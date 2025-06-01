@@ -69,13 +69,14 @@ def _(EGSException, api, time):
         """
         Fetches details from Epic Games Store API by title,
         then attempts to get more product details including tags.
-    
+
         Returns a dictionary of extracted game details, None if nothing found.
         """
-        print(f"...Sleeping for {delay} seconds for rate limit purposes (initial search)")
+    
+        print(f"...Sleeping {delay} seconds... (initial search)")
         time.sleep(delay)
         print(f"Fetching initial details for: {game_title}...")
-        
+
         extracted_data = {
             "searched_title": game_title,
             "api_found_title": None,
@@ -86,9 +87,9 @@ def _(EGSException, api, time):
             "api_categories": None,
             "api_original_price": None,
             "api_key_image_wide": None,
-            "api_tags": None, # This will be our focus
+            "api_tags": None, 
             "api_raw_search_result": None, # For debugging initial search
-            "api_raw_product_page": None # For debugging product page call
+            "api_raw_product_page": None   # For debugging product page call
         }
 
         try:
@@ -97,14 +98,14 @@ def _(EGSException, api, time):
 
             if search_results and search_results.get('data', {}).get('Catalog', {}).get('searchStore', {}).get('elements'):
                 elements = search_results['data']['Catalog']['searchStore']['elements']
-                
+
                 best_match_from_search = None
                 for element in elements:
                     if str(element.get('title', '')).strip().lower() == str(game_title).strip().lower():
                         best_match_from_search = element
                         print(f"  Exact match found in search: {element.get('title')}")
                         break
-                
+
                 if not best_match_from_search and elements:
                     best_match_from_search = elements[0]
                     print(f"  No exact match in search. Using first result: {best_match_from_search.get('title')}")
@@ -114,7 +115,7 @@ def _(EGSException, api, time):
                     extracted_data["api_id"] = best_match_from_search.get('id')
                     extracted_data["api_namespace"] = best_match_from_search.get('namespace')
                     extracted_data["api_product_slug"] = best_match_from_search.get('productSlug') # often None here
-                    
+
                     # If productSlug is None from search, try to use the one from title for get_product
                     slug_for_product_page = best_match_from_search.get('productSlug') or \
                                             str(best_match_from_search.get('title','')).lower().replace(' ', '-') # basic slugify
@@ -126,18 +127,18 @@ def _(EGSException, api, time):
                     print(f"  Fetching product page details for slug: {slug_for_product_page}...")
                     print(f"...Sleeping for {delay} seconds for rate limit purposes (product page)")
                     time.sleep(delay) # Additional delay before the second API call
-                    
+
                     try:
                         # According to epicstore-api docs, get_product uses 'slug'
                         product_page_data = api.get_product(slug=slug_for_product_page)
                         extracted_data["api_raw_product_page"] = product_page_data # Store for debugging
-                        
+
                         if product_page_data:
                             print(f"  Successfully fetched product page for {slug_for_product_page}")
                             # Now extract details from product_page_data
                             # This structure might differ from the search result element
                             extracted_data["api_description"] = product_page_data.get('description')
-                            
+
                             # Price from product page
                             price_info = product_page_data.get('price', {}).get('totalPrice', {})
                             extracted_data["api_original_price"] = price_info.get('originalPrice')
@@ -148,7 +149,7 @@ def _(EGSException, api, time):
                                 if img.get('type') == 'DieselStoreFrontWide': # Or common wide image types
                                     extracted_data["api_key_image_wide"] = img.get('url')
                                     break
-                            
+
                             # Categories from product page
                             categories_list = product_page_data.get('categories', [])
                             extracted_data["api_categories"] = [cat.get('path') for cat in categories_list if cat.get('path')]
@@ -185,7 +186,7 @@ def _(EGSException, api, time):
                     print(f"  No search results elements found for '{game_title}'.")
             else: # No search results structure
                 print(f"  No valid search results structure for '{game_title}'.")
-            
+
             return extracted_data
 
         except EGSException as e_search:
