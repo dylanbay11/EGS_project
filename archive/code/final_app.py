@@ -14,6 +14,7 @@ import plotly.express as px
 #     return pd.read_csv(url, na_values=['', 'NA', 'NaN', None]) 
 # df = load_data()
 
+# df = pd.read_csv("data/nodesc.csv")
 df = pd.read_csv("~/Desktop/dshw/EGS_project/nodesc.csv")
 
 # begin streamlit stuff
