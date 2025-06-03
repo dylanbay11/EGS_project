@@ -1,0 +1,587 @@
+index,order,good_game,title,start_date,end_date,api_found_title,api_id,api_namespace,api_description,api_product_slug,api_categories,api_original_price,api_key_image_wide,api_tags
+1,586,0,Tiny Tina’s Wonderlands,2025-05-29,2025-06-05,Tiny Tina's Assault on Dragon Keep: A Wonderlands One-shot Adventure,e73c6b914a394bbface8847d75879492,d98b6c292e224a59b359372f4f5152df,,tiny-tinas-assault-on-dragon-keep-a-wonderlands-one-shot-adventure,[],,,null
+2,585,0,Limbo,2025-05-29,2025-06-05,Limbo,8ac7a28bdcdf4f4db7706419aa502c0e,d5241c76f178492ea1540fce45616757,,limbo,[],,,null
+3,584,1,Sifu,2025-05-22,2025-05-29,Sifu,41de807326694983bb752bd9e872d0f4,b7b42e2078524ab386a8b2a9856ef557,,sifu,[],,,null
+4,583,0,Gigapocalypse,2025-05-22,2025-05-29,Gigapocalypse,529a003e742f425b865c08a2f0040097,09f00180b25347bdb65ac0b7378756b7,,,null,,,null
+5,582,0,Deliver at All Costs,2025-05-22,2025-05-29,Deliver At All Costs,75a9f751a9964f46b3a37b396d2edc52,2ef976af17b74478a4b2938d54bb3db4,,,null,,,null
+6,581,0,Happy Game,2025-05-15,2025-05-22,Happy Game,431ef6a0c3fd4aaab390ceb2f1904bc3,0024d18025a544fd99b2ee8dee87baaf,,,null,,,null
+7,580,0,Dead Island 2,2025-05-15,2025-05-22,Dead Island 2,29cfc63ad4074333bc6e3f7efb6fab3a,236c74b4cd2e4e3099cbe2ebdc9686fd,,dead-island-2,[],,,null
+8,579,0,Touch Type Tale,2025-05-08,2025-05-15,Touch Type Tale,ac63bc06c6d44a5d8c423675bd7208d9,7029f6353d7f468eb6940bbe6041474e,,touch-type-tale,[],,,null
+9,578,0,Deadtime Defenders,2025-05-08,2025-05-15,Deadtime Defenders,cff516f0708444ee8ee06a96e6986b34,bd93f0ee6bcb47f9abc3ef018cb97a0d,,,null,,,null
+10,577,1,Lego Star Wars: The Skywalker Saga,2025-05-04,2025-05-05,LEGO® Star Wars™: The Skywalker Saga,283939b792814f5e87d8bdd5a8375fac,9c59efaabb6a48f19b3485d5d9416032,,lego-star-wars-the-skywalker-saga,[],,,null
+11,576,0,Super Space Club,2025-05-01,2025-05-08,Super Space Club,f2946e78792f48a69c7c030f03e7fb42,5d6924bd68114aab9e48f1ed17ce1883,,,null,,,null
+12,575,0,Chuchel,2025-04-24,2025-05-01,CHUCHEL,70ec5e706b404d378762042f029b46ef,092bbf0d7e2449c08271cae2fb791cf2,,,null,,,null
+13,574,0,Albion Online Free Welcome Gift,2025-04-24,2025-05-01,,,,,,null,,,null
+14,573,0,Firestone Free Offer,2025-04-17,2025-04-24,,,,,,null,,,null
+15,572,0,Botanicula,2025-04-17,2025-04-24,Botanicula,03c59230eea04398900d900770899a9e,5c7501617f3449c5a6eed7590392f9fa,,,null,,,null
+16,571,0,River City Girls,2025-04-10,2025-04-17,River City Girls,ceea8c3f2f0b48dfbd5c658c3cb6d1b0,a02304688fb3406192a3491b4281bee7,,,null,,,null
+17,570,0,Idle Champions of the Forgotten Realms,2025-04-10,2025-04-17,Idle Champions of the Forgotten Realms,a9748abde1c94b66aae5250bb9fc5503,7e508f543b05465abe3a935960eb70ac,,idle-champions-of-the-forgotten-realms,[],,,null
+18,569,0,Arcadgeddon,2025-04-10,2025-04-17,Arcadegeddon,1f3eef158d3a40589651269e662673ea,043ffc92cbd64a9fbc350ea68f415937,,arcadegeddon,[],,,null
+19,568,0,Cat Quest II,2025-04-03,2025-04-10,Cat Quest II,2a8398bbcb524c379ab21e31f0be5aeb,58004246d72f474a957ff5f57b9684ca,,,null,,,null
+20,567,0,"Neko Ghost, Jump!",2025-03-27,2025-04-03,"Neko Ghost, Jump!",8c06c52475f04adb9cdfea4c0a50f734,c4c7d3cd0a2f4ea2bf7d4a57e46e8d68,,neko-ghost-jump,[],,,null
+21,566,0,Cat Quest,2025-03-27,2025-04-03,Cat Quest,2da36fbed1b34d1997e5ffb1f8efdeb6,c986e75258a146fba03a920dba852ca9,,,null,,,null
+22,565,0,Jurassic World Evolution 2,2025-03-20,2025-03-27,Jurassic World Evolution 2,47dfc9b69a9f44a5a47fa3d182f4d599,4817ba5c11504724ba4d5817c8995dff,,jurassic-world-evolution-2,[],,,null
+23,564,0,World of Warships: Anniversary Party Favor,2025-03-13,2025-03-20,,,,,,null,,,null
+24,563,0,Mortal Shell,2025-03-13,2025-03-20,Mortal Shell,10c62ba6044c4cbba8b50ad16dc58c4d,ff8c96d781824ba1ae62d18d207fc52e,,mortal-shell,[],,,null
+25,562,0,Them’s Fightin’ Herds,2025-03-06,2025-03-13,Them's Fightin' Herds,1f723b00df58467998c4984ca39915ad,a567c32599bf4d4fb609e424f3691b39,,thems-fightin-herds/home,null,,,null
+26,561,0,Mages of Mystralia,2025-02-27,2025-03-06,Mages of Mystralia,464a19f4865248b5948c9514af11d563,bd12fd574df14846ad24703ca7b1a12b,,mages-of-mystralia,[],,,null
+27,560,0,World War Z: Aftermath,2025-02-20,2025-02-27,World War Z Aftermath,05af9ab1d2dc4b78ada8b2f09724da20,wombat,,world-war-z,[],,,null
+28,559,0,Garden Story,2025-02-20,2025-02-27,Garden Story,794bbf45d5fe451d9f805d99d30bbbd0,0f3f352865294c3ea5e10454f24fde85,,garden-story,[],,,null
+29,558,0,F1 Manager 2024,2025-02-13,2025-02-20,F1® Manager 2023,9e76915f47364710a3b2486181349217,38b4b40752b142e5a503acbb241a8b3c,,f1-manager-2023,[],,,null
+30,557,0,Apex Legends: Loba Free Unlock Bundle,2025-02-13,2025-02-20,,,,,,null,,,null
+31,556,0,Humankind Standard Edition,2025-02-06,2025-02-13,Ancestors: The Humankind Odyssey Standard Edition Retail Audience,66d249a901054b44812adecd7635803f,amaranth,,,null,,,null
+32,555,0,Beyond Blue,2025-02-06,2025-02-13,Beyond Blue,c3006006e4c74c4d8316ff09fb8dcc8d,bd9fd28ca1214868922f2ab41d6d3b65,,beyond-blue,[],,,null
+33,554,0,Undying,2025-01-30,2025-02-06,Undying,c9d2e42d8b404add9390c0182093abbd,487df1dfd24b44c381a2a376fbf78946,,undying,[],,,null
+34,553,0,Behind the Frame: The Finest Scenery,2025-01-23,2025-01-30,Behind the Frame: The Finest Scenery,ade0eed6f17a412b97d29a992b35754c,5fb8093984924ff5bfad61ae28730818,,behind-the-frame-the-finest-scenery,[],,,null
+35,552,0,Escape Academy,2025-01-16,2025-01-23,Escape Academy,224ed07084444c619cedc473c7cd1498,040baa2d100d465caf428c688cc3cdba,,,null,,,null
+36,551,0,Turmoil,2025-01-09,2025-01-16,Turmoil,92acefe8e4e845169ea160bb92e3e4e0,85c72a063b884d249a554fee9f71125d,,,null,,,null
+37,550,0,Hell Let Loose,2025-01-02,2025-01-09,Hell Let Loose,5cee37b551534963887a11f6744f6951,6430e58041234e41b8f81f68f01450ed,,,null,,,null
+38,549,0,Kingdom Come: Deliverance,2025-01-01,2025-01-02,Kingdom Come: Deliverance,bd15ffd61c1744a295de36c164694e40,ca4058f18b0a4a9e9e2ccc28f7f33000,,kingdom-come-deliverance/home,null,,,null
+39,548,1,Sifu,2024-12-31,2025-01-01,Sifu,41de807326694983bb752bd9e872d0f4,b7b42e2078524ab386a8b2a9856ef557,,sifu,[],,,null
+40,547,0,[Redacted],2024-12-30,2024-12-31,[REDACTED],611a4122fc9940b19e26094099034c56,04e4108a1fec4845bd2744e8d554c9a6,,,null,,,null
+41,546,0,Orcs Must Die! 3,2024-12-29,2024-12-30,Orcs Must Die! 3,144edd0ee90645cb9c31ae6d97fcfcaf,a1a52b1a570e4ee3ab3b2a8ca930753e,,,null,,,null
+42,545,0,Kill Knight,2024-12-28,2024-12-29,KILL KNIGHT,094d562fdbf143e896ffeaee8592db58,db6d869788bd4aa59f9ccb26c91a0153,,,null,,,null
+43,544,1,Hot Wheels Unleashed,2024-12-27,2024-12-28,HOT WHEELS UNLEASHED™,7626d56f226c49c5af79685abf167cb6,71e6bd85af1841f598526da595f22a62,,hot-wheels-unleashed,[],,,null
+44,543,1,Ghostrunner 2,2024-12-26,2024-12-27,Ghostrunner 2,be5600439b434624802764f704755cde,708f57aaa04b42ef885be16c8288f0ac,,ghostrunner-2,[],,,null
+45,542,1,Control,2024-12-25,2024-12-26,Control,ab885109aec0430bab7fbc87c002eb8d,0d36d28dad0942d8be178cb68f6793af,,,[],,,null
+46,541,1,Dredge,2024-12-24,2024-12-25,DREDGE,c52eda250c0043358ee825b870d49fcd,8b454b47f5544fc6829cf0fed42ebae0,,,null,,,null
+47,540,0,Dark and Darker: Legendary Status,2024-12-23,2024-12-24,,,,,,null,,,null
+48,539,0,Wizard of Legend,2024-12-22,2024-12-23,Wizard of Legend,9ac7a7323fb2401f92560174d5a384ff,194cda74f9024d67860202683a3dab18,,,null,,,null
+49,538,0,TerraTech,2024-12-21,2024-12-22,TerraTech,e50af47d4be74b50a0dd99b42ae44470,96830aff053e404c808a54300c941e57,,,null,,,null
+50,537,0,Astrea: Six-Sided Oracles,2024-12-20,2024-12-21,Astrea Six Sided Oracles,7c14bf0cffdd43be968fdcf28e5af653,a940fa38f001486a9884640924119576,,,null,,,null
+51,536,0,Vampire Survivors,2024-12-19,2024-12-20,Vampire Survivors,9b6d6cc0e10a42a3a0aa4fe02f5dbee5,a4e77bc04aa440a096962c14b63a41e8,,,null,,,null
+52,535,0,The Lord of the Rings: Return to Moria,2024-12-12,2024-12-19,The Lord of The Rings: Return to Moria™,8b5d0e6d2d0d43388b749940a6ccb6a6,1d6b5762a1d643a4830481c44d59abfb,,,null,,,null
+53,534,1,Lego Star Wars: The Skywalker Saga,2024-12-05,2024-12-12,LEGO® Star Wars™: The Skywalker Saga,283939b792814f5e87d8bdd5a8375fac,9c59efaabb6a48f19b3485d5d9416032,,lego-star-wars-the-skywalker-saga,[],,,null
+54,533,0,Bus Simulator 21 Next Stop,2024-12-05,2024-12-12,Bus Simulator 21 Next Stop,10adac482d1647e1afc237b66dc45066,2b09519576cb4276bfd8df52f5288e4a,,bus-simulator-21,[],,,null
+55,532,1,Brotato,2024-11-28,2024-12-05,Brotato,3fe7eaeca2fa474187fc338a5324ae11,3b391953ce4b42bb9a28a2fee249154b,,,null,,,null
+56,531,0,Beholder,2024-11-21,2024-11-28,Beholder,5ef8a7dc06384428a3effed5cefd0ee1,7109c2e220544434ad355bce3cf69120,,,null,,,null
+57,530,0,Snakebird Complete,2024-11-14,2024-11-21,Snakebird Complete,fddca2297b9a4354b59f8f83d4975c90,efc30c2078a2499ab979d198255e2e4b,,,null,,,null
+58,529,0,Castlevania Anniversary Collection,2024-11-14,2024-11-21,Castlevania Anniversary Collection,8f80897c0b6e4e678fed08da169d44be,247d4d4b4e424afd9b474334fe450a43,,,null,,,null
+59,528,0,Deceive Inc.,2024-11-07,2024-11-14,Deceive Inc.,327e2f6dbe2b4859b3e1ba4f69dff5c2,eca9a86adffa4605b8250d383fc01098,,deceive-inc,[],,,null
+60,527,0,Apex Legends: Ash Free Unlock Bundle,2024-11-07,2024-11-14,,,,,,null,,,null
+61,526,1,Ghostwire: Tokyo,2024-10-31,2024-11-07,Ghostwire: Tokyo,53a6356d1f4945e58d8c8e9f511c3c9d,a93cd6111251461c953776a0c4ea4d80,,ghostwire-tokyo,[],,,null
+62,525,0,Witch It,2024-10-31,2024-11-07,fell in love with coser,8f95043921da43d78dacfdb917cbeaed,e4088fe230d843c18e1d45c4109d2713,,,null,,,null
+63,524,0,Moving Out,2024-10-24,2024-10-31,Moving Out,0a8b32256f374cf4998c3ecf44c31db9,f919a1262081444fb28f0fdef68d6b14,,moving-out,[],,,null
+64,523,0,Kardboard Kings,2024-10-17,2024-10-24,Kardboard Kings,747d522e0451439590fa6647ae67f58a,22a9bc193ad94ab78155b5c2f9541e6b,,,null,,,null
+65,522,0,Invincible Presents: Atom Eve,2024-10-17,2024-10-24,Invincible Presents: Atom Eve,d8abd7984d034e21acafbce5ba0cca9b,b79b8b81ba8c4bf9b4b1154670237131,,,null,,,null
+66,521,0,Outliver: Tribulation,2024-10-10,2024-10-17,Outliver: Tribulation,a4d3ae371e674ce3b2892d63c8bb4041,13e30807efce43ea9e04ac1c45668d8e,,,null,,,null
+67,520,0,Empyrion: Galactic Survival,2024-10-10,2024-10-17,Empyrion - Galactic Survival,5d79a38c99e9432f8dec6288a17595ab,edd938a6d7ec4a55ab82bba8f8dd5b22,,,null,,,null
+68,519,0,Bear and Breakfast,2024-10-03,2024-10-10,Bear and Breakfast,5a05b93354d74d2687b3b002d4bfc1a3,6c3a09646a954c04b5ab774e5b8c861d,,,null,,,null
+69,518,0,The Spirit and the Mouse,2024-09-26,2024-10-03,The Spirit and the Mouse,b9763cf171e446d5864cfa0b8fe8b9bb,300ee26a2d6746cdb7dd515ae819f5d4,,,null,,,null
+70,517,0,The Last Stand: Aftermath,2024-09-19,2024-09-26,The Last Stand: Aftermath,8f58067d08bb454ab0eb8907345b8c76,8d296e80f3ec42a79881f0693f3bded0,,the-last-stand-aftermath,[],,,null
+71,516,1,Toem: A Photo Adventure,2024-09-19,2024-09-26,,,,,,null,,,null
+72,515,0,Super Crazy Rhythm Castle,2024-09-12,2024-09-19,SUPER CRAZY RHYTHM CASTLE,c1480c18d56f476c96b36037f2a81f51,048550a9623d4824894430a2c2823e02,,,null,,,null
+73,514,0,Rugrats: Adventures in Gameland,2024-09-12,2024-09-19,Rugrats: Adventures in Gameland,03fa35d7ade24540b5902b662570a270,c20d98862be8473b896df438004868c5,,,null,,,null
+74,513,0,Sniper Ghost Warrior Contracts,2024-09-05,2024-09-12,SGWC series - Full Arsenal Edition,9e93eacc261e4bc6ad7eafb7da0a3954,36e743d744f742dcbee4efd9fc83ca92,,sgwc-series-full-arsenal-edition,null,,,null
+75,512,1,Football Manager 2024,2024-09-05,2024-09-12,Football Manager 2024,d0ec3758eb4b4224a2037cd438d51cc1,610a546d4e204215a0b9a1c8a382bacb,,,[],,,null
+76,511,0,Wild Card Football,2024-08-29,2024-09-05,,,,,,null,,,null
+77,510,0,Fallout Classic Collection,2024-08-29,2024-09-05,Fallout® Classic Collection,b2df9bd956ad46b4beabff90f69bd3c9,08f9ecb2186a454cacee6b05d06098ec,,fallout-classic-collection,null,,,null
+78,509,1,The Callisto Protocol,2024-08-22,2024-08-29,The Callisto Protocol,b8833393baf843d6abc4f5eb38487d33,6b0541b5d9aa476cbf407643ab3b1d7d,,the-callisto-protocol,[],,,null
+79,508,0,Gigantic: Rampage Edition,2024-08-22,2024-08-29,Gigantic: Rampage Edition,5a387d243a05401b926575736262a929,ba2eb1ee9bfc434b8c06d33f9df7d15a,,,null,,,null
+80,507,0,World of Warships Starter Pack: Albany,2024-08-15,2024-08-22,,,,,,null,,,null
+81,506,0,Death’s Gambit: Afterlife,2024-08-15,2024-08-22,Death's Gambit - Afterlife,15ffd983174241ae8a00033f5f23f060,7b9cdaaca4f5424e8d6bd7dabe559010,,,null,,,null
+82,505,0,DNF Duel,2024-08-08,2024-08-15,DNF Duel,9f314276c254423bb9b145480b5b150b,3eb832eb6d9f4496818a0b0d667420c0,,,null,,,null
+83,504,0,CYGNI: All Guns Blazing,2024-08-08,2024-08-15,CYGNI - All Guns Blazing,ce86ed5a3c0d48eaa5326dda50105a9b,5d9f109e44ec4c8bbc5495f43b601f25,,,null,,,null
+84,503,0,Apex Legends Conduit Free Unlock Bundle,2024-08-08,2024-08-15,,,,,,null,,,null
+85,502,0,Rawmen: Food Fighter Arena,2024-08-01,2024-08-08,RAWMEN: Food Fighter Arena 🍜,e7e111c658584357a25ff993fca52a3c,b9665613f2b94636bf4536a411002d22,,,null,,,null
+86,501,0,LumbearJack,2024-08-01,2024-08-08,LumbearJack,ed744042986f41f791d295459d75725f,b112cc17de8c4b43a2372993b5916fec,,,null,,,null
+87,500,0,F.I.S.T.: Forged in Shadow Torch,2024-07-25,2024-08-01,F.I.S.T.: Forged In Shadow Torch,6e708b1e608f446eaa80488d26b7444b,a7e2a2c51b9149c097b771926ed91877,,fist-forged-in-shadow-torch,[],,,null
+88,499,0,Olympics Go! Paris 2024 Exclusive Outfits Pack,2024-07-25,2024-08-01,,,,,,null,,,null
+89,498,0,Maid of Sker,2024-07-18,2024-07-25,Maid of Sker,3795a845a05d4b3baacb8126635ffd74,89a30c2a3fdb4281b5df57350e797ca9,,,null,,,null
+90,497,0,Arcade Paradise,2024-07-18,2024-07-25,Arcade Paradise,f7ce9c6bfed74819894366568193d4f8,89b9c510e8d74b9da34c447915b1ffb1,,arcade-paradise,[],,,null
+91,496,0,Floppy Knights,2024-07-11,2024-07-18,Floppy Knights,2e84cea730144ac79c3b7f34a2e20d3f,f7ca5706875344d8a1fe695093353fae,,,null,,,null
+92,495,0,The Falconeer,2024-07-04,2024-07-11,The Falconeer: Standard Edition,98cffb44de6543aaa39a62e3c6124e06,29e93200bb53431a961afc53e39fb9c8,,the-falconeer,[],,,null
+93,494,0,Sunless Skies: Sovereign Edition,2024-06-27,2024-07-04,Sunless Skies: Sovereign Edition,d64e188ad8034ffcacd038c4713f5c0a,3f6f54e0f8164224b817d23075cbb2a8,,,null,,,null
+94,493,0,Rumble Club Free Game of the Week Bonus,2024-06-20,2024-06-27,,,,,,null,,,null
+95,492,0,Freshly Frosted,2024-06-20,2024-06-27,Freshly Frosted,eba5b90a4eda4234a26259bf2ea8b07a,013ef1cdbe5a4408919025207ddb9c99,,,null,,,null
+96,491,0,Redout 2,2024-06-13,2024-06-20,Redout 2,b77095c5a9224fbe8a7222db84675873,05ae696a3c5f49af91a7433547460c21,,redout-2,[],,,null
+97,490,0,Idle Champions of the Forgotten Realms,2024-06-13,2024-06-20,Idle Champions of the Forgotten Realms,a9748abde1c94b66aae5250bb9fc5503,7e508f543b05465abe3a935960eb70ac,,idle-champions-of-the-forgotten-realms,[],,,null
+98,489,1,Marvel’s Midnight Suns,2024-06-06,2024-06-13,Marvel's Midnight Suns Digital+ Edition,45027e9dd84c44e79b8cd1be610023c5,ea73c08ac633414584e281f838b3a78c,,marvels-midnight-suns--digital-edition,null,,,null
+99,488,0,Chivalry 2,2024-05-30,2024-06-06,Chivalry 2,c1c055783d524ce19e45959fea8cd791,epic,,chivalry-2/home,null,,,null
+100,487,0,Farming Simulator 22,2024-05-23,2024-05-30,Farming Simulator 22,91468918931c44148b837e76d34bf75a,308cbcb523ad4937a8c509d10e9b688a,,farming-simulator-22,[],,,null
+101,486,1,Dragon Age: Inquisition – Game of the Year Edition,2024-05-16,2024-05-23,Dragon Age: Inquisition – Game of the Year Edition,4e1a331635b445f58eb3c8a52c5076b3,afe2527e29b94db48b2eef984e34d81a,,,null,,,null
+102,485,0,Firestone Free Offer,2024-05-09,2024-05-16,,,,,,null,,,null
+103,484,0,Circus Electrique,2024-05-09,2024-05-16,Circus Electrique,c9b55213beab4dce973680780877ce99,396a808f269241aba0fe2ad322ebd6d5,,circus-electrique,[],,,null
+104,483,0,Orcs Must Die! 3,2024-05-02,2024-05-09,Orcs Must Die! 3,144edd0ee90645cb9c31ae6d97fcfcaf,a1a52b1a570e4ee3ab3b2a8ca930753e,,,null,,,null
+105,482,0,Cat Quest II,2024-05-02,2024-05-09,Cat Quest II,2a8398bbcb524c379ab21e31f0be5aeb,58004246d72f474a957ff5f57b9684ca,,,null,,,null
+106,481,0,Lisa: Definitive Edition,2024-04-25,2024-05-02,LISA: The Definitive Edition,944b5b5d646d46bc92bc33edfe983d26,ca3a9d16d131478c97fd56c138a6511a,,lisa-the-definitive-edition,null,,,null
+107,480,0,Industria,2024-04-25,2024-05-02,INDUSTRIA,2dbb1debe54f4555805896caf7844470,51b1503392e04abab64364092cbfca2b,,industria,[],,,null
+108,479,0,Town of Salem 2,2024-04-18,2024-04-25,Town of Salem 2,f4c04d050f8c459ab1261ecbeeb5720a,ab9f1f7354a8418388b43132d420524a,,,null,,,null
+109,478,0,The Big Con,2024-04-18,2024-04-25,The Big Con,d0ae213cddb44791a607056fcc6040f1,a1f2a672b08f45d28bb6b65eef6ffe41,,the-big-con,[],,,null
+110,477,1,Ghostrunner,2024-04-11,2024-04-18,Ghostrunner,19b650f9a98a45b0bfe07674b51fa7a0,95d0b9561be1464cb43bd029e94cf526,,ghostrunner,[],,,null
+111,476,0,Thief,2024-04-04,2024-04-11,Thief,23e4018b5fea4fa0bc1337da2b286154,3319fe5042ab4392a2b11c6938c0cda1,,,null,,,null
+112,475,1,The Outer Worlds: Spacer’s Choice Edition,2024-04-04,2024-04-11,The Outer Worlds: Spacer's Choice Edition,0769596f15a445b7a5ad3f8d7c7730e2,dc61166eea95474e912953b163791d42,,the-outer-worlds-spacers-choice-edition,[],,,null
+113,474,0,Islets,2024-03-28,2024-04-04,Islets,4862aa73b8b048c782958b8f22118d28,cecc5a53aa534e15881fdbd67a1e83b7,,,null,,,null
+114,473,0,Invincible Presents: Atom Eve,2024-03-21,2024-03-28,Invincible Presents: Atom Eve,d8abd7984d034e21acafbce5ba0cca9b,b79b8b81ba8c4bf9b4b1154670237131,,,null,,,null
+115,472,0,Call of the Wild: The Angler,2024-03-21,2024-03-28,Call of the Wild: The Angler™,e5cfeb2ef72e4cae8a237317fed902ee,75d74aeb36024d95b8a30bad40dc19c3,,call-of-the-wild-the-angler,[],,,null
+116,471,0,The Bridge,2024-03-14,2024-03-21,The Bridge,6b228a1ad940496dabc89ec6640107f3,epic,,the-bridge/home,null,,,null
+117,470,1,Deus Ex: Mankind Divided,2024-03-14,2024-03-21,Deus Ex - Mankind Divided,6e41bd515f5e4c93bc7888b582e88865,5c5b2b01c8ce475d86cdd2c76fd11f7b,,,null,,,null
+118,469,0,Astro Duel 2,2024-03-07,2024-03-14,Astro Duel 2,bc38eac0277d41ec955690e25779cb53,4a681a809a094e2c8dcc68353c68fed6,,,null,,,null
+119,468,0,Aerial_Knight’s Never Yield,2024-02-29,2024-03-07,Aerial_Knight's Never Yield,2fecb1793ce446408cd869611400a797,2ed7ed64d8604265924b85bbd5670220,,aerial-knights-never-yield,[],,,null
+120,467,0,Super Meat Boy Forever,2024-02-22,2024-02-29,Super Meat Boy Forever,ef66029a1c0d467ea7755f6a88b4088c,epic,,super-meat-boy-forever,[],,,null
+121,466,0,Dakar Desert Rally,2024-02-15,2024-02-22,Dakar Desert Rally,aca45f8a6b124590af039f97e148bd89,ac98aa34584648f2b71152e509191c1c,,dakar-desert-rally,[],,,null
+122,465,0,Lost Castle,2024-02-08,2024-02-15,Lost Castle,186b5f89167f48fd94a9538ebfe214c6,ab29925a0a9a49598adba45d108ceb3e,,,null,,,null
+123,464,0,Doki Doki Literature Club Plus!,2024-02-08,2024-02-15,Doki Doki Literature Club Plus!,76cd108ce4354545bd825e181262dbad,1311a5735ed844c0b3c47027cab321f0,,doki-doki-literature-club-plus,[],,,null
+124,463,0,Doors: Paradox,2024-02-01,2024-02-08,Doors - Paradox,b8dee54bce824477bc0b7cb298f9f9a9,88c17fed155e43068c338d33d1bcd481,,,null,,,null
+125,462,0,Infinifactory,2024-01-25,2024-02-01,Infinifactory,e69075bc6dd84fa09b47af91b3ce6723,1260f09c5ab842b9a645e14f085ed5af,,,null,,,null
+126,461,0,Love,2024-01-18,2024-01-25,Beacon-fire: Project Salvation Belles,d8406a0e7d1a44f88aceb79a27daaa79,c1d996c2b2064c94b870701376c7fbf2,,,null,,,null
+127,460,0,Sail Forth,2024-01-11,2024-01-18,Sail Forth,c819b6b40a034231ad64b8406f75814e,d93cf08971eb4920862a95870a051f81,,,null,,,null
+128,459,1,Marvel’s Guardians of the Galaxy,2024-01-04,2024-01-11,Marvel's Guardians of the Galaxy,a2fc9e21ab4e416680c2b9597b7f6eaf,2a09fb19b47f46dfb11ebd382f132a8f,,marvels-guardians-of-the-galaxy,[],,,null
+129,458,1,A Plague Tale: Innocence,2024-01-03,2024-01-04,A Plague Tale: Innocence,89e949b9176d4f04a5b2e6ca28655b21,71d19da3678943098859baa9c4c39f95,,a-plague-tale-innocence,[],,,null
+130,457,0,20 Minutes Till Dawn,2024-01-02,2024-01-03,20 Minutes Till Dawn,9758dccdbda54c1387f732d0d7d03b3b,ee9fad7056a94957b3a4d8c457000337,,,null,,,null
+131,456,0,Escape Academy,2024-01-01,2024-01-02,Escape Academy,224ed07084444c619cedc473c7cd1498,040baa2d100d465caf428c688cc3cdba,,,null,,,null
+132,455,1,Ghostrunner,2023-12-31,2024-01-01,Ghostrunner,19b650f9a98a45b0bfe07674b51fa7a0,95d0b9561be1464cb43bd029e94cf526,,ghostrunner,[],,,null
+133,454,0,Saints Row,2023-12-30,2023-12-31,Saints Row,c8ae275e995940b0868d9f44e75d05d9,0d23bb77ee2f45b7a571bde68caddb09,,saints-row,[],,,null
+134,453,0,Snakebird Complete,2023-12-29,2023-12-30,Snakebird Complete,fddca2297b9a4354b59f8f83d4975c90,efc30c2078a2499ab979d198255e2e4b,,,null,,,null
+135,452,0,Cat Quest,2023-12-28,2023-12-29,Cat Quest,2da36fbed1b34d1997e5ffb1f8efdeb6,c986e75258a146fba03a920dba852ca9,,,null,,,null
+136,451,0,Cursed to Golf,2023-12-27,2023-12-28,Cursed to Golf,cc8016226a1a4bca9208e071073ad788,2cdc5a2758a6445d8d4f399ecb469aaf,,,null,,,null
+137,450,0,Human Resource Machine,2023-12-26,2023-12-27,Human Resource Machine,6a76c942e36e46c4ab566a21b5f46461,epic,,human-resource-machine/home,null,,,null
+138,449,1,The Outer Worlds: Spacer’s Choice Edition,2023-12-25,2023-12-26,The Outer Worlds: Spacer's Choice Edition,0769596f15a445b7a5ad3f8d7c7730e2,dc61166eea95474e912953b163791d42,,the-outer-worlds-spacers-choice-edition,[],,,null
+139,448,1,Ghostwire: Tokyo,2023-12-24,2023-12-25,Ghostwire: Tokyo,53a6356d1f4945e58d8c8e9f511c3c9d,a93cd6111251461c953776a0c4ea4d80,,ghostwire-tokyo,[],,,null
+140,447,1,Fallout 3: Game of the Year Edition,2023-12-23,2023-12-24,Fallout 3: Game of the Year Edition,d6f01b1827c64ed388191ae507fe7c1b,fa702d34a37248ba98fb17f680c085e3,,fallout-3-game-of-the-year-edition,[],,,null
+141,446,0,Art of Rally,2023-12-22,2023-12-23,Art of Rally,8a2dd95a9fe04bdebde02b46a8f41aed,4751c4f6a96547209a33831d847d2810,,art-of-rally/home,null,,,null
+142,445,0,Melvor Idle,2023-12-21,2023-12-22,Melvor Idle,99f665baf7ab4d5597504a2ff46b3edc,207c42b0325d40ebb0414041dac29b19,,,null,,,null
+143,444,0,DNF Duel,2023-12-20,2023-12-21,DNF Duel,9f314276c254423bb9b145480b5b150b,3eb832eb6d9f4496818a0b0d667420c0,,,null,,,null
+144,443,1,Destiny 2: Legacy Collection,2023-12-13,2023-12-20,,,,,,null,,,null
+145,442,0,Predecessor,2023-12-07,2023-12-13,Predecessor,a19138c05ca642d2a7fd73dcbadea7da,85f0435aa88347d185dbcb147716609b,,predecessor,[],,,null
+146,441,0,GigaBash,2023-12-07,2023-12-13,GigaBash,4a003a822ba54453b59c277f5bfc697f,16fc138ed83846bc90d923fe0d87ad72,,gigabash,[],,,null
+147,440,0,Mighty Fight Federation,2023-11-30,2023-12-07,Mighty Fight Federation,61baaf316c8448e5b5c9ee80fe0b26f7,651d07f1eee8419e80eb2938f8f44cf0,,mighty-fight-federation,[],,,null
+148,439,0,Jitsu Squad,2023-11-30,2023-12-07,Jitsu Squad,5526de3a3c35483da97b1b8ce970b360,6ef33a285bf5426d852762aecc95c826,,,null,,,null
+149,438,0,Deliver Us Mars,2023-11-23,2023-11-30,Deliver Us Mars,34c8b5efd29f48209928d74752584426,53ec6d9f552241549c4d8aa1a42bcb3b,,deliver-us-mars,[],,,null
+150,437,0,Surviving the Aftermath,2023-11-16,2023-11-23,Surviving the Aftermath,eb081710a4b64e068c8881a138d9de3f,epic,,surviving-the-aftermath/home,null,,,null
+151,436,0,Earthlock,2023-11-16,2023-11-23,EARTHLOCK,54412e4f88824cb2a3f1dbb604b59c16,5c82c05d2978489090d30c05e17e6e12,,,null,,,null
+152,435,0,Golden Light,2023-11-09,2023-11-16,Golden Light,f787056536bf43298e39305a0c5c20c8,ca05bd340e84436ebea4a0c0ca55befa,,,null,,,null
+153,434,0,Turnip Boy Commits Tax Evasion,2023-11-02,2023-11-09,Turnip Boy Commits Tax Evasion,e0282b701ea04c42ac1b5a55c1a3bfde,80be39e522204fd0942916d73234d044,,,null,,,null
+154,433,1,The Evil Within 2,2023-10-26,2023-11-02,The Evil Within 2,77693e5298d94911a0edd2492203d9ea,5891aa5c4c6f4aabbf555a679e02cfb9,,the-evil-within-2,[],,,null
+155,432,0,Tandem: A Tale of Shadows,2023-10-26,2023-11-02,Tandem: A Tale of Shadows,9142916d80f54720b01f8f62b21014be,d1a3ff292b2f4ee289a83d7a91ae3458,,,null,,,null
+156,431,1,The Evil Within,2023-10-19,2023-10-26,The Evil Within,087155540ecc47239c98c1265b40ba99,d602fd70876141ba9bf4d54809c423d1,,the-evil-within,[],,,null
+157,430,0,Eternal Threads,2023-10-19,2023-10-26,Eternal Threads,921e40c4c69f4d728914ca2a4f0aa407,35eda4ff87f94a7491dc28175b8f3b4f,,,null,,,null
+158,429,0,Q.U.B.E. Ultimate Bundle,2023-10-12,2023-10-19,,,,,,null,,,null
+159,428,0,Blazing Sails,2023-10-12,2023-10-19,Blazing Sails,363d0be3b57d4741a046d38da0e6355e,aee7dd76aa6746578f476dc47f8d1d7f,,blazing-sails,[],,,null
+160,427,0,Godlike Burger,2023-10-05,2023-10-12,Godlike Burger,d9300ace164b41ac90a7b54e59d47953,beb7e64d3da74ae780405da48cccb581,,,null,,,null
+161,426,0,Soulstice,2023-09-28,2023-10-05,Soulstice,4b19305fb8ec4640b4fa8d6ea5e5e3c4,cb8afc06acb14f6a8cf3ab01f4b361ce,,soulstice,[],,,null
+162,425,0,Model Builder,2023-09-28,2023-10-05,Model Builder: Complete Edition,d3e5b556640144bfa5de2d5d3b283d68,23499f64e5304139b514c3e674c5c0d6,,,null,,,null
+163,424,0,The Forest Quartet,2023-09-21,2023-09-28,The Forest Quartet,4286fb03f8984923a63be6a856945c50,a3100205e194489088c7625c8c5c1596,,,null,,,null
+164,423,0,Out of Line,2023-09-21,2023-09-28,Out of Line,b1faf4597f064576a7ad60efff9d2a9a,0f58cd1c026441f49371d663a710fe83,,,null,,,null
+165,422,0,911 Operator,2023-09-14,2023-09-21,911 Operator,268fd6ea355740d6ba4c76c3ffd4cbe0,d923c737f0d243ccab407605ea40d39e,,,null,,,null
+166,421,0,Spelldrifter,2023-09-07,2023-09-14,Spelldrifter,98050bc663334e2c9c99e596084bab0f,14d712e338ee4fe5b5304d959cd75cd2,,spelldrifter,[],,,null
+167,420,0,Cave Story+,2023-08-31,2023-09-07,Cave Story+,be3de140fc3749b28215da1626cce8bc,78473822f724474d8e436f6bde735623,,cave-story-plus,[],,,null
+168,419,0,Homeworld: Deserts of Kharak,2023-08-24,2023-08-31,Homeworld: Deserts of Kharak,508291c29513464b84c1b701edf3d8f4,e209b2d1d5384f639335f64e3e6c4bb8,,homeworld-deserts-of-kharak,[],,,null
+169,418,0,Dodo Peak,2023-08-17,2023-08-24,Dodo Peak,97576d7026ab4e4181fdf9b8711a95d9,cea01263911a4e179a5e3892ef710930,,,null,,,null
+170,417,0,Black Book,2023-08-17,2023-08-24,Black Book,0bce0871129140d894da3789e2fe0a7f,8211dc6089af4542926b7a8137b9079e,,black-book,[],,,null
+171,416,0,Orwell: Keeping an Eye on You,2023-08-10,2023-08-17,Orwell: Keeping an Eye on You,2bc098b80f364e178f364ab368b15372,750dfadbde8445f980601e84434359c5,,orwell-keeping-an-eye-on-you,[],,,null
+172,415,0,Europa Universalis IV,2023-08-10,2023-08-17,Europa Universalis IV,45b82cb4454b40439b61ba126adfabec,80d3aeb1d7c3434981e0bcbc47700a83,,europa-universalis-iv,[],,,null
+173,414,0,Loop Hero,2023-08-03,2023-08-10,Loop Hero,db122f42b41f4dec927e0f280cf653bd,ff50f85ed609454e80ac46d9496da34d,,,[],,,null
+174,413,0,Bloons TD 6,2023-08-03,2023-08-10,Bloons TD 6,b27e3b556f1048b9824c7196f32afceb,6a8dfa6e441e4f2f9048a98776c6077d,,,null,,,null
+175,412,0,Severed Steel,2023-07-27,2023-08-03,Severed Steel,b26543426574454e82e07624450c9022,5db7394e65044dd1bb083ee983e2b3a5,,severed-steel,[],,,null
+176,411,0,Homeworld Remastered Collection,2023-07-27,2023-08-03,Homeworld Remastered Collection,4709cb4179de4f3daa08fe69ec41bc22,4311a0ee99724086b1a4f261b827d038,,homeworld-remastered-collection,[],,,null
+177,410,0,The Elder Scrolls Online,2023-07-20,2023-07-27,The Elder Scrolls Online,c052f9c8e36d432fbfb4a10b0849da9f,27aa2ebdcda14b3bb8a669aab73ca55f,,the-elder-scrolls-online,[],,,null
+178,409,0,Murder by Numbers,2023-07-20,2023-07-27,Murder by Numbers,72266ee0bb6f46b3b81f787f31eef633,a0c5d9d8a9a940e8a8f63118c7323210,,murder-by-numbers,[],,,null
+179,408,0,Train Valley 2,2023-07-13,2023-07-20,Train Valley 2,e499fc9429044cda83c141213a831592,5c59642227a2412fb38f324d1772914e,,,null,,,null
+180,407,0,Grime,2023-07-06,2023-07-13,A Woman's Lot,f7e60790188248b2add20279fb905568,ca4058f18b0a4a9e9e2ccc28f7f33000,,kingdom-come-deliverance/a-womans-lot,null,,,null
+181,406,0,The Dungeon of Naheulbeuk: The Amulet of Chaos,2023-06-29,2023-07-06,,,,,,null,,,null
+182,405,0,theHunter: Call of the Wild,2023-06-22,2023-06-29,theHunter: Call of the Wild™,7b0d120a875547e9bec70192ddcc96e2,c7f9346e3db148fca6dd63e9dd8451bd,,thehunter-call-of-the-wild,[],,,null
+183,404,0,Idle Champions of the Forgotten Realms,2023-06-22,2023-06-29,Idle Champions of the Forgotten Realms,a9748abde1c94b66aae5250bb9fc5503,7e508f543b05465abe3a935960eb70ac,,idle-champions-of-the-forgotten-realms,[],,,null
+184,403,1,Guacamelee! 2,2023-06-15,2023-06-22,Guacamelee! 2,f7aa0e57c2b94acd97a28a7ec99a7ded,277e364d24ec43069f4ee3c4414d5096,,,null,,,null
+185,402,1,Guacamelee! Super Turbo Championship Edition,2023-06-15,2023-06-22,Guacamelee! Super Turbo Championship Edition,825a2a7eb70b458ab5b3cd9f5b3fa014,f5d9b93771214e4cbd60506539d1cfc6,,,null,,,null
+186,401,0,Payday 2,2023-06-08,2023-06-15,PAYDAY 2,384f75fdd6b34f63a2daace1a3c5dab0,3b661fd6a9724ac7b6ac6d10d0572511,,,null,,,null
+187,400,0,Midnight Ghost Hunt,2023-06-01,2023-06-08,Midnight Ghost Hunt,0613000f1d164fc1b5dd3e5ad1376399,964f58c4c2074404bf9c359483ab1a48,,midnight-ghost-hunt,[],,,null
+188,399,1,Fallout: New Vegas Ultimate Edition,2023-05-25,2023-06-01,Fallout: New Vegas - Ultimate Edition,08834851d4a54f48b485e97caab98012,3428aaab2c674c98b3acb789dcfaa548,,fallout-new-vegas--ultimate-edition,null,,,null
+189,398,1,Death Stranding,2023-05-18,2023-05-25,Death Stranding,9a071cfb3827440ba36cbef6a6042186,epic,,death-stranding/home,null,,,null
+190,397,0,The Sims 4 The Daring Lifestyle Bundle,2023-05-11,2023-05-18,,,,,,null,,,null
+191,396,0,Kao the Kangaroo,2023-05-04,2023-05-11,Kao the Kangaroo,8fa0a4d003dc4e7fb2c9125e17693280,3bbc147c5f134b7cab059cb2b3bb0dd7,,,null,,,null
+192,395,0,Horizon Chase Turbo,2023-05-04,2023-05-11,Horizon Chase Turbo,58a2b650955f4920876afe86dfb563c1,253d451b16364a22907dd01b7e928fb6,,horizon-chase-turbo,[],,,null
+193,394,0,Against All Odds,2023-05-04,2023-05-11,Against All Odds,5b99274688e9465aa9d5ca5cea176cfd,676a89b2e8344c9db39a79724150cba6,,,null,,,null
+194,393,0,Poker Club,2023-04-27,2023-05-04,Poker Club,b18baf5b2a18423493139ef9974dbbe3,a0149619255648e8af0993a17ef4ee8e,,,null,,,null
+195,392,0,Breathedge,2023-04-27,2023-05-04,Breathedge,8401414902e84f2cb9afa9142f051d32,08ae29e4f70a4b62aa055e383381aa82,,breathedge,[],,,null
+196,391,0,Never Alone (Kisima Ingitchuna),2023-04-20,2023-04-27,Never Alone (Kisima Ingitchuna),0cd43717a2224f33bb9a95f01d303474,b13f6a1e5121469d8a825947b759339d,,never-alone-kisima-ingitchuna,[],,,null
+197,390,0,Beyond Blue,2023-04-20,2023-04-27,Beyond Blue,c3006006e4c74c4d8316ff09fb8dcc8d,bd9fd28ca1214868922f2ab41d6d3b65,,beyond-blue,[],,,null
+198,389,0,Second Extinction,2023-04-13,2023-04-20,,,,,,null,,,null
+199,388,0,Mordhau,2023-04-13,2023-04-20,MORDHAU,7f89db821ab1441981adb4daf31c06db,2bda08f9230144a19e98373cc4a6ac2d,,mordhau,[],,,null
+200,387,0,shapez,2023-04-06,2023-04-13,shapez,35f8d25247154fca9b900c13d2be04f6,315e6807f6684c279fc286d0fc36a44f,,,null,,,null
+201,386,0,Dying Light: The Following – Enhanced Edition,2023-04-06,2023-04-13,,,,,,null,,,null
+202,385,0,Tunche,2023-03-30,2023-04-06,Tunche,1cfc3e68b14940719bbc0bce58fae8a4,78683b0edafd4a978a5ab61a7f6b0594,,tunche,[],,,null
+203,384,0,The Silent Age,2023-03-30,2023-04-06,The Silent Age,9f476effdb174d789a6d7894d7c39dbb,46d340566781448ebdc2cb576f91d3b6,,,null,,,null
+204,383,0,World of Warships Starter Pack: Ishizuchi,2023-03-23,2023-03-30,,,,,,null,,,null
+205,382,0,Chess Ultra,2023-03-23,2023-03-30,Chess Ultra,ce6ec094f67e4c558334f2683b2125da,0e9ae0e756524ed49a27435c9c3c3e1c,,,null,,,null
+206,381,0,"Warhammer 40,000: Gladius – Relics of War",2023-03-16,2023-03-23,"Warhammer 40,000: Gladius - Relics of War",0fffb527a35441b08505c018dc1812bd,0d89655f53884b09b241b60c07e684af,,warhammer-40000-gladius-relics-of-war,[],,,null
+207,380,0,Call of the Sea,2023-03-09,2023-03-16,Call of the Sea,92da5d8d918543b6b408e36d9af81765,5e427319eea1401ab20c6cd78a4163c4,,call-of-the-sea,[],,,null
+208,379,0,Rise of Industry,2023-03-02,2023-03-09,Rise of Industry,c04a2ab8ff4442cba0a41fb83453e701,9f101e25b1a9427a9e6971d2b21c5f82,,,null,,,null
+209,378,0,Duskers,2023-02-23,2023-03-02,Duskers,894044bc1cd34d99b69ac356fa036f99,f27cd07f948348dfb27165510c56c569,,,null,,,null
+210,377,0,Warpips,2023-02-16,2023-02-23,Warpips,f6e75092c08045afa343fb5c5aa817ae,277788d421e748e580ca0972c339f1a6,,,null,,,null
+211,376,0,Recipe for Disaster,2023-02-09,2023-02-16,Recipe for Disaster,40607137e7ff40059c3d3ba232dae958,615a4dc5c85c4c28a390dda4298acd80,,,null,,,null
+212,375,1,Dishonored: Death of the Outsider,2023-02-02,2023-02-09,Dishonored®: Death of the Outsider™,faf518d367de4306a911ce211c8e47e4,87c84bc5f43d4fe69ad8f3ccde0594b0,,dishonored-death-of-the-outsider,[],,,null
+213,374,0,City of Gangsters,2023-02-02,2023-02-09,City of Gangsters,1518143f0eb44365a8ede8d8e38719d7,e33138cc2b964d38a42a812b83b6507e,,,null,,,null
+214,373,0,Hell Is Others,2023-01-26,2023-02-02,Hell is Others,c1735ab5600741489a3ed30ed18c8b2f,bd75186521ab40b5840774b78bb287e3,,,null,,,null
+215,372,0,Adios,2023-01-26,2023-02-02,Adios,7334a6f04f5b47218e691f805891bc5d,a3dd9f3da8ec49c7b25dec42cce2ec46,,,null,,,null
+216,371,0,Epistory: Typing Chronicles,2023-01-19,2023-01-26,Epistory - Typing Chronicles,63352c1c0eed4ab9a640dafee08eff54,6a6d54e5b4ef4fb0b3dad1d02a320376,,,null,,,null
+217,370,0,Gamedec: Definitive Edition,2023-01-12,2023-01-19,Gamedec - Definitive Edition,61d13d6fe0c84016a8bacd6fa14cab0e,b8abdf9f9bc64ed6b4128a71fd47607f,,gamedec,[],,,null
+218,369,0,First Class Trouble,2023-01-12,2023-01-19,First Class Trouble,7d9434b94bc74d25bdd9299b3d9f3e3e,27834480410d4000a987b32801e9abba,,first-class-trouble,[],,,null
+219,368,0,Divine Knockout,2023-01-12,2023-01-19,,,,,,null,,,null
+220,367,0,Shadow Tactics: Aiko’s Choice,2023-01-05,2023-01-12,Shadow Tactics - Aiko's Choice,ef6a61163419450ba4dcf2eacb6b88e7,39c6dd5409944922a04cac3f59fbbcd4,,,null,,,null
+221,366,0,Kerbal Space Program,2023-01-05,2023-01-12,Kerbal Space Program,20dd3087657940f59b110d0f5ffaf41e,ca0530b485754032be50cb6f27be0c2c,,kerbal-space-program,[],,,null
+222,365,0,Eximius: Seize the Frontline,2022-12-29,2023-01-05,Eximius: Seize the Frontline,6930e8f29e1646e194da321c88a266bf,1c943de0163f4f0982f34dc0fc37dce9,,eximius-seize-the-frontline,[],,,null
+223,364,1,Dishonored: Definitive Edition,2022-12-29,2023-01-05,Dishonored - Definitive Edition,ecf4d2e87ea7445298c7471d8e9b405e,766e1b59c32c447093add5efbc1a4858,,dishonored-definitive-edition,[],,,null
+224,363,0,Mortal Shell,2022-12-28,2022-12-29,Mortal Shell,10c62ba6044c4cbba8b50ad16dc58c4d,ff8c96d781824ba1ae62d18d207fc52e,,mortal-shell,[],,,null
+225,362,0,Severed Steel,2022-12-27,2022-12-28,Severed Steel,b26543426574454e82e07624450c9022,5db7394e65044dd1bb083ee983e2b3a5,,severed-steel,[],,,null
+226,361,0,F.I.S.T.: Forged in Shadow Torch,2022-12-26,2022-12-27,F.I.S.T.: Forged In Shadow Torch,6e708b1e608f446eaa80488d26b7444b,a7e2a2c51b9149c097b771926ed91877,,fist-forged-in-shadow-torch,[],,,null
+227,360,1,Death Stranding,2022-12-25,2022-12-26,Death Stranding,9a071cfb3827440ba36cbef6a6042186,epic,,death-stranding/home,null,,,null
+228,359,1,Metro: Last Light Redux,2022-12-24,2022-12-25,Metro: Last Light Redux,6bad44fc6dd9456081442559c51a577f,epic,,metro-last-light-redux,[],,,null
+229,358,0,Encased,2022-12-23,2022-12-24,Encased,adc96ea4979d4b14831823a2c0efa057,48ee23bbc7c34ac09604253e74d17b49,,encased,[],,,null
+230,357,0,Fallout Tactics: Brotherhood of Steel,2022-12-22,2022-12-23,Fallout Tactics: Brotherhood of Steel,550b1ad4adcc414a966d459587bcdb30,b90be973f6e74975ac1a6ff15dbfd0b3,,fallout-tactics-brotherhood-of-steel,[],,,null
+231,356,0,Fallout 2: A Post Nuclear Role Playing Game,2022-12-22,2022-12-23,Fallout 2: A Post Nuclear Role Playing Game,f7eb422464774537915ee423ca84a59a,aae22da1fb884fa395b25bc30dd61faf,,fallout-2,[],,,null
+232,355,0,Fallout: A Post Nuclear Role Playing Game,2022-12-22,2022-12-23,Fallout: A Post Nuclear Role Playing Game,ed7dba6b05354eeca6e2bc130ceffaf3,2e412cfcbd954e7180930e9784a47e18,,fallout,[],,,null
+233,354,0,LEGO Builder’s Journey,2022-12-21,2022-12-22,LEGO® Builder's Journey,bd886035d7ee4eb1b886a5ada1358528,ea533c2d54754167a9392a2ffa61bb87,,lego-builders-journey,[],,,null
+234,353,0,Wolfenstein: The New Order,2022-12-20,2022-12-21,Wolfenstein: The New Order,52a32a3469dd4a2ca20bfff0c6a66486,0bd3e505924240adb702295fa08c1eff,,wolfenstein-the-new-order,[],,,null
+235,352,0,Them’s Fightin’ Herds,2022-12-19,2022-12-20,Them's Fightin' Herds,1f723b00df58467998c4984ca39915ad,a567c32599bf4d4fb609e424f3691b39,,thems-fightin-herds/home,null,,,null
+236,351,1,Sable,2022-12-18,2022-12-19,Chivalry 2 - Stable,9ef854099e2d4d409169812684c45590,bd46d4ce259349e5bd8b3ded20274737,,,null,,,null
+237,350,0,Costume Quest 2,2022-12-17,2022-12-18,Costume Quest 2,62488ccca67b455891967a4cfc6dea24,c660f57e1a164930a7196f1fd27ae45a,,costume-quest-2,[],,,null
+238,349,0,Horizon Chase Turbo,2022-12-16,2022-12-17,Horizon Chase Turbo,58a2b650955f4920876afe86dfb563c1,253d451b16364a22907dd01b7e928fb6,,horizon-chase-turbo,[],,,null
+239,348,0,Bloons TD 6,2022-12-15,2022-12-16,Bloons TD 6,b27e3b556f1048b9824c7196f32afceb,6a8dfa6e441e4f2f9048a98776c6077d,,,null,,,null
+240,347,0,Wildcat Gun Machine,2022-12-08,2022-12-15,Wildcat Gun Machine,d6531a64aa334d8d9c993cc607e48406,13cba1b288ec417badb9a276cbb6d819,,,null,,,null
+241,346,0,Saints Row IV: Re-Elected,2022-12-08,2022-12-15,Saints Row IV Re-Elected,23ea1157ec89467d99f9b0fdf0ddb89b,151e56468b5049628653dedab7c88007,,saints-row-iv-re-election,null,,,null
+242,345,0,RPG in a Box,2022-12-01,2022-12-08,,,,,,null,,,null
+243,344,0,Fort Triumph,2022-12-01,2022-12-08,Fort Triumph,f3575fe40f894984a7027d86034e3b2c,58dbbafdb5b04b3e9442506354457e3c,,fort-triumph,[],,,null
+244,343,0,Star Wars: Squadrons,2022-11-24,2022-12-01,STAR WARS™: Squadrons,2ebc70bd2f0044a18e2734b4fcd9b48b,bc2b0372eaa448469cb9a769f27acea1,,star-wars-squadrons/home,null,,,null
+245,342,0,Evil Dead: The Game,2022-11-17,2022-11-24,,,,,,null,,,null
+246,341,0,Dark Deity,2022-11-17,2022-11-24,Dark Deity,e48379072089437dbd783ef80c56fc2c,be69d6b9214f4bc594c4cb1cd310a553,,,null,,,null
+247,340,0,Epic Cheerleader Pack,2022-11-15,2022-11-24,,,,,,null,,,null
+248,339,0,Shadow Tactics: Blades of the Shogun,2022-11-10,2022-11-17,Shadow Tactics: Blades of the Shogun,aec117239abd49a08eddc9e75a981fa3,2f215955790d456b80c291bc2feaf7f7,,shadow-tactics/home,null,,,null
+249,338,0,Alba: A Wildlife Adventure,2022-11-10,2022-11-17,Alba - A Wildlife Adventure,44a89fd06011419d9df5fe412ab305e1,caf357c955344eaeaaaddb3c8357dbdf,,,null,,,null
+250,337,0,Rising Storm 2: Vietnam,2022-11-03,2022-11-10,Rising Storm 2: Vietnam,b19d810d322240e7b37bcf84ffac60ce,3542a1df211e492bb2abecb7c734f7f9,,rising-storm-2-vietnam,[],,,null
+251,336,0,Filament,2022-11-03,2022-11-10,Filament,296453e71c884f95aecf4d582cf66915,89fb09a222a54e53b692e9c36e68d0a1,,,null,,,null
+252,335,0,"Warhammer 40,000: Mechanicus",2022-10-27,2022-11-03,"Warhammer 40,000: Mechanicus - Standard Edition",559b16fa81134dce83b5b8b7cf67b5b3,144f9e231e2846d1a4381d9bb678f69d,,,null,,,null
+253,334,0,Saturnalia,2022-10-27,2022-11-03,Saturnalia,275d5915ebd2479f983f51025b22a1b8,c749cd78da34408d8434a46271f4bb79,,saturnalia,[],,,null
+254,333,1,Fallout 3: Game of the Year Edition,2022-10-20,2022-10-27,Fallout 3: Game of the Year Edition,d6f01b1827c64ed388191ae507fe7c1b,fa702d34a37248ba98fb17f680c085e3,,fallout-3-game-of-the-year-edition,[],,,null
+255,332,0,Evoland Legendary Edition,2022-10-20,2022-10-27,Evoland Legendary Edition,e068e168886a4a90a4e36a310e3bda32,3f7bd21610f743e598fa8e955500f5b7,,,null,,,null
+256,331,0,ToeJam & Earl: Back in the Groove!,2022-10-13,2022-10-20,ToeJam & Earl: Back in the Groove!,db9725548f40419cac7d1c10f94c0736,bd1047eb76fd4fd490fcb8f668e5deda,,,null,,,null
+257,330,0,Darkwood,2022-10-13,2022-10-20,Darkwood,d00f7e0293ef44b8ab453294cc380a4d,25b5ab5928784a74a502f6a84bb8b49f,,,null,,,null
+258,329,0,Slain: Back from Hell,2022-10-06,2022-10-13,Slain: Back From Hell,e5267e621ed14b84829c82a69e289c8e,5a85738bd9e74940ad8409ed8a2c680a,,,null,,,null
+259,328,0,Rising Hell,2022-10-06,2022-10-13,Rising Hell,59595c8d06bf417886be97b618046f65,8d123dcc4b5c4d168f7de7b3e1ed7d47,,,null,,,null
+260,327,0,The Drone Racing League,2022-09-29,2022-10-06,The Drone Racing League®,1578c50f725742fab1863952e01efc52,b6aa6a98bb394a53870bd6b026fefd1d,,the-drone-racing-league-simulator,[],,,null
+261,326,0,Runbow,2022-09-29,2022-10-06,Runbow,d98bc011d00a4323b2c49c7dc9d75969,aa7c3e6b5a2a4ca8962270c15bddb861,,,null,,,null
+262,325,0,Gloomhaven,2022-09-22,2022-09-29,Gloomhaven,9232fdbc352445cc820a54bdc97ed2bb,bc079f73f020432fac896d30c8e2c330,,,null,,,null
+263,324,0,Ark: Survival Evolved,2022-09-22,2022-09-29,ARK: Survival Evolved,16b7c8509ea8427898981145d244316c,ark,,ark,[],,,null
+264,323,0,The Captain,2022-09-15,2022-09-22,The Captain,80fb2028e27b489988bcd2c242b8caf0,301980d060324bb29202677f468c6c44,,the-captain,[],,,null
+265,322,0,Spirit of the North,2022-09-15,2022-09-22,Spirit of the North,4460a8fcdc3e4f48a11f3174656f8a96,6098a8c7375c43458a22163a637c0c2f,,,null,,,null
+266,321,0,Realm Royale Reforged Epic Launch Bundle,2022-09-08,2022-09-15,,,,,,null,,,null
+267,320,0,Hundred Days: Winemaking Simulator,2022-09-08,2022-09-15,Hundred Days - Winemaking Simulator,141eee80fbe041d48e16e7b998829295,4d8b727a49144090b103f6b6ba471e71,,hundred-days-winemaking-simulator,[],,,null
+268,319,0,Submerged: Hidden Depths,2022-09-01,2022-09-08,Submerged: Hidden Depths,befad00f8b354f52a4f10e927025e9f8,6006c7c9d8534b0ca4605ea3a759f3e1,,,null,,,null
+269,318,0,Shadow of the Tomb Raider: Definitive Edition,2022-09-01,2022-09-08,Shadow of the Tomb Raider: Definitive Edition,ee7f3c6725fd4fd4b8aeab8622cb770e,4b5461ca8d1c488787b5200b420de066,,shadow-of-the-tomb-raider,[],,,null
+270,317,0,Knockout City,2022-09-01,2022-09-08,,,,,,null,,,null
+271,316,0,Ring of Pain,2022-08-25,2022-09-01,Ring of Pain,4b5ba08363b5472f8c061d92c9a849db,b9c7474c6bdf4e9ab8ca5a5da60059d4,,ring-of-pain,[],,,null
+272,315,0,Destiny 2: Bungie 30th Anniversary Pack,2022-08-23,2022-08-30,,,,,,null,,,null
+273,314,0,Rumbleverse Boom Boxer Content Pack,2022-08-18,2022-08-25,,,,,,null,,,null
+274,313,0,Doom 64,2022-08-18,2022-08-25,DOOM 64,4d14124e8e9c484381db3be1e2118e8a,0ea70edafcc54b3191e262bbb6971981,,doom-64,[],,,null
+275,312,0,"Cook, Serve, Delicious! 3?!",2022-08-11,2022-08-18,"Cook, Serve, Delicious! 3?!",41a886d5d37646bfb3d30842cc8f34d2,b29663f909b94b0b83deb76f147e9e4f,,,null,,,null
+276,311,0,Unrailed!,2022-08-04,2022-08-11,Unrailed!,38ad328025584a26bab9ca92c5f5b842,5a6d34ba28bc45d081d9311c3885feef,,,null,,,null
+277,310,0,Lawn Mowing Simulator,2022-07-28,2022-08-04,Lawn Mowing Simulator,7d849437da4547399baa3758cb7ec580,70d9536d99af4c70a55e4c23989f4225,,,null,,,null
+278,309,0,Tannenberg,2022-07-21,2022-07-28,Tannenberg,4bdbe4d91f084966aed33eeb5ebb71fd,538de058a6d9490ea151c4cd111cc01b,,tannenberg,[],,,null
+279,308,0,Shop Titans,2022-07-21,2022-07-28,Shop Titans,89a60cbd5e6c4cea9af4c7346df3f633,9696e0c7c26841789a152588c744d506,,,null,,,null
+280,307,0,Wonder Boy: The Dragon’s Trap,2022-07-14,2022-07-21,Wonder Boy The Dragons Trap,bd18a76d848946b0ac5f5c692c8b4757,e1e92771f6774072bb1b8d0a0a6197f7,,,null,,,null
+281,306,0,Killing Floor 2,2022-07-07,2022-07-14,Killing Floor 2,85f5ff10c31c4cd99978f4d57d3ec97a,affc33b82405457595a032f00284abd2,,killing-floor-2,[],,,null
+282,305,0,Ancient Enemy,2022-07-07,2022-07-14,Ancient Enemy,07c6a2e544274070b9e9ee78316c5774,138c9362d8ff4c239076bc556e18cdac,,ancient-enemy,[],,,null
+283,304,0,Iratus: Lord of the Dead,2022-06-30,2022-07-07,Iratus: Lord of the Dead,101ca62ae8064e4799bd84cd549479fa,d250bdf072934b70ab080c6fcee77734,,,null,,,null
+284,303,0,Hood: Outlaws & Legends,2022-06-30,2022-07-07,,,,,,null,,,null
+285,302,0,Geneforge 1 – Mutagen,2022-06-30,2022-07-07,Geneforge 1 - Mutagen,d8970826d8bb4d599a74ad990eb8ae01,308652d49c89470fbf45fe8696b9c1c1,,geneforge-1-mutagen,[],,,null
+286,301,0,Car Mechanic Simulator 2018,2022-06-23,2022-06-30,Car Mechanic Simulator 2018,5eb27cf1747c40b5a0d4f5492774678d,226306adde104c9092247dcd4bfa1499,,car-mechanic-simulator-2018,[],,,null
+287,300,0,A Game of Thrones: The Board Game Digital Edition,2022-06-23,2022-06-30,A Game Of Thrones: The Board Game Digital Edition,a125d72a47a1490aba78c4e79a40395d,1b737464d3c441f8956315433be02d3b,,,null,,,null
+288,299,0,Supraland,2022-06-16,2022-06-23,Supraland,1167f711027c484cafb64899f89527ba,ae373893881044d2bf26d6f8363a120e,,supraland,[],,,null
+289,298,0,Maneater,2022-06-09,2022-06-16,Maneater,cf0f9c305d5d4dc9bd0fc4c14b5f2c5d,turtle,,maneater,[],,,null
+290,297,0,Wolfenstein: The New Order,2022-06-02,2022-06-09,Wolfenstein: The New Order,52a32a3469dd4a2ca20bfff0c6a66486,0bd3e505924240adb702295fa08c1eff,,wolfenstein-the-new-order,[],,,null
+291,296,1,BioShock: The Collection,2022-05-26,2022-06-02,BioShock: The Collection,7b376ca3de1c4cb1b94c9164221fb4a5,b15fbb77440547c29567bfa76a878a32,,bioshock-the-collection,null,,,null
+292,295,1,Borderlands 3,2022-05-19,2022-05-26,Borderlands 3,3efc7f6a60bb489fb7572176bd60d2cc,epic,,borderlands-3/home,null,,,null
+293,294,0,Redout: Enhanced Edition,2022-05-12,2022-05-19,Redout: Enhanced Edition,c82ab1b8b43843e6a279128614667fb8,93ea0d593cb04e62afb0741bbf894173,,redout-enhanced-edition,[],,,null
+294,293,1,Prey,2022-05-12,2022-05-19,Prey,ed17077691c541c19dc95e47fdd1cfd5,6ea398b9c2244250a9177c0b8a69b5cd,,prey,[],,,null
+295,292,0,Jotun: Valhalla Edition,2022-05-12,2022-05-19,Jotun: Valhalla Edition,cbbde99547d54f41b8f7bd5fc46726c5,ba3149b6d7a7488ab5cc674154458757,,jotun/home,null,,,null
+296,291,0,Terraforming Mars,2022-05-05,2022-05-12,Terraforming Mars,f2496286331e405793d69807755b7b23,25d726130e6c4fe68f88e71933bda955,,,null,,,null
+297,290,0,Paradigm,2022-04-28,2022-05-05,Paradigm,ee598afa02a1496289ae14bf442c5224,dd9648d29088406e9e2a61ba33fc13f6,,,null,,,null
+298,289,0,Just Die Already,2022-04-28,2022-05-05,Just Die Already,fd05ded73f7944798434bd7ee7b39e9c,8c7ed85dae4341d385919ee4d832eb1a,,just-die-already,[],,,null
+299,288,0,Riverbond,2022-04-21,2022-04-28,Riverbond,d848b3c67d3f4f94b26e0ae9f4b6b45c,100f8957d16d4d2d89716775b5767779,,,null,,,null
+300,287,0,Amnesia: Rebirth,2022-04-21,2022-04-28,Amnesia: Rebirth,e24cd7ba0b3343729b68d8134c074528,b2df9b20c72446d690718965da41c7ad,,amnesia-rebirth,[],,,null
+301,286,1,XCOM 2,2022-04-14,2022-04-21,Destroy All Humans! 2 - Reprobed,2b57169ff8fd4814bc6fc67076b0b767,4d62b26703d24f6d919750b3d88b6d52,,destroy-all-humans-2-reprobed,[],,,null
+302,285,0,Insurmountable,2022-04-14,2022-04-21,Insurmountable,185b6f2fc0e945cc909fe8a691d39b7d,e25eba2210804006a61763a4108322de,,,null,,,null
+303,284,0,Rogue Legacy,2022-04-07,2022-04-14,Rogue Legacy,cc8ecf10eb654f93bd1a61a466be2584,66ce501aea0a424cb80cfe5f31f80f03,,rogue-legacy,[],,,null
+304,283,1,The Vanishing of Ethan Carter,2022-04-07,2022-04-14,The Vanishing of Ethan Carter,bdea68145b61462f9cd17068e835aadf,f401d7e187e349138380d22e991b29ca,,the-vanishing-of-ethan-carter,[],,,null
+305,282,1,Total War: Warhammer,2022-03-31,2022-04-07,Total War: WARHAMMER,bb3ce2b4668b4b22aae989f4508f0b71,0c321ac6d5fe49139c153253b60702f4,,total-war-warhammer,[],,,null
+306,281,0,City of Brass,2022-03-31,2022-04-07,City of Brass,b8c9b6788e4b4794b2b537076c2ced9d,epic,,city-of-brass/home,null,,,null
+307,280,0,Demon’s Tilt,2022-03-24,2022-03-31,DEMON'S TILT,08f2539567df4d43a1b0f8a5196f43cc,c4a39e8e304c4356afcddd79820b223d,,demons-tilt,[],,,null
+308,279,0,In Sound Mind,2022-03-17,2022-03-24,In Sound Mind,9bbfe5536ecc4a1190e07cb4cbeb7ddb,fa9812acd30f46f8a69a75bf27addb5c,,in-sound-mind,[],,,null
+309,278,0,Cities: Skylines,2022-03-10,2022-03-17,Cities: Skylines,bf83aee67dd1475fb6bf2c8563f14b70,6009be9994c2409099588cde6f3a5ed0,,cities-skylines,[],,,null
+310,277,0,Centipede: Recharged,2022-03-03,2022-03-10,Centipede: Recharged,b44a2808223f4cd0a8ca1376410b5460,a1edd0d2e28d4d298152c001e7c47e22,,centipede-recharged,[],,,null
+311,276,0,Black Widow: Recharged,2022-03-03,2022-03-10,Black Widow: Recharged,2dd7498ffb08433ca9b7c20946787e1f,a25444fc25e9498781983b58ceba30c5,,black-widow-recharged,[],,,null
+312,275,0,Dauntless Epic Slayer Kit,2022-03-03,2022-03-10,,,,,,null,,,null
+313,274,0,Cris Tales,2022-02-24,2022-03-03,Cris Tales,132a0780b11d4cdf8932a239ce86aa4b,ef361cdf19514595a8cb0945fb66962e,,cris-tales,[],,,null
+314,273,1,Brothers: A Tale of Two Sons,2022-02-17,2022-02-24,Brothers - A Tale of Two Sons,751c3ae311cf48e1926233fdddae9cb8,615659ff36244d258ef6c6a827e32c5d,,brothers-a-tale-of-two-sons,[],,,null
+315,272,0,Windbound,2022-02-10,2022-02-17,Windbound,13e70cb21eda428dbdf8d8b0a013880f,a47cb01bef994749ac731aa3366796e8,,windbound,[],,,null
+316,271,0,Yooka-Laylee and the Impossible Lair,2022-02-03,2022-02-10,Yooka-Laylee and the Impossible Lair,7ab1f8e424a044db8f8ee6ae394c2f88,epic,,yooka-laylee-and-the-impossible-lair/home,null,,,null
+317,270,0,Daemon X Machina,2022-01-27,2022-02-03,DAEMON X MACHINA,f6d665930cc34c34ac69cfe52906a723,0dc18227b3f14162968d8e7969e454ef,,daemon-x-machina,[],,,null
+318,269,0,Relicta,2022-01-20,2022-01-27,Relicta,8f338b5867d84354bf01550081b4bb2b,d79920221de24b448e24516a7810804e,,relicta,[],,,null
+319,268,0,Galactic Civilizations III,2022-01-13,2022-01-20,Galactic Civilizations III,5d63b78c08184c10933a47874117db8c,3c52fbac843d4375803187739db84801,,galactic-civilizations-iii,[],,,null
+320,267,0,Gods Will Fall,2022-01-06,2022-01-13,Gods Will Fall,5207cdd79e9145d0bbb947c6bd3699a3,28d06644e2f84b398c1b7fb96a2b6bd5,,gods-will-fall,[],,,null
+321,266,1,Shadow of the Tomb Raider: Definitive Edition,2021-12-31,2022-01-06,Shadow of the Tomb Raider: Definitive Edition,ee7f3c6725fd4fd4b8aeab8622cb770e,4b5461ca8d1c488787b5200b420de066,,shadow-of-the-tomb-raider,[],,,null
+322,265,1,Rise of the Tomb Raider: 20 Year Celebration,2021-12-31,2022-01-06,Rise of the Tomb Raider: 20 Year Celebration,1d053e8b4a784eb2bbe1b1924419d459,48ffecf4a89f4fd496817b0451384f39,,rise-of-the-tomb-raider,[],,,null
+323,264,1,Tomb Raider Game of the Year Edition,2021-12-31,2022-01-06,Tomb Raider GAME OF THE YEAR EDITION,1c5143aeec774495a5acc9d613af181b,caca23a0954f4c1aba1fdd7e277b81e2,,tomb-raider,[],,,null
+324,263,0,Salt and Sanctuary,2021-12-29,2021-12-30,Salt and Sanctuary,b69fb17fe548401297c61f0e88807031,79d9bff700bb46a790b21e8c73b34899,,,[],,,null
+325,262,0,Moving Out,2021-12-28,2021-12-29,Moving Out,0a8b32256f374cf4998c3ecf44c31db9,f919a1262081444fb28f0fdef68d6b14,,moving-out,[],,,null
+326,261,0,Mages of Mystralia,2021-12-27,2021-12-28,Mages of Mystralia,464a19f4865248b5948c9514af11d563,bd12fd574df14846ad24703ca7b1a12b,,mages-of-mystralia,[],,,null
+327,260,1,Control,2021-12-26,2021-12-27,Control,ab885109aec0430bab7fbc87c002eb8d,0d36d28dad0942d8be178cb68f6793af,,,[],,,null
+328,259,1,Prey,2021-12-25,2021-12-26,Prey,ed17077691c541c19dc95e47fdd1cfd5,6ea398b9c2244250a9177c0b8a69b5cd,,prey,[],,,null
+329,258,0,Pathfinder: Kingmaker,2021-12-24,2021-12-25,Pathfinder: Kingmaker - Imperial Edition,8b8f6bb0adb0477eb3841748f3d95aa4,6daaf10529e94fccaa8ee43b66adbe4a,,pathfinder-kingmaker/imperial-edition,null,,,null
+330,257,0,Vampyr,2021-12-23,2021-12-24,Vampyr,1c319cea18464c909b9b0c2ea5e155a0,epic,,vampyr,[],,,null
+331,256,0,Mutant Year Zero: Road to Eden,2021-12-22,2021-12-23,Mutant Year Zero: Road To Eden,32d80b384c934b89be96dd4c32b54946,epic,,mutant-year-zero,[],,,null
+332,255,0,Second Extinction,2021-12-21,2021-12-22,,,,,,null,,,null
+333,254,0,Loop Hero,2021-12-20,2021-12-21,Loop Hero,db122f42b41f4dec927e0f280cf653bd,ff50f85ed609454e80ac46d9496da34d,,,[],,,null
+334,253,1,The Vanishing of Ethan Carter,2021-12-19,2021-12-20,The Vanishing of Ethan Carter,bdea68145b61462f9cd17068e835aadf,f401d7e187e349138380d22e991b29ca,,the-vanishing-of-ethan-carter,[],,,null
+335,252,0,Remnant: From the Ashes,2021-12-18,2021-12-19,Remnant: From the Ashes,a0bb13a219f747f88dff4c2a50b070c0,663e521f2a444199be58152fd93fa66e,,remnant-from-the-ashes,[],,,null
+336,251,0,Neon Abyss,2021-12-17,2021-12-18,Neon Abyss,1ad9b7fca007477ca454d2048d019d2f,b0ebefb11a9145488af78f6d2488afff,,neon-abyss,[],,,null
+337,250,0,Shenmue III,2021-12-16,2021-12-17,Shenmue III,4045372b7cc449b3bcfbe4af8d31bf10,epic,,shenmue-3/home,null,,,null
+338,249,0,Prison Architect,2021-12-09,2021-12-16,Prison Architect,cf42bfef8bdc4a3b9db9ae500c9bfe06,3ffb410dab2d409aacd39a1abc6fcbba,,prison-architect,[],,,null
+339,248,0,Godfall Challenger Edition,2021-12-09,2021-12-16,,,,,,null,,,null
+340,247,0,while True: learn(),2021-12-02,2021-12-09,while True: learn(),154108003e4e4f099634188deb9a01b8,9359fa123dbf4b89b7d70be316d7810c,,while-true-learn,[],,,null
+341,246,0,Dead by Daylight,2021-12-02,2021-12-09,Dead by Daylight,dc3a03c1ce5d467bb5db4693be7dbef8,611482b8586142cda48a0786eb8a127c,,,[],,,null
+342,245,0,Antstream Epic Welcome Pack,2021-11-25,2021-12-02,,,,,,null,,,null
+343,244,0,theHunter: Call of the Wild,2021-11-25,2021-12-02,theHunter: Call of the Wild™,7b0d120a875547e9bec70192ddcc96e2,c7f9346e3db148fca6dd63e9dd8451bd,,thehunter-call-of-the-wild,[],,,null
+344,243,0,Guild of Dungeoneering,2021-11-18,2021-11-25,Guild of Dungeoneering Ultimate Edition,fc75b7c573c64c24a937823183f8468e,e04dd85a41d740ac972df346afd913a6,,guild-of-dungeoneering-ultimate-edition,[],,,null
+345,242,0,Kid A Mnesia Exhibition,2021-11-18,2021-11-25,KID A MNESIA EXHIBITION,b8bf369a354e4a01b01d61d750b1bc6d,72eb87039aa74e82a4b873c276de61e3,,kid-a-mnesia-exhibition,[],,,null
+346,241,0,Never Alone (Kisima Ingitchuna),2021-11-18,2021-11-25,Never Alone (Kisima Ingitchuna),0cd43717a2224f33bb9a95f01d303474,b13f6a1e5121469d8a825947b759339d,,never-alone-kisima-ingitchuna,[],,,null
+347,240,0,Rogue Company Season Four Epic Pack,2021-11-11,2021-11-18,,,,,,null,,,null
+348,239,0,Tiny Tina’s Assault on Dragon Keep,2021-11-11,2021-11-18,Tiny Tina's Assault on Dragon Keep: A Wonderlands One-shot Adventure,e73c6b914a394bbface8847d75879492,d98b6c292e224a59b359372f4f5152df,,tiny-tinas-assault-on-dragon-keep-a-wonderlands-one-shot-adventure,[],,,null
+349,238,0,Aven Colony,2021-11-04,2021-11-11,Aven Colony,408e1dacff9c4ddabecb93b1e6183db9,31bd7140ab344cd59a770e14b2afbcea,,aven-colony,[],,,null
+350,237,0,DARQ: Complete Edition,2021-10-28,2021-11-04,DARQ: Complete Edition,0af5da05c76943f8a7da7cc65949ffd4,3819de76dedf4cd2aebbcf9279e23e43,,darq-complete-edition,[],,,null
+351,236,0,Among the Sleep: Enhanced Edition,2021-10-21,2021-10-28,Among the Sleep - Enhanced Edition,2a112cd37b774426990583a259e25ef9,53ef2f4592684c4c97d6d32e40467274,,among-the-sleep-enhanced-edition,[],,,null
+352,235,0,Stubbs the Zombie in Rebel Without a Pulse,2021-10-14,2021-10-21,Stubbs the Zombie in Rebel Without a Pulse,f060c900b80441fda67a7d986c327905,dcbacb85c17e4d39b885d0ba252dc8a7,,stubbs-the-zombie-in-rebel-without-a-pulse,[],,,null
+353,234,0,Paladins Epic Pack,2021-10-14,2021-10-21,Paladins Epic Pack,87150f24a0924e658feb8df97485d0f0,badb0ee71b474ed591ec43212547cfc8,,,null,,,null
+354,233,1,PC Building Simulator,2021-10-07,2021-10-14,PC Building Simulator,7bfbb022d2fa4d67a4844631ecd5c027,8f5f5eff22f3468fa5551771406fc868,,pc-building-simulator,[],,,null
+355,232,0,Europa Universalis IV,2021-09-30,2021-10-07,Europa Universalis IV,45b82cb4454b40439b61ba126adfabec,80d3aeb1d7c3434981e0bcbc47700a83,,europa-universalis-iv,[],,,null
+356,231,0,2064: Read Only Memories,2021-09-30,2021-10-07,2064: Read Only Memories,92e998e921ad4979883c19f65de8b456,5b08e4db33c54e518c2a1360cc2c7f18,,2064-read-only-memories,[],,,null
+357,230,0,The Escapists,2021-09-23,2021-09-30,The Escapists,33aaf380683a465ea91de7407faa7072,epic,,the-escapists/home,null,,,null
+358,229,0,Tharsis,2021-09-16,2021-09-23,Tharsis,0c7924b21589422581c7cbe8d5a336c5,be67e141378446cf9399b3db1a22ceb3,,tharsis,[],,,null
+359,228,0,Speed Brawl,2021-09-16,2021-09-23,Speed Brawl,d89d1ecf209d42688d82909e522f2ec1,d3f34b351df646e0ab932fd8d8e5dfc2,,speed-brawl,[],,,null
+360,227,0,Sheltered,2021-09-09,2021-09-16,Sheltered,011ab6d40b80485bb23fbef4362aceb2,3b550d92911244558770b68c5a812a5d,,sheltered,[],,,null
+361,226,0,Nioh: The Complete Edition,2021-09-09,2021-09-16,Nioh: The Complete Edition,3bc256d2117b4415b25a2c7d756392f4,3622b6ddc5c849b1826085d5fe492eae,,nioh-the-complete-edition,[],,,null
+362,225,0,Yoku’s Island Express,2021-09-02,2021-09-09,Yoku's Island Express,f28ce458986e4f8dbbf67be5d0ac41e6,54399b3ef40d4c568e5904607470ffe9,,yokus-island-express,[],,,null
+363,224,0,Automachef,2021-08-26,2021-09-02,Automachef,c57ffe9b84324710845173de8a887feb,75ec0c7498894d1a99a5c8f02f3e4c55,,automachef,[],,,null
+364,223,1,Saints Row: The Third Remastered,2021-08-26,2021-09-02,Saints Row®: The Third™  Remastered,822ad2aee1ff4b2da5dd03a995527821,3928fd8975b2437d894bbc5cd21de9a0,,saints-row-the-third-remastered,[],,,null
+365,222,0,Yooka-Laylee,2021-08-19,2021-08-26,Yooka-Laylee,03d4680cc79a4030b40e2d7c6bdacbaf,131e306949034972959ca401ca27837e,,yooka-laylee,[],,,null
+366,221,0,Void Bastards,2021-08-19,2021-08-26,Void Bastards,c1bb7eb3554b42f0957cc87363e59e1d,6b753bd045604be89d9779e741c604b1,,void-bastards,[],,,null
+367,220,0,Rebel Galaxy,2021-08-12,2021-08-19,Rebel Galaxy,73f7ee3f9e5540ff963573b9c3b08744,weaver,,rebel-galaxy/home,null,,,null
+368,219,0,Minit,2021-08-05,2021-08-12,Minit,c3bb66a9e2064fa580597cee86cbc1df,43605e89e49d438485298819a7ef17b4,,minit/home,null,,,null
+369,218,1,A Plague Tale: Innocence,2021-08-05,2021-08-12,A Plague Tale: Innocence,89e949b9176d4f04a5b2e6ca28655b21,71d19da3678943098859baa9c4c39f95,,a-plague-tale-innocence,[],,,null
+370,217,0,Train Sim World 2,2021-07-29,2021-08-05,,,,,,null,,,null
+371,216,0,Mothergunship,2021-07-29,2021-08-05,Mothergunship,5d2ce65c344c40918fe103c5dc34e6f1,7dc02eac2fe347368b5f72a02bb5bc5e,,mothergunship,[],,,null
+372,215,0,Verdun,2021-07-22,2021-07-29,Verdun,7d26ed48c61f498189e60b282eaddbdf,e4a2a414d46849f49a35c0f80df2903a,,verdun,[],,,null
+373,214,0,Defense Grid: The Awakening,2021-07-22,2021-07-29,Defense Grid: The Awakening,cae9b411f608482a9c646f00daac9e46,0dabb0f14acf4fef84bd2b2bf3085dfc,,defense-grid,[],,,null
+374,213,0,Obduction,2021-07-15,2021-07-22,Obduction,48a3d2ead65c450b996ba3f4c1d88c68,4ac85017adaf4d228518d64325c4ec65,,obduction,[],,,null
+375,212,0,Offworld Trading Company,2021-07-15,2021-07-22,Offworld Trading Company,4531b00fcf354680bf68d138b7155fda,e8882546f28e4832af823c646aed232e,,offworld-trading-company/home,null,,,null
+376,211,0,Ironcast,2021-07-08,2021-07-15,Ironcast,397d1ab85db34e7a8dfd943b51c1c6a5,8e56fc9fc0fb4f18af0592c74ad896ba,,ironcast,[],,,null
+377,210,0,Bridge Constructor: The Walking Dead,2021-07-08,2021-07-15,Bridge Constructor: The Walking Dead,8e30f82a970b48e684a27ca49c386115,39697c68e46b48d2b75e17bdc417d859,,bridge-constructor-the-walking-dead/home,null,,,null
+378,209,0,The Spectrum Retreat,2021-07-01,2021-07-08,The Spectrum Retreat,2cb68a86262b4e0a91dbe0625cbbb242,32ef234417314b65a4f76041b684f4d0,,the-spectrum-retreat,[],,,null
+379,208,1,Sonic Mania,2021-06-24,2021-07-01,Sonic Mania,8d50972d297f448cb3718d6e8094327a,45e7cf3c49054f2fb20b673d9b0ae69e,,sonic-mania,[],,,null
+380,207,0,Horizon Chase Turbo,2021-06-24,2021-07-01,Horizon Chase Turbo,58a2b650955f4920876afe86dfb563c1,253d451b16364a22907dd01b7e928fb6,,horizon-chase-turbo,[],,,null
+381,206,0,Overcooked! 2,2021-06-17,2021-06-24,Overcooked! 2,0fd170f41c284239a6a6e0be2df3b8e5,2d94b7b33d7f4d02a8fff6fbf71ac7ab,,overcooked-2,[],,,null
+382,205,0,Hell Is Other Demons,2021-06-17,2021-06-24,Hell is other demons,1786c8d9cd474bef9ce221929411633f,643a8667d7a940b8b36094020fcd0dcf,,hell-is-other-demons,[],,,null
+383,204,1,Control,2021-06-10,2021-06-17,Control,ab885109aec0430bab7fbc87c002eb8d,0d36d28dad0942d8be178cb68f6793af,,,[],,,null
+384,203,1,Frostpunk,2021-06-03,2021-06-10,Frostpunk,1d43b9f055f846f38413d036f0cc2a04,be886d9db65047a89b24cd4317695f18,,frostpunk,[],,,null
+385,202,0,Among Us,2021-05-27,2021-06-03,Among Us,63e07f28b89445ba80f06657ef0b68a7,33956bcb55d4452d8c47e16b94e294bd,,among-us,[],,,null
+386,201,1,NBA 2K21,2021-05-20,2021-05-27,,,,,,null,,,null
+387,200,0,The Lion’s Song,2021-05-13,2021-05-20,The Lion's Song,ed820853b9f649ac93e2456b2362220d,e35a5826457c4c98aada2ffad7b5ea5d,,the-lions-song,[],,,null
+388,199,0,Pine,2021-05-06,2021-05-13,Anime Reaper,86303bc468d94fc4ab7fdfc8cf5d1f9a,29b2af6e39e143ed9925859e9969b4f3,,,null,,,null
+389,198,0,World of Warships Exclusive Starter Pack,2021-05-06,2021-05-13,,,,,,null,,,null
+390,197,0,Idle Champions of the Forgotten Realms,2021-04-29,2021-05-06,Idle Champions of the Forgotten Realms,a9748abde1c94b66aae5250bb9fc5503,7e508f543b05465abe3a935960eb70ac,,idle-champions-of-the-forgotten-realms,[],,,null
+391,196,0,Hand of Fate 2,2021-04-22,2021-04-29,Hand of Fate 2,ef673112760b43c39b8492c31da80e4b,eb348461cdaf4bec9d69a1c4bb39ecc4,,hand-of-fate-2,[],,,null
+392,195,0,Alien: Isolation,2021-04-22,2021-04-29,Alien: Isolation,d37f3694e7a04edb8347f3cb6320f9d3,df37f065c3f14eadbf011177396e2966,,alien-isolation,[],,,null
+393,194,0,The First Tree,2021-04-15,2021-04-22,The First Tree,844f72b164ad4f5884c4feeca5561678,489c2ca47aaa4190b694184b979d3b23,,the-first-tree,[],,,null
+394,193,0,Ken Follett’s The Pillars of the Earth,2021-04-15,2021-04-22,Ken Follett's The Pillars of the Earth,ded5930173d5495993186871fbfd329a,ce8393adfbf342ceab0a36479ffbc627,,ken-follets-the-pillars-of-the-earth,[],,,null
+395,192,0,Deponia: The Complete Journey,2021-04-15,2021-04-22,Deponia: The Complete Journey,abdae4ebcf3e41beb6ec8040d818afcd,e5decf71f325458b92653616ee98682a,,deponia-the-complete-journey,[],,,null
+396,191,0,3 out of 10: Season Two,2021-04-08,2021-04-15,3 out of 10: Season Two,9fc33e99abf342138323856854e745ec,b829cfd910554ad3ad2eb3b314e2b1ef,,3-out-of-10-season-2,[],,,null
+397,190,0,Tales of the Neon Sea,2021-04-01,2021-04-08,Tales of the Neon Sea,b5e5f4fbdd4a40348c3a9a554f076922,37e6d41ce91e44988190c2f10108d4e9,,tales-of-the-neon-sea,[],,,null
+398,189,0,Creature in the Well,2021-03-25,2021-04-01,Creature in the Well,000f9a594ed44b3981272946d330d968,e4ac2f8cd49b42f18821f3fc3b6fc1b6,,creature-in-the-well,[],,,null
+399,188,0,The Fall,2021-03-18,2021-03-25,Age of Zalmoxis - Rise of the Fallen,c50ab2a47fa44844ae7a49402327f4fa,3be7d39a69c34da7bdd5fb6db6c049df,,,null,,,null
+400,187,0,Surviving Mars,2021-03-11,2021-03-18,Surviving Mars,39516a5b66d04b75b25a810e593b0a97,d759128018124dcabb1fbee9bb28e178,,surviving-mars,[],,,null
+401,186,0,Wargame: Red Dragon,2021-03-04,2021-03-11,Wargame: Red Dragon,3cca0612b6334f5cb610d1379a39ad6c,d66c34349a054c3ea529726a5687520e,,wargame-red-dragon,[],,,null
+402,185,0,Sunless Sea,2021-02-25,2021-03-04,Sunless Sea,5d921696022d4bbe850c76be8c9bc98f,f672c20984f04f69936e6057feefe3d1,,sunless-sea,[],,,null
+403,184,1,Rage 2,2021-02-18,2021-02-25,RAGE 2,26c8bec5ae4f44b6b942b9564e81cafc,2736ab9fec9c4a93a7a2872ed5154d4b,,rage-2,[],,,null
+404,183,0,Absolute Drift,2021-02-18,2021-02-25,Absolute Drift,0c90d229f27a4251beee8b4776a8fb44,9d2f484bbec64aa8ad234b3199dcaf1c,,absolute-drift,[],,,null
+405,182,0,Halcyon 6 Starbase Commander,2021-02-04,2021-02-11,Halcyon 6 Starbase Commander,e7946db0d53a418e8cb17a92dd908cd5,3dd7b519d7ab4631ae96d3efa8588514,,halcyon-6,[],,,null
+406,181,1,Metro: Last Light Redux,2021-02-04,2021-02-11,Metro: Last Light Redux,6bad44fc6dd9456081442559c51a577f,epic,,metro-last-light-redux,[],,,null
+407,180,0,For the King,2021-02-04,2021-02-11,For The King,55e88d9d4c864d53ba3a03f58222ed24,epic,,for-the-king/home,null,,,null
+408,179,0,Dandara: Trials of Fear Edition,2021-01-28,2021-02-04,Dandara: Trials of Fear Edition,a5dbe3de0fb14e029d78f85b25e89ca6,73b62f4875a248d8acc95966ce94c80f,,dandara,[],,,null
+409,178,0,Galactic Civilizations III,2021-01-21,2021-01-28,Galactic Civilizations III,5d63b78c08184c10933a47874117db8c,3c52fbac843d4375803187739db84801,,galactic-civilizations-iii,[],,,null
+410,177,0,Star Wars Battlefront II: Celebration Edition,2021-01-14,2021-01-21,STAR WARS™ Battlefront™ II: Celebration Edition,ea7721c6c2694e72813d3661bc68a2cb,b156c3365a5b4cb9a01a5e1108b4e3f4,,star-wars-battlefront-2,[],,,null
+411,176,0,Crying Suns,2021-01-07,2021-01-14,Crying Suns,462844c5fc104812a53792c42d400644,0a4fc789eb0143c29296de79df5387ab,,crying-suns,[],,,null
+412,175,0,Jurassic World Evolution,2020-12-31,2021-01-07,Jurassic World Evolution,d5a8d607058f4accb71aa406dc8cece0,047392e91d5e4cfdb19e2767440ab206,,jurassic-world-evolution,[],,,null
+413,174,0,Torchlight II,2020-12-30,2020-12-31,Torchlight II,9ca2b214a7b0477cb57fb0975f50043c,8432511ef63b489b843d21ff486a0355,,torchlight-2,[],,,null
+414,173,0,Solitairica,2020-12-29,2020-12-30,Solitairica,cd761753fdfa430994f60b512c90b66e,e0172a81e4f0430e88c3156bdadfd088,,solitairica,[],,,null
+415,172,0,Stranded Deep,2020-12-28,2020-12-29,Stranded Deep,c0050ea63818490f93837f8476bc5418,5fd8f5ae809f46d4b33741cc80d3aef8,,stranded-deep,[],,,null
+416,171,0,Night in the Woods,2020-12-27,2020-12-28,Night in the Woods,bfba5c4bab344751b8ab159a48555209,abd29ccc8c2a4a40a31f27de63cb0603,,night-in-the-woods,[],,,null
+417,170,0,My Time at Portia,2020-12-26,2020-12-27,My Time At Portia,b3a7ea2e333a49ab8a7c3d0aa1f31e5e,cobra,,my-time-at-portia/home,null,,,null
+418,169,0,Darkest Dungeon,2020-12-25,2020-12-26,Darkest Dungeon II,2373a0ce09bd43d695088c8335758178,6ff9efdef6dc45ecb40ed20fcd2c4621,,darkest-dungeon-2/home,null,,,null
+419,168,1,Inside,2020-12-24,2020-12-25,Inside,513fe4b9afb54c18bc88b1b6dd6ca8d8,epic,,inside/home,null,,,null
+420,167,0,Tropico 5,2020-12-23,2020-12-24,Tropico 5,a178c2b75e20434696533628d8fdb296,7015c51a49be4592b5ba3ae2577723c5,,tropico-5/home,null,,,null
+421,166,1,Metro 2033 Redux,2020-12-22,2020-12-23,Metro 2033 Redux,0dfa5a4398bb44c8b1ac34e5f248fab9,petunia,,metro-2033-redux,[],,,null
+422,165,0,Alien: Isolation,2020-12-21,2020-12-22,Alien: Isolation,d37f3694e7a04edb8347f3cb6320f9d3,df37f065c3f14eadbf011177396e2966,,alien-isolation,[],,,null
+423,164,0,Defense Grid: The Awakening,2020-12-20,2020-12-21,Defense Grid: The Awakening,cae9b411f608482a9c646f00daac9e46,0dabb0f14acf4fef84bd2b2bf3085dfc,,defense-grid,[],,,null
+424,163,0,The Long Dark,2020-12-19,2020-12-20,The Long Dark,f24e1ebf9a054781abc85bc82a2dcbba,58dfcd1952ee48c1a1fa31c6ace5fe3d,,the-long-dark,[],,,null
+425,162,1,Oddworld: New ‘n’ Tasty,2020-12-18,2020-12-19,Oddworld: New 'n' Tasty,a020424f6c854cefac41f4af4a0ce69f,56eab841eaab4016b9fedd2350f997b6,,oddworld-new-n-tasty,[],,,null
+426,161,0,Cities: Skylines,2020-12-17,2020-12-18,Cities: Skylines,bf83aee67dd1475fb6bf2c8563f14b70,6009be9994c2409099588cde6f3a5ed0,,cities-skylines,[],,,null
+427,160,0,Pillars of Eternity: Definitive Edition,2020-12-10,2020-12-17,Pillars of Eternity - Definitive Edition,6238fdbc5a0143ccbc8448a8009bcef5,25e53de2e4ab4da8aa589d881273a11c,,pillars-of-eternity,[],,,null
+428,159,0,Tyranny: Gold Edition,2020-12-10,2020-12-17,Tyranny - Gold Edition,8a9ebc1feff6402e9b88839f46ee45ac,2462202651534bf7b4b4e0ea960be8ac,,tyranny,[],,,null
+429,158,0,Cave Story+,2020-12-03,2020-12-10,Cave Story+,be3de140fc3749b28215da1626cce8bc,78473822f724474d8e436f6bde735623,,cave-story-plus,[],,,null
+430,157,1,MudRunner,2020-11-26,2020-12-03,MudRunner,7aea960be7dd4d86a9b30cf5daa03eeb,6bff1c13a8884b518bd44acaf691ddba,,mudrunner/home,null,,,null
+431,156,0,Elite Dangerous,2020-11-19,2020-11-26,Elite Dangerous,7b002177046841a69da1adc0e1d0c98f,3db17abfd650423f993291624b1b2ac1,,elite-dangerous/home,null,,,null
+432,155,0,The World Next Door,2020-11-19,2020-11-26,The World Next Door,e74db1952d344022bb510b8ddbcc4589,b258cb25f6cc4031914256c2d42b2188,,the-world-next-door/home,null,,,null
+433,154,0,The Textorcist: The Story of Ray Bibbia,2020-11-12,2020-11-19,The Textorcist: The Story of Ray Bibbia,aafbe6800d9f4e50aa896139ed45554a,0f7039ef44ad4ee18f16f19d96cf2a6b,,the-textorcist/home,null,,,null
+434,153,0,Dungeons 3,2020-11-05,2020-11-12,Dungeons 3,256fe52d342c4b65ac34997a610d9384,213259527d2f41baa90cbe0ae5555271,,dungeons-3/home,null,,,null
+435,152,0,Blair Witch,2020-10-29,2020-11-05,Blair Witch,8b62502ac3774dd5b43e208bb2a46ef3,8101d2b09984401fa28cecce4c867e71,,blair-witch/home,null,,,null
+436,151,0,Ghostbusters: The Video Game Remastered,2020-10-29,2020-11-05,Ghostbusters: The Video Game Remastered,387e3e9d6a1a4812bd2e54a04eac2db9,d0545b136bb042fb9014e72b6af748f6,,ghostbusters-the-video-game-remastered,[],,,null
+437,150,0,Layers of Fear 2,2020-10-22,2020-10-29,Layers of Fear 2,dd36293739384a63886ccdc39bc02993,2972368dffc24d4ea80ba1aa2bcf56d2,,layers-of-fear-2/home,null,,,null
+438,149,0,Costume Quest 2,2020-10-22,2020-10-29,Costume Quest 2,62488ccca67b455891967a4cfc6dea24,c660f57e1a164930a7196f1fd27ae45a,,costume-quest-2,[],,,null
+439,148,0,Kingdom: New Lands,2020-10-15,2020-10-22,Kingdom New Lands,c98c8c591fdb472e97dc3169b097218a,epic,,kingdom-new-lands/home,null,,,null
+440,147,0,Amnesia: A Machine for Pigs,2020-10-15,2020-10-22,Amnesia: A Machine for Pigs,8080b4a777b54ec8a1ded2c8e7ec40a4,8de58df378c34407b6db0388e0470a45,,amnesia-a-machine-for-pigs,[],,,null
+441,146,0,Rising Storm 2: Vietnam,2020-10-08,2020-10-15,Rising Storm 2: Vietnam,b19d810d322240e7b37bcf84ffac60ce,3542a1df211e492bb2abecb7c734f7f9,,rising-storm-2-vietnam,[],,,null
+442,145,0,Abzû,2020-10-08,2020-10-15,ABZU,dedd448c38d947ab90291540f183378b,7af7476ff9eb4a8d9cd9d6486224de76,,abzu,[],,,null
+443,144,0,Pikuniku,2020-10-01,2020-10-08,Pikuniku,559d2ae2577e463eb9f914883795935e,c50f4a5c796e4abdbf8025cfbf5cff21,,pikuniku/home,null,,,null
+444,143,0,RollerCoaster Tycoon 3: Complete Edition,2020-09-24,2020-10-01,RollerCoaster Tycoon 3 Complete Edition,4ec50a302f1449b3bf706a199c333ab8,f01b3e0178d448f0b93911e292d8e614,,rollercoaster-tycoon-3-complete-edition/home,null,,,null
+445,142,1,Watch Dogs 2,2020-09-17,2020-09-24,Watch Dogs 2,d9abe2371ab64987906aff81a0ee0e61,epic,,watch-dogs-2/home,null,,,null
+446,141,0,Stick It to the Man!,2020-09-17,2020-09-24,Stick It To The Man!,0d25ff58568a41feb949ef3fc7cf8e13,ad876f7812c946f6a362bf821b971b48,,stick-it-to-the-man,[],,,null
+447,140,0,Football Manager 2020,2020-09-17,2020-09-24,Football Manager 2020 In-game Editor,44d7537f61f24ed786e5c369a674ee86,c1ccf2ba1bc1473abb6ca5168e1a670c,,football-manager-2020/in-game-editor,null,,,null
+448,139,0,Railway Empire,2020-09-10,2020-09-17,Railway Empire,f5f7971517134ed488fd51974563f5f5,93b333eb973b45b582f3bdf68dfc1dc9,,railway-empire,[],,,null
+449,138,0,Where the Water Tastes like Wine,2020-09-10,2020-09-17,Where The Water Tastes Like Wine,72cbf73f83ea4437b142e143a1c78562,27d2f156f77b4202b9bc78e40a408b03,,where-the-water-tastes-like-wine/home,null,,,null
+450,137,0,Into the Breach,2020-09-03,2020-09-10,Into The Breach,ac46070b9807412daef46a19064f139c,epic,,into-the-breach/home,null,,,null
+451,136,0,Shadowrun Collection,2020-08-27,2020-09-03,,,,,,null,,,null
+452,135,1,Hitman,2020-08-27,2020-09-03,HITMAN World of Assassination,baa5245f8d2249cdbad9f9e814673b48,ed55aa5edc5941de92fd7f64de415793,,hitman-3,[],,,null
+453,134,0,God’s Trigger,2020-08-20,2020-08-27,God's Trigger,8f6f05aa00fd48cca99d897b593b3e8b,ceaa24233cdb4b678a1cf515e3a912e8,,gods-trigger,[],,,null
+454,133,0,Enter the Gungeon,2020-08-20,2020-08-27,Enter the Gungeon,e820a1ab24ca4bd2b725ba33194489d4,be13f6c4fb11427fbf3313ce93b97cc0,,enter-the-gungeon/home,null,,,null
+455,132,0,Remnant: From the Ashes,2020-08-13,2020-08-20,Remnant: From the Ashes,a0bb13a219f747f88dff4c2a50b070c0,663e521f2a444199be58152fd93fa66e,,remnant-from-the-ashes,[],,,null
+456,131,1,The Alto Collection,2020-08-13,2020-08-20,The Alto Collection,754412e3df444c0c84653ea7aa047fe6,b4e95103463b491ab34b29e616404325,,the-alto-collection,[],,,null
+457,130,0,A Total War Saga: TROY,2020-08-13,2020-08-20,A Total War Saga: TROY,4fc245c9e77a4560a31e0dc77e89d716,53310576ce1d4446b20dbbdac4f09f2d,,a-total-war-saga-troy,[],,,null
+458,129,0,Wilmot’s Warehouse,2020-08-06,2020-08-13,Wilmot's Warehouse,b5dba5ebbdf84ecaad0edf4f5e026247,f697ab7aa6af41f880e1489818e2720d,,wilmots-warehouse,[],,,null
+459,128,0,"3 out of 10, EP 1",2020-08-06,2020-08-13,"3 out of 10, EP 1: Welcome To Shovelworks",eb38399025864ffb88a7e027d02502a8,d9090f3f39f64d5bb827c6e44b95cff0,,3-out-of-10-ep-1,[],,,null
+460,127,0,20XX,2020-07-30,2020-08-06,20XX,14f073a7a4204943b830717c32e2c710,4c7117cadb714722950338f02850fd8d,,20xx,[],,,null
+461,126,0,Superbrothers: Sword & Sworcery EP,2020-07-30,2020-08-06,Superbrothers: Sword & Sworcery EP,a8b9cb3f7f0143bc9366ec7695f7876c,1109b87f323946e5b7883d724e6a22ba,,superbrothers-sword-and-sworcery-ep,[],,,null
+462,125,0,Barony,2020-07-30,2020-08-06,Barony,3fb9665744a5404d95de612ddc445f35,b79cdb6e07ea4ce9a82c00a0fb079ca5,,barony,[],,,null
+463,124,0,Next Up Hero,2020-07-23,2020-07-30,Next Up Hero,bc24fd6c82354ae18279e18effaa640e,7563789523404ae7ba52588adc99963a,,next-up-hero,[],,,null
+464,123,0,Tacoma,2020-07-23,2020-07-30,Tacoma,32052e4882be420e8b009f05483f1f23,675f47ac5d5847f59badceea5b0950cf,,tacoma,[],,,null
+465,122,0,Torchlight II,2020-07-16,2020-07-23,Torchlight II,9ca2b214a7b0477cb57fb0975f50043c,8432511ef63b489b843d21ff486a0355,,torchlight-2,[],,,null
+466,121,0,Lifeless Planet: Premier Edition,2020-07-09,2020-07-16,Lifeless Planet: Premier Edition,8891a362aacf45e68b618eced3b4ba00,9ce4c6f216cf43e7ba5eff1045b6e08d,,lifeless-planet-premier-edition/home,null,,,null
+467,120,0,Killing Floor 2,2020-07-09,2020-07-16,Killing Floor 2,85f5ff10c31c4cd99978f4d57d3ec97a,affc33b82405457595a032f00284abd2,,killing-floor-2,[],,,null
+468,119,0,The Escapists 2,2020-07-09,2020-07-16,The Escapists 2,70c286b7eb704c9eaa59e66571447092,115577f4ef1e4055aaf0da534fdfe81e,,the-escapists-2/home,null,,,null
+469,118,0,Hue,2020-07-02,2020-07-09,Hue,d4497261293046f58c0a429a11a7d852,cd88d9edc5a748cfa138e467205adcac,,hue,[],,,null
+470,117,0,Stranger Things 3: The Game,2020-06-25,2020-07-02,,,,,,null,,,null
+471,116,0,AER Memories of Old,2020-06-25,2020-07-02,AER Memories of Old,ddbac5b8afd64e36a63d6904e0ef7e41,f3720f53cccb4a20841a392a8ea0457f,,aer-memories-of-old,[],,,null
+472,115,0,Pathway,2020-06-18,2020-06-25,Pathway,8c02538c55314c22b0e2216502bdac20,eb9117fdc2a1493ba4e8a4e1d2286e2f,,pathway,[],,,null
+473,114,0,Ark: Survival Evolved,2020-06-11,2020-06-18,ARK: Survival Evolved,16b7c8509ea8427898981145d244316c,ark,,ark,[],,,null
+474,113,0,Samurai Shodown NeoGeo Collection,2020-06-11,2020-06-18,SAMURAI SHODOWN NEOGEO COLLECTION,b3678744f16842debd1f2d57fbe12e9c,3e84a6d0684b4f7593e6bf88bee0cbaf,,samurai-shodown-neogeo-collection,[],,,null
+475,112,0,Overcooked,2020-06-04,2020-06-11,Overcooked,eed2eaea15864c52a7fe8c122dd6ce03,epic,,overcooked/home,null,,,null
+476,111,0,Sludge Life,2020-05-28,2021-05-28,SLUDGE LIFE,13f7f3e05e91444585e9be24b59fe536,158a0eaa18574bb39347c04286d118c7,,sludge-life/home,null,,,null
+477,110,1,Borderlands: The Handsome Collection,2020-05-28,2020-06-04,Borderlands: The Handsome Collection,a61c6602b5784d36801d0cab73e02337,85189f7cf7a64f86aa6aa91d81d36c08,,borderlands-the-handsome-collection,null,,,null
+478,109,1,Sid Meier’s Civilization VI,2020-05-21,2020-05-28,Sid Meier’s Civilization® VI,fe74b3dad04846e5a58f62aebd3858b6,cd14dcaa4f3443f19f7169a980559c62,,sid-meiers-civilization-vi,[],,,null
+479,108,1,Grand Theft Auto V: Premium Edition,2020-05-14,2020-05-21,,,,,,null,,,null
+480,107,0,Death Coming,2020-05-07,2020-05-14,Death Coming,1516933c27344f478d04efa7ccaa623e,58c35a214bbb4656a536126ad1552d42,,death-coming/home,null,,,null
+481,106,0,Crashlands,2020-04-30,2020-05-07,Crashlands,50c1f8b00eff4eb68b474bf57a2bf7bc,1b8a504ec52d4430b65cca2990ad6c7f,,crashlands/home,null,,,null
+482,105,0,Amnesia: The Dark Descent,2020-04-30,2020-05-07,Amnesia: The Dark Descent,785b37a897c14ad589d2d5f79aaf372e,917551a8060244469eb4e6ab8a99cf24,,amnesia-the-dark-descent/home,null,,,null
+483,104,0,For the King,2020-04-23,2020-04-30,For The King,55e88d9d4c864d53ba3a03f58222ed24,epic,,for-the-king/home,null,,,null
+484,103,0,Wheels of Aurelia,2020-04-16,2020-04-23,Wheels of Aurelia,ae212a8d9bda47228596f6ce38e5c597,f5d58106a0e143758ddf2bb30dd72ae2,,wheels-of-aurelia/home,null,,,null
+485,102,1,Just Cause 4,2020-04-16,2020-04-23,Just Cause 4,e99c88534b7743198cc93706a32bb57e,epic,,just-cause-4/standard-edition,null,,,null
+486,101,0,Close to the Sun,2020-04-09,2020-04-16,Close to the Sun,5354dc63819f416a80ef712d9d410351,epic,,close-to-the-sun/home,null,,,null
+487,100,0,Sherlock Holmes: Crimes and Punishments,2020-04-09,2020-04-16,Sherlock Holmes: Crimes and Punishments,afadb715390a4593acdca79dae94b60a,23f3da2016b94461a7bd7e2eb46aa0f9,,sherlock-holmes-crimes-and-punishments/home,null,,,null
+488,99,0,Drawful 2,2020-04-02,2020-04-09,Drawful 2,21da750de4f448eb981a43b2cd216c4d,epic,,drawful-2,[],,,null
+489,98,1,Gone Home,2020-04-02,2020-04-09,Gone Home,56b3f851cc664490a9911040da23a611,52326e805bac4619a4a8fac165363a42,,gone-home/home,null,,,null
+490,97,0,Hob,2020-04-02,2020-04-09,Hob,984e5e4ed4574586a2f6b4041dd13b4d,epic,,hob/home,null,,,null
+491,96,0,Totally Reliable Delivery Service,2020-04-01,2020-04-08,Totally Reliable Delivery Service,4f480f675a6c4947b1bbfbc73a7d3a93,epic,,totally-reliable-delivery-service/home,null,,,null
+492,95,0,World War Z,2020-03-26,2020-04-02,World War Z,3f459a6ca66245eba62819d656dd6178,wombat,,world-war-z--base-game,null,,,null
+493,94,0,Tormentor x Punisher,2020-03-26,2020-04-02,Tormentor x Punisher,84f8d79ca9d84057ba4406d215cb6ad5,51c19c28a7024793b9e38174d0e1634b,,tormentor-x-punisher/home,null,,,null
+494,93,0,Figment,2020-03-26,2020-04-02,Figment,addd4e86c4d746ab86f21606bdadce7d,270e1d648a5e4060b7b441615c4da4d9,,figment/home,null,,,null
+495,92,1,The Stanley Parable,2020-03-19,2020-03-26,The Stanley Parable,ba1f4fa2618046a0a8d71588cd0c2a68,4c00c7506c4b4fa695f749bd6bb07ff6,,the-stanley-parable/home,null,,,null
+496,91,1,Watch Dogs,2020-03-19,2020-03-26,Watch Dogs,62693d9e6f7745d084810f3d0cb87ce5,epic,,watch-dogs/home,null,,,null
+497,90,0,Mutazione,2020-03-12,2020-03-19,Mutazione,e33a567a8ce04ed5abc23d5e46a98087,5645a537b6a44f6f82d122729f3253ed,,mutazione/home,null,,,null
+498,89,1,A Short Hike,2020-03-12,2020-03-19,A Short Hike,e97596b69a334eb896d3567ffad85093,fd0183d33a5a40ff8cd4a6ebb52f6ace,,a-short-hike/home,null,,,null
+499,88,0,Anodyne 2: Return to Dust,2020-03-12,2020-03-19,Anodyne 2: Return To Dust,69d2af5db6994e2db61d70810ce563af,395be8a9aed24142b30b6abb2778e995,,anodyne-2-return-to-dust/home,null,,,null
+500,87,0,GoNNER,2020-03-05,2020-03-12,GoNNER,cefa7f9e970d4b93b828831d05f4e7ae,epic,,gonner/home,null,,,null
+501,86,0,Offworld Trading Company,2020-03-05,2020-03-12,Offworld Trading Company,4531b00fcf354680bf68d138b7155fda,e8882546f28e4832af823c646aed232e,,offworld-trading-company/home,null,,,null
+502,85,0,InnerSpace,2020-02-27,2020-03-05,InnerSpace,95e8b0adb366410c892f8f6fc8ac1bfa,387bc8d3398a40f7ae14de417b4acefc,,innerspace,[],,,null
+503,84,1,Assassin’s Creed Syndicate,2020-02-20,2020-02-27,Assassin's Creed Syndicate Standard Edition,e6cd2745c0a3496383e0adc95c7b63b1,c9be94273fe244c08032ca493ad87434,,assassins-creed-syndicate/home,null,,,null
+504,83,0,Faeria,2020-02-20,2020-02-27,Faeria,a141915f0de3494791151b205a712cda,f9c2aedaff8442b286fbd026948b9f09,,faeria,[],,,null
+505,82,0,Aztez,2020-02-13,2020-02-20,Aztez,8b620ab6eaad4c6182d44f07830fd8f6,5b325322a4c04b9e9e780b9a1e9b2d70,,aztez/home,null,,,null
+506,81,0,Kingdom Come: Deliverance,2020-02-13,2020-02-20,Kingdom Come: Deliverance,bd15ffd61c1744a295de36c164694e40,ca4058f18b0a4a9e9e2ccc28f7f33000,,kingdom-come-deliverance/home,null,,,null
+507,80,0,Carcassonne,2020-02-06,2020-02-13,Carcassonne,7578096b1bb44f88aea5f317b3d819c7,epic,,carcassonne/home,null,,,null
+508,79,0,Ticket to Ride,2020-02-06,2020-02-13,Ticket to Ride,2d90b2be6c9947b18926a07ddd928410,epic,,ticket-to-ride/home,null,,,null
+509,78,0,Farming Simulator 19,2020-01-30,2020-02-06,Farming Simulator 19,05c98a2164de4f96b2689824cab4ac34,epic,,farming-simulator-19/home,null,,,null
+510,77,0,The Bridge,2020-01-23,2020-01-30,The Bridge,6b228a1ad940496dabc89ec6640107f3,epic,,the-bridge/home,null,,,null
+511,76,0,Horace,2020-01-16,2020-01-23,Horace,0cbd1a647ba945fba3d793b150ee5a7d,epic,,horace/home,null,,,null
+512,75,0,Sundered: Eldritch Edition,2020-01-09,2020-01-16,Sundered: Eldritch Edition,f6aee57bdd3445d4973bbbb639e8e8d5,ca8077d80493497188e0ca5bca3ebe60,,sundered-eldritch-edition/home,null,,,null
+513,74,0,Darksiders II,2020-01-01,2020-01-09,Darksiders II Deathinitive Edition,4530e0cba368471fbee9107df203c2e4,epic,,darksiders2/home,null,,,null
+514,73,0,Darksiders,2020-01-01,2020-01-09,Darksiders Genesis,1045fb691c15439c9f9a41d755b1a80e,9bcf72043732431397782f3a32efbbd5,,darksiders-genesis/home,null,,,null
+515,72,0,Steep,2020-01-01,2020-01-09,Among the Sleep - Enhanced Edition,2a112cd37b774426990583a259e25ef9,53ef2f4592684c4c97d6d32e40467274,,among-the-sleep-enhanced-edition,[],,,null
+516,71,0,Yooka-Laylee and the Impossible Lair,2019-12-31,2020-01-01,Yooka-Laylee and the Impossible Lair,7ab1f8e424a044db8f8ee6ae394c2f88,epic,,yooka-laylee-and-the-impossible-lair/home,null,,,null
+517,70,0,Hello Neighbor,2019-12-30,2019-12-31,Hello Neighbor,d76580cab11b4216bfa1a16ee820d680,helloneighbor,,hello-neighbor/home,null,,,null
+518,69,0,The Talos Principle,2019-12-29,2019-12-30,The Talos Principle,fd9b1ebe196044828cee90fc29a431f7,epic,,the-talos-principle/home,null,,,null
+519,68,0,Shadow Tactics: Blades of the Shogun,2019-12-28,2019-12-29,Shadow Tactics: Blades of the Shogun,aec117239abd49a08eddc9e75a981fa3,2f215955790d456b80c291bc2feaf7f7,,shadow-tactics/home,null,,,null
+520,67,0,Hyper Light Drifter,2019-12-27,2019-12-28,Hyper Light Drifter,0d649bc9d1824294ad0e28fe8e411043,epic,,hyper-light-drifter/home,null,,,null
+521,66,0,FTL: Faster Than Light,2019-12-26,2019-12-27,FTL: Faster Than Light,61b641c3702f4770ac525101b39f0063,f7dc1618d0bd4810a61f50d44333900e,,faster-than-light,[],,,null
+522,65,0,Totally Accurate Battle Simulator,2019-12-25,2019-12-26,Totally Accurate Battle Simulator,6a612192c0ed499f8c7db747b3049107,ffe512fa1e594ee6a75d4643d1e21b43,,totally-accurate-battle-simulator,[],,,null
+523,64,1,Celeste,2019-12-24,2019-12-25,Celeste,544c18ccadf8466691d8f2a335721b14,b671fbc7be424e888c9346a9a6d3d9db,,celeste/home,null,,,null
+524,63,0,Ape Out,2019-12-23,2019-12-24,Ape Out,1a3d31d61b02483e9a53349f6e52681e,epic,,ape-out/home,null,,,null
+525,62,1,Little Inferno,2019-12-22,2019-12-23,Little Inferno,21eb73afb3b34940a2f41799f378f6ac,epic,,little-inferno/home,null,,,null
+526,61,0,Superhot,2019-12-21,2019-12-22,SUPERHOT,be60529b869c4a8dae064311aefdd1bd,epic,,superhot/home,null,,,null
+527,60,0,TowerFall Ascension,2019-12-20,2019-12-21,TowerFall Ascension,99c0e480aa634b11be54bd02b018ee1c,epic,,towerfall-ascension/home,null,,,null
+528,59,0,Into the Breach,2019-12-19,2019-12-20,Into The Breach,ac46070b9807412daef46a19064f139c,epic,,into-the-breach/home,null,,,null
+529,58,0,The Escapists,2019-12-12,2019-12-19,The Escapists,33aaf380683a465ea91de7407faa7072,epic,,the-escapists/home,null,,,null
+530,57,1,The Wolf Among Us,2019-12-12,2019-12-19,The Wolf Among Us,a5240293bb904531b66abdcc9819dab9,epic,,the-wolf-among-us/home,null,,,null
+531,56,0,Jotun: Valhalla Edition,2019-12-06,2019-12-12,Jotun: Valhalla Edition,cbbde99547d54f41b8f7bd5fc46726c5,ba3149b6d7a7488ab5cc674154458757,,jotun/home,null,,,null
+532,55,1,Rayman Legends,2019-11-29,2019-12-06,Rayman Legends,41bc6f9760b544a6a4907ba001ab41b3,epic,,rayman-legends/home,null,,,null
+533,54,0,Bad North,2019-11-21,2019-11-29,Bad North,ef763c445dc748ada03b5f04de057aa9,epic,,bad-north/home,null,,,null
+534,53,0,The Messenger,2019-11-14,2019-11-21,The Messenger,124e1b42195949dda096a46a16061f27,epic,,the-messenger/home,null,,,null
+535,52,0,Nuclear Throne,2019-11-07,2019-11-14,Nuclear Throne,c46e7726fb6b465f8b1a749618edee64,epic,,nuclear-throne/home,null,,,null
+536,51,0,Ruiner,2019-11-07,2019-11-14,RUINER,a9a4ab65b8cb405198e2332795b69be6,epic,,ruiner/home,null,,,null
+537,50,0,Costume Quest,2019-10-31,2019-11-07,Costume Quest,456b1db2807544d596c6b8b4d415d538,epic,,costume-quest/home,null,,,null
+538,49,0,SOMA,2019-10-31,2019-11-07,SOMA,52e1d1095dad49799b3e95cc591d29f6,epic,,soma/home,null,,,null
+539,48,0,Q.U.B.E. 2,2019-10-24,2019-10-31,Q.U.B.E. 2,0c8b6d95ff2746648ccd356dbf941c12,4b5f1eb366dc45f0920d397c01b291ba,,q-u-b-e-2,[],,,null
+540,47,0,Layers of Fear,2019-10-24,2019-10-31,Layers of Fear,3bf85df66f784ee19ff1218fced5f386,9df61912ce644d8096412ba0f516759a,,,[],,,null
+541,46,0,Observer,2019-10-17,2019-10-24,>observer_,674c5786721a4f24a99d89199948acc3,epic,,observer/home,null,,,null
+542,45,1,Alan Wake’s American Nightmare,2019-10-17,2019-10-24,Alan Wake’s American Nightmare,da621d3c18154c82aedab85687fccdc6,4d2a12aff0484d699b1806ab104d259b,,alan-wake-american-nightmare/home,null,,,null
+543,44,0,Surviving Mars,2019-10-10,2019-10-17,Surviving Mars,39516a5b66d04b75b25a810e593b0a97,d759128018124dcabb1fbee9bb28e178,,surviving-mars,[],,,null
+544,43,0,Minit,2019-10-03,2019-10-10,Minit,c3bb66a9e2064fa580597cee86cbc1df,43605e89e49d438485298819a7ef17b4,,minit/home,null,,,null
+545,42,0,Everything,2019-09-26,2019-10-03,Everything,ca25cd054b29435c8e6e3794a27acbb2,epic,,everything/home,null,,,null
+546,41,0,Metro 2033 Redux,2019-09-26,2019-10-03,Metro 2033 Redux,0dfa5a4398bb44c8b1ac34e5f248fab9,petunia,,metro-2033-redux,[],,,null
+547,40,1,Batman: Arkham Knight,2019-09-19,2019-09-26,Batman™: Arkham Knight,9714d370b31d44c68b80921b7fb994c8,epic,,batman-arkham-knight/home,null,,,null
+548,39,1,Batman: Arkham City,2019-09-19,2019-09-26,Batman™: Arkham City - Game of the Year Edition,9602d3adbf28458284215cda7f224b28,epic,,batman-arkham-city/home,null,,,null
+549,38,1,Batman: Arkham Asylum,2019-09-19,2019-09-26,Batman™ Arkham Asylum Game of the Year Edition,ac3da74961c8413b9a63b4258cbc31f8,epic,,batman-arkham-asylum/home,null,,,null
+550,37,0,LEGO Batman 3: Beyond Gotham,2019-09-19,2019-09-26,LEGO® Batman™ 3: Beyond Gotham,5d701b13e9fb423aa53553fc94112bce,epic,,lego-batman-3/home,null,,,null
+551,36,0,LEGO Batman 2: DC Super Heroes,2019-09-19,2019-09-26,LEGO® Batman™ 2: DC Super Heroes,ad6b9e6c4cfc4b959ce44ecad7565c7b,epic,,lego-batman-2/home,null,,,null
+552,35,0,LEGO Batman: The Videogame,2019-09-19,2019-09-26,LEGO® Batman™ The Videogame,559ac60ab99244e1a6c8c80a6194b257,epic,,lego-batman/home,null,,,null
+553,34,0,Conarium,2019-09-12,2019-09-19,Conarium,3298096e41df45c4a42616542760365d,epic,,conarium/home,null,,,null
+554,33,0,The End Is Nigh,2019-09-05,2019-09-12,The End is Nigh,f77ae52ec98e4c218ca7a0da76c1eb93,epic,,the-end-is-nigh/home,null,,,null
+555,32,0,Abzû,2019-09-05,2019-09-12,ABZU,dedd448c38d947ab90291540f183378b,7af7476ff9eb4a8d9cd9d6486224de76,,abzu,[],,,null
+556,31,0,Celeste,2019-08-29,2019-09-05,Celeste,544c18ccadf8466691d8f2a335721b14,b671fbc7be424e888c9346a9a6d3d9db,,celeste/home,null,,,null
+557,30,0,Inside,2019-08-29,2019-09-05,Inside,513fe4b9afb54c18bc88b1b6dd6ca8d8,epic,,inside/home,null,,,null
+558,29,0,Fez,2019-08-22,2019-08-29,Fez,442f123b4d884d8ca85236aa30b99a79,41f47fd0d3e248bc938a5815d6d64daa,,fez/home,null,,,null
+559,28,0,Hyper Light Drifter,2019-08-15,2019-08-22,Hyper Light Drifter,0d649bc9d1824294ad0e28fe8e411043,epic,,hyper-light-drifter/home,null,,,null
+560,27,0,Mutant Year Zero: Road to Eden,2019-08-15,2019-08-22,Mutant Year Zero: Road To Eden,32d80b384c934b89be96dd4c32b54946,epic,,mutant-year-zero,[],,,null
+561,26,0,GNOG,2019-08-08,2019-08-15,GNOG,75804ef64d96446fb250a691fbd6654d,epic,,gnog/home,null,,,null
+562,25,0,For Honor,2019-08-02,2019-08-09,For Honor,1d2d37ffabdf4d97b10577499238b487,epic,,for-honor/home,null,,,null
+563,24,1,Alan Wake,2019-08-02,2019-08-09,Alan Wake,8e1c914755f44623be389ae027813f8c,epic,,alan-wake,[],,,null
+564,23,0,Moonlighter,2019-07-25,2019-08-02,Moonlighter,8682f88d596749f1b1902f9f764638c5,epic,,moonlighter/home,null,,,null
+565,22,1,This War of Mine,2019-07-25,2019-08-02,This War of Mine,589cbda0e6074cb2ae29df601f0407e3,epic,,this-war-of-mine/home,null,,,null
+566,21,1,Limbo,2019-07-17,2019-07-25,Limbo,8ac7a28bdcdf4f4db7706419aa502c0e,d5241c76f178492ea1540fce45616757,,limbo,[],,,null
+567,20,0,Torchlight,2019-07-11,2019-07-18,Torchlight,1ebfdccc11bd46dabdfc0fbb1490d13a,epic,,torchlight/home,null,,,null
+568,19,0,Overcooked,2019-07-04,2019-07-11,Overcooked,eed2eaea15864c52a7fe8c122dd6ce03,epic,,overcooked/home,null,,,null
+569,18,0,Last Day of June,2019-06-27,2019-07-04,Last Day of June,3f9b7d87d6ea4ac1bb26d49683bd7064,4fd85a772cd5471aa5e38efcaa0d6f24,,last-day-of-june,[],,,null
+570,17,0,Rebel Galaxy,2019-06-20,2019-06-27,Rebel Galaxy,73f7ee3f9e5540ff963573b9c3b08744,weaver,,rebel-galaxy/home,null,,,null
+571,16,0,Enter the Gungeon,2019-06-13,2019-06-20,Enter the Gungeon,e820a1ab24ca4bd2b725ba33194489d4,be13f6c4fb11427fbf3313ce93b97cc0,,enter-the-gungeon/home,null,,,null
+572,15,0,Kingdom: New Lands,2019-06-06,2019-06-13,Kingdom New Lands,c98c8c591fdb472e97dc3169b097218a,epic,,kingdom-new-lands/home,null,,,null
+573,14,0,City of Brass,2019-05-30,2019-06-06,City of Brass,b8c9b6788e4b4794b2b537076c2ced9d,epic,,city-of-brass/home,null,,,null
+574,13,0,RiME,2019-05-23,2019-05-30,RiME,927bf0728077496ea33372e6c52b028a,epic,,rime/home,null,,,null
+575,12,0,Stories Untold,2019-05-16,2019-05-30,Stories Untold,fdf22ba0f79b4cdda26efacdd6da0531,epic,,stories-untold/home,null,,,null
+576,11,1,World of Goo,2019-05-02,2019-05-16,World of Goo,5c36e7edaa91442496d9223bccce9e66,epic,,world-of-goo/home,null,,,null
+577,10,0,Transistor,2019-04-18,2019-05-02,Transistor,0e3a524afe7043c39148c1c3c35dd6c7,epic,,transistor/home,null,,,null
+578,9,1,The Witness,2019-04-04,2019-04-18,The Witness,ea1854d7e3004420ba3f0759384514c6,magnolia,,the-witness/home,null,,,null
+579,8,1,Oxenfree,2019-03-21,2019-04-04,Oxenfree,ebf5f23b876944f89d140750e756585d,hibiscus,,oxenfree/home,null,,,null
+580,7,1,Slime Rancher,2019-03-07,2019-03-21,Slime Rancher,cd44981c3cea431a9a203ff94b132994,corydalis,,slime-rancher/home,null,,,null
+581,6,0,Thimbleweed Park,2019-02-22,2019-03-07,Thimbleweed Park,f0b60db562384b70bfe441f1965736d9,tulip,,thimbleweed-park/home,null,,,null
+582,5,1,Axiom Verge,2019-02-07,2019-02-22,Axiom Verge,15a6c7220ba045448aeaed7e7c2f9a1f,epic,,axiom-verge/home,null,,,null
+583,4,0,The Jackbox Party Pack,2019-01-24,2019-02-07,The Jackbox Party Pack,f2546a46804147bfb6ab74937caf9295,feverfew,,jackbox-party-pack-1,[],,,null
+584,3,1,What Remains of Edith Finch,2019-01-11,2019-01-24,What Remains of Edith Finch,b1f4888a7c9b4449b6bfbace4de24a9c,badger,,what-remains-of-edith-finch/home,null,,,null
+585,2,1,Super Meat Boy,2018-12-28,2019-01-10,Super Meat Boy,13434c6d49b742c7b195201573c146c9,epic,,super-meat-boy/home,null,,,null
+586,1,1,Subnautica,2018-12-12,2018-12-27,Subnautica,a6d73af1b7de4ae086e61f462a351272,epic,,subnautica,[],,,null
