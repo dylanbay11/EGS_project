@@ -15,6 +15,10 @@ except Exception as e:
     print(f"Failed to initialize EpicGamesStoreAPI: {e}")
     api = None
 
+import os
+import datetime
+import requests
+
 def scrape_gamelist():
     """
     Scrapes the list of free games and dates from the Google Sheet data source.
@@ -23,23 +27,62 @@ def scrape_gamelist():
     """
 
     print("Attempting to load game list from Google Sheet...")
-    google_sheet_url = "https://docs.google.com/spreadsheets/d/1pD5h9JfwjewnN7DTKPu-Ad89ukaStLaY7nB5jhOAEyE/export?format=csv&gid=504781956"
+    google_sheet_url = "https://docs.google.com/spreadsheets/d/1B2S4kj4PY_U7W5daQyLbv1XvFIFm64o0lFv0Q4fxZIA/export?format=csv"
+
+    today = datetime.date.today().isoformat()
+    filepath = f"../data/{today}-gsheets.csv"
+
+    # ensure data directory exists
+    os.makedirs("../data", exist_ok=True)
+
+    if not os.path.exists(filepath):
+        print(f"File {filepath} not found. Downloading...")
+        try:
+            response = requests.get(google_sheet_url)
+            response.raise_for_status()
+            with open(filepath, 'wb') as f:
+                f.write(response.content)
+            print(f"Downloaded successfully to {filepath}")
+        except Exception as e:
+            print(f"Failed to download Google Sheet: {e}")
+            return pd.DataFrame()
+    else:
+        print(f"File {filepath} already exists. Using cached version.")
+
     try:
-        gdf = pd.read_csv(google_sheet_url)
+        # We need to skip 15 rows of intro stuff
+        gdf = pd.read_csv(filepath, skiprows=15)
+
+        # Take the first 7 columns and rename them appropriately, making sure the 6th is 'Games'
+        # so it matches expected schema. (Original sheet columns: FROM, TO, DAY, DAYS, TYPE, NAME, NOTES)
+        gdf = gdf.iloc[:, 0:7]
+        gdf.columns = ['FROM', 'TO', 'DAY', 'DAYS', 'TYPE', 'Games', 'NOTES']
+
+        # Forward fill the 'FROM' and 'TO' dates because secondary games per week have empty date cells
+        gdf['FROM'] = gdf['FROM'].ffill()
+        gdf['TO'] = gdf['TO'].ffill()
+
+        # Filter out rows that are not valid games (future placeholders, dividers, or empty names)
+        # Placeholder TYPE often is '*', valid ones might be empty or 'mobile', 'other'.
+        # We also need to strip whitespace and drop nans in Games.
+        gdf = gdf[~gdf['Games'].isna()]
+        gdf['Games'] = gdf['Games'].astype(str).str.strip()
+        gdf = gdf[~gdf['Games'].isin(['', '-', 'nan'])]
+        gdf = gdf[gdf['TYPE'] != '*']
+
+        # We reset index for cleaner look
+        gdf = gdf.reset_index(drop=True)
+
         print("Successfully loaded data from Google Sheet.")
         print(f"Columns found: {gdf.columns.tolist()}")
         print("First 5 rows of the loaded data:")
         print(gdf.head())
 
-        #TODO: make nice column names and enforce proper data types
-        
         return gdf
         
     except Exception as e:
-        print(f"Failed to load data from Google Sheet: {e}")
-        return pd.DataFrame(), None
-
-    #TODO: add a manual loading fallback from data folder after first successful scrape
+        print(f"Failed to load data from {filepath}: {e}")
+        return pd.DataFrame()
 
 def get_game_details(game_title: str, delay: float = 1.5):
     """

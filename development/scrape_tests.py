@@ -110,25 +110,36 @@ def scrape_pcgamer():
 
 def scrape_google_sheets():
     print("\n--- Google Sheets (CSV Export) ---")
-    url = "https://docs.google.com/spreadsheets/d/1fpp0u5VHig4KG47Fu0I2EaB7vNCuU4xYBFWRlUKydjk/export?format=csv&gid=216261844"
+    url = "https://docs.google.com/spreadsheets/d/1B2S4kj4PY_U7W5daQyLbv1XvFIFm64o0lFv0Q4fxZIA/export?format=csv"
     try:
         response = requests.get(url)
         response.raise_for_status()
         csv_data = StringIO(response.text)
         reader = csv.reader(csv_data)
 
-        # Skip header rows
-        for _ in range(3):
+        # Skip 16 header/metadata rows
+        for _ in range(16):
             next(reader)
 
         entries = []
+        last_date = ""
         for row in reader:
-            if len(row) >= 25:
-                 title = row[0]
-                 start_date = row[23]
-                 end_date = row[24]
+            if len(row) >= 7:
+                 title = row[5].strip()
+                 start_date = row[0].strip()
+                 end_date = row[1].strip()
+
+                 # The date columns can be empty, meaning we forward fill from previous row
+                 if not start_date and not end_date:
+                     start_date, end_date = last_date.split(" - ")
+                 elif start_date and end_date:
+                     last_date = f"{start_date} - {end_date}"
+
                  date = f"{start_date} - {end_date}"
-                 entries.append({"date": date, "title": title})
+
+                 # Skip place-holders, titles that are '-', empty titles
+                 if title and title not in ['-', ''] and row[4] != '*':
+                     entries.append({"date": date, "title": title})
             if len(entries) >= 3:
                  break
 
