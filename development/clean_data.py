@@ -1,0 +1,76 @@
+import pandas as pd
+import re
+import os
+
+def clean_gsheets():
+    # Load the Google Sheets CSV file, skipping the initial header rows
+    file_path = os.path.join(os.path.dirname(__file__), '../data/2026-04-21-gsheets.csv')
+    df = pd.read_csv(file_path, skiprows=15)
+
+    # Keep the first 7 columns and rename to standard names
+    df = df.iloc[:, 0:7]
+    df.columns = ['FROM', 'TO', 'DAY', 'DAYS', 'TYPE', 'Title', 'NOTES']
+
+    # Forward-fill event-related columns for days with multiple games
+    cols_to_ffill = ['FROM', 'TO', 'DAY', 'DAYS', 'TYPE']
+    for col in cols_to_ffill:
+        df[col] = df[col].ffill()
+
+    # If Title is NaN but NOTES is present (e.g., in a bundle like Trine Collection), use NOTES
+    df['Title'] = df['Title'].fillna(df['NOTES'])
+
+    # Clean string values, remove empties, and filter out future placeholders
+    df = df[df['Title'].notna()]
+    df['Title'] = df['Title'].astype(str).str.strip()
+    df = df[~df['Title'].isin(['', '-', 'nan'])]
+    df = df[df['TYPE'] != '*']
+
+    return df
+
+def clean_wiki():
+    # Load the Wikipedia CSV file
+    file_path = os.path.join(os.path.dirname(__file__), '../data/2026-04-21-wiki.csv')
+    df = pd.read_csv(file_path)
+
+    # Explode rows where Title has multiple games separated by \n
+    df['Title'] = df['Title'].str.split('\n')
+    df = df.explode('Title')
+    df['Title'] = df['Title'].str.strip()
+
+    return df
+
+def normalize_title(t):
+    """Normalize a title for robust merging: lowercase, remove special characters, and strip extra spaces."""
+    t = str(t).lower()
+    t = re.sub(r'[^a-z0-9\s]', '', t)
+    t = re.sub(r'\s+', ' ', t).strip()
+    return t
+
+def main():
+    print("Cleaning Google Sheets data...")
+    gsheets_df = clean_gsheets()
+
+    print("Cleaning Wikipedia data...")
+    wiki_df = clean_wiki()
+
+    # Create temporary normalized title columns for merging
+    gsheets_df['merge_title'] = gsheets_df['Title'].apply(normalize_title)
+    wiki_df['merge_title'] = wiki_df['Title'].apply(normalize_title)
+
+    print("Merging datasets...")
+    # LEFT JOIN: keep all from gsheets (primary source), enrich with wiki info where possible
+    merged_df = pd.merge(gsheets_df, wiki_df, on='merge_title', how='left', suffixes=('_gsheets', '_wiki'))
+
+    # Drop the temporary merge column
+    merged_df = merged_df.drop('merge_title', axis=1)
+
+    print(f"Merge complete. Result shape: {merged_df.shape}")
+    print(f"Games successfully matched with Wikipedia data: {merged_df['Title_wiki'].notna().sum()}")
+
+    # Save output to data directory
+    output_path = os.path.join(os.path.dirname(__file__), '../data/cleaned_merged_data.csv')
+    merged_df.to_csv(output_path, index=False)
+    print(f"Saved merged dataset to: {output_path}")
+
+if __name__ == "__main__":
+    main()
