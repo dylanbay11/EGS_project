@@ -27,16 +27,28 @@ def scrape_gamelist():
     """
 
     print("Attempting to load game list from Google Sheet...")
-    google_sheet_url = "https://docs.google.com/spreadsheets/d/1B2S4kj4PY_U7W5daQyLbv1XvFIFm64o0lFv0Q4fxZIA/export?format=csv"
+    google_sheet_url = "https://docs.google.com/spreadsheets/d/1B2S4kj4PY_U7W5daQyLbv1XvFIFm64o0lFv0Q4fxZIA/export?format=xlsx"
 
     today = datetime.date.today().isoformat()
-    filepath = f"../data/{today}-gsheets.csv"
+    # Resolve the data directory dynamically relative to this script
+    data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data')
+    filepath = os.path.join(data_dir, f"{today}-gsheets.xlsx")
 
     # ensure data directory exists
-    os.makedirs("../data", exist_ok=True)
+    os.makedirs(data_dir, exist_ok=True)
 
     if not os.path.exists(filepath):
         print(f"File {filepath} not found. Downloading...")
+
+        # Clean up old gsheets files in the data directory
+        for f_name in os.listdir(data_dir):
+            if f_name.startswith("20") and ("-gsheets.xlsx" in f_name or "-gsheets.csv" in f_name) and not f_name.startswith(today):
+                try:
+                    os.remove(os.path.join(data_dir, f_name))
+                    print(f"Removed old cache file: {f_name}")
+                except Exception as e:
+                    print(f"Warning: Failed to remove old cache file {f_name}: {e}")
+
         try:
             response = requests.get(google_sheet_url)
             response.raise_for_status()
@@ -50,13 +62,40 @@ def scrape_gamelist():
         print(f"File {filepath} already exists. Using cached version.")
 
     try:
+        import openpyxl
+
         # We need to skip 15 rows of intro stuff
-        gdf = pd.read_csv(filepath, skiprows=15)
+        gdf = pd.read_excel(filepath, engine='openpyxl', skiprows=15)
+
+        # Extract colors via openpyxl before doing any pandas filtering that changes row indices
+        wb = openpyxl.load_workbook(filepath, data_only=True)
+        sheet = wb.active
+
+        color_map = {
+            'FFD0E0E3': 'regular',
+            'FFB6D7A8': 'mystery',
+            'FFFFF2CC': 'unusual',
+            'FFF4CCCC': 'mobile'
+        }
+
+        colors = []
+        # pd.read_excel with skiprows=15 reads row 16 as header, data starts at row 17.
+        # So we iterate openpyxl from row 17 to len(gdf) + 16
+        for row_idx in range(17, 17 + len(gdf)):
+            cell = sheet.cell(row=row_idx, column=6) # 6th column is 'NAME'
+            rgb = cell.fill.start_color.rgb if cell.fill and cell.fill.start_color else None
+
+            # Map rgb to known categories, default to 'unknown' if not matched
+            category = color_map.get(rgb, 'unknown') if rgb and type(rgb) == str else 'unknown'
+            colors.append(category)
 
         # Take the first 7 columns and rename them appropriately, making sure the 6th is 'Games'
         # so it matches expected schema. (Original sheet columns: FROM, TO, DAY, DAYS, TYPE, NAME, NOTES)
         gdf = gdf.iloc[:, 0:7]
         gdf.columns = ['FROM', 'TO', 'DAY', 'DAYS', 'TYPE', 'Games', 'NOTES']
+
+        # Assign the parsed colors as a new column
+        gdf['COLOR_CATEGORY'] = colors
 
         # Forward fill the 'FROM' and 'TO' dates because secondary games per week have empty date cells
         gdf['FROM'] = gdf['FROM'].ffill()
