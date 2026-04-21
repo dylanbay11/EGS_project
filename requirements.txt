@@ -1,6 +1,0 @@
-epicstore_api
-streamlit
-pandas
-plotly
-numpy
-openpyxl
