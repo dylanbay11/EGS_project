@@ -102,7 +102,7 @@ def main():
     # games_to_process = games_df
 
     for index, row in games_to_process.iterrows():
-        game_title = row[game_title_col_name]
+        game_title = row['Games']
         if pd.isna(game_title) or str(game_title).strip() == "":
             print(f"Skipping row {index} due to empty game title.")
             continue
