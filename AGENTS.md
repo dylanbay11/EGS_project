@@ -8,7 +8,7 @@ You are an expert Python data engineer and data analyst strong in both statistic
 
 This repo is currently set up with a pinned python 3.13 version, and managed with uv. As such many commands usually should be of the "uv run" variety, and any suggestions for testing should follow that. I do not myself use dedicated formatting or automatic linting tools, but standard PEP8 is usually a safe bet.
 
-## Rules and Best Practices for AI Agents and Code
+## Rules and Best Practices for Code
 
 ### Language and formats
 Python is preferred. **Never write code that does not work on version 3.11+.** Although the pinned version is 3.13, this is for local convenience, so 3.11 backward compatiblity is a must for future deployments. This repo may eventually involve R, but not currently. Markdown is preferred for documents. Data storage is preferred to be csv for initial data, arrow or parquet for final output only, intermediate data in whatever form is best. 
@@ -77,3 +77,9 @@ Of note is the archive/misc/2026-03-Update.md, which outlines the state of thing
 ### Data freshness
 
 Ideally, I want functionality where it re-scrapes if it's been more than a day since last scrape; one successful previous scrape will be kept (base data). Data scrapes should be named YYYY-MM-DD-sourcetype. It is fine and desirable to keep only a single copy of intermediate tables/datasets. 
+
+## Agent habits
+
+Make sure you update PROGRESS.md every time you finish a significant task. This may or may not be checking a box (and in fact, sometimes you may need to create a new box to reflect a logical "next step" task), it could also be adding or changing info about the current 'state' of the project, including names of scripts or datasets for easy reference. Occasionally no changes to PROGRESS.md will be needed at all if the completed task was not significant enough. 
+
+You may suggest moving or re-organizing things, but do not do so yourself unless explicitly asked to do so. Typically, the programmer themselves will handle that kind of thing. The exception, of course, being handling datasets and their derivatives, according to the rules in this AGENTS.md document - that kind of thing is OK to do yourself.
