@@ -1,0 +1,145 @@
+---
+title: "EDA in R"
+subtitle: "Easier UI for me"
+author: "Dylan Bay"
+date: today
+format:
+  html:
+    toc: true
+    df-print: paged
+editor: visual
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(conflicted)
+
+# Core
+library(tidyverse)
+library(vroom)
+library(janitor)
+library(DBI)
+library(RSQLite)
+library(here)
+library(readxl)
+
+# Modeling and EDA
+library(car)
+library(skimr)
+library(naniar)
+
+# Visuals and Formatting
+library(broom)
+library(patchwork)
+library(scales)
+library(glue)
+library(cowplot)
+
+# Package Conflicts
+conflicts_prefer(
+  dplyr::filter, dplyr::lag, dplyr::select, janitor::chisq.test, janitor::fisher.test, purrr::some, 
+  purrr::discard, readr::col_factor, lubridate::here, dplyr::recode, purrr::some, skimr::n_complete,
+  vroom::col_factor, patchwork::align_plots, lubridate::stamp
+)
+conflict_prefer_all("vroom", losers = "readr")  # These two overlap pretty directly
+# Comment out library(conflicted) to see exact conflicts and masking happening by default
+
+# Options
+knitr::opts_chunk$set(  
+  fig.width = 8,
+  fig.height = 5,
+  fig.align = "center",
+  dpi = 300
+) # beyond YAML defaults
+options(scipen = 999)
+options(theme_set(theme_cowplot()))
+```
+
+# Introduction
+
+I will be analyzing THIS data source. For some background, CONTEXT. The goal is to OBJECTIVE.
+
+# Import
+
+```{r}
+#| label: load-data
+
+df <- read_xlsx(here::here("data", "2026-04-21-gsheets.xlsx"),
+                 skip = 15, col_types = c("date", "date", rep("guess", 5))) |> 
+  slice(1:(n()-1)) |>  # one stupid header repeat at bottom
+  slice(which(TYPE == "next"):n())  # include the next game(s) but no future slots
+  # slice(which.max(TO <= today()):n())  # do not include any next games or future slots
+# may also need to chop off a "next" game with "-" as NAME, I think is filler for double-nexts?
+
+# GOOGLE SHEETS NOTES
+# Make sure to skip the first few rows, but also after grabbing column names...
+#  the next few might have different numbers of rows! Depending on if "next" is a double, etc.
+# NAME / NOTES column will need renaming
+# unusual behavior: row 44, Trine Classic Collection; the 4 actual games are in the NAME/NOTES field
+# others like this: Batman Arkham - Trilogy, Lego Batman Trilogy, Darksider's Fury Collection, Borderlands: The Handsome Collection, Shadowrun Collection, Tomb Raider Trilogy, BioShock: The Collection, Fallout® Classic Collection (twice!), LOVE, LISA: Definitive Edition, 
+# "The Sims 4 - The Daring Lifestyle Bundle" puts a "-" in TYPE for some reason; also is like the above with 3 things in the notes column; ditto Destiny 2: Legacy Collection; maybe because these are "pack"
+# contrarily e.g. "Idle Champions of the Forgotten Realms - Epic Champions of Renown Pack" will have the specific one called out after the - instead
+# there are some cases where both a PC AND a mobile version are given away
+#  example rows 28, 29 are mobile Botany Manor and PC Botany manor (NA TYPE)
+#  but careful, not always reliable to have one be "mobile": rows 95 and 96 have Eastern Exorcist with one labeled dupe3 ("mobile dupe games")
+# above implies we might want to split the TYPE field into 2 different fields to avoid overlap
+# small handful of "Requires base game (payable/free)" pattern in notes, could be interesting
+# Yes, Sludge Life free for 365 is technically not an error; consider drop as outlier? It was an epic exclusive
+# "Hitman" shows as "free" type; but this is actually the WOA starter pack, NOT Hitman 1 or WOA itself
+# yellow AND 'other' is indicative of a special event, off-cycle, weird-time or similarly weird but full game
+# DEATH STRANDING - DIRECTORS CUT is listed as yellow other 0 day; this was an accidental listing live for a few hours, might need special treatment?
+# A handful of titles have emoji or other characters in their names: the R trademark thing in Fallout and ohters, "Tormentor❌Punisher", a TM symbol for Apex Legends and others, a few m dashes, quote marks, U with hat in ABZU, a +, RAWMEN: Food Fighter Arena 🍜, parentheses, dots, 	>observer_, 
+# A MNESIA special experience thing may be misspelled with extra space?
+# AND, of course, the whole thing about needing to down-propogate dates, weekday, days, NOT type though. Or up-propogate depending on sort! GSheets goes from recent to past.
+
+# info contained in the header dropped rows:
+#  dupe = dupe games, packs, ingame content, DLC
+#  free = free games (permanently?)
+#  other = 'other unique games' 'not the crappy free indie games'
+#  pack2 = 'other' dupe games, packs, ingame content, DLC
+#  dupe2 = 'other' dupe games, packs, ingame content, DLC
+#  mobile = mobile unique games
+#  pack3 = mobile packs, ingame content, DLC
+#  dupe3 = mobile dupe games, packs, ingame content, DLC
+#  next = next gifts ()
+# cyan = normal game
+# green = mystery game
+# yellow = "not the usual gifts"
+# light red = mobile 
+# the version i'm looking at doesn't have the color-code data; what gives? Thought I fixed that
+
+head(df)
+tail(df)
+unique(df$`NAMES / NOTES`, df$DAYS, df$TYPE)
+```
+
+# EDA
+
+Here is some initial descriptive information about our dataset.
+
+```{r}
+#| label: eda
+
+# skim(df)
+# df |> group_by(cat_var) |> skim()  # summaries per major category
+# df |> skim() |> filter(n_missing > 0)  # summary of missings
+# vis_miss(df)  # heatmap of missingness overall
+# gg_miss_var(df)  # bar of missingness
+# gg_miss_upset(df)  # easy col-to-col missingness associations
+```
+
+# Analysis
+
+We will now proceed with our analysis.
+
+```{r}
+#| label: modeling
+
+set.seed(1001)
+```
+
+# Conclusion
+
+It is clear that FINDING. We recommend ACTION. Possible next steps include EXTRAS.
