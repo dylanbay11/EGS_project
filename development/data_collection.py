@@ -91,7 +91,7 @@ def scrape_gamelist():
 
         # Take the first 7 columns and rename them appropriately, making sure the 6th is 'Games'
         # so it matches expected schema. (Original sheet columns: FROM, TO, DAY, DAYS, TYPE, NAME, NOTES)
-        gdf = gdf.iloc[:, 0:7]
+        gdf = gdf.iloc[:, 0:7].copy()
         gdf.columns = ['FROM', 'TO', 'DAY', 'DAYS', 'TYPE', 'Games', 'NOTES']
 
         # Assign the parsed colors as a new column
@@ -104,8 +104,8 @@ def scrape_gamelist():
         # Filter out rows that are not valid games (future placeholders, dividers, or empty names)
         # Placeholder TYPE often is '*', valid ones might be empty or 'mobile', 'other'.
         # We also need to strip whitespace and drop nans in Games.
-        gdf = gdf[~gdf['Games'].isna()]
-        gdf['Games'] = gdf['Games'].astype(str).str.strip()
+        gdf = gdf[~gdf['Games'].isna()].copy()
+        gdf['Games'] = gdf['Games'].astype("string").str.strip()
         gdf = gdf[~gdf['Games'].isin(['', '-', 'nan'])]
         gdf = gdf[gdf['TYPE'] != '*']
 
