@@ -7,15 +7,18 @@
 - **API Access Discovery**: We discovered that the unofficial wrapper-API (`epicstore_api`) is failing due to structure/authentication changes. However, we found it is highly feasible to bypass it and use open static endpoints instead, as documented in `EpicGamesStoreAPIReport.md`.
 
 ## Near & Medium-Term Roadmap
-- [ ] **Finish Data Cleaning**: Finalize cleaning rules across datasets.
-- [ ] **Spot Check Enrichment**: Polish up final touches on game list data enrichment. The Wikipedia scrape needs hand verification and spot-checking by the user.
+There may be minor overlap between some of these.
+- [ ] **Visibility Options**: Create a marimo document that allows easier inspection and spot-checking of outputs, to enable better feedback for AI agents
+- [ ] **Finish Data Cleaning**: Finalize cleaning rules and procedures across datasets, both content and columns.
+- [ ] **Wikipedia Spot Check**: Polish up final touches on game list data enrichment. The Wikipedia scrape needs hand verification and spot-checking by the user.
+- [ ] **Google Sheets Spot Check**: Ensure that all relevant info was imported including labels and 'meta'data.
 - [ ] **Verify Source Merges**: Ensure that the two gamelist sources merge and match correctly.
 - [ ] **Feature Engineering**: Perform minor feature engineering, manipulation, or reshaping for certain stubborn columns.
 - [ ] **Missing Data Assessment**: Complete a holistic missing data pass/assessment.
 - [ ] **Fetch API Data Directly**: Bypass the problematic wrapper-API and hit open static endpoints (`freeGamesPromotions` and `content/products/<productSlug>`) for data (like tags, prices, developer, and publisher details) as detailed in the API report.
-- [ ] **(Stretch Goal) Extract Wrapper Data**: If necessary, extract additional "extra" information via the wrapper-API.
 
 ## Long-Term Roadmap
+- [ ] **Extract Wrapper Data**: If necessary, extract additional "extra" information via the wrapper-API to enable more analysis.
 - [ ] **Interactive Streamlit App**: Develop an interactive Streamlit application to allow users to play with visualizations (e.g., price over time, average price by game tag, total dollar amount per week, as noted in the brainstorm document).
 - [ ] **Content Creation**: Write a blog post, Reddit post, and/or LinkedIn post detailing the findings and process.
 - [ ] **Portfolio Integration**: Create a portfolio presentation suitable for a portfolio website.
