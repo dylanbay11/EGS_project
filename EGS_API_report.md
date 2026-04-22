@@ -15,7 +15,7 @@ However, your specific goal of mapping scraped games to the catalog and retrievi
 ### Alternative Endpoints (No Cloudscraper Required)
 1. **Free Games List:**
    - Endpoint: `https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=US&allowCountries=US`
-   - You can get all the free games, along with their `title`, `productSlug`, `price`, and basic `tags` directly here using the standard `requests` library. No anti-bot bypass is needed.
+   - You can get all the free games, along with their `title`, `productSlug`, `price`, and basic `tags` directly here using the standard `requests` library. No anti-bot bypass is needed. USER EDIT: This might be the *current* set of free games, NOT the ones that are given away for free in the past, or possibly also perpetually-free games, which is NOT the focus of this analysis.
 2. **Product Page Info:**
    - Endpoint: `https://store-content.ak.epicgames.com/api/en-US/content/products/<productSlug>`
    - Once you have the `productSlug` from the free games list, you can query this endpoint to get deep details about the game, such as description, developer attributions, and page layout elements.
