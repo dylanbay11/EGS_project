@@ -11,7 +11,7 @@ csv_path = 'data/2026-04-21-wiki.csv'
 
 def check_should_scrape():
     # check if file exists and if it was modified in the last 24 hours
-    if os.path.exists(csv_path):
+    if os.path.exists(csv_path) and not os.environ.get("FORCE_SCRAPE"):
         mtime = os.path.getmtime(csv_path)
         last_modified_date = datetime.datetime.fromtimestamp(mtime)
         now = datetime.datetime.now()
@@ -93,6 +93,18 @@ def scrape_wiki():
                 # Format date
                 clean_date = translate_date(date_str, year)
 
+                # Extract game wiki link
+                game_wiki_link = ""
+                a_tag = cells[1].find('a', href=True)
+                if a_tag:
+                    href = a_tag['href']
+                    if href.startswith('//'):
+                        game_wiki_link = 'https:' + href
+                    elif href.startswith('/'):
+                        game_wiki_link = 'https://ru.wikipedia.org' + href
+                    else:
+                        game_wiki_link = href
+
                 # Extract links
                 links = []
                 for a in cells[2].find_all('a', href=True):
@@ -113,6 +125,7 @@ def scrape_wiki():
                     "Date": clean_date,
                     "Title": title,
                     "Year": year,
+                    "Game Wiki Link": game_wiki_link,
                     "Source Links": link_str
                 })
 
