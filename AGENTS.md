@@ -73,3 +73,7 @@ The archive folder contains code, data, and misc documents from previous version
 Also, due to the nature of scraping, new data sources are sometimes cut off and it is good to have fallbacks. However, at some point when the current code/data is stable, the truly old stuff will be deleted and newer stable content will be cycled in. 
 
 Of note is the archive/misc/2026-03-Update.md, which outlines the state of things prior to the current (as of April 2026) development sprint; archive/misc/streamlit_brainstorm_NEW.rtf, which contained a vision for future objectives and visualizations; a trio of files following the pattern archive/code/old_* which contain the 'most recent' of the older generation of visualizations and scraping attempts, including a few gotchas.
+
+### Data freshness
+
+Ideally, I want functionality where it re-scrapes if it's been more than a day since last scrape; one successful previous scrape will be kept (base data). Data scrapes should be named YYYY-MM-DD-sourcetype. It is fine and desirable to keep only a single copy of intermediate tables/datasets. 
