@@ -6,9 +6,9 @@ You are an expert Python data engineer and data analyst strong in both statistic
 
 ## Environment
 
-This repo is currently set up with a pinned python 3.13 version, and managed with uv. As such many commands usually should be of the "uv run" variety, and any suggestions for testing should follow that. I do not myself use dedicated formatting or automatic linting tools, but standard PEP8 is usually a safe bet.
+This repo is currently set up with a pinned python 3.13 version, and managed with uv. As such many commands usually should be of the "uv run" variety, and any suggestions for testing should follow that. I do not myself use dedicated formatting or automatic linting tools, but standard PEP8 is usually a safe bet. 
 
-## Rules and Best Practices for AI Agents and Code
+## Rules and Best Practices for Code
 
 ### Language and formats
 Python is preferred. **Never write code that does not work on version 3.11+.** Although the pinned version is 3.13, this is for local convenience, so 3.11 backward compatiblity is a must for future deployments. This repo may eventually involve R, but not currently. Markdown is preferred for documents. Data storage is preferred to be csv for initial data, arrow or parquet for final output only, intermediate data in whatever form is best. 
@@ -31,7 +31,8 @@ I prefer comments in slightly more casual language. Full sentence comments, go a
 - Avoid wrappers whose interface is more complex than their implementation, or add a shallow abstraction that mostly adds mental load without extra clarity.
 
 ### Python and tabular data (pandas) specifics
-- As a reminder, do not write code unless it works in python version 3.11. That means you are strictly forbidden from using Python 3.12+ syntax features, specifically f-string quote reuse and the new type parameter syntax (PEP 695). Do not import modules or functions introduced after 3.11, such as itertools.batched.
+**Environment Note**: If a Pandas method fails (especially `pd.col()`), assume your execution environment is wrong, not the codebase. Run `uv run python -c "import pandas as pd; print(pd.__version__)"` to confirm you are actually running Pandas 3.0+ before making any changes.
+Similarly and as a good reminder, do not write code unless it works in **python version 3.11**. That means you are strictly forbidden from using Python 3.12+ syntax features, specifically f-string quote reuse and the new type parameter syntax (PEP 695). Do not import modules or functions introduced after 3.11, such as itertools.batched.
 - An R/tidy language general philosophy is how the pandas code should read where possible; to emulate that kind of heuristic, method chaining is often preferred over intermediate variable assignment, as long as it still keeps mental load manageable.
 - Exceptions should be exceptional — use them for truly unexpected states, not ordinary control flow like "user not found"
 - Use self-descriptive values, avoid custom mappings that require memorization.
@@ -40,14 +41,20 @@ I prefer comments in slightly more casual language. Full sentence comments, go a
 - A surprising number of bugs come from forgetting that reset_index() wasn't called, or that a groupby left a MultiIndex. Either call **reset_index()** immediately after any operation that changes the index, or add a comment explaining why you're keeping a non-default index. 
 
 ### Pandas 3.0 note (CRITICAL)
-This repo uses Pandas 3.0+. You must account for breaking changes and utilize new syntax:
-- **No Chained Assignment:** It hard errors. Use `.loc` for mutation (e.g., `df.loc[df["col"] > 0, "col"] = 0`).
+This repo uses Pandas 3.0+. You must account for breaking changes and utilize new syntax. Be aware errors might come from outdated environments. 
+- **Tidy Column References (`pd.col`):** You should prefer using `pd.col()` instead of `lambda` functions in methods like `.assign()`. 
+  - *Ideal:* `df.assign(name=pd.col("first") + " " + pd.col("last"))`
+  - *Avoid:* `df.assign(name=lambda x: x["first"] + " " + x["last"])`
+- **Missing Data:** When filling NA values, pass the target value or Series directly. **Never** pass a callable/lambda into `fillna()`.
+  - *Correct:* `df['Title'] = df['Title'].fillna(df['NOTES'])`
+  - *Forbidden:* `df.assign(Title=lambda x: x['Title'].fillna(lambda x: x['NOTES']))`
+- **Copy-on-Write (CoW):** Pandas 3.0 enforces Copy-on-Write. Standard column assignment (e.g., `df['col'] = 1`) is perfectly valid, safe, and preferred for readability. Do not arbitrarily wrap standard assignments in `.assign()` just to avoid brackets.
+- **No Chained Assignment:** Chained assignment (e.g., `df["col"][mask] = 0`) is a hard error. Use `.loc` for conditional mutation (e.g., `df.loc[df["col"] > 0, "col"] = 0`). 
+  - *Note:* The `mode.copy_on_write` option no longer exists in Pandas 3.0. Do not reference it or attempt to set it.
 - **String Dtypes:** Strings are Arrow-backed `str`, not `object`. Checking `dtype == "object"` or `dtype == object` to find strings will break.
-- **Tidy Column References:** Use `pd.col()` instead of `lambda` in methods like `.assign()`: `df.assign(name=pd.col("first") + " " + pd.col("last"))`.
 - **Anti-Joins:** Use `how="left_anti"` or `"right_anti"` in `pd.merge()` directly instead of manual boolean masking.
 - **Arrow:** Prefer `DataFrame.from_arrow()` for zero-copy ingestion over numpy conversions.
-- Every indexing operation and method returns a **copy** (semantically). Chained assignment is **broken and silent** — it will not raise an error but will not modify the original DataFrame either. The `mode.copy_on_write` option no longer exists and will be removed in 4.0. Do not reference it.
-- With `sort=False`, the result now preserves **input order** (consistent with `Series.value_counts()`). Previously it sorted by row labels. If your code depended on the old label-sorted output, add an explicit `.sort_index()`.
+- **Sorting Preserves Input Order:** With `sort=False`, the result now preserves input order (consistent with `Series.value_counts()`). If your code depends on the old label-sorted output, add an explicit `.sort_index()`.
 
 ### Package preference
 - Pandas for dataframe manipulation
@@ -77,3 +84,9 @@ Of note is the archive/misc/2026-03-Update.md, which outlines the state of thing
 ### Data freshness
 
 Ideally, I want functionality where it re-scrapes if it's been more than a day since last scrape; one successful previous scrape will be kept (base data). Data scrapes should be named YYYY-MM-DD-sourcetype. It is fine and desirable to keep only a single copy of intermediate tables/datasets. 
+
+## Agent habits
+
+Make sure you update PROGRESS.md every time you finish a significant task. This may or may not be checking a box (and in fact, sometimes you may need to create a new box to reflect a logical "next step" task), it could also be adding or changing info about the current 'state' of the project, including names of scripts or datasets for easy reference. Occasionally no changes to PROGRESS.md will be needed at all if the completed task was not significant enough. 
+
+You may suggest moving or re-organizing things, but do not do so yourself unless explicitly asked to do so. Typically, the programmer themselves will handle that kind of thing. The exception, of course, being handling datasets and their derivatives, according to the rules in this AGENTS.md document - that kind of thing is OK to do yourself.
