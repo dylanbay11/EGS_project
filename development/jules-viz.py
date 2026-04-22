@@ -8,7 +8,7 @@ def load_and_clean_data(filepath):
     df = pd.read_csv(filepath, skiprows=[1])
 
     # Clean 'GG' column
-    df['is_good_game'] = df['GG'].apply(lambda x: True if str(x).strip() == '⭐' else False)
+    df['is_good_game'] = df['GG'].astype("string").str.strip() == '⭐'
 
     # Clean 'Start' column to datetime
     df['Start Date'] = pd.to_datetime(df['Start'], errors='coerce')
