@@ -172,3 +172,10 @@ cython_debug/
 # VSCode being stupid
 .vscode/
 settings.json
+
+# RStudio
+.Rproj.user
+.positai
+.Rhistory
+*.Rproj
+*.RData
