@@ -168,3 +168,7 @@ cython_debug/
 
 # temp output files for testing (MAY CHANGE)
 *.html
+
+# VSCode being stupid
+.vscode/
+settings.json
