@@ -84,8 +84,8 @@ target/
 profile_default/
 ipython_config.py
 
-# marmio
-__marimo__
+# marimo
+__marimo__/
 development/__marimo__
 
 # pyenv

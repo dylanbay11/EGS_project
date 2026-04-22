@@ -224,9 +224,12 @@ requires-dist = [
     { name = "epicstore-api", specifier = ">=0.2.0" },
     { name = "marimo", specifier = ">=0.23.2" },
     { name = "numpy", specifier = ">=2.4.4" },
+<<<<<<< HEAD
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "pandas", specifier = ">=3.0.2" },
     { name = "plotly", specifier = ">=6.7.0" },
+=======
+>>>>>>> research
     { name = "pandas", specifier = ">=3.0.2" },
     { name = "polars", specifier = ">=1.40.0" },
 ]
