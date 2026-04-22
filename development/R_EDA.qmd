@@ -66,6 +66,7 @@ I will be analyzing THIS data source. For some background, CONTEXT. The goal is 
 ```{r}
 #| label: load-data
 
+# GSHEETS DATA QUALITY ANALYSIS AND NOTES
 df <- read_xlsx(here::here("data", "2026-04-21-gsheets.xlsx"),
                  skip = 15, col_types = c("date", "date", rep("guess", 5))) |> 
   slice(1:(n()-1)) |>  # one stupid header repeat at bottom
@@ -73,7 +74,6 @@ df <- read_xlsx(here::here("data", "2026-04-21-gsheets.xlsx"),
   # slice(which.max(TO <= today()):n())  # do not include any next games or future slots
 # may also need to chop off a "next" game with "-" as NAME, I think is filler for double-nexts?
 
-# GOOGLE SHEETS NOTES
 # Make sure to skip the first few rows, but also after grabbing column names...
 #  the next few might have different numbers of rows! Depending on if "next" is a double, etc.
 # NAME / NOTES column will need renaming
@@ -92,6 +92,7 @@ df <- read_xlsx(here::here("data", "2026-04-21-gsheets.xlsx"),
 # DEATH STRANDING - DIRECTORS CUT is listed as yellow other 0 day; this was an accidental listing live for a few hours, might need special treatment?
 # A handful of titles have emoji or other characters in their names: the R trademark thing in Fallout and ohters, "Tormentor❌Punisher", a TM symbol for Apex Legends and others, a few m dashes, quote marks, U with hat in ABZU, a +, RAWMEN: Food Fighter Arena 🍜, parentheses, dots, 	>observer_, 
 # A MNESIA special experience thing may be misspelled with extra space?
+# Cat Quest 2 is marked as a dupe of Cat Quest II (similar III-type issues may exist elsewhere too)
 # AND, of course, the whole thing about needing to down-propogate dates, weekday, days, NOT type though. Or up-propogate depending on sort! GSheets goes from recent to past.
 
 # info contained in the header dropped rows:
@@ -112,8 +113,56 @@ df <- read_xlsx(here::here("data", "2026-04-21-gsheets.xlsx"),
 
 head(df)
 tail(df)
-unique(df$`NAMES / NOTES`, df$DAYS, df$TYPE)
+unique(c(df$`NAME / NOTES`, df$DAYS, df$TYPE))
+# df_g_og <- read_xlsx(here("data", "2026-04-21-gsheets.xlsx"))  # og for reference
+# df_csv <- vroom(here("data", "2026-04-21-gsheets.csv"))  # no different, weird
 ```
+
+```{r}
+# WIKI DATA QUALITY ANALYSIS
+dfw <- vroom(here("data", "2026-04-21-wiki.csv"))  # (w) for wiki version, vs (g) google sheets above
+# instant notes here: well it's sorted the other way for one
+# some russian leaks and even changes order, e.g. some of the idle champions, sims 4, Destiny 2, dark and darker, Rumbleverse, behind the frame i think is it
+# capitalization can be different, Abzu (with hat thing) is partly lower case here, might impact matching, SUPERHOT (g) too as ex
+# at least one is definitely missing: [REDACTED], >observer_, 
+# Black Book didn't translate AT ALL and even has the weird doubleangle quote brackets
+# some simply styled or filled in different: 3 out of 10 Episode 1 3 out of 10: Season Two (w) VS 3 out of 10, EP 1: "Welcome To Shovelworks", 3 out of 10: Season Two (g)
+# for sure none of the mobile games are included as entries, port or no
+# Even alphabetization cannot be trusted: Civilization VI (w) vs (g) Sid Meier's...
+# a possible solution to sidestep this is to parse the date-ranges
+#  would have to be start date since 1-day has no range; otherwise consistent in D-Month-YYYY
+# newlines are destroyed for multi-entries, e.g. BioShock: The Collection BioShock Remastered BioS.., might need a fix on the scraper level with custom separator?
+# dupe behavior is unpredictable; e.g. Alien Isolation only appears once in (w), the one-day, not the weeklong later
+#  however both of A Plague Tale: Innocence are there despite also being a weeklong once and a oneday once??
+# missing some events, like Saints Row: III (8-day!)
+# strange error: data-sort-value="Evil Within, The 2"| The Evil Within 2 (w) here for some reason, parse error?
+
+dfww <- vroom(here("data", "2026-04-21-wiki-enriched.csv"))
+```
+
+```{r}
+only_g <- anti_join(df, dfw, by = c("NAME" = "Title")) %>% 
+  mutate(source = "g, not w")
+# dupes, packs, mobiles - but need to fill in NAs to be sure if that's it!
+
+# 2. Find what is ONLY in set2
+only_w <- anti_join(dfw, df, by = c("Title" = "NAME")) %>% 
+  mutate(source = "W, NOT G")
+
+# 3. Combine them to investigate all mismatches in one place
+mismatches <- bind_rows(only_g, only_w)
+
+# as mentioned before capitalization issues
+# Alan Wake's American Nightmare doesn't match due to, of all things, straight vs curved apostrophe...
+# expected but Anodyne 2 (w) vs Anodyne 2: Return to Dust (g)
+# silly stuff like Astrea: Six Sided Oracles (g) vs Astrea: Six Sided Oracles (w) with hyphen vs space
+# didn't see any but possible whitespace issues
+# anyways there are lots of other mismatch reasons that I mostly covered above, like the bundling issue
+# will need to revisit this once I've handled and cleaned some of the concepts already mentioned
+# dunno if I can QUITE use a similarity score? wonder how hard the logic might be. 
+# is it safe to just do an inner join, then apply special matching to JUST the mismatches, or is that error prone?
+```
+
 
 # EDA
 
