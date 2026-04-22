@@ -23,7 +23,7 @@ def clean_gsheets():
     df = pd.read_csv(file_path, skiprows=15)
 
     # Keep the first 7 columns and rename to standard names
-    df = df.iloc[:, 0:7]
+    df = df.iloc[:, 0:7].copy()
     df.columns = ['FROM', 'TO', 'DAY', 'DAYS', 'TYPE', 'Title', 'NOTES']
 
     # Forward-fill event-related columns for days with multiple games
@@ -35,8 +35,8 @@ def clean_gsheets():
     df['Title'] = df['Title'].fillna(df['NOTES'])
 
     # Clean string values, remove empties, and filter out future placeholders
-    df = df[df['Title'].notna()]
-    df['Title'] = df['Title'].astype(str).str.strip()
+    df = df[df['Title'].notna()].copy()
+    df['Title'] = df['Title'].astype("string").str.strip()
     df = df[~df['Title'].isin(['', '-', 'nan'])]
     df = df[df['TYPE'] != '*']
 
@@ -48,18 +48,15 @@ def clean_wiki():
     df = pd.read_csv(file_path)
 
     # Explode rows where Title has multiple games separated by \n
-    df['Title'] = df['Title'].str.split('\n')
+    df['Title'] = df['Title'].astype("string").str.split('\n')
     df = df.explode('Title')
-    df['Title'] = df['Title'].str.strip()
+    df['Title'] = df['Title'].astype("string").str.strip()
 
     return df
 
-def normalize_title(t):
-    """Normalize a title for robust merging: lowercase, remove special characters, and strip extra spaces."""
-    t = str(t).lower()
-    t = re.sub(r'[^a-z0-9\s]', '', t)
-    t = re.sub(r'\s+', ' ', t).strip()
-    return t
+def normalize_title_series(s):
+    """Normalize a title Series for robust merging: lowercase, remove special characters, and strip extra spaces."""
+    return s.astype("string").str.lower().str.replace(r'[^a-z0-9\s]', '', regex=True).str.replace(r'\s+', ' ', regex=True).str.strip()
 
 def main():
     print("Cleaning Google Sheets data...")
@@ -69,8 +66,8 @@ def main():
     wiki_df = clean_wiki()
 
     # Create temporary normalized title columns for merging
-    gsheets_df['merge_title'] = gsheets_df['Title'].apply(normalize_title)
-    wiki_df['merge_title'] = wiki_df['Title'].apply(normalize_title)
+    gsheets_df['merge_title'] = normalize_title_series(gsheets_df['Title'])
+    wiki_df['merge_title'] = normalize_title_series(wiki_df['Title'])
 
     print("Merging datasets...")
     # LEFT JOIN: keep all from gsheets (primary source), enrich with wiki info where possible

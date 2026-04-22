@@ -131,6 +131,14 @@ def scrape_wiki():
 
     df = pd.DataFrame(data)
 
+    # Cast to PyArrow strings for Pandas 3.0 string backend compliance
+    df = df.astype({
+        "Date": "string",
+        "Title": "string",
+        "Game Wiki Link": "string",
+        "Source Links": "string"
+    })
+
     # Ensure data directory exists
     os.makedirs('data', exist_ok=True)
 
