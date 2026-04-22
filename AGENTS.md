@@ -46,11 +46,12 @@ This repo uses Pandas 3.0+. You must account for breaking changes and utilize ne
 - **Tidy Column References (`pd.col`):** You should prefer using `pd.col()` instead of `lambda` functions in methods like `.assign()`. 
   - *Ideal:* `df.assign(name=pd.col("first") + " " + pd.col("last"))`
   - *Avoid:* `df.assign(name=lambda x: x["first"] + " " + x["last"])`
-- **Missing Data:** When filling NA values, pass the target value or Series directly. **Never** pass a callable/lambda into `fillna()`.
+  - *Clarification*: This is NOT to say that apply+lambda functions should never be used, in some cases it is more clear and perfectly fine. Use your best judgement. 
+- **Missing Data:** When filling NA values, pass the target value or Series directly. **Never** pass a callable/lambda into `fillna()`. This restriction is ONLY for filling in NA values into `fillna()`, this is not a global rule or policy.
   - *Correct:* `df['Title'] = df['Title'].fillna(df['NOTES'])`
-  - *Forbidden:* `df.assign(Title=lambda x: x['Title'].fillna(lambda x: x['NOTES']))`
+  - *Forbidden:* `df.assign(Title=lambda x: x['Title'].fillna(lambda x: x['NOTES']))`  # because of the fillna() combination
 - **Copy-on-Write (CoW):** Pandas 3.0 enforces Copy-on-Write. Standard column assignment (e.g., `df['col'] = 1`) is perfectly valid, safe, and preferred for readability. Do not arbitrarily wrap standard assignments in `.assign()` just to avoid brackets.
-- **No Chained Assignment:** Chained assignment (e.g., `df["col"][mask] = 0`) is a hard error. Use `.loc` for conditional mutation (e.g., `df.loc[df["col"] > 0, "col"] = 0`). 
+- **No Chained Assignment:** Chained assignment (e.g., df["col"][mask] = 0) is no longer supported under Copy-on-Write and will raise an error or fail. Use .loc for explicit, unambiguous mutation (e.g., df.loc[df["col"] > 0, "col"] = 0)
   - *Note:* The `mode.copy_on_write` option no longer exists in Pandas 3.0. Do not reference it or attempt to set it.
 - **String Dtypes:** Strings are Arrow-backed `str`, not `object`. Checking `dtype == "object"` or `dtype == object` to find strings will break.
 - **Anti-Joins:** Use `how="left_anti"` or `"right_anti"` in `pd.merge()` directly instead of manual boolean masking.
