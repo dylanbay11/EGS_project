@@ -8,6 +8,7 @@ dependencies = [
     "beautifulsoup4>=4.12",
     "cloudscraper>=1.2.71",
     "epicstore-api>=0.2.0",
+    "howlongtobeatpy>=1.0.21",
     "marimo>=0.23.2",
     "numpy>=2.0.0",
     "openpyxl>=3.1.5",
