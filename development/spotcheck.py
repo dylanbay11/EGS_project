@@ -151,12 +151,8 @@ def _(gsheets_csv, wiki_csv):
     # --- 6. COMPARE & CONTRAST (GSheets vs Wiki) ---
     print("\n--- Comparison: GSheets vs Wiki Titles ---")
     # Assuming clean_data.py logic: clean titles first
-    def normalize_title(t):
-        import re
-        t = str(t).lower()
-        t = re.sub(r'[^a-z0-9\s]', '', t)
-        t = re.sub(r'\s+', ' ', t).strip()
-        return t
+    def normalize_title(s):
+        return s.astype("string").str.lower().str.replace(r'[^a-z0-9\s]', '', regex=True).str.replace(r'\s+', ' ', regex=True).str.strip()
 
     # We need to extract the raw titles safely
     # Gsheets titles are in column 6 (index 5) or NOTES
