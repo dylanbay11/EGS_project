@@ -5,6 +5,13 @@ import os
 import sys
 
 def scrape_hltb_data():
+    """
+    Scrapes HowLongToBeat (HLTB) data for unique games in the cleaned dataset.
+
+    Reads the merged data to extract unique titles and queries the HLTB API to
+    retrieve completion times, review scores, and related metadata. Saves
+    the results incrementally to avoid data loss.
+    """
     input_file = "data/cleaned_merged_data.csv"
     output_file = "outputs/hltb_data.csv"
 

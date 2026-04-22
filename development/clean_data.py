@@ -43,6 +43,12 @@ def clean_gsheets():
     return df
 
 def clean_wiki():
+    """
+    Loads and cleans the scraped Wikipedia dataset.
+
+    Returns:
+        pd.DataFrame: A DataFrame with exploded titles replacing bundle text.
+    """
     # Load the Wikipedia CSV file
     file_path = os.path.join(os.path.dirname(__file__), '../data/2026-04-21-wiki.csv')
     df = pd.read_csv(file_path)
@@ -62,6 +68,13 @@ def normalize_title(t):
     return t
 
 def main():
+    """
+    Main function to execute the data cleaning pipeline.
+
+    Loads and cleans Google Sheets and Wikipedia datasets separately, normalizes
+    titles to perform a left join merging Wikipedia metadata into the primary
+    Google Sheets dataset, and saves the result to a CSV file.
+    """
     print("Cleaning Google Sheets data...")
     gsheets_df = clean_gsheets()
 

@@ -8,6 +8,18 @@ import pandas as pd
 import os
 
 def resolve(data, obj, max_depth=10, current_depth=0):
+    """
+    Recursively resolves references within the Metacritic Next.js JSON payload.
+
+    Args:
+        data (list): The root JSON object list containing the referable data.
+        obj: The current object or index being resolved.
+        max_depth (int): Limit recursion depth to prevent infinite loops.
+        current_depth (int): Tracker for current recursion level.
+
+    Returns:
+        The recursively resolved object (dict, list, bool, int, string, etc.).
+    """
     if current_depth > max_depth: return obj
 
     if isinstance(obj, bool):
@@ -23,6 +35,16 @@ def resolve(data, obj, max_depth=10, current_depth=0):
     return obj
 
 def search_metacritic(game_name):
+    """
+    Searches Metacritic for a game title and extracts data from the Next.js payload.
+
+    Args:
+        game_name (str): The name of the game to query.
+
+    Returns:
+        list[dict] | None: A list of matched game dictionaries including title,
+                           slug, releaseDate, criticScore, rating, and platforms.
+    """
     query = urllib.parse.quote(game_name)
     url = f"https://www.metacritic.com/search/{query}/"
     req = urllib.request.Request(
@@ -66,6 +88,12 @@ def search_metacritic(game_name):
         return None
 
 def test_scrape():
+    """
+    Executes a test scrape of Metacritic for the first 10 games in the dataset.
+
+    Extracts details for each target, matches the highest scoring query result
+    to the target, appends results into a dataframe, and outputs it to a CSV file.
+    """
     df = pd.read_csv('data/epic_free_games_with_api_details.csv')
     games = df['title'].head(10).tolist()
 

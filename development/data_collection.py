@@ -172,6 +172,13 @@ def get_game_details(game_title: str, delay: float = 1.5):
         return None
 
 def main():
+    """
+    Main execution pipeline for Epic Games Store data collection.
+
+    Retrieves the primary game list from Google Sheets, iterates through the targets,
+    queries the Epic Games Store API for detailed product info (tags, price, etc.),
+    and saves the enriched result to a CSV file.
+    """
     games_df = scrape_gamelist()
     
     if games_df.empty:

@@ -10,6 +10,13 @@ import datetime
 csv_path = 'data/2026-04-21-wiki.csv'
 
 def check_should_scrape():
+    """
+    Checks if a new scrape of Wikipedia data is required.
+
+    Returns:
+        bool: True if the scrape should proceed (file doesn't exist, is older than 24h,
+              or FORCE_SCRAPE is set), False otherwise.
+    """
     # check if file exists and if it was modified in the last 24 hours
     if os.path.exists(csv_path) and not os.environ.get("FORCE_SCRAPE"):
         mtime = os.path.getmtime(csv_path)
@@ -33,6 +40,16 @@ months = {
 }
 
 def translate_date(date_str, year):
+    """
+    Translates and normalizes Russian month names and formats into English date strings.
+
+    Args:
+        date_str (str): The raw date string scraped from Russian Wikipedia.
+        year (int): The inferred release year to append if missing.
+
+    Returns:
+        str: A cleaned and translated date string in English.
+    """
     # e.g., "14—27 декабря" or "14—27 декабря 2018"
     # replace ndash or emdash with hyphen
     date_str = date_str.replace('—', '-').replace('–', '-')
@@ -46,6 +63,13 @@ def translate_date(date_str, year):
     return date_str
 
 def scrape_wiki():
+    """
+    Scrapes the list of Epic Games Store free giveaways from the Russian Wikipedia page.
+
+    Fetches the HTML content, parses data tables to extract dates, game titles,
+    and source links, resolving footnote references. Saves the extracted data
+    as a CSV to the data directory.
+    """
     if not check_should_scrape():
         return
 

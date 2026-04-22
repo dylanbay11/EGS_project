@@ -6,6 +6,7 @@ app = marimo.App()
 
 @app.cell
 def _():
+    """Marimo cell that imports required libraries for the notebook."""
     import pandas as pd  # ty:ignore[unresolved-import]
     import numpy as np  # ty:ignore[unresolved-import]
     import os
@@ -15,6 +16,7 @@ def _():
 
 @app.cell
 def _(os, pd):
+    """Marimo cell that handles data loading of raw and intermediate datasets."""
     # --- 1. DATA LOADING ---
     # Load datasets (using raw source files and intermediate/merged ones)
     data_dir = os.path.join(os.path.dirname(__file__), '../data')
@@ -51,6 +53,7 @@ def _(os, pd):
 
 @app.cell
 def _(datasets):
+    """Marimo cell for executing basic Exploratory Data Analysis (EDA) and overviews."""
     # --- 2. BASIC EDA & OVERVIEW ---
     print("\n--- Basic Dataset Overview ---")
     for _name, _df in datasets.items():
@@ -65,7 +68,7 @@ def _(datasets):
 
 @app.cell
 def _(col, datasets):
-
+    """Marimo cell executing missing data analysis and handling non-standard missing values."""
     # --- 3. MISSING DATA ANALYSIS ---
     print("\n--- Missing Data Analysis ---")
     for _name, _df in datasets.items():
@@ -89,7 +92,7 @@ def _(col, datasets):
 
 @app.cell
 def _(datasets):
-
+    """Marimo cell to detect completely duplicated rows and duplicate title keys."""
     # --- 4. DUPLICATE DETECTION ---
     print("\n--- Duplicate Detection ---")
     for _name, _df in datasets.items():
@@ -120,7 +123,7 @@ def _(datasets):
 
 @app.cell
 def _(datasets):
-
+    """Marimo cell to check strings for problematic hidden whitespace or characters."""
     # --- 5. HIDDEN CHARACTER CHECKS ---
     print("\n--- Hidden Character Checks ---")
     # Check for leading/trailing whitespaces, newlines, tabs, non-breaking spaces
@@ -147,11 +150,12 @@ def _(datasets):
 
 @app.cell
 def _(gsheets_csv, wiki_csv):
-
+    """Marimo cell that compares overlap and discrepancies between GSheets and Wikipedia titles."""
     # --- 6. COMPARE & CONTRAST (GSheets vs Wiki) ---
     print("\n--- Comparison: GSheets vs Wiki Titles ---")
     # Assuming clean_data.py logic: clean titles first
     def normalize_title(s):
+        """Normalizes titles to allow robust matching across data sources."""
         return s.astype("string").str.lower().str.replace(r'[^a-z0-9\s]', '', regex=True).str.replace(r'\s+', ' ', regex=True).str.strip()
 
     # We need to extract the raw titles safely
@@ -199,7 +203,7 @@ def _(gsheets_csv, wiki_csv):
 
 @app.cell
 def _(datasets):
-
+    """Marimo cell checking columns for data type consistency, particularly dates."""
     # --- 7. DATA TYPE CORRECTNESS ---
     print("\n--- Data Type Correctness Checks ---")
     # Look at date columns to see if they are parsed as datetime or strings
