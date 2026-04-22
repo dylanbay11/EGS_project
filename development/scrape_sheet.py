@@ -6,6 +6,7 @@ app = marimo.App(width="medium")
 
 @app.cell
 def _():
+    """Initializes basic data components and core scraping logic for Marimo cell."""
     import marimo as mo
     import pandas as pd
     import pandas as pd
@@ -64,6 +65,7 @@ def _():
 
 @app.cell
 def _(EGSException, api, time):
+    """Marimo cell defining a function to fetch specific game details from the Epic Games Store API."""
 
     def get_game_details(game_title: str, delay: float = 1.5):
         """
@@ -200,6 +202,7 @@ def _(EGSException, api, time):
 
 @app.cell
 def _(get_game_details, pd, scrape_gamelist):
+    """Marimo cell that runs the scraping process on the game list and handles results."""
     games_df = scrape_gamelist()
 
     if games_df.empty:
@@ -253,23 +256,27 @@ def _(get_game_details, pd, scrape_gamelist):
 
 @app.cell
 def _():
+    """Empty Marimo cell placeholder."""
     return
 
 
 @app.cell
 def _(processed_games_df):
+    """Marimo cell to inspect api_details of processed games."""
     processed_games_df["api_details"]
     return
 
 
 @app.cell
 def _():
+    """Marimo cell to import altair visualization library."""
     import altair as alt
     return
 
 
 @app.cell
 def _():
+    """Marimo cell for eventual main execution point, currently commented out for dev visibility."""
     #TODO: re-implement later after dev stage 
     #  (to allow notebook visibility into saved objects and keep in-scope)
     # def main():

@@ -6,6 +6,7 @@ app = marimo.App(width="medium")
 
 @app.cell
 def _():
+    """Marimo cell that imports required libraries for the notebook."""
     ## IMPORTS
     import marimo as mo         # run scripts as better Jupyter-style notebooks
 
@@ -22,6 +23,7 @@ def _():
 
 @app.cell
 def _(pd):
+    """Marimo cell defining a basic game list scraper."""
     ## GAME LIST SCRAPER
     def scrape_gamelist() -> pd.DataFrame:
         """
@@ -60,6 +62,7 @@ def _(pd):
 
 @app.cell
 def _(os, pd, scrape_gamelist):
+    """Marimo cell that loads the gamelist from a parquet file or scrapes it if unavailable."""
     ## LOAD OR OBTAIN GAME LIST
     def gamelist_path():
         """
@@ -118,6 +121,7 @@ def _(os, pd, scrape_gamelist):
 
 @app.cell
 def _(es):
+    """Marimo cell that initializes the Epic Games Store API wrapper."""
     ## API 
     # verify API wrapper is working
     try:
@@ -131,10 +135,12 @@ def _(es):
 
 @app.cell
 def _(api, gamelist, json):
+    """Marimo cell fetching test API search data and printing it."""
     # TEMP
     g = api.fetch_store_games(count = 7, keywords = gamelist.sample(1)["title"].iloc[0])
     g
     def jprint(j):
+        """Prints a nicely indented JSON representation of a dictionary."""
         print(json.dumps(j, indent = 2, default = str))
     jprint(g)
     return (g,)
@@ -142,6 +148,7 @@ def _(api, gamelist, json):
 
 @app.cell
 def _(g):
+    """Marimo cell verifying type structure of API search element."""
     type(g["data"]["Catalog"]["searchStore"]["elements"])
     # g["data"]["Catalog"]["searchStore"]["elements"]
     return
@@ -184,6 +191,7 @@ app._unparsable_cell(
 
 @app.cell
 def _():
+    """Empty Marimo cell placeholder."""
     return
 
 

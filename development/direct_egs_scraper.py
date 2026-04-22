@@ -128,6 +128,12 @@ def process_game(title: str, scraper: cloudscraper.CloudScraper) -> dict:
     return result
 
 def main():
+    """
+    Main function to process a sample of games from the Wikipedia dataset.
+
+    Uses cloudscraper to search the EGS GraphQL catalog and fetches product page
+    details via static API to extract developer/publisher metadata for each match.
+    """
     data_dir = Path("data")
     input_file = data_dir / "2026-04-21-wiki.csv"
 

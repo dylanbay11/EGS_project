@@ -7,6 +7,14 @@ import time
 import os
 
 def enrich_data():
+    """
+    Enriches Wikipedia title data with additional attributes.
+
+    Reads titles from a base CSV dataset, queries the English Wikipedia API for
+    each title's dedicated page, and extracts metadata from infoboxes (developer,
+    publisher, genre, etc.) along with the first few paragraphs of summary and
+    background text. Saves the enriched dataset to a new CSV file.
+    """
     input_file = 'data/2026-04-21-wiki.csv'
     output_file = 'data/2026-04-21-wiki-enriched.csv'
 

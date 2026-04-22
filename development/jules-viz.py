@@ -3,6 +3,15 @@ import plotly.express as px
 import os
 
 def load_and_clean_data(filepath):
+    """
+    Loads and cleans dataset for visualizations.
+
+    Args:
+        filepath (str): Path to the CSV dataset.
+
+    Returns:
+        pd.DataFrame: A cleaned DataFrame ready for plotting.
+    """
     # Load data and skip the row containing totals (row index 1 in standard pandas read_csv if header=0)
     # The first row of data (after header) seems to be totals
     df = pd.read_csv(filepath, skiprows=[1])
@@ -17,6 +26,13 @@ def load_and_clean_data(filepath):
     return df
 
 def visualize_good_games(df, output_dir):
+    """
+    Generates and saves a stacked bar chart of 'good games' per year.
+
+    Args:
+        df (pd.DataFrame): The cleaned dataset.
+        output_dir (str): The directory path to save the resulting HTML plot.
+    """
     # Group by year and count good games vs total games
     yearly_stats = df.groupby('Start Year').agg(
         Total_Games=('Games', 'count'),
@@ -42,6 +58,13 @@ def visualize_good_games(df, output_dir):
     print(f"Saved good_games_per_year.html to {output_dir}")
 
 def visualize_duplicates(df, output_dir):
+    """
+    Generates and saves a horizontal bar chart showing the most duplicated games.
+
+    Args:
+        df (pd.DataFrame): The cleaned dataset.
+        output_dir (str): The directory path to save the resulting HTML plot.
+    """
     # Count how often each game appears
     # Drop rows where 'Games' is null
     games_clean = df.dropna(subset=['Games'])
@@ -70,6 +93,7 @@ def visualize_duplicates(df, output_dir):
     print(f"Saved top_duplicated_games.html to {output_dir}")
 
 def main():
+    """Main function to load data, generate standard visualizations, and save them."""
     data_path = 'data/epic_free_games_with_api_details.csv'
     output_dir = 'development'
 
