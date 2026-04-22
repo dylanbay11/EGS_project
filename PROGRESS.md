@@ -9,6 +9,7 @@
 ## Near & Medium-Term Roadmap
 There may be minor overlap between some of these.
 - [ ] **Visibility Options**: Create a marimo document that allows easier inspection and spot-checking of outputs, to enable better feedback for AI agents
+- [ ] **Test Suite**: Develop small-scale, not overkill, useful set of re-usable tests (manual, no extra packages) for validation.
 - [ ] **Finish Data Cleaning**: Finalize cleaning rules and procedures across datasets, both content and columns.
 - [ ] **Wikipedia Spot Check**: Polish up final touches on game list data enrichment. The Wikipedia scrape needs hand verification and spot-checking by the user.
 - [ ] **Google Sheets Spot Check**: Ensure that all relevant info was imported including labels and 'meta'data.
