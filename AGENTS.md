@@ -29,6 +29,7 @@ I prefer comments in slightly more casual language. Full sentence comments, go a
 - Prefer early returns over nested ifs, free working memory by letting the reader focus only on the happy path only.
 - Don't make readers chase behavior up an inheritance chain. Prefer injecting collaborators or using plain functions composed together. 
 - Avoid wrappers whose interface is more complex than their implementation, or add a shallow abstraction that mostly adds mental load without extra clarity.
+- ALWAYS ALWAYS ALWAYS include a docstring for each and every function. See PEP 257. Of course for smaller functions, a single triple quoted line describing what it does is fine. If it's more elaborate, have a oneline summary, a blank newline, and then summarize its behavior and document its arguments, return value(s), side effects, exceptions raised, and restrictions on when it can be called (all IF applicable).
 
 ### Python and tabular data (pandas) specifics
 **Environment Note**: If a Pandas method fails (especially `pd.col()`), assume your execution environment is wrong, not the codebase. Run `uv run python -c "import pandas as pd; print(pd.__version__)"` to confirm you are actually running Pandas 3.0+ before making any changes.
