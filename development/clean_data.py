@@ -38,31 +38,53 @@ def clean_gsheets():
     
     if file_path.endswith('.xlsx'):
         df = pd.read_excel(file_path, engine='openpyxl', skiprows=15)
-    else:
-        df = pd.read_csv(file_path, skiprows=15)
 
-    if file_path.endswith('.xlsx'):
-        df = pd.read_excel(file_path, engine='openpyxl', skiprows=15)
+        import openpyxl
+        wb = openpyxl.load_workbook(file_path, data_only=True)
+        sheet = wb.active
+
+        colors = []
+        for row_idx in range(17, 17 + len(df)):
+            cell = sheet.cell(row=row_idx, column=6) # 6th column is 'NAME'
+            rgb = cell.fill.start_color.rgb if cell.fill and cell.fill.start_color else None
+            colors.append(rgb if rgb and isinstance(rgb, str) else 'unknown')
     else:
         df = pd.read_csv(file_path, skiprows=15)
+        colors = ['unknown'] * len(df)
 
     # Keep the first 7 columns and rename to standard names
     df = df.iloc[:, 0:7].copy()
     df.columns = ['FROM', 'TO', 'DAY', 'DAYS', 'TYPE', 'Title', 'NOTES']
 
-    # Forward-fill event-related columns for days with multiple games
-    cols_to_ffill = ['FROM', 'TO', 'DAY', 'DAYS', 'TYPE']
-    for col in cols_to_ffill:
-        df[col] = df[col].ffill()
+    df['COLOR_CATEGORY'] = colors
+
+    # Slice from the first "next" and exclude trailing rows
+    first_next_idx = df.index[df['TYPE'] == 'next'].tolist()
+    if first_next_idx:
+        start_idx = first_next_idx[0]
+        df = df.loc[start_idx:].copy()
+
+    # Drop the last row if it repeats the header
+    if len(df) > 0 and df.iloc[-1]['FROM'] == 'FROM':
+        df = df.iloc[:-1].copy()
 
     # If Title is NaN but NOTES is present (e.g., in a bundle like Trine Collection), use NOTES
-    df['Title'] = df['Title'].fillna(df['NOTES'])
+    if 'NOTES' in df.columns:
+        df['Title'] = df['Title'].fillna(df['NOTES'])
+
+    # Forward-fill event-related columns for days with multiple games (Do not ffill TYPE)
+    cols_to_ffill = ['FROM', 'TO', 'DAY', 'DAYS']
+    for col in cols_to_ffill:
+        df[col] = df[col].ffill()
 
     # Clean string values, remove empties, and filter out future placeholders
     df = df[df['Title'].notna()].copy()
     df['Title'] = df['Title'].astype("string").str.strip()
     df = df[~df['Title'].isin(['', '-', 'nan'])]
     df = df[df['TYPE'] != '*']
+
+    # We reset index for cleaner look
+    df = df.reset_index(drop=True)
 
     return df
 
