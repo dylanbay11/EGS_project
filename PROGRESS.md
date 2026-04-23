@@ -12,7 +12,7 @@ There may be minor overlap between some of these.
 - [ ] **Test Suite**: Develop small-scale, not overkill, useful set of re-usable tests (manual, no extra packages) for validation.
 - [ ] **Finish Data Cleaning**: Finalize cleaning rules and procedures across datasets, both content and columns.
 - [ ] **Wikipedia Spot Check**: Polish up final touches on game list data enrichment. The Wikipedia scrape needs hand verification and spot-checking by the user.
-- [ ] **Google Sheets Spot Check**: Ensure that all relevant info was imported including labels and 'meta'data.
+- [x] **Google Sheets Spot Check**: Ensure that all relevant info was imported including labels and 'meta'data. (Updated collection logic)
 - [ ] **Verify Source Merges**: Ensure that the two gamelist sources merge and match correctly.
 - [ ] **Feature Engineering**: Perform minor feature engineering, manipulation, or reshaping for certain stubborn columns.
 - [ ] **Missing Data Assessment**: Complete a holistic missing data pass/assessment.

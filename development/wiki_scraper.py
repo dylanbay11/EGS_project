@@ -163,6 +163,13 @@ def scrape_wiki():
                         links.append(href)
                 link_str = ", ".join(links)
 
+                # Check for definition lists which are used for bundles
+                has_dl = title_cell.find('dl')
+                if has_dl:
+                    dt = has_dl.find('dt')
+                    if dt:
+                        dt.decompose() # Remove the overarching collection name
+
                 # Remove sup elements
                 for sup in title_cell.find_all('sup'):
                     sup.decompose()

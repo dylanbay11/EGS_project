@@ -68,9 +68,28 @@ def clean_gsheets():
     if len(df) > 0 and df.iloc[-1]['FROM'] == 'FROM':
         df = df.iloc[:-1].copy()
 
-    # If Title is NaN but NOTES is present (e.g., in a bundle like Trine Collection), use NOTES
+    # Handle bundles and collections correctly where games are listed in NOTES
     if 'NOTES' in df.columns:
-        df['Title'] = df['Title'].fillna(df['NOTES'])
+        collection_names = df['Title'].ffill()
+
+        is_continuation = df['Title'].isna() & df['NOTES'].notna()
+        next_is_continuation = is_continuation.shift(-1).fillna(False)
+        is_start = df['Title'].notna() & df['NOTES'].notna() & next_is_continuation
+        in_collection = is_start | is_continuation
+
+        new_titles = df['Title'].copy().astype("string")
+        new_notes = df['NOTES'].copy().astype("string")
+        collection_name_strings = collection_names.astype("string")
+        notes_strings = df['NOTES'].astype("string")
+
+        new_titles.loc[in_collection] = notes_strings.loc[in_collection]
+        new_notes.loc[in_collection] = "Part of collection: " + collection_name_strings.loc[in_collection]
+
+        isolated_missing_title = (~in_collection) & df['Title'].isna() & df['NOTES'].notna()
+        new_titles.loc[isolated_missing_title] = notes_strings.loc[isolated_missing_title]
+
+        df['Title'] = new_titles
+        df['NOTES'] = new_notes
 
     # Forward-fill event-related columns for days with multiple games (Do not ffill TYPE)
     cols_to_ffill = ['FROM', 'TO', 'DAY', 'DAYS']
