@@ -86,7 +86,7 @@ Of note is the archive/misc/2026-03-Update.md, which outlines the state of thing
 
 ### Data freshness
 
-Ideally, I want functionality where it re-scrapes if it's been more than a day since last scrape; one successful previous scrape will be kept (base data). Data scrapes should be named YYYY-MM-DD-sourcetype. It is fine and desirable to keep only a single copy of intermediate tables/datasets. 
+Ideally, I want functionality where it re-scrapes if it's been more than a day since last scrape; one successful previous scrape will be kept (base data). Data scrapes should be named YYYY-MM-DD-sourcetype, named dynamically after today's date when the scraping occurred. It is fine and desirable to keep only a single copy of intermediate tables/datasets. 
 
 ## Agent habits
 
