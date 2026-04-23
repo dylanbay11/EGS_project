@@ -5,28 +5,49 @@ import pandas as pd
 import time
 import os
 import datetime
+import glob
 
-# Target CSV path
-csv_path = 'data/2026-04-21-wiki.csv'
+def get_today_csv_path():
+    """Returns the path for today's Wikipedia scrape CSV."""
+    today_str = datetime.date.today().strftime("%Y-%m-%d")
+    return f'data/{today_str}-wiki.csv'
 
 def check_should_scrape():
     """
     Checks if a new scrape of Wikipedia data is required.
 
     Returns:
-        bool: True if the scrape should proceed (file doesn't exist, is older than 24h,
+        bool: True if the scrape should proceed (today's file doesn't exist,
               or FORCE_SCRAPE is set), False otherwise.
     """
-    # check if file exists and if it was modified in the last 24 hours
+    csv_path = get_today_csv_path()
     if os.path.exists(csv_path) and not os.environ.get("FORCE_SCRAPE"):
-        mtime = os.path.getmtime(csv_path)
-        last_modified_date = datetime.datetime.fromtimestamp(mtime)
-        now = datetime.datetime.now()
-        diff = now - last_modified_date
-        if diff.total_seconds() < 86400: # 1 day in seconds
-            print(f"Skipping scrape: {csv_path} was generated less than 1 day ago ({last_modified_date}).")
-            return False
+        print(f"Skipping scrape: Today's scrape {csv_path} already exists.")
+        return False
     return True
+
+def cleanup_old_scrapes():
+    """
+    Keeps today's scrape and the most recent previous scrape, and deletes older ones.
+    """
+    files = glob.glob('data/*-wiki.csv')
+    # Filter out enriched ones just in case
+    files = [f for f in files if not f.endswith('-wiki-enriched.csv')]
+
+    if not files:
+        return
+
+    files.sort(reverse=True)
+    # Keep the first two files (today and yesterday/most recent)
+    files_to_keep = files[:2]
+    files_to_delete = files[2:]
+
+    for f in files_to_delete:
+        try:
+            os.remove(f)
+            print(f"Deleted old scrape: {f}")
+        except Exception as e:
+            print(f"Failed to delete {f}: {e}")
 
 months = {
     'января': 'January', 'февраля': 'February', 'марта': 'March',
@@ -194,11 +215,24 @@ def scrape_wiki():
         "Source Links": "string"
     })
 
+    # Validation
+    if len(df) < 100:
+        print(f"Validation failed: Scrape only returned {len(df)} rows (expected >= 100). Discarding data.")
+        return
+
+    na_count = df['Title'].isna().sum()
+    if na_count > len(df) * 0.1: # Allow up to 10% NAs
+        print(f"Validation failed: Too many NAs in Title column ({na_count}). Discarding data.")
+        return
+
     # Ensure data directory exists
     os.makedirs('data', exist_ok=True)
 
+    csv_path = get_today_csv_path()
     df.to_csv(csv_path, index=False)
     print(f"Successfully scraped and saved {len(df)} records to {csv_path}")
+
+    cleanup_old_scrapes()
 
 if __name__ == "__main__":
     scrape_wiki()
