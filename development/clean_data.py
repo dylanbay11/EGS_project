@@ -41,11 +41,6 @@ def clean_gsheets():
     else:
         df = pd.read_csv(file_path, skiprows=15)
 
-    if file_path.endswith('.xlsx'):
-        df = pd.read_excel(file_path, engine='openpyxl', skiprows=15)
-    else:
-        df = pd.read_csv(file_path, skiprows=15)
-
     # Keep the first 7 columns and rename to standard names
     df = df.iloc[:, 0:7].copy()
     df.columns = ['FROM', 'TO', 'DAY', 'DAYS', 'TYPE', 'Title', 'NOTES']
@@ -68,20 +63,24 @@ def clean_gsheets():
 
 def clean_wiki():
     """
-    Loads and cleans the scraped Wikipedia dataset.
+    Loads and cleans the enriched Wikipedia dataset.
 
     Returns:
-        pd.DataFrame: A DataFrame with exploded titles replacing bundle text.
+        pd.DataFrame: A DataFrame containing the Wikipedia data.
     """
-    # Load the Wikipedia CSV file dynamically
+    # Load the Enriched Wikipedia CSV file dynamically
     data_dir = os.path.join(os.path.dirname(__file__), '../data')
-    file_path = get_latest_file(data_dir, "20*-wiki.csv")
+    # get_latest_file filters out -enriched.csv by default if we just pass *-wiki.csv, so we need a direct match
+    files = glob.glob(os.path.join(data_dir, "20*-wiki-enriched.csv"))
+    if not files:
+        raise FileNotFoundError("No enriched wiki files found")
+    files.sort(reverse=True)
+    file_path = files[0]
+
     df = pd.read_csv(file_path)
 
-    # Explode rows where Title has multiple games separated by \n
-    df['Title'] = df['Title'].astype("string").str.split('\n')
-    df = df.explode('Title')
-    df['Title'] = df['Title'].astype("string").str.strip()
+    # Title is now title_wiki
+    df['title_wiki'] = df['title_wiki'].astype("string").str.strip()
 
     return df
 
@@ -105,7 +104,7 @@ def main():
 
     # Create temporary normalized title columns for merging
     gsheets_df['merge_title'] = normalize_title_series(gsheets_df['Title'])
-    wiki_df['merge_title'] = normalize_title_series(wiki_df['Title'])
+    wiki_df['merge_title'] = normalize_title_series(wiki_df['title_wiki'])
 
     print("Merging datasets...")
     # LEFT JOIN: keep all from gsheets (primary source), enrich with wiki info where possible
@@ -115,7 +114,7 @@ def main():
     merged_df = merged_df.drop('merge_title', axis=1)
 
     print(f"Merge complete. Result shape: {merged_df.shape}")
-    print(f"Games successfully matched with Wikipedia data: {merged_df['Title_wiki'].notna().sum()}")
+    print(f"Games successfully matched with Wikipedia data: {merged_df['title_wiki'].notna().sum()}")
 
     # Save output to data directory
     output_path = os.path.join(os.path.dirname(__file__), '../data/cleaned_merged_data.csv')

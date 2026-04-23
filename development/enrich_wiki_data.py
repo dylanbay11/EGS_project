@@ -27,7 +27,7 @@ def enrich_data():
     publisher, genre, etc.) along with the first few paragraphs of summary and
     background text. Saves the enriched dataset to a new CSV file.
     """
-    input_file = get_latest_file('data/*-wiki.csv')
+    input_file = get_latest_file(os.path.join(os.path.dirname(__file__), '../data/*-wiki.csv'))
 
     if not input_file or not os.path.exists(input_file):
         print(f"Error: No recent wiki input file found.")
@@ -42,7 +42,8 @@ def enrich_data():
         'Date': 'daterange_wiki',
         'Title': 'title_wiki',
         'Year': 'year_wiki',
-        'Source Links': 'source_wiki'
+        'Source Links': 'source_wiki',
+        'Game Wiki Link': 'ru_link_wiki'
     })
 
     enriched_data = []
@@ -150,6 +151,16 @@ def enrich_data():
     final_df = pd.merge(df, enriched_df, on='title_wiki', how='left')
     final_df.to_csv(output_file, index=False)
     print(f"Enriched data saved to {output_file}")
+
+    # Cleanup old enriched files (keep only the newly created one)
+    enriched_files = glob.glob(os.path.join(os.path.dirname(__file__), '../data/*-wiki-enriched.csv'))
+    for f in enriched_files:
+        if f != output_file:
+            try:
+                os.remove(f)
+                print(f"Deleted old enriched file: {f}")
+            except Exception as e:
+                print(f"Failed to delete old enriched file {f}: {e}")
 
 if __name__ == '__main__':
     enrich_data()

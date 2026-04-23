@@ -31,7 +31,7 @@ def cleanup_old_scrapes():
     """
     Keeps today's scrape and the most recent previous scrape, and deletes older ones.
     """
-    files = glob.glob('data/*-wiki.csv')
+    files = glob.glob(os.path.join(os.path.dirname(__file__), '../data/*-wiki.csv'))
     # Filter out enriched ones just in case
     files = [f for f in files if not f.endswith('-wiki-enriched.csv')]
 
@@ -227,7 +227,7 @@ def scrape_wiki():
         return
 
     # Ensure data directory exists
-    os.makedirs('data', exist_ok=True)
+    os.makedirs(os.path.join(os.path.dirname(__file__), '../data'), exist_ok=True)
 
     csv_path = get_today_csv_path()
     df.to_csv(csv_path, index=False)
