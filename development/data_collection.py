@@ -97,9 +97,25 @@ def scrape_gamelist():
         # Assign the parsed colors as a new column
         gdf['COLOR_CATEGORY'] = colors
 
-        # Forward fill the 'FROM' and 'TO' dates because secondary games per week have empty date cells
+        # Slice from the first "next" and exclude trailing rows
+        first_next_idx = gdf.index[gdf['TYPE'] == 'next'].tolist()
+        if first_next_idx:
+            start_idx = first_next_idx[0]
+            gdf = gdf.loc[start_idx:].copy()
+
+        # Drop the last row if it repeats the header
+        if len(gdf) > 0 and gdf.iloc[-1]['FROM'] == 'FROM':
+            gdf = gdf.iloc[:-1].copy()
+
+        # Fall back to 'NOTES' if 'Games' is empty
+        # Handled carefully: note the column was renamed from 'NAME / NOTES' to 'NOTES' and 'NAME' to 'Games' above!
+        gdf['Games'] = gdf['Games'].fillna(gdf['NOTES'])
+
+        # Forward fill missing dates and metadata
         gdf['FROM'] = gdf['FROM'].ffill()
         gdf['TO'] = gdf['TO'].ffill()
+        gdf['DAY'] = gdf['DAY'].ffill()
+        gdf['DAYS'] = gdf['DAYS'].ffill()
 
         # Filter out rows that are not valid games (future placeholders, dividers, or empty names)
         # Placeholder TYPE often is '*', valid ones might be empty or 'mobile', 'other'.
