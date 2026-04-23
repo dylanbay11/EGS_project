@@ -107,19 +107,16 @@ def scrape_wiki():
             cells = row.find_all(['th', 'td'])
             if len(cells) >= 3:
                 date_str = cells[0].text.strip()
-                title = cells[1].text.strip()
-
-                # Clean title
-                title = re.sub(r'\[\d+\]', '', title)
-                title = re.sub(r'\[[a-zA-Zа-яА-ЯёЁ.]+\]', '', title)
-                title = title.strip()
 
                 # Format date
                 clean_date = translate_date(date_str, year)
 
-                # Extract game wiki link
+                # Setup title cell for better text extraction
+                title_cell = cells[1]
+
+                # Extract game wiki link (use first link as default for bundle)
                 game_wiki_link = ""
-                a_tag = cells[1].find('a', href=True)
+                a_tag = title_cell.find('a', href=True)
                 if a_tag:
                     href = a_tag['href']
                     if href.startswith('//'):
@@ -142,16 +139,50 @@ def scrape_wiki():
                                 links.append(external_link['href'])
                     else:
                         links.append(href)
-
                 link_str = ", ".join(links)
 
-                data.append({
-                    "Date": clean_date,
-                    "Title": title,
-                    "Year": year,
-                    "Game Wiki Link": game_wiki_link,
-                    "Source Links": link_str
-                })
+                # Remove sup elements
+                for sup in title_cell.find_all('sup'):
+                    sup.decompose()
+
+                # Insert newlines before block elements to ensure proper splitting
+                for elem in title_cell.find_all(['dd', 'dt', 'li', 'br']):
+                    elem.insert_before('\n')
+
+                raw_title_text = title_cell.get_text(separator=' ').strip()
+
+                # Collapse whitespace
+                raw_title_clean = re.sub(r'[ \t]+', ' ', raw_title_text)
+                raw_title_clean = re.sub(r' ?\n ?', '\n', raw_title_clean)
+                raw_title_clean = re.sub(r'\n+', '\n', raw_title_clean)
+
+                # Split bundle into multiple rows
+                split_titles = [t.strip() for t in raw_title_clean.split('\n') if t.strip()]
+
+                for title in split_titles:
+                    # Clean title
+                    title = re.sub(r'^data-sort-value=.*?\|\s*', '', title)
+                    title = title.replace('«', '').replace('»', '')
+                    title = title.replace('’', "'").replace('‘', "'")
+                    title = title.replace('—', '-').replace('–', '-')
+                    title = title.replace('\xa0', ' ')
+
+                    if title != '[REDACTED]':
+                        title = re.sub(r'\[[а-яА-Яa-zA-Z.]+\]', '', title)
+
+                    title = title.strip()
+
+                    if title == 'Чёрная книга':
+                        title = 'Black Book'
+
+                    if title:
+                        data.append({
+                            "Date": clean_date,
+                            "Title": title,
+                            "Year": year,
+                            "Game Wiki Link": game_wiki_link,
+                            "Source Links": link_str
+                        })
 
     df = pd.DataFrame(data)
 
