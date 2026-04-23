@@ -1,6 +1,18 @@
 import pandas as pd
 import re
 import os
+import glob
+
+def get_latest_file(pattern):
+    """Gets the latest file matching a pattern based on alphabetical sorting (since dates are YYYY-MM-DD)."""
+    base_dir = os.path.join(os.path.dirname(__file__), '../')
+    files = glob.glob(os.path.join(base_dir, pattern))
+    # Filter out enriched ones just in case we are matching `*-wiki.csv`
+    files = [f for f in files if not f.endswith('-wiki-enriched.csv')]
+    if not files:
+        raise FileNotFoundError(f"No files matching pattern {pattern} found.")
+    files.sort(reverse=True)
+    return files[0]
 
 def clean_gsheets():
     """
@@ -19,7 +31,7 @@ def clean_gsheets():
       - next: next gifts (future/upcoming games)
     """
     # Load the Google Sheets CSV file, skipping the initial header rows
-    file_path = os.path.join(os.path.dirname(__file__), '../data/2026-04-21-gsheets.csv')
+    file_path = get_latest_file('data/*-gsheets.csv')
     df = pd.read_csv(file_path, skiprows=15)
 
     # Keep the first 7 columns and rename to standard names
@@ -50,7 +62,7 @@ def clean_wiki():
         pd.DataFrame: A DataFrame with exploded titles replacing bundle text.
     """
     # Load the Wikipedia CSV file
-    file_path = os.path.join(os.path.dirname(__file__), '../data/2026-04-21-wiki.csv')
+    file_path = get_latest_file('data/*-wiki.csv')
     df = pd.read_csv(file_path)
 
     # Explode rows where Title has multiple games separated by \n

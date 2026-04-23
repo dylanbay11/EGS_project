@@ -5,6 +5,18 @@ import urllib.parse
 import re
 import time
 import os
+import glob
+import datetime
+
+def get_latest_file(pattern):
+    """Gets the latest file matching a pattern based on alphabetical sorting (since dates are YYYY-MM-DD)."""
+    files = glob.glob(pattern)
+    # Filter out enriched ones just in case we are matching `*-wiki.csv`
+    files = [f for f in files if not f.endswith('-wiki-enriched.csv')]
+    if not files:
+        return None
+    files.sort(reverse=True)
+    return files[0]
 
 def enrich_data():
     """
@@ -15,12 +27,13 @@ def enrich_data():
     publisher, genre, etc.) along with the first few paragraphs of summary and
     background text. Saves the enriched dataset to a new CSV file.
     """
-    input_file = 'data/2026-04-21-wiki.csv'
-    output_file = 'data/2026-04-21-wiki-enriched.csv'
+    input_file = get_latest_file('data/*-wiki.csv')
 
-    if not os.path.exists(input_file):
-        print(f"Error: Input file {input_file} not found.")
+    if not input_file or not os.path.exists(input_file):
+        print(f"Error: No recent wiki input file found.")
         return
+
+    output_file = input_file.replace('.csv', '-enriched.csv')
 
     df = pd.read_csv(input_file)
 
