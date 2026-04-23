@@ -3,17 +3,19 @@ import re
 import os
 import glob
 
-def get_latest_file(pattern):
-    """Gets the latest file matching a pattern based on alphabetical sorting (since dates are YYYY-MM-DD)."""
-    base_dir = os.path.join(os.path.dirname(__file__), '../')
-    files = glob.glob(os.path.join(base_dir, pattern))
+def get_latest_file(data_dir, pattern_xlsx, pattern_csv=None):
+    """Helper to find the most recently created/named file matching a pattern."""
+    files = glob.glob(os.path.join(data_dir, pattern_xlsx))
+    if pattern_csv:
+        files.extend(glob.glob(os.path.join(data_dir, pattern_csv)))
+    
     # Filter out enriched ones just in case we are matching `*-wiki.csv`
     files = [f for f in files if not f.endswith('-wiki-enriched.csv')]
+    
     if not files:
-        raise FileNotFoundError(f"No files matching pattern {pattern} found.")
+        raise FileNotFoundError(f"No files found matching {pattern_xlsx} or {pattern_csv}")
     files.sort(reverse=True)
     return files[0]
-
 def clean_gsheets():
     """
     Cleans the Google Sheets data.
@@ -30,9 +32,19 @@ def clean_gsheets():
       - dupe3: mobile dupe games, packs, in-game content, DLC
       - next: next gifts (future/upcoming games)
     """
-    # Load the Google Sheets CSV file, skipping the initial header rows
-    file_path = get_latest_file('data/*-gsheets.csv')
-    df = pd.read_csv(file_path, skiprows=15)
+    # Find the latest Google Sheets file dynamically
+    data_dir = os.path.join(os.path.dirname(__file__), '../data')
+    file_path = get_latest_file(data_dir, "20*-gsheets.xlsx", "20*-gsheets.csv")
+    
+    if file_path.endswith('.xlsx'):
+        df = pd.read_excel(file_path, engine='openpyxl', skiprows=15)
+    else:
+        df = pd.read_csv(file_path, skiprows=15)
+
+    if file_path.endswith('.xlsx'):
+        df = pd.read_excel(file_path, engine='openpyxl', skiprows=15)
+    else:
+        df = pd.read_csv(file_path, skiprows=15)
 
     # Keep the first 7 columns and rename to standard names
     df = df.iloc[:, 0:7].copy()
@@ -61,8 +73,9 @@ def clean_wiki():
     Returns:
         pd.DataFrame: A DataFrame with exploded titles replacing bundle text.
     """
-    # Load the Wikipedia CSV file
-    file_path = get_latest_file('data/*-wiki.csv')
+    # Load the Wikipedia CSV file dynamically
+    data_dir = os.path.join(os.path.dirname(__file__), '../data')
+    file_path = get_latest_file(data_dir, "20*-wiki.csv")
     df = pd.read_csv(file_path)
 
     # Explode rows where Title has multiple games separated by \n

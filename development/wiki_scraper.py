@@ -9,8 +9,9 @@ import glob
 
 def get_today_csv_path():
     """Returns the path for today's Wikipedia scrape CSV."""
-    today_str = datetime.date.today().strftime("%Y-%m-%d")
-    return f'data/{today_str}-wiki.csv'
+    today = datetime.date.today().isoformat()
+    data_dir = os.path.join(os.path.dirname(__file__), '../data')
+    return os.path.join(data_dir, f'{today}-wiki.csv')
 
 def check_should_scrape():
     """

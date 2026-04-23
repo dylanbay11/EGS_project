@@ -21,17 +21,28 @@ def _(os, pd):
     # Load datasets (using raw source files and intermediate/merged ones)
     data_dir = os.path.join(os.path.dirname(__file__), '../data')
 
+    import glob
+    def get_latest_file(directory, pattern_main, pattern_alt=None):
+        files = glob.glob(os.path.join(directory, pattern_main))
+        if pattern_alt:
+            files.extend(glob.glob(os.path.join(directory, pattern_alt)))
+        files.sort(reverse=True)
+        return files[0] if files else None
+
     # Source 1: Google Sheets (skipping first 15 rows based on project memory, and row 16 which is totals in actual parsing)
     print("Loading GSheets data...")
-    gsheets_csv = pd.read_csv(os.path.join(data_dir, '2026-04-21-gsheets.csv'), skiprows=15)
-    # GSheets from Excel file as well to see background colours and formatting
-    # (Requires openpyxl)
-    # gsheets_xlsx = pd.read_excel(os.path.join(data_dir, '2026-04-21-gsheets.xlsx'), skiprows=15)
+    latest_gsheets = get_latest_file(data_dir, '20*-gsheets.xlsx', '20*-gsheets.csv')
+    if latest_gsheets.endswith('.xlsx'):
+        gsheets_csv = pd.read_excel(latest_gsheets, engine='openpyxl', skiprows=15)
+    else:
+        gsheets_csv = pd.read_csv(latest_gsheets, skiprows=15)
 
     # Source 2: Wikipedia data
     print("Loading Wiki data...")
-    wiki_csv = pd.read_csv(os.path.join(data_dir, '2026-04-21-wiki.csv'))
-    wiki_enriched_csv = pd.read_csv(os.path.join(data_dir, '2026-04-21-wiki-enriched.csv'))
+    latest_wiki = get_latest_file(data_dir, '20*-wiki.csv')
+    wiki_csv = pd.read_csv(latest_wiki)
+    latest_wiki_enriched = get_latest_file(data_dir, '20*-wiki-enriched.csv')
+    wiki_enriched_csv = pd.read_csv(latest_wiki_enriched)
 
     # Intermediate/Merged data
     print("Loading Merged data...")
@@ -154,7 +165,7 @@ def _(gsheets_csv, wiki_csv):
     # --- 6. COMPARE & CONTRAST (GSheets vs Wiki) ---
     print("\n--- Comparison: GSheets vs Wiki Titles ---")
     # Assuming clean_data.py logic: clean titles first
-    def normalize_title(s):
+    def normalize_title_series(s):
         """Normalizes titles to allow robust matching across data sources."""
         return s.astype("string").str.lower().str.replace(r'[^a-z0-9\s]', '', regex=True).str.replace(r'\s+', ' ', regex=True).str.strip()
 
@@ -168,7 +179,7 @@ def _(gsheets_csv, wiki_csv):
         gsheets_raw['Title'] = gsheets_raw['Title'].fillna(gsheets_raw['NOTES'])
         gsheets_raw = gsheets_raw[gsheets_raw['Title'].notna()]
 
-        gsheets_titles = set(gsheets_raw['Title'].apply(normalize_title).unique())
+        gsheets_titles = set(normalize_title_series(gsheets_raw['Title']).unique())
     else:
         gsheets_titles = set()
 
@@ -177,7 +188,7 @@ def _(gsheets_csv, wiki_csv):
         wiki_raw = wiki_csv.copy()
         wiki_raw['Title'] = wiki_raw['Title'].str.split('\n')
         wiki_raw = wiki_raw.explode('Title')
-        wiki_titles = set(wiki_raw['Title'].apply(normalize_title).unique())
+        wiki_titles = set(normalize_title_series(wiki_raw['Title']).unique())
     else:
         wiki_titles = set()
 
