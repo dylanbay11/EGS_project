@@ -12,7 +12,13 @@ def scrape_hltb_data():
     retrieve completion times, review scores, and related metadata. Saves
     the results incrementally to avoid data loss.
     """
-    input_file = "data/cleaned_merged_data.csv"
+
+    # Determine the input file
+    input_file = "data/merge_mc.csv"
+    if not os.path.exists(input_file):
+        print(f"Fallback: {input_file} not found. Using data/cleaned_merged_data.csv instead.", flush=True)
+        input_file = "data/cleaned_merged_data.csv"
+
     output_file = "outputs/hltb_data.csv"
 
     print(f"Reading dataset from {input_file}", flush=True)
@@ -44,9 +50,7 @@ def scrape_hltb_data():
     games_to_process = [g for g in unique_games if g not in processed_games]
     print(f"Processing {len(games_to_process)} remaining games...", flush=True)
 
-    # Let's just process a smaller batch for the sake of time in this environment, e.g., max 20
-    max_to_process = 20
-    games_to_process = games_to_process[:max_to_process]
+
 
     for i, game in enumerate(games_to_process):
         print(f"[{i+1}/{len(games_to_process)}] Searching for: {game}", flush=True)
@@ -106,6 +110,27 @@ def scrape_hltb_data():
         print(f"Finished. Total data saved to {output_file}", flush=True)
     else:
         print("No new data to save.", flush=True)
+
+    # Merge the scraped data back onto the original dataset
+    if os.path.exists(output_file):
+        print("Merging HLTB data back onto the original dataset...", flush=True)
+        try:
+            # Read original dataset
+            orig_df = pd.read_csv(input_file)
+            # Read HLTB data
+            hltb_df = pd.read_csv(output_file)
+
+            # Perform a left join
+            # We use 'Title_gsheets' from original and 'Original_Title' from HLTB
+            merged_df = orig_df.merge(hltb_df, left_on='Title_gsheets', right_on='Original_Title', how='left')
+
+            # Save the final dataset
+            final_output = "data/merge_hltb.csv"
+            merged_df.to_csv(final_output, index=False)
+            print(f"Successfully saved merged dataset to {final_output}", flush=True)
+        except Exception as e:
+            print(f"Error during merging: {e}", flush=True)
+
 
 if __name__ == "__main__":
     scrape_hltb_data()
