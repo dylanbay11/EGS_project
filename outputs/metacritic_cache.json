@@ -1,0 +1,5490 @@
+{
+  "DOOMBLADE": {
+    "mc_title": "DOOMBLADE",
+    "mc_slug": "doomblade",
+    "mc_releaseDate": "2023-05-31",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Broken Sword : Reforged": {
+    "mc_title": "Broken Sword - Shadow of the Templars: Reforged",
+    "mc_slug": "broken-sword-shadow-of-the-templars-reforged",
+    "mc_releaseDate": "2024-09-19",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4, Nintendo Switch 2"
+  },
+  "The Stone of Madness": {
+    "mc_title": "The Stone of Madness",
+    "mc_slug": "the-stone-of-madness",
+    "mc_releaseDate": "2025-01-28",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, Xbox Series X"
+  },
+  "Dumb Ways to Draw": {
+    "mc_title": "Dumb Ways To Draw",
+    "mc_slug": "dumb-ways-to-draw",
+    "mc_releaseDate": "2019-05-01",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad)"
+  },
+  "Prop Sumo": {
+    "mc_title": "Prop Sumo",
+    "mc_slug": "prop-sumo",
+    "mc_releaseDate": "2026-04-09",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Dumb Ways to Die 2: The Games": {
+    "mc_title": "Dumb Ways to Die 2: The Games",
+    "mc_slug": "dumb-ways-to-die-2-the-games",
+    "mc_releaseDate": "2014-11-18",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad)"
+  },
+  "Clone Drone in the Danger Zone": {
+    "mc_title": "Clone Drone in the Danger Zone",
+    "mc_slug": "clone-drone-in-the-danger-zone",
+    "mc_releaseDate": "2017-03-16",
+    "mc_criticScore": 82,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One, Xbox Series X"
+  },
+  "TOMAK: Save the Earth Regeneration": {
+    "mc_title": "TOMAK : Save the Earth Regeneration",
+    "mc_slug": "tomak-save-the-earth-regeneration",
+    "mc_releaseDate": "2026-04-02",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "The Wreck": {
+    "mc_title": "The Wreck",
+    "mc_slug": "the-wreck",
+    "mc_releaseDate": "2023-03-14",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, PlayStation 4, Xbox Series X, Xbox One"
+  },
+  "Havendock": {
+    "mc_title": "Havendock",
+    "mc_slug": "havendock",
+    "mc_releaseDate": "2025-04-22",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Hyper Echelon": {
+    "mc_title": "Hyper Echelon",
+    "mc_slug": "hyper-echelon",
+    "mc_releaseDate": "2021-11-11",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4"
+  },
+  "Potion Permit": {
+    "mc_title": "Potion Permit",
+    "mc_slug": "potion-permit",
+    "mc_releaseDate": "2022-09-22",
+    "mc_criticScore": 74,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, Xbox One, PlayStation 4, PC, PlayStation 5, Xbox Series X, iOS (iPhone/iPad)"
+  },
+  "Electrician Simulator": {
+    "mc_title": "Electrician Simulator",
+    "mc_slug": "electrician-simulator",
+    "mc_releaseDate": "2022-09-21",
+    "mc_criticScore": 60,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X"
+  },
+  "World of Warships — Epic Anniversary Tachibana Pack": {
+    "mc_title": "World of Warships",
+    "mc_slug": "world-of-warships",
+    "mc_releaseDate": "2015-09-17",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "Wonder Boy: The Dragon's Trap": {
+    "mc_title": "Wonder Boy: The Dragon's Trap",
+    "mc_slug": "wonder-boy-the-dragons-trap",
+    "mc_releaseDate": "2017-04-18",
+    "mc_criticScore": 79,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Wii U, Nintendo Switch, iOS (iPhone/iPad), PlayStation 5"
+  },
+  "Cozy Grove": {
+    "mc_title": "Cozy Grove",
+    "mc_slug": "cozy-grove",
+    "mc_releaseDate": "2021-04-08",
+    "mc_criticScore": 71,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One, iOS (iPhone/iPad), PlayStation 5, Nintendo Switch 2"
+  },
+  "Isonzo": {
+    "mc_title": "Isonzo",
+    "mc_slug": "isonzo",
+    "mc_releaseDate": "2022-09-13",
+    "mc_criticScore": 67,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, Xbox Series X, PC, PlayStation 4, Xbox One"
+  },
+  "Little Nightmares": {
+    "mc_title": "Little Nightmares",
+    "mc_slug": "little-nightmares",
+    "mc_releaseDate": "2017-04-28",
+    "mc_criticScore": 78,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, iOS (iPhone/iPad)"
+  },
+  "Idle Champions of the Forgotten Realms - Raistlin's Renown Pack": {
+    "mc_title": "Idle Champions of the Forgotten Realms",
+    "mc_slug": "idle-champions-of-the-forgotten-realms",
+    "mc_releaseDate": "2018-05-15",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Idle Champions of the Forgotten Realms - Dragonlance Pack": {
+    "mc_title": "Idle Champions of the Forgotten Realms",
+    "mc_slug": "idle-champions-of-the-forgotten-realms",
+    "mc_releaseDate": "2018-05-15",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Turnip Boy Robs a Bank": {
+    "mc_title": "Turnip Boy Robs a Bank",
+    "mc_slug": "turnip-boy-robs-a-bank",
+    "mc_releaseDate": "2024-01-18",
+    "mc_criticScore": 82,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Boxes: Lost Fragments": {
+    "mc_title": "Boxes: Lost Fragments",
+    "mc_slug": "boxes-lost-fragments",
+    "mc_releaseDate": "2024-02-01",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, Xbox Series X, Xbox One, PlayStation 4, PlayStation 5"
+  },
+  "My Night Job": {
+    "mc_title": "My Night Job",
+    "mc_slug": "my-night-job",
+    "mc_releaseDate": "2016-05-17",
+    "mc_criticScore": 60,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch"
+  },
+  "Residual": {
+    "mc_title": "Residual",
+    "mc_slug": "residual",
+    "mc_releaseDate": "2021-09-09",
+    "mc_criticScore": 68,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 5, Xbox Series X, PlayStation 4, Xbox One"
+  },
+  "Return to Ash": {
+    "mc_title": "Return to Ash",
+    "mc_slug": "return-to-ash",
+    "mc_releaseDate": "2025-07-10",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "STALCRAFT: X Edition Starter": {
+    "mc_title": "Xenoblade Chronicles X: Definitive Edition",
+    "mc_slug": "xenoblade-chronicles-x-definitive-edition",
+    "mc_releaseDate": "2025-03-20",
+    "mc_criticScore": 87,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, Nintendo Switch 2"
+  },
+  "The Darkside Detective: A Fumble in the Dark": {
+    "mc_title": "The Darkside Detective: A Fumble in the Dark",
+    "mc_slug": "the-darkside-detective-a-fumble-in-the-dark",
+    "mc_releaseDate": "2021-04-15",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, Xbox One, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "Nobody Wants to Die": {
+    "mc_title": "Nobody Wants to Die",
+    "mc_slug": "nobody-wants-to-die",
+    "mc_releaseDate": "2024-07-17",
+    "mc_criticScore": 75,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X"
+  },
+  "Botany Manor": {
+    "mc_title": "Botany Manor",
+    "mc_slug": "botany-manor",
+    "mc_releaseDate": "2024-04-09",
+    "mc_criticScore": 82,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox Series X, Xbox One, PlayStation 4, PlayStation 5"
+  },
+  "Poison Retro Set": {
+    "mc_title": "Maliki : Poison Of The Past",
+    "mc_slug": "maliki-poison-of-the-past",
+    "mc_releaseDate": "2025-04-22",
+    "mc_criticScore": 75,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "Faily Brakes 2": {
+    "mc_title": "Faily Brakes 2 Flatout",
+    "mc_slug": "faily-brakes-2-flatout",
+    "mc_releaseDate": "2019-12-22",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad)"
+  },
+  "Definitely Not Fried Chicken": {
+    "mc_title": "Definitely Not Fried Chicken",
+    "mc_slug": "definitely-not-fried-chicken",
+    "mc_releaseDate": "2023-09-29",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "The Forest Quartet": {
+    "mc_title": "The Forest Quartet",
+    "mc_slug": "the-forest-quartet",
+    "mc_releaseDate": "2022-12-08",
+    "mc_criticScore": 71,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 5, PC, PlayStation 4, Nintendo Switch"
+  },
+  "Rustler (Grand Theft Horse)": {
+    "mc_title": "Grand Theft Auto V",
+    "mc_slug": "grand-theft-auto-v",
+    "mc_releaseDate": "2014-11-18",
+    "mc_criticScore": 97,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PlayStation 3, Xbox 360, Xbox One, PC, PlayStation 5, Xbox Series X"
+  },
+  "Dumb Ways to Die": {
+    "mc_title": "Dumb Ways to Die",
+    "mc_slug": "dumb-ways-to-die",
+    "mc_releaseDate": "2013-05-07",
+    "mc_criticScore": 70,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad)"
+  },
+  "Styx: Master of Shadows": {
+    "mc_title": "Styx: Master of Shadows",
+    "mc_slug": "styx-master-of-shadows",
+    "mc_releaseDate": "2014-10-07",
+    "mc_criticScore": 71,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Styx: Shards of Darkness": {
+    "mc_title": "Styx: Shards of Darkness",
+    "mc_slug": "styx-shards-of-darkness",
+    "mc_releaseDate": "2017-03-14",
+    "mc_criticScore": 72,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Bouncemasters": {
+    "mc_title": "Bouncemasters",
+    "mc_slug": "bouncemasters-2025",
+    "mc_releaseDate": "2025-09-29",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Bloons TD 6": {
+    "mc_title": "Bloons TD 6",
+    "mc_slug": "bloons-td-6",
+    "mc_releaseDate": "2018-06-14",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, Xbox One, PlayStation 4"
+  },
+  "Skul: The Hero Slayer": {
+    "mc_title": "Skul: The Hero Slayer",
+    "mc_slug": "skul-the-hero-slayer",
+    "mc_releaseDate": "2021-01-21",
+    "mc_criticScore": 80,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "Total War: THREE KINGDOMS": {
+    "mc_title": "Total War: Three Kingdoms",
+    "mc_slug": "total-war-three-kingdoms",
+    "mc_releaseDate": "2019-05-23",
+    "mc_criticScore": 85,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "Wildgate: Standard Edition": {
+    "mc_title": "Wildgate",
+    "mc_slug": "wildgate",
+    "mc_releaseDate": "2025-07-22",
+    "mc_criticScore": 72,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X"
+  },
+  "Chivalry 2": {
+    "mc_title": "Chivalry 2",
+    "mc_slug": "chivalry-2",
+    "mc_releaseDate": "2021-06-08",
+    "mc_criticScore": 82,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Xbox Series X, PlayStation 5"
+  },
+  "Trine Classic Collection": {
+    "mc_title": "Marvel vs. Capcom Fighting Collection: Arcade Classics",
+    "mc_slug": "marvel-vs-capcom-fighting-collection-arcade",
+    "mc_releaseDate": "2024-09-12",
+    "mc_criticScore": 87,
+    "mc_rating": "",
+    "mc_platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One"
+  },
+  "Trine 2: Complete Story": {
+    "mc_title": "Trine 2: Complete Story",
+    "mc_slug": "trine-2-complete-story",
+    "mc_releaseDate": "2013-11-15",
+    "mc_criticScore": 84,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch"
+  },
+  "Trine 3: The Artifacts of Power": {
+    "mc_title": "Trine 3: The Artifacts of Power",
+    "mc_slug": "trine-3-the-artifacts-of-power",
+    "mc_releaseDate": "2015-08-20",
+    "mc_criticScore": 68,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Nintendo Switch"
+  },
+  "Trine 4: The Nightmare Prince": {
+    "mc_title": "Trine 4: The Nightmare Prince",
+    "mc_slug": "trine-4-the-nightmare-prince",
+    "mc_releaseDate": "2019-10-08",
+    "mc_criticScore": 80,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One"
+  },
+  "Viewfinder": {
+    "mc_title": "Viewfinder",
+    "mc_slug": "viewfinder",
+    "mc_releaseDate": "2023-07-18",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, PlayStation 4, Xbox Series X, Nintendo Switch"
+  },
+  "SKALD: Against the Black Priory": {
+    "mc_title": "SKALD: Against the Black Priory",
+    "mc_slug": "skald-against-the-black-priory",
+    "mc_releaseDate": "2025-11-04",
+    "mc_criticScore": 76,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Cassette Beasts": {
+    "mc_title": "Cassette Beasts",
+    "mc_slug": "cassette-beasts",
+    "mc_releaseDate": "2023-04-26",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One, Xbox Series X, iOS (iPhone/iPad)"
+  },
+  "We Were Here Together": {
+    "mc_title": null,
+    "mc_slug": null,
+    "mc_releaseDate": null,
+    "mc_criticScore": null,
+    "mc_rating": null,
+    "mc_platforms": null
+  },
+  "Monument Valley": {
+    "mc_title": "Monument Valley",
+    "mc_slug": "monument-valley",
+    "mc_releaseDate": "2014-04-03",
+    "mc_criticScore": 89,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), Nintendo Switch, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4, PC"
+  },
+  "Monument Valley 2": {
+    "mc_title": "Monument Valley 2",
+    "mc_slug": "monument-valley-2",
+    "mc_releaseDate": "2017-05-30",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), Nintendo Switch, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4, PC"
+  },
+  "Disco Elysium: The Final Cut": {
+    "mc_title": "Disco Elysium: The Final Cut",
+    "mc_slug": "disco-elysium-the-final-cut",
+    "mc_releaseDate": "2021-03-30",
+    "mc_criticScore": 89,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PC, PlayStation 4, iOS (iPhone/iPad), Xbox Series X, Nintendo Switch, Xbox One"
+  },
+  "The Callisto Protocol": {
+    "mc_title": "The Callisto Protocol",
+    "mc_slug": "the-callisto-protocol",
+    "mc_releaseDate": "2022-12-02",
+    "mc_criticScore": 69,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PC, Xbox Series X, PlayStation 4, Xbox One"
+  },
+  "Bloodstained: Ritual of the Night": {
+    "mc_title": "Bloodstained: Ritual of the Night",
+    "mc_slug": "bloodstained-ritual-of-the-night",
+    "mc_releaseDate": "2019-06-18",
+    "mc_criticScore": 83,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Wii U, PlayStation Vita, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Train Sim World® 6: Spirit of Steam: Liverpool Lime Street - Crewe": {
+    "mc_title": "Train Sim World 6",
+    "mc_slug": "train-sim-world-6",
+    "mc_releaseDate": "2025-09-30",
+    "mc_criticScore": 76,
+    "mc_rating": "E",
+    "mc_platforms": "PC, PlayStation 5, PlayStation 4, Xbox One, Xbox Series X"
+  },
+  "Paradise Killer": {
+    "mc_title": "Paradise Killer",
+    "mc_slug": "paradise-killer",
+    "mc_releaseDate": "2020-09-04",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Sorry We're Closed": {
+    "mc_title": "Sorry We're Closed",
+    "mc_slug": "sorry-were-closed",
+    "mc_releaseDate": "2024-11-14",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Blood West": {
+    "mc_title": "Blood West",
+    "mc_slug": "blood-west",
+    "mc_releaseDate": "2023-12-05",
+    "mc_criticScore": 80,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox Series X, PlayStation 5, Nintendo Switch 2"
+  },
+  "Eternights": {
+    "mc_title": "Eternights",
+    "mc_slug": "eternights",
+    "mc_releaseDate": "2023-09-12",
+    "mc_criticScore": 68,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PlayStation 4, PC, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Shotgun King: The Final Checkmate": {
+    "mc_title": "Shotgun King: The Final Checkmate",
+    "mc_slug": "shotgun-king-the-final-checkmate",
+    "mc_releaseDate": "2023-08-24",
+    "mc_criticScore": 75,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 5, PC, PlayStation 4, Xbox Series X, Xbox One, Nintendo Switch"
+  },
+  "Jotunnslayer: Hordes of Hel": {
+    "mc_title": "Jotunnslayer: Hordes of Hel",
+    "mc_slug": "jotunnslayer-hordes-of-hel",
+    "mc_releaseDate": "2025-09-03",
+    "mc_criticScore": 79,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, PlayStation 5"
+  },
+  "Hogwarts Legacy": {
+    "mc_title": "Hogwarts Legacy",
+    "mc_slug": "hogwarts-legacy",
+    "mc_releaseDate": "2023-02-07",
+    "mc_criticScore": 84,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, Xbox Series X, PC, PlayStation 4, Xbox One, Nintendo Switch, Nintendo Switch 2"
+  },
+  "Dead Cells": {
+    "mc_title": "Dead Cells",
+    "mc_slug": "dead-cells",
+    "mc_releaseDate": "2018-08-07",
+    "mc_criticScore": 89,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One, iOS (iPhone/iPad)"
+  },
+  "The Darkside Detective": {
+    "mc_title": "The Darkside Detective",
+    "mc_slug": "the-darkside-detective",
+    "mc_releaseDate": "2017-07-27",
+    "mc_criticScore": 77,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One, PlayStation 5, iOS (iPhone/iPad)"
+  },
+  "Jackbox Party Pack 4": {
+    "mc_title": "The Jackbox Party Pack 4",
+    "mc_slug": "the-jackbox-party-pack-4",
+    "mc_releaseDate": "2017-10-17",
+    "mc_criticScore": 74,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Universe for Sale": {
+    "mc_title": "Universe For Sale",
+    "mc_slug": "universe-for-sale",
+    "mc_releaseDate": "2023-11-16",
+    "mc_criticScore": 80,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, Xbox One, PlayStation 5, PlayStation 4, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Zoeti": {
+    "mc_title": "Zoeti",
+    "mc_slug": "zoeti",
+    "mc_releaseDate": "2023-04-20",
+    "mc_criticScore": 69,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Godzilla Voxel Wars": {
+    "mc_title": "Godzilla Voxel Wars",
+    "mc_slug": "godzilla-voxel-wars",
+    "mc_releaseDate": "2023-11-08",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "Scourgebringer": {
+    "mc_title": "ScourgeBringer",
+    "mc_slug": "scourgebringer",
+    "mc_releaseDate": "2020-10-21",
+    "mc_criticScore": 76,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch, PlayStation Vita, PlayStation 4, PlayStation 5, iOS (iPhone/iPad)"
+  },
+  "Songs of Silence": {
+    "mc_title": "Songs Of Silence",
+    "mc_slug": "songs-of-silence",
+    "mc_releaseDate": "2024-11-13",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X"
+  },
+  "Zero Hour": {
+    "mc_title": "Zero Hour",
+    "mc_slug": "zero-hour",
+    "mc_releaseDate": "2020-08-12",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Idle Champions of the Forgotten Realms - Nixie's Champions of Renown Pack": {
+    "mc_title": "Idle Champions of the Forgotten Realms",
+    "mc_slug": "idle-champions-of-the-forgotten-realms",
+    "mc_releaseDate": "2018-05-15",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Felix The Reaper": {
+    "mc_title": "Felix the Reaper",
+    "mc_slug": "felix-the-reaper",
+    "mc_releaseDate": "2019-10-17",
+    "mc_criticScore": 67,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PlayStation 4, Xbox One, PC, iOS (iPhone/iPad)"
+  },
+  "Bendy and the Ink Machine": {
+    "mc_title": "Bendy and the Ink Machine",
+    "mc_slug": "bendy-and-the-ink-machine",
+    "mc_releaseDate": "2018-11-20",
+    "mc_criticScore": 71,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One, iOS (iPhone/iPad), PlayStation 5, Xbox Series X"
+  },
+  "Five Nights at Freddy's: Into the Pit": {
+    "mc_title": "Five Nights at Freddy's: Into the Pit",
+    "mc_slug": "five-nights-at-freddys-into-the-pit",
+    "mc_releaseDate": "2024-08-08",
+    "mc_criticScore": 87,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Doodle Farm: Breeds and Beasts": {
+    "mc_title": "Survival Quest Dungeons and the Beasts",
+    "mc_slug": "survival-quest-dungeons-and-the-beasts",
+    "mc_releaseDate": "TBA",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Fear the Spotlight": {
+    "mc_title": "Fear the Spotlight",
+    "mc_slug": "fear-the-spotlight",
+    "mc_releaseDate": "2024-10-22",
+    "mc_criticScore": 83,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, PC, Nintendo Switch, Xbox One, Xbox Series X, PlayStation 4"
+  },
+  "Samorost 3": {
+    "mc_title": "Samorost 3",
+    "mc_slug": "samorost-3",
+    "mc_releaseDate": "2016-03-24",
+    "mc_criticScore": 80,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad)"
+  },
+  "Amnesia: The Bunker": {
+    "mc_title": "Amnesia: The Bunker",
+    "mc_slug": "amnesia-the-bunker",
+    "mc_releaseDate": "2023-06-06",
+    "mc_criticScore": 77,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Xbox Series X, Nintendo Switch"
+  },
+  "Double Dragon Trilogy": {
+    "mc_title": "Double Dragon Trilogy",
+    "mc_slug": "double-dragon-trilogy",
+    "mc_releaseDate": "2013-12-05",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC"
+  },
+  "Albion Online - Rogue Journeyman Bundle": {
+    "mc_title": "Albion Online",
+    "mc_slug": "albion-online",
+    "mc_releaseDate": "2018-05-16",
+    "mc_criticScore": 72,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Xbox Series X"
+  },
+  "Gravity Circuit": {
+    "mc_title": "Gravity Circuit",
+    "mc_slug": "gravity-circuit",
+    "mc_releaseDate": "2023-07-13",
+    "mc_criticScore": 89,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, PlayStation 4"
+  },
+  "Doodle Devil: Dark Side": {
+    "mc_title": "Doodle Devil: 3volution - Doodle Devil Pack",
+    "mc_slug": "doodle-devil-3volution-doodle-devil-pack",
+    "mc_releaseDate": "2022-07-22",
+    "mc_criticScore": null,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch"
+  },
+  "Firestone Online Idle RPG - Special Offer": {
+    "mc_title": "Firestone: Online Idle RPG",
+    "mc_slug": "firestone-online-idle-rpg",
+    "mc_releaseDate": "2023-04-25",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Nightingale": {
+    "mc_title": "Nightingale",
+    "mc_slug": "nightingale",
+    "mc_releaseDate": "TBA - Early Access",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Eastern Exorcist": {
+    "mc_title": "Eastern Exorcist",
+    "mc_slug": "eastern-exorcist",
+    "mc_releaseDate": "2021-07-07",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Xbox Series X, Nintendo Switch"
+  },
+  "Jorel’s Brother and The Most Important Game of the Galaxy": {
+    "mc_title": "Jorel's Brother and The Most Important Game of the Galaxy: Complete Edition",
+    "mc_slug": "jorels-brother-and-the-most-important-game-of-the-2024",
+    "mc_releaseDate": "2024-04-10",
+    "mc_criticScore": null,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox Series X, Nintendo Switch, Xbox One"
+  },
+  "Road Redemption Mobile - Full Game": {
+    "mc_title": "Road Redemption",
+    "mc_slug": "road-redemption",
+    "mc_releaseDate": "2017-10-04",
+    "mc_criticScore": 70,
+    "mc_rating": "",
+    "mc_platforms": "PC, Wii U, Nintendo Switch, Xbox One, PlayStation 4"
+  },
+  "Samorost 2": {
+    "mc_title": "Samorost 2",
+    "mc_slug": "samorost-2",
+    "mc_releaseDate": "2020-11-05",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC"
+  },
+  "Project Winter": {
+    "mc_title": "Project Winter",
+    "mc_slug": "project-winter",
+    "mc_releaseDate": "2021-02-04",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox One, PC, PlayStation 4, Nintendo Switch"
+  },
+  "The Battle of Polytopia": {
+    "mc_title": "The Battle of Polytopia",
+    "mc_slug": "the-battle-of-polytopia",
+    "mc_releaseDate": "2022-10-12",
+    "mc_criticScore": 72,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, iOS (iPhone/iPad), PC"
+  },
+  "Ghostrunner 2": {
+    "mc_title": "Ghostrunner 2",
+    "mc_slug": "ghostrunner-2",
+    "mc_releaseDate": "2023-10-26",
+    "mc_criticScore": 80,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, Xbox Series X, PC"
+  },
+  "Machinarium": {
+    "mc_title": "Machinarium",
+    "mc_slug": "machinarium",
+    "mc_releaseDate": "2009-10-16",
+    "mc_criticScore": 85,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, Wii, iOS (iPhone/iPad), PlayStation 3, PlayStation Vita, PlayStation 4, Nintendo Switch, Xbox One"
+  },
+  "Make Way": {
+    "mc_title": "Make Way",
+    "mc_slug": "make-way",
+    "mc_releaseDate": "2023-12-04",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Strange Horticulture": {
+    "mc_title": "Strange Horticulture",
+    "mc_slug": "strange-horticulture",
+    "mc_releaseDate": "2022-01-21",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox Series X, Xbox One, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "Kamaeru": {
+    "mc_title": "Kamaeru: A Frog Refuge",
+    "mc_slug": "kamaeru-a-frog-refuge",
+    "mc_releaseDate": "2024-06-08",
+    "mc_criticScore": 70,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, Xbox Series X"
+  },
+  "Hidden Folks": {
+    "mc_title": "Hidden Folks",
+    "mc_slug": "hidden-folks",
+    "mc_releaseDate": "2017-02-15",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, Nintendo Switch"
+  },
+  "Totally Reliable Delivery Service Standard Edition": {
+    "mc_title": "Totally Reliable Delivery Service: Definitive Edition",
+    "mc_slug": "totally-reliable-delivery-service-definitive",
+    "mc_releaseDate": "2026-02-13",
+    "mc_criticScore": null,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 5, Nintendo Switch"
+  },
+  "112 Operator": {
+    "mc_title": "112 Operator",
+    "mc_slug": "112-operator",
+    "mc_releaseDate": "2020-04-23",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Road Redemption": {
+    "mc_title": "Road Redemption",
+    "mc_slug": "road-redemption",
+    "mc_releaseDate": "2017-10-04",
+    "mc_criticScore": 70,
+    "mc_rating": "",
+    "mc_platforms": "PC, Wii U, Nintendo Switch, Xbox One, PlayStation 4"
+  },
+  "Pilgrims": {
+    "mc_title": "Pilgrims",
+    "mc_slug": "pilgrims",
+    "mc_releaseDate": "2019-10-05",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, Nintendo Switch"
+  },
+  "Keylocker | Turn Based Cyberpunk Action": {
+    "mc_title": "Keylocker | Turn Based Cyberpunk Action",
+    "mc_slug": "keylocker-turn-based-cyberpunk-action",
+    "mc_releaseDate": "2024-09-18",
+    "mc_criticScore": 69,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, PlayStation 5, Nintendo Switch"
+  },
+  "Doodle Mafia: Epic Alchemy": {
+    "mc_title": "Doodle Mafia",
+    "mc_slug": "doodle-mafia",
+    "mc_releaseDate": "2018-11-08",
+    "mc_criticScore": 52,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox One, PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Legion TD 2": {
+    "mc_title": "Legion TD 2",
+    "mc_slug": "legion-td-2",
+    "mc_releaseDate": "2017-11-20",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "There Is No Game: Wrong Dimension": {
+    "mc_title": "There is no game : Wrong dimension",
+    "mc_slug": "there-is-no-game-wrong-dimension",
+    "mc_releaseDate": "2021-04-14",
+    "mc_criticScore": 87,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, iOS (iPhone/iPad)"
+  },
+  "Sid Meier’s Civilization® VI Platinum Edition": {
+    "mc_title": "Sid Meier's Civilization VI",
+    "mc_slug": "sid-meiers-civilization-vi",
+    "mc_releaseDate": "2016-10-20",
+    "mc_criticScore": 88,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "Figment 2: Creed Valley": {
+    "mc_title": "Figment 2: Creed Valley",
+    "mc_slug": "figment-2-creed-valley",
+    "mc_releaseDate": "2023-03-09",
+    "mc_criticScore": 76,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, PlayStation 5, Xbox Series X"
+  },
+  "Sky Racket": {
+    "mc_title": "Sky Racket",
+    "mc_slug": "sky-racket",
+    "mc_releaseDate": "2020-03-17",
+    "mc_criticScore": 72,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC"
+  },
+  "Figment": {
+    "mc_title": "Figment",
+    "mc_slug": "figment",
+    "mc_releaseDate": "2018-06-28",
+    "mc_criticScore": 75,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, Xbox One, PC, PlayStation 4, iOS (iPhone/iPad), Xbox Series X"
+  },
+  "Backpack Hero": {
+    "mc_title": "Backpack Hero",
+    "mc_slug": "backpack-hero",
+    "mc_releaseDate": "2023-11-14",
+    "mc_criticScore": 76,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, PlayStation 4, Xbox One, Xbox Series X"
+  },
+  "Cultist Simulator": {
+    "mc_title": "Cultist Simulator",
+    "mc_slug": "cultist-simulator",
+    "mc_releaseDate": "2018-05-31",
+    "mc_criticScore": 71,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, PlayStation 5, PlayStation 4, Xbox Series X, Xbox One"
+  },
+  "Sable": {
+    "mc_title": "Sable",
+    "mc_slug": "sable",
+    "mc_releaseDate": "2021-09-23",
+    "mc_criticScore": 76,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, Xbox One, PlayStation 5, PlayStation 4"
+  },
+  "Doodle God: Infinite Alchemy Merge": {
+    "mc_title": "Doodle God: Alchemy Jam",
+    "mc_slug": "doodle-god-alchemy-jam",
+    "mc_releaseDate": "2018-01-26",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "The Operator": {
+    "mc_title": "The Operator",
+    "mc_slug": "the-operator",
+    "mc_releaseDate": "2024-07-22",
+    "mc_criticScore": 78,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "shapez": {
+    "mc_title": "shapez",
+    "mc_slug": "shapez",
+    "mc_releaseDate": "2020-06-07",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "DC Heroes United’s - Super Power Batman Bundle DLC": {
+    "mc_title": "LEGO Batman 2: DC Super Heroes",
+    "mc_slug": "lego-batman-2-dc-super-heroes",
+    "mc_releaseDate": "2012-06-19",
+    "mc_criticScore": 79,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox 360, PlayStation 3, PC, PlayStation Vita, 3DS, DS, Wii, Wii U"
+  },
+  "Two Point Hospital": {
+    "mc_title": "Two Point Hospital",
+    "mc_slug": "two-point-hospital",
+    "mc_releaseDate": "2018-08-29",
+    "mc_criticScore": 83,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Ogu and the Secret Forest": {
+    "mc_title": "Ogu and the Secret Forest",
+    "mc_slug": "ogu-and-the-secret-forest",
+    "mc_releaseDate": "2024-07-29",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "Deathloop": {
+    "mc_title": "Deathloop",
+    "mc_slug": "deathloop",
+    "mc_releaseDate": "2021-09-14",
+    "mc_criticScore": 88,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PC, Xbox Series X"
+  },
+  "Hell Let Loose - Summer Warfare Pack": {
+    "mc_title": "Hell Let Loose",
+    "mc_slug": "hell-let-loose",
+    "mc_releaseDate": "2021-07-27",
+    "mc_criticScore": 79,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X"
+  },
+  "LIMBO": {
+    "mc_title": "LIMBO",
+    "mc_slug": "limbo",
+    "mc_releaseDate": "2010-07-21",
+    "mc_criticScore": 90,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox 360, PlayStation 3, PC, PlayStation Vita, iOS (iPhone/iPad), Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "Tiny Tina's Wonderlands": {
+    "mc_title": "Tiny Tina's Wonderlands",
+    "mc_slug": "tiny-tinas-wonderlands",
+    "mc_releaseDate": "2022-03-25",
+    "mc_criticScore": 78,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, PlayStation 4, Xbox One"
+  },
+  "Gigapocalypse": {
+    "mc_title": "Gigapocalypse",
+    "mc_slug": "gigapocalypse",
+    "mc_releaseDate": "2022-08-05",
+    "mc_criticScore": 0,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox Series X, PC, Nintendo Switch, Xbox One, PlayStation 4, PlayStation 5, iOS (iPhone/iPad)"
+  },
+  "Deliver At All Cost": {
+    "mc_title": "Deliver At All Costs",
+    "mc_slug": "deliver-at-all-costs",
+    "mc_releaseDate": "2025-05-22",
+    "mc_criticScore": 69,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, PC, Xbox Series X"
+  },
+  "Sifu": {
+    "mc_title": "SIFU",
+    "mc_slug": "sifu",
+    "mc_releaseDate": "2022-02-08",
+    "mc_criticScore": 81,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PlayStation 4, PC, Nintendo Switch, Xbox Series X, Xbox One"
+  },
+  "Fortnite -- Frosted Skyline Pack": {
+    "mc_title": "Fortnite",
+    "mc_slug": "fortnite",
+    "mc_releaseDate": "2017-07-21",
+    "mc_criticScore": 78,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, iOS (iPhone/iPad), Nintendo Switch, PlayStation 5, Xbox Series X, Nintendo Switch 2"
+  },
+  "Happy Game": {
+    "mc_title": "Happy Game",
+    "mc_slug": "happy-game",
+    "mc_releaseDate": "2021-10-28",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Dead Island 2": {
+    "mc_title": "Dead Island 2",
+    "mc_slug": "dead-island-2",
+    "mc_releaseDate": "2023-04-21",
+    "mc_criticScore": 73,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PlayStation 4, Xbox One, PC, Xbox Series X"
+  },
+  "Asphalt Legends UNITE: Triple Decal Pack": {
+    "mc_title": "Asphalt Legends Unite",
+    "mc_slug": "asphalt-legends-unite",
+    "mc_releaseDate": "2024-07-17",
+    "mc_criticScore": 0,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 5, iOS (iPhone/iPad), Xbox Series X, Xbox One, PlayStation 4, Nintendo Switch, PC"
+  },
+  "Disney Speedstorm - Monochromatic Pack - Racer Ariel": {
+    "mc_title": "?",
+    "mc_slug": "-5",
+    "mc_releaseDate": "2025-02-25",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Fall Guys - Digi Costume": {
+    "mc_title": "Fall Guys",
+    "mc_slug": "fall-guys",
+    "mc_releaseDate": "2020-08-04",
+    "mc_criticScore": 81,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One, Xbox Series X, PlayStation 5"
+  },
+  "Infinity Nikki MEGA Sale Bundle": {
+    "mc_title": "Infinity Nikki",
+    "mc_slug": "infinity-nikki",
+    "mc_releaseDate": "2024-12-05",
+    "mc_criticScore": 80,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 5, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "Neverwinter - Epic Starter Pack": {
+    "mc_title": "Neverwinter",
+    "mc_slug": "neverwinter",
+    "mc_releaseDate": "2013-06-20",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4"
+  },
+  "RAWMEN Sakura Gusoku Cosmetic Set": {
+    "mc_title": "RAWMEN: Food Fighter Arena",
+    "mc_slug": "rawmen-food-fighter-arena",
+    "mc_releaseDate": "2024-07-23",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, PlayStation 4, Xbox One, Xbox Series X"
+  },
+  "Rocket League® - TriTrim Wheels": {
+    "mc_title": "Rocket League",
+    "mc_slug": "rocket-league",
+    "mc_releaseDate": "2015-07-07",
+    "mc_criticScore": 85,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch"
+  },
+  "SMITE 2 Thanatoasty Bundle": {
+    "mc_title": "SMITE",
+    "mc_slug": "smite",
+    "mc_releaseDate": "2015-08-19",
+    "mc_criticScore": 80,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox One, PC, PlayStation 4, Nintendo Switch"
+  },
+  "Star Trek Online - Epic Starter Pack Bundle": {
+    "mc_title": "Star Trek Online",
+    "mc_slug": "star-trek-online",
+    "mc_releaseDate": "2010-02-02",
+    "mc_criticScore": 66,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox 360, PlayStation 4, Xbox One"
+  },
+  "World of Warships — Courbet Epic Plunder Pack": {
+    "mc_title": "World of Warships",
+    "mc_slug": "world-of-warships",
+    "mc_releaseDate": "2015-09-17",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "World of Warships x Azur Lane — Quest for AL Avrora": {
+    "mc_title": "World of Warships",
+    "mc_slug": "world-of-warships",
+    "mc_releaseDate": "2015-09-17",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "Wuthering Waves Giveaway": {
+    "mc_title": "Wuthering Waves",
+    "mc_slug": "wuthering-waves",
+    "mc_releaseDate": "2024-05-23",
+    "mc_criticScore": 71,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, iOS (iPhone/iPad), Xbox Series X"
+  },
+  "MR RACER: Premium": {
+    "mc_title": "Car Tap Racer Premium - Speed Racing",
+    "mc_slug": "car-tap-racer-premium-speed-racing",
+    "mc_releaseDate": "2014-09-10",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad)"
+  },
+  "Deadtime Defenders": {
+    "mc_title": "Deadtime Defenders",
+    "mc_slug": "deadtime-defenders",
+    "mc_releaseDate": "2025-05-08",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Touch Type Tale": {
+    "mc_title": "Touch Type Tale - Strategic Typing",
+    "mc_slug": "touch-type-tale-strategic-typing",
+    "mc_releaseDate": "2023-03-28",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "LEGO® Star Wars™: The Skywalker Saga": {
+    "mc_title": "LEGO Star Wars: The Skywalker Saga",
+    "mc_slug": "lego-star-wars-the-skywalker-saga",
+    "mc_releaseDate": "2022-04-05",
+    "mc_criticScore": 82,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 5, Xbox One, PC, PlayStation 4, Nintendo Switch, Xbox Series X"
+  },
+  "Super Space Club": {
+    "mc_title": "Super Space Club",
+    "mc_slug": "super-space-club",
+    "mc_releaseDate": "2023-08-04",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One"
+  },
+  "Chuchel": {
+    "mc_title": "CHUCHEL",
+    "mc_slug": "chuchel",
+    "mc_releaseDate": "2018-03-07",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Loop Hero": {
+    "mc_title": "Loop Hero",
+    "mc_slug": "loop-hero",
+    "mc_releaseDate": "2021-03-04",
+    "mc_criticScore": 82,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One, Xbox Series X, iOS (iPhone/iPad)"
+  },
+  "Albion Online - Free Welcome Gift": {
+    "mc_title": "Albion Online",
+    "mc_slug": "albion-online",
+    "mc_releaseDate": "2018-05-16",
+    "mc_criticScore": 72,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Xbox Series X"
+  },
+  "Botanicula": {
+    "mc_title": "Botanicula",
+    "mc_slug": "botanicula",
+    "mc_releaseDate": "2012-04-19",
+    "mc_criticScore": 82,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad)"
+  },
+  "Bridge Constructor: The Walking Dead": {
+    "mc_title": "Bridge Constructor: The Walking Dead",
+    "mc_slug": "bridge-constructor-the-walking-dead",
+    "mc_releaseDate": "2020-11-19",
+    "mc_criticScore": 72,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, PlayStation 5, PlayStation 4, Xbox One, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Arcadgeddon Promo bundle": {
+    "mc_title": "City of Promotion",
+    "mc_slug": "city-of-promotion",
+    "mc_releaseDate": "TBA 2026",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Idle Champions of the Forgotten Realms - Astarion's Champions of Renown Pack": {
+    "mc_title": "Idle Champions of the Forgotten Realms",
+    "mc_slug": "idle-champions-of-the-forgotten-realms",
+    "mc_releaseDate": "2018-05-15",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "River City Girls": {
+    "mc_title": "River City Girls",
+    "mc_slug": "river-city-girls",
+    "mc_releaseDate": "2019-08-30",
+    "mc_criticScore": 79,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One, PlayStation 5, iOS (iPhone/iPad)"
+  },
+  "Doodle Kingdom: Medieval": {
+    "mc_title": "Doodle Kingdom: Medieval",
+    "mc_slug": "doodle-kingdom-medieval",
+    "mc_releaseDate": "2025-03-25",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad)"
+  },
+  "Cat Quest II": {
+    "mc_title": "Cat Quest III",
+    "mc_slug": "cat-quest-iii",
+    "mc_releaseDate": "2024-08-08",
+    "mc_criticScore": 80,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 5, Xbox Series X, PC, PlayStation 4, Xbox One, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Evoland 2": {
+    "mc_title": "Evoland 2",
+    "mc_slug": "evoland-2",
+    "mc_releaseDate": "2018-02-28",
+    "mc_criticScore": 76,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad)"
+  },
+  "Out There - Omega Edition": {
+    "mc_title": "Out There: Omega The Alliance",
+    "mc_slug": "out-there-omega-the-alliance",
+    "mc_releaseDate": "2019-04-09",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "Nintendo Switch"
+  },
+  "Cat Quest": {
+    "mc_title": "Cat Quest",
+    "mc_slug": "cat-quest",
+    "mc_releaseDate": "2017-11-10",
+    "mc_criticScore": 74,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "Neko Ghost, Jump": {
+    "mc_title": "Neko Ghost, Jump!",
+    "mc_slug": "neko-ghost-jump",
+    "mc_releaseDate": "2022-01-11",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "Dragon Age: The Veilguard - Rook’s Weapons Appearance": {
+    "mc_title": "Dragon Age: The Veilguard",
+    "mc_slug": "dragon-age-the-veilguard",
+    "mc_releaseDate": "2024-10-31",
+    "mc_criticScore": 82,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PC, Xbox Series X"
+  },
+  "Super Meat Boy Forever Mobile": {
+    "mc_title": "Super Meat Boy Forever",
+    "mc_slug": "super-meat-boy-forever",
+    "mc_releaseDate": "2020-12-23",
+    "mc_criticScore": 66,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, iOS (iPhone/iPad), PlayStation 4, PC, Xbox One"
+  },
+  "Jurassic World Evolution 2": {
+    "mc_title": "Jurassic World Evolution 2",
+    "mc_slug": "jurassic-world-evolution-2",
+    "mc_releaseDate": "2021-11-09",
+    "mc_criticScore": 78,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, Xbox Series X, Xbox One, PC, PlayStation 4"
+  },
+  "Mortal Shell": {
+    "mc_title": "Mortal Shell",
+    "mc_slug": "mortal-shell",
+    "mc_releaseDate": "2020-08-18",
+    "mc_criticScore": 76,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, PlayStation 5, Xbox Series X"
+  },
+  "World of Warships — Anniversary Party Favor": {
+    "mc_title": "World of Warships",
+    "mc_slug": "world-of-warships",
+    "mc_releaseDate": "2015-09-17",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "Them's Fightin' Herds": {
+    "mc_title": "Them's Fightin' Herds",
+    "mc_slug": "thems-fightin-herds",
+    "mc_releaseDate": "2022-10-18",
+    "mc_criticScore": 80,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox Series X, PC, Nintendo Switch, Xbox One, PlayStation 5, PlayStation 4"
+  },
+  "Mages of Mystralia": {
+    "mc_title": "Mages of Mystralia",
+    "mc_slug": "mages-of-mystralia",
+    "mc_releaseDate": "2017-05-18",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "STAR WARS™ Knights of the Old Republic™": {
+    "mc_title": "Star Wars: Knights of the Old Republic",
+    "mc_slug": "star-wars-knights-of-the-old-republic",
+    "mc_releaseDate": "2003-07-17",
+    "mc_criticScore": 94,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox, PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "STAR WARS™ Knights of the Old Republic™ II - The Sith Lords™": {
+    "mc_title": "Star Wars: Knights of the Old Republic II - The Sith Lords",
+    "mc_slug": "star-wars-knights-of-the-old-republic-ii-the-sit",
+    "mc_releaseDate": "2004-12-06",
+    "mc_criticScore": 86,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox, PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Garden Story": {
+    "mc_title": "Garden Story",
+    "mc_slug": "garden-story",
+    "mc_releaseDate": "2021-08-11",
+    "mc_criticScore": 73,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One"
+  },
+  "World War Z: Aftermath": {
+    "mc_title": "World War Z: Aftermath",
+    "mc_slug": "world-war-z-aftermath",
+    "mc_releaseDate": "2021-09-21",
+    "mc_criticScore": 80,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Apex Legends™: Loba Free Unlock Bundle": {
+    "mc_title": "Apex Legends",
+    "mc_slug": "apex-legends",
+    "mc_releaseDate": "2019-02-04",
+    "mc_criticScore": 89,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch, PlayStation 5, Xbox Series X, Nintendo Switch 2"
+  },
+  "F1® Manager 2024": {
+    "mc_title": "F1 Manager 2024",
+    "mc_slug": "f1-manager-2024",
+    "mc_releaseDate": "2024-07-23",
+    "mc_criticScore": 81,
+    "mc_rating": "E",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Beyond Blue": {
+    "mc_title": "Beyond Blue",
+    "mc_slug": "beyond-blue",
+    "mc_releaseDate": "2020-06-11",
+    "mc_criticScore": 72,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "HUMANKIND™": {
+    "mc_title": "Humankind",
+    "mc_slug": "humankind",
+    "mc_releaseDate": "2021-08-17",
+    "mc_criticScore": 77,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Undying": {
+    "mc_title": "Undying",
+    "mc_slug": "undying",
+    "mc_releaseDate": "2023-12-07",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Nintendo Switch, Xbox Series X"
+  },
+  "Dying Light - 10th Anniversary Bundle": {
+    "mc_title": null,
+    "mc_slug": null,
+    "mc_releaseDate": null,
+    "mc_criticScore": null,
+    "mc_rating": null,
+    "mc_platforms": null
+  },
+  "Dungeon of the Endless: Apogee": {
+    "mc_title": "Dungeon of the Endless: Apogee",
+    "mc_slug": "dungeon-of-the-endless-apogee",
+    "mc_releaseDate": "2021-03-16",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad)"
+  },
+  "Behind the Frame: The Finest Scenery": {
+    "mc_title": "Behind the Frame: The Finest Scenery",
+    "mc_slug": "behind-the-frame-the-finest-scenery",
+    "mc_releaseDate": "2021-08-25",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, PlayStation 4"
+  },
+  "Escape Academy": {
+    "mc_title": "Escape Academy",
+    "mc_slug": "escape-academy",
+    "mc_releaseDate": "2022-07-13",
+    "mc_criticScore": 79,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, Xbox One, PlayStation 4, PlayStation 5"
+  },
+  "Turmoil": {
+    "mc_title": "Turmoil",
+    "mc_slug": "turmoil",
+    "mc_releaseDate": "2016-06-02",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, Xbox One, PlayStation 4, Xbox Series X"
+  },
+  "Hell Let Loose": {
+    "mc_title": "Hell Let Loose",
+    "mc_slug": "hell-let-loose",
+    "mc_releaseDate": "2021-07-27",
+    "mc_criticScore": 79,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X"
+  },
+  "Kingdom Come: Deliverance": {
+    "mc_title": "Kingdom Come: Deliverance",
+    "mc_slug": "kingdom-come-deliverance",
+    "mc_releaseDate": "2018-02-13",
+    "mc_criticScore": 76,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "SIFU": {
+    "mc_title": "SIFU",
+    "mc_slug": "sifu",
+    "mc_releaseDate": "2022-02-08",
+    "mc_criticScore": 81,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PlayStation 4, PC, Nintendo Switch, Xbox Series X, Xbox One"
+  },
+  "[REDACTED]": {
+    "mc_title": "[REDACTED]",
+    "mc_slug": "redacted",
+    "mc_releaseDate": "2024-10-27",
+    "mc_criticScore": 77,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X"
+  },
+  "Orcs Must Die! 3": {
+    "mc_title": "Orcs Must Die! 3",
+    "mc_slug": "orcs-must-die-3",
+    "mc_releaseDate": "2021-07-23",
+    "mc_criticScore": 77,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Xbox Series X, PlayStation 5"
+  },
+  "Kill Knight": {
+    "mc_title": "KILL KNIGHT",
+    "mc_slug": "kill-knight",
+    "mc_releaseDate": "2024-10-02",
+    "mc_criticScore": 88,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "HOT WHEELS UNLEASHED™": {
+    "mc_title": "Hot Wheels Unleashed",
+    "mc_slug": "hot-wheels-unleashed",
+    "mc_releaseDate": "2021-09-27",
+    "mc_criticScore": 75,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 5, Xbox Series X, PlayStation 4, Xbox One, Nintendo Switch, PC"
+  },
+  "Control": {
+    "mc_title": "Control",
+    "mc_slug": "control",
+    "mc_releaseDate": "2019-08-27",
+    "mc_criticScore": 82,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One"
+  },
+  "Dredge": {
+    "mc_title": "DREDGE",
+    "mc_slug": "dredge",
+    "mc_releaseDate": "2023-03-30",
+    "mc_criticScore": 80,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox Series X, Xbox One, PlayStation 5, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "Dark and Darker - Legendary Status": {
+    "mc_title": "Dark and Darker",
+    "mc_slug": "dark-and-darker",
+    "mc_releaseDate": "TBA - Early Access",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Wizard of Legend": {
+    "mc_title": "Wizard of Legend",
+    "mc_slug": "wizard-of-legend",
+    "mc_releaseDate": "2018-05-15",
+    "mc_criticScore": 76,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "TerraTech": {
+    "mc_title": "TerraTech",
+    "mc_slug": "terratech",
+    "mc_releaseDate": "2019-05-29",
+    "mc_criticScore": 60,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4"
+  },
+  "Astrea: Six Sided Oracles": {
+    "mc_title": "Astrea: Six-Sided Oracles",
+    "mc_slug": "astrea-six-sided-oracles",
+    "mc_releaseDate": "2023-09-21",
+    "mc_criticScore": 85,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Train Sim World® 5: Sherman Hill: Cheyenne - Laramie": {
+    "mc_title": "Train Sim World 5: Thomas & Friends Visit the West Somerset Railway",
+    "mc_slug": "train-sim-world-5-thomas-and-friends-visit-the",
+    "mc_releaseDate": "2025-03-20",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PlayStation 5, PlayStation 4, Xbox Series X, PC, Xbox One"
+  },
+  "Vampire Survivors": {
+    "mc_title": "Vampire Survivors",
+    "mc_slug": "vampire-survivors",
+    "mc_releaseDate": "2022-10-20",
+    "mc_criticScore": 86,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, Xbox One, iOS (iPhone/iPad), Nintendo Switch, PlayStation 4, PlayStation 5"
+  },
+  "The Lord of the Rings™: Return to Moria™": {
+    "mc_title": "The Lord of the Rings: Return to Moria",
+    "mc_slug": "the-lord-of-the-rings-return-to-moria",
+    "mc_releaseDate": "2023-10-24",
+    "mc_criticScore": 59,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X"
+  },
+  "Bus Simulator 21 Next Stop": {
+    "mc_title": "Bus Simulator 21: Next Stop",
+    "mc_slug": "bus-simulator-21-next-stop",
+    "mc_releaseDate": "2023-05-16",
+    "mc_criticScore": 0,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 5, PlayStation 4, Xbox Series X, Xbox One, PC"
+  },
+  "Brotato": {
+    "mc_title": "Brotato",
+    "mc_slug": "brotato",
+    "mc_releaseDate": "2023-06-23",
+    "mc_criticScore": 76,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, Xbox Series X, Xbox One, PlayStation 4, PlayStation 5, Nintendo Switch 2"
+  },
+  "Beholder": {
+    "mc_title": "Beholder",
+    "mc_slug": "beholder",
+    "mc_releaseDate": "2016-11-09",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "PC, iOS (iPhone/iPad)"
+  },
+  "Castlevania Anniversary Collection": {
+    "mc_title": "Castlevania Anniversary Collection",
+    "mc_slug": "castlevania-anniversary-collection",
+    "mc_releaseDate": "2019-05-16",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Snakebird Complete": {
+    "mc_title": "Snakebird Complete",
+    "mc_slug": "snakebird-complete",
+    "mc_releaseDate": "2023-11-24",
+    "mc_criticScore": 0,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC"
+  },
+  "Apex Legends™: Ash Free Unlock Bundle": {
+    "mc_title": "Apex Legends",
+    "mc_slug": "apex-legends",
+    "mc_releaseDate": "2019-02-04",
+    "mc_criticScore": 89,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch, PlayStation 5, Xbox Series X, Nintendo Switch 2"
+  },
+  "Deceive Inc.": {
+    "mc_title": "Deceive Inc.",
+    "mc_slug": "deceive-inc",
+    "mc_releaseDate": "2023-03-21",
+    "mc_criticScore": 75,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, PlayStation 5"
+  },
+  "Ghostwire: Tokyo": {
+    "mc_title": "GhostWire: Tokyo",
+    "mc_slug": "ghostwire-tokyo",
+    "mc_releaseDate": "2022-03-22",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, PC, Xbox Series X"
+  },
+  "Witch It": {
+    "mc_title": "Witch It",
+    "mc_slug": "witch-it",
+    "mc_releaseDate": "2020-10-22",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Nintendo Switch, Xbox Series X"
+  },
+  "Moving Out": {
+    "mc_title": "Moving Out",
+    "mc_slug": "moving-out",
+    "mc_releaseDate": "2020-04-28",
+    "mc_criticScore": 74,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One"
+  },
+  "Invincible Presents: Atom Eve": {
+    "mc_title": "Invincible Presents: Atom Eve",
+    "mc_slug": "invincible-presents-atom-eve",
+    "mc_releaseDate": "2023-11-14",
+    "mc_criticScore": 79,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Kardboard Kings": {
+    "mc_title": "Kardboard Kings: Card Shop Simulator",
+    "mc_slug": "kardboard-kings-card-shop-simulator",
+    "mc_releaseDate": "2022-02-10",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Empyrion - Galactic Survival": {
+    "mc_title": "Empyrion - Galactic Survival",
+    "mc_slug": "empyrion-galactic-survival",
+    "mc_releaseDate": "2020-08-05",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Outliver: Tribulation": {
+    "mc_title": "Outliver: Tribulation",
+    "mc_slug": "outliver-tribulation",
+    "mc_releaseDate": "2023-07-18",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "World of Warships x TMNT — Mission: Free Permanent Camo Unlock": {
+    "mc_title": "World of Warships",
+    "mc_slug": "world-of-warships",
+    "mc_releaseDate": "2015-09-17",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "Bear and Breakfast": {
+    "mc_title": "Bear and Breakfast",
+    "mc_slug": "bear-and-breakfast",
+    "mc_releaseDate": "2022-07-28",
+    "mc_criticScore": 72,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 5, PlayStation 4"
+  },
+  "The Spirit and the Mouse": {
+    "mc_title": "The Spirit and the Mouse",
+    "mc_slug": "the-spirit-and-the-mouse",
+    "mc_releaseDate": "2022-09-26",
+    "mc_criticScore": 82,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 5, PlayStation 4"
+  },
+  "The Last Stand: Aftermath": {
+    "mc_title": "The Last Stand: Aftermath",
+    "mc_slug": "the-last-stand-aftermath",
+    "mc_releaseDate": "2021-11-16",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, Xbox Series X, PlayStation 5, PlayStation 4"
+  },
+  "TOEM": {
+    "mc_title": "TOEM",
+    "mc_slug": "toem",
+    "mc_releaseDate": "2021-09-17",
+    "mc_criticScore": 79,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 5, Xbox Series X, Xbox One, iOS (iPhone/iPad)"
+  },
+  "Rugrats: Adventures in Gameland": {
+    "mc_title": "Rugrats: Adventures in Gameland",
+    "mc_slug": "rugrats-adventures-in-gameland",
+    "mc_releaseDate": "2024-09-10",
+    "mc_criticScore": 74,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PlayStation 5, Xbox Series X, PC, PlayStation 4, Xbox One"
+  },
+  "SUPER CRAZY RHYTHM CASTLE": {
+    "mc_title": "Super Crazy Rhythm Castle",
+    "mc_slug": "super-crazy-rhythm-castle",
+    "mc_releaseDate": "2023-11-14",
+    "mc_criticScore": 60,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PlayStation 5, Xbox Series X, PC, PlayStation 4, Xbox One"
+  },
+  "Football Manager 2024": {
+    "mc_title": "Football Manager 2024",
+    "mc_slug": "football-manager-2024",
+    "mc_releaseDate": "2023-11-06",
+    "mc_criticScore": 84,
+    "mc_rating": "E",
+    "mc_platforms": "PC, Xbox Series X, Xbox One, PlayStation 5, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Sniper Ghost Warrior Contracts": {
+    "mc_title": "Sniper Ghost Warrior Contracts",
+    "mc_slug": "sniper-ghost-warrior-contracts",
+    "mc_releaseDate": "2019-11-22",
+    "mc_criticScore": 71,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4"
+  },
+  "Fallout® Classic Collection": {
+    "mc_title": "Marvel vs. Capcom Fighting Collection: Arcade Classics",
+    "mc_slug": "marvel-vs-capcom-fighting-collection-arcade",
+    "mc_releaseDate": "2024-09-12",
+    "mc_criticScore": 87,
+    "mc_rating": "",
+    "mc_platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One"
+  },
+  "Fallout 2: A Post Nuclear Role Playing Game": {
+    "mc_title": "DUST - A Post Apocalyptic Role Playing Game",
+    "mc_slug": "dust-a-post-apocalyptic-role-playing-game",
+    "mc_releaseDate": "2022-05-01",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Fallout Tactics: Brotherhood of Steel": {
+    "mc_title": "Fallout Tactics: Brotherhood of Steel",
+    "mc_slug": "fallout-tactics-brotherhood-of-steel",
+    "mc_releaseDate": "2001-03-14",
+    "mc_criticScore": 82,
+    "mc_rating": "M",
+    "mc_platforms": "PC"
+  },
+  "Wild Card Football": {
+    "mc_title": "Wild Card Football",
+    "mc_slug": "wild-card-football",
+    "mc_releaseDate": "2023-10-10",
+    "mc_criticScore": 72,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 5, Xbox Series X, PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Gigantic: Rampage Edition": {
+    "mc_title": "Gigantic: Rampage Edition",
+    "mc_slug": "gigantic-rampage-edition",
+    "mc_releaseDate": "2024-04-09",
+    "mc_criticScore": 65,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Death's Gambit: Afterlife": {
+    "mc_title": "Death's Gambit: Afterlife",
+    "mc_slug": "deaths-gambit-afterlife",
+    "mc_releaseDate": "2021-09-30",
+    "mc_criticScore": 78,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox Series X, Xbox One"
+  },
+  "World of Warships — Starter Pack: Albany": {
+    "mc_title": "World of Warships",
+    "mc_slug": "world-of-warships",
+    "mc_releaseDate": "2015-09-17",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "Apex Legends™: Conduit Free Unlock Bundle": {
+    "mc_title": "Apex Legends",
+    "mc_slug": "apex-legends",
+    "mc_releaseDate": "2019-02-04",
+    "mc_criticScore": 89,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch, PlayStation 5, Xbox Series X, Nintendo Switch 2"
+  },
+  "CYGNI - All Guns Blazing": {
+    "mc_title": "CYGNI: All Guns Blazing",
+    "mc_slug": "cygni-all-guns-blazing",
+    "mc_releaseDate": "2024-08-06",
+    "mc_criticScore": 74,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 5, PC, Xbox Series X"
+  },
+  "DNF Duel": {
+    "mc_title": "DNF Duel: Who's Next",
+    "mc_slug": "dnf-duel-whos-next",
+    "mc_releaseDate": "2022-06-28",
+    "mc_criticScore": 80,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, PlayStation 4, PC, Nintendo Switch"
+  },
+  "LumbearJack": {
+    "mc_title": "LumbearJack",
+    "mc_slug": "lumbearjack",
+    "mc_releaseDate": "2022-06-14",
+    "mc_criticScore": 0,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox Series X, Nintendo Switch, PC, Xbox One"
+  },
+  "RAWMEN: Food Fighter Arena 🍜": {
+    "mc_title": "RAWMEN: Food Fighter Arena",
+    "mc_slug": "rawmen-food-fighter-arena",
+    "mc_releaseDate": "2024-07-23",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, PlayStation 4, Xbox One, Xbox Series X"
+  },
+  "F.I.S.T.: Forged In Shadow Torch": {
+    "mc_title": "F.I.S.T.: Forged In Shadow Torch",
+    "mc_slug": "fist-forged-in-shadow-torch",
+    "mc_releaseDate": "2021-09-07",
+    "mc_criticScore": 80,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 5, PlayStation 4, PC, Nintendo Switch, Xbox Series X"
+  },
+  "Olympics™ Go! Paris 2024 - Exclusive Outfits pack": {
+    "mc_title": "Olympics Go! Paris 2024",
+    "mc_slug": "olympics-go-paris-2024",
+    "mc_releaseDate": "2024-06-11",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Arcade Paradise": {
+    "mc_title": "Arcade Paradise",
+    "mc_slug": "arcade-paradise",
+    "mc_releaseDate": "2022-08-11",
+    "mc_criticScore": 73,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, PC, Xbox Series X, Nintendo Switch, Xbox One, PlayStation 4"
+  },
+  "Maid of Sker": {
+    "mc_title": "Maid of Sker",
+    "mc_slug": "maid-of-sker",
+    "mc_releaseDate": "2020-07-28",
+    "mc_criticScore": 64,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch, Xbox Series X, PlayStation 5"
+  },
+  "Floppy Knights": {
+    "mc_title": "Floppy Knights",
+    "mc_slug": "floppy-knights",
+    "mc_releaseDate": "2022-05-24",
+    "mc_criticScore": 69,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox Series X, PC, Xbox One, Nintendo Switch"
+  },
+  "The Falconeer: Standard Edition": {
+    "mc_title": "The Falconeer: Warrior Edition",
+    "mc_slug": "the-falconeer-warrior-edition",
+    "mc_releaseDate": "2021-08-05",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, PlayStation 4, Nintendo Switch"
+  },
+  "Sunless Skies: Sovereign Edition": {
+    "mc_title": "Sunless Skies: Sovereign Edition",
+    "mc_slug": "sunless-skies-sovereign-edition",
+    "mc_releaseDate": "2021-05-19",
+    "mc_criticScore": 0,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Nintendo Switch, Xbox One, PC"
+  },
+  "Freshly Frosted": {
+    "mc_title": "Freshly Frosted",
+    "mc_slug": "freshly-frosted",
+    "mc_releaseDate": "2022-06-10",
+    "mc_criticScore": 85,
+    "mc_rating": "E",
+    "mc_platforms": "Xbox One, PC, Nintendo Switch, PlayStation 4, Xbox Series X, iOS (iPhone/iPad)"
+  },
+  "Rumble Club - Free Game of the Week Bonus": {
+    "mc_title": "The Walking Dead: A Telltale Games Series - Game of the Year Edition",
+    "mc_slug": "the-walking-dead-a-telltale-games-series-game-of",
+    "mc_releaseDate": "2013-08-20",
+    "mc_criticScore": 82,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation Vita, PC, PlayStation 3, Xbox 360, Xbox One, PlayStation 4"
+  },
+  "Crime Boss: Rockay City - Cagnali's Order": {
+    "mc_title": "Crime Boss: Rockay City - Cagnali's Order",
+    "mc_slug": "crime-boss-rockay-city-cagnalis-order",
+    "mc_releaseDate": "2024-06-18",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, PlayStation 5"
+  },
+  "Crime Boss: Rockay City - Dragon's Gold Cup": {
+    "mc_title": "Crime Boss: Rockay City - Dragon's Cup",
+    "mc_slug": "crime-boss-rockay-city-dragons-cup",
+    "mc_releaseDate": "2023-09-14",
+    "mc_criticScore": 0,
+    "mc_rating": "M",
+    "mc_platforms": "Xbox Series X, PC, PlayStation 5"
+  },
+  "Crime Boss: Rockay City - Heavy Hitters Pack": {
+    "mc_title": "Crime Boss: Rockay City",
+    "mc_slug": "crime-boss-rockay-city",
+    "mc_releaseDate": "2023-03-28",
+    "mc_criticScore": 52,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, PlayStation 5"
+  },
+  "Crime Boss: Rockay City - Tactical Weapon Pack": {
+    "mc_title": "Crime Boss: Rockay City",
+    "mc_slug": "crime-boss-rockay-city",
+    "mc_releaseDate": "2023-03-28",
+    "mc_criticScore": 52,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, PlayStation 5"
+  },
+  "Idle Champions of the Forgotten Realms - Dungeon & Dragons Pack": {
+    "mc_title": "Idle Champions of the Forgotten Realms",
+    "mc_slug": "idle-champions-of-the-forgotten-realms",
+    "mc_releaseDate": "2018-05-15",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Redout 2": {
+    "mc_title": "Redout 2",
+    "mc_slug": "redout-2",
+    "mc_releaseDate": "2022-06-16",
+    "mc_criticScore": 78,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, Xbox Series X, PlayStation 5"
+  },
+  "Marvel’s Midnight Suns": {
+    "mc_title": "Marvel's Midnight Suns",
+    "mc_slug": "marvels-midnight-suns",
+    "mc_releaseDate": "2022-12-02",
+    "mc_criticScore": 83,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox Series X, Xbox One, Nintendo Switch, PlayStation 5, PlayStation 4"
+  },
+  "Warhammer 40,000: Gladius - Relics of War": {
+    "mc_title": "Warhammer 40,000: Gladius - Relics of War",
+    "mc_slug": "warhammer-40000-gladius-relics-of-war",
+    "mc_releaseDate": "2018-07-12",
+    "mc_criticScore": 71,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Farming Simulator 22": {
+    "mc_title": "Farming Simulator 22",
+    "mc_slug": "farming-simulator-22",
+    "mc_releaseDate": "2021-11-22",
+    "mc_criticScore": 75,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 5, PC, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Echo Starter Pack": {
+    "mc_title": "Airport Ground Handling Simulator VR. Starter Pack.",
+    "mc_slug": "airport-ground-handling-simulator-vr-starter-pack",
+    "mc_releaseDate": "TBA - Early Access",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Dragon Age: Inquisition - Game of the Year Edition": {
+    "mc_title": "Dragon Age: Inquisition - Game of the Year Edition",
+    "mc_slug": "dragon-age-inquisition-game-of-the-year-edition",
+    "mc_releaseDate": "2015-10-06",
+    "mc_criticScore": null,
+    "mc_rating": "M",
+    "mc_platforms": "Xbox One, PlayStation 4, PC"
+  },
+  "Circus Electrique": {
+    "mc_title": "Circus Electrique",
+    "mc_slug": "circus-electrique",
+    "mc_releaseDate": "2022-09-06",
+    "mc_criticScore": 70,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Firestone Free Offer": {
+    "mc_title": "I Offered You the Crown",
+    "mc_slug": "i-offered-you-the-crown",
+    "mc_releaseDate": "2025-07-16",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Cat Quest 2": {
+    "mc_title": "Cat Quest",
+    "mc_slug": "cat-quest",
+    "mc_releaseDate": "2017-11-10",
+    "mc_criticScore": 74,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "INDUSTRIA": {
+    "mc_title": "INDUSTRIA",
+    "mc_slug": "industria",
+    "mc_releaseDate": "2021-09-30",
+    "mc_criticScore": 67,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, PlayStation 5, Xbox One"
+  },
+  "LISA: Definitive Edition": {
+    "mc_title": "LISA: Definitive Edition",
+    "mc_slug": "lisa-definitive-edition",
+    "mc_releaseDate": "2023-07-18",
+    "mc_criticScore": 83,
+    "mc_rating": "M",
+    "mc_platforms": "Nintendo Switch, PC, Xbox Series X, PlayStation 5, PlayStation 4, Xbox One"
+  },
+  "LISA: The Painful - Definitive Edition": {
+    "mc_title": "LISA: The Painful - Definitive Edition",
+    "mc_slug": "lisa-the-painful-definitive-edition",
+    "mc_releaseDate": "2023-07-18",
+    "mc_criticScore": 0,
+    "mc_rating": "M",
+    "mc_platforms": "Xbox Series X, Nintendo Switch, Xbox One, PlayStation 5, PlayStation 4, PC"
+  },
+  "The Big Con": {
+    "mc_title": "The Big Con",
+    "mc_slug": "the-big-con",
+    "mc_releaseDate": "2021-08-31",
+    "mc_criticScore": 77,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, Xbox One, PlayStation 5, PlayStation 4"
+  },
+  "Town of Salem 2": {
+    "mc_title": "Town of Salem 2",
+    "mc_slug": "town-of-salem-2",
+    "mc_releaseDate": "2023-08-25",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, PlayStation 5, Xbox Series X"
+  },
+  "Ghostrunner": {
+    "mc_title": "Ghostrunner",
+    "mc_slug": "ghostrunner",
+    "mc_releaseDate": "2020-10-27",
+    "mc_criticScore": 81,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch, PlayStation 5, Xbox Series X"
+  },
+  "The Outer Worlds: Spacer's Choice Edition": {
+    "mc_title": "The Outer Worlds: Spacer's Choice Edition",
+    "mc_slug": "the-outer-worlds-spacers-choice-edition",
+    "mc_releaseDate": "2023-03-07",
+    "mc_criticScore": 72,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, Xbox Series X, PC"
+  },
+  "Thief": {
+    "mc_title": "Thief",
+    "mc_slug": "thief",
+    "mc_releaseDate": "2014-02-25",
+    "mc_criticScore": 67,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, PlayStation 3, Xbox 360"
+  },
+  "Islets": {
+    "mc_title": "Islets",
+    "mc_slug": "islets",
+    "mc_releaseDate": "2022-08-24",
+    "mc_criticScore": 82,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, Xbox Series X, Xbox One, PlayStation 5, PlayStation 4"
+  },
+  "World of Warships — Starter Pack: Dreadnought": {
+    "mc_title": "World of Warships",
+    "mc_slug": "world-of-warships",
+    "mc_releaseDate": "2015-09-17",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "Call of the Wild: The Angler™": {
+    "mc_title": "Call of the Wild: The Angler",
+    "mc_slug": "call-of-the-wild-the-angler",
+    "mc_releaseDate": "2022-08-31",
+    "mc_criticScore": 63,
+    "mc_rating": "E",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, PlayStation 4, Xbox One"
+  },
+  "The Sims™ 4 - Backyard Stuff": {
+    "mc_title": "The Sims 4 Bundle: Vampires, Kids Room Stuff & Backyard Stuff",
+    "mc_slug": "the-sims-4-bundle-vampires-kids-room-stuff-and",
+    "mc_releaseDate": "2017-02-17",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Deus Ex: Mankind Divided": {
+    "mc_title": "Deus Ex: Mankind Divided",
+    "mc_slug": "deus-ex-mankind-divided",
+    "mc_releaseDate": "2016-08-23",
+    "mc_criticScore": 84,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "The Bridge": {
+    "mc_title": "The Bridge",
+    "mc_slug": "the-bridge",
+    "mc_releaseDate": "2018-03-23",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Astro Duel 2": {
+    "mc_title": "Astro Duel 2",
+    "mc_slug": "astro-duel-2",
+    "mc_releaseDate": "2024-03-07",
+    "mc_criticScore": 0,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, Xbox Series X"
+  },
+  "Aerial_Knight's Never Yield": {
+    "mc_title": "Aerial_Knight's Never Yield",
+    "mc_slug": "aerialknights-never-yield",
+    "mc_releaseDate": "2021-05-19",
+    "mc_criticScore": 65,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 5, Xbox Series X, PlayStation 4, Xbox One, iOS (iPhone/iPad)"
+  },
+  "Super Meat Boy Forever": {
+    "mc_title": "Super Meat Boy Forever",
+    "mc_slug": "super-meat-boy-forever",
+    "mc_releaseDate": "2020-12-23",
+    "mc_criticScore": 66,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, iOS (iPhone/iPad), PlayStation 4, PC, Xbox One"
+  },
+  "Dakar Desert Rally": {
+    "mc_title": "Dakar Desert Rally",
+    "mc_slug": "dakar-desert-rally",
+    "mc_releaseDate": "2022-10-04",
+    "mc_criticScore": 69,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 5, Xbox Series X, PC, PlayStation 4, Xbox One"
+  },
+  "Dying Light - Shu Warrior Bundle": {
+    "mc_title": "Dying Light",
+    "mc_slug": "dying-light",
+    "mc_releaseDate": "2015-01-27",
+    "mc_criticScore": 74,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, PlayStation 3, Xbox 360"
+  },
+  "Doki Doki Literature Club Plus!": {
+    "mc_title": "Doki Doki Literature Club Plus!",
+    "mc_slug": "doki-doki-literature-club-plus",
+    "mc_releaseDate": "2021-06-30",
+    "mc_criticScore": 85,
+    "mc_rating": "M",
+    "mc_platforms": "Nintendo Switch, PlayStation 4, PC, Xbox One, PlayStation 5, Xbox Series X"
+  },
+  "Lost Castle": {
+    "mc_title": "Lost Castle",
+    "mc_slug": "lost-castle",
+    "mc_releaseDate": "2016-08-31",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4"
+  },
+  "Doors: Paradox": {
+    "mc_title": "Doors: Paradox",
+    "mc_slug": "doors-paradox",
+    "mc_releaseDate": "2024-11-14",
+    "mc_criticScore": 0,
+    "mc_rating": "E",
+    "mc_platforms": "Xbox Series X, PC, iOS (iPhone/iPad), Nintendo Switch, Xbox One, PlayStation 4, PlayStation 5"
+  },
+  "Infinifactory": {
+    "mc_title": "Infinifactory",
+    "mc_slug": "infinifactory",
+    "mc_releaseDate": "2015-12-22",
+    "mc_criticScore": 70,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC"
+  },
+  "LOVE": {
+    "mc_title": "Love",
+    "mc_slug": "love",
+    "mc_releaseDate": "2026-02-24",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "LOVE Classic (classic version, 2008 recoded in 2020)": {
+    "mc_title": "World of Warcraft Classic: Burning Crusade Classic",
+    "mc_slug": "world-of-warcraft-classic-burning-crusade-classic",
+    "mc_releaseDate": "2021-06-01",
+    "mc_criticScore": 79,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Sail Forth": {
+    "mc_title": "Sail Forth",
+    "mc_slug": "sail-forth",
+    "mc_releaseDate": "2022-12-21",
+    "mc_criticScore": 77,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One, PlayStation 5, Xbox Series X, Nintendo Switch 2"
+  },
+  "Marvel's Guardians of the Galaxy": {
+    "mc_title": "Marvel's Guardians of the Galaxy",
+    "mc_slug": "marvels-guardians-of-the-galaxy",
+    "mc_releaseDate": "2021-10-26",
+    "mc_criticScore": 80,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, PlayStation 4, PC, Xbox Series X, Xbox One, Nintendo Switch"
+  },
+  "A Plague Tale: Innocence": {
+    "mc_title": "A Plague Tale: Innocence",
+    "mc_slug": "a-plague-tale-innocence",
+    "mc_releaseDate": "2019-05-14",
+    "mc_criticScore": 81,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch, PlayStation 5, Xbox Series X"
+  },
+  "20 Minutes Till Dawn": {
+    "mc_title": "20 Minutes Till Dawn",
+    "mc_slug": "20-minutes-till-dawn",
+    "mc_releaseDate": "2022-06-08",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Saints Row": {
+    "mc_title": "Saints Row",
+    "mc_slug": "saints-row",
+    "mc_releaseDate": "2022-08-23",
+    "mc_criticScore": 61,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PC, Xbox Series X, PlayStation 4, Xbox One"
+  },
+  "Cursed to Golf": {
+    "mc_title": "Cursed to Golf",
+    "mc_slug": "cursed-to-golf",
+    "mc_releaseDate": "2022-08-18",
+    "mc_criticScore": 80,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One, Xbox Series X, PlayStation 5, PlayStation 4"
+  },
+  "Human Resource Machine": {
+    "mc_title": "Human Resource Machine",
+    "mc_slug": "human-resource-machine",
+    "mc_releaseDate": "2015-10-15",
+    "mc_criticScore": 78,
+    "mc_rating": "",
+    "mc_platforms": "PC, Wii U, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Fallout 3: Game of the Year Edition": {
+    "mc_title": "Fallout 3: Game of the Year Edition",
+    "mc_slug": "fallout-3-game-of-the-year-edition",
+    "mc_releaseDate": "2009-10-13",
+    "mc_criticScore": null,
+    "mc_rating": "M",
+    "mc_platforms": "Xbox 360, PlayStation 3, PC"
+  },
+  "art of rally": {
+    "mc_title": "art of rally",
+    "mc_slug": "art-of-rally",
+    "mc_releaseDate": "2020-09-23",
+    "mc_criticScore": 79,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox Series X, Xbox One, Nintendo Switch, PlayStation 4, PlayStation 5, iOS (iPhone/iPad)"
+  },
+  "Melvor Idle": {
+    "mc_title": "Melvor Idle",
+    "mc_slug": "melvor-idle",
+    "mc_releaseDate": "2021-11-18",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Destiny 2: Legacy Collection": {
+    "mc_title": "Mega Man Legacy Collection + Mega Man Legacy Collection 2",
+    "mc_slug": "mega-man-legacy-collection-plus-mega-man-legacy",
+    "mc_releaseDate": "2018-05-22",
+    "mc_criticScore": 79,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch"
+  },
+  "Destiny 2: Beyond Light": {
+    "mc_title": "Destiny 2: Beyond Light",
+    "mc_slug": "destiny-2-beyond-light",
+    "mc_releaseDate": "2020-11-10",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Xbox Series X, PlayStation 5"
+  },
+  "Destiny 2: Shadowkeep": {
+    "mc_title": "Destiny 2: Shadowkeep",
+    "mc_slug": "destiny-2-shadowkeep",
+    "mc_releaseDate": "2019-10-01",
+    "mc_criticScore": 73,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One"
+  },
+  "Warhammer 40,000: Rogue Trader - Limited Outfit Pack": {
+    "mc_title": "Warhammer 40K: Rogue Trader - Void Shadows",
+    "mc_slug": "warhammer-40k-rogue-trader-void-shadows",
+    "mc_releaseDate": "2024-09-24",
+    "mc_criticScore": 86,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X"
+  },
+  "Gigabash": {
+    "mc_title": "GigaBash",
+    "mc_slug": "gigabash",
+    "mc_releaseDate": "2022-08-05",
+    "mc_criticScore": 73,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 5, PC, Xbox One, PlayStation 4, Nintendo Switch, Xbox Series X"
+  },
+  "Predecessor": {
+    "mc_title": "Predecessor",
+    "mc_slug": "predecessor",
+    "mc_releaseDate": "2024-08-20",
+    "mc_criticScore": 0,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox Series X, PC, PlayStation 5"
+  },
+  "The Sims™ 4 - My First Pet Stuff": {
+    "mc_title": "The Sims 4: My First Pet Stuff",
+    "mc_slug": "the-sims-4-my-first-pet-stuff",
+    "mc_releaseDate": "2018-03-13",
+    "mc_criticScore": 0,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Jitsu Squad": {
+    "mc_title": "Jitsu Squad",
+    "mc_slug": "jitsu-squad",
+    "mc_releaseDate": "2022-12-09",
+    "mc_criticScore": 70,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One, Xbox Series X, PlayStation 5"
+  },
+  "Mighty Fight Federation": {
+    "mc_title": "Mighty Fight Federation",
+    "mc_slug": "mighty-fight-federation",
+    "mc_releaseDate": "2021-02-25",
+    "mc_criticScore": 69,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, Nintendo Switch, PlayStation 4, PC, Xbox One"
+  },
+  "Deliver Us Mars": {
+    "mc_title": "Deliver Us Mars",
+    "mc_slug": "deliver-us-mars",
+    "mc_releaseDate": "2023-02-02",
+    "mc_criticScore": 69,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, PlayStation 4, Xbox One"
+  },
+  "EARTHLOCK": {
+    "mc_title": "Earthlock",
+    "mc_slug": "earthlock",
+    "mc_releaseDate": "2018-03-08",
+    "mc_criticScore": 73,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Surviving the Aftermath": {
+    "mc_title": "Surviving the Aftermath",
+    "mc_slug": "surviving-the-aftermath",
+    "mc_releaseDate": "2021-11-16",
+    "mc_criticScore": 69,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox One, PlayStation 4, PC, Nintendo Switch"
+  },
+  "Suicide Squad: Kill the Justice League": {
+    "mc_title": "Suicide Squad: Kill The Justice League",
+    "mc_slug": "suicide-squad-kill-the-justice-league",
+    "mc_releaseDate": "2024-02-02",
+    "mc_criticScore": 60,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, Xbox Series X, PC"
+  },
+  "Golden Light": {
+    "mc_title": "Golden Light",
+    "mc_slug": "golden-light",
+    "mc_releaseDate": "2022-03-11",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Turnip Boy Commits Tax Evasion": {
+    "mc_title": "Turnip Boy Commits Tax Evasion",
+    "mc_slug": "turnip-boy-commits-tax-evasion",
+    "mc_releaseDate": "2021-04-22",
+    "mc_criticScore": 74,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "Tandem: A Tale of Shadows": {
+    "mc_title": "Tandem: A Tale of Shadows",
+    "mc_slug": "tandem-a-tale-of-shadows",
+    "mc_releaseDate": "2021-10-21",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "The Evil Within 2": {
+    "mc_title": "The Evil Within 2",
+    "mc_slug": "the-evil-within-2",
+    "mc_releaseDate": "2017-10-13",
+    "mc_criticScore": 76,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "Eternal Threads": {
+    "mc_title": "Eternal Threads",
+    "mc_slug": "eternal-threads",
+    "mc_releaseDate": "2022-05-19",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, Xbox Series X, PlayStation 5"
+  },
+  "The Evil Within": {
+    "mc_title": "The Evil Within",
+    "mc_slug": "the-evil-within",
+    "mc_releaseDate": "2014-10-14",
+    "mc_criticScore": 75,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox 360, PlayStation 3, PC, Xbox One"
+  },
+  "Blazing Sails": {
+    "mc_title": "Blazing Sails",
+    "mc_slug": "blazing-sails",
+    "mc_releaseDate": "2023-11-13",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Q.U.B.E. ULTIMATE BUNDLE": {
+    "mc_title": "Marvel: Ultimate Alliance Bundle",
+    "mc_slug": "marvel-ultimate-alliance-bundle",
+    "mc_releaseDate": "2016-07-26",
+    "mc_criticScore": 61,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One"
+  },
+  "Godlike Burger": {
+    "mc_title": "Godlike Burger",
+    "mc_slug": "godlike-burger",
+    "mc_releaseDate": "2022-04-21",
+    "mc_criticScore": 60,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One, PlayStation 5"
+  },
+  "Model Builder": {
+    "mc_title": "Model Builder",
+    "mc_slug": "model-builder",
+    "mc_releaseDate": "2022-02-08",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Soulstice": {
+    "mc_title": "Soulstice",
+    "mc_slug": "soulstice",
+    "mc_releaseDate": "2022-09-20",
+    "mc_criticScore": 68,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, PlayStation 4"
+  },
+  "Out of Line": {
+    "mc_title": "Out of Line",
+    "mc_slug": "out-of-line",
+    "mc_releaseDate": "2021-06-23",
+    "mc_criticScore": 69,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One, PlayStation 4"
+  },
+  "We Were Here Expeditions: The FriendShip": {
+    "mc_title": "We Were Here Expeditions: The FriendShip",
+    "mc_slug": "we-were-here-expeditions-the-friendship",
+    "mc_releaseDate": "2023-09-14",
+    "mc_criticScore": 82,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, PlayStation 4, Xbox One"
+  },
+  "911 Operator": {
+    "mc_title": "911 Operator",
+    "mc_slug": "911-operator",
+    "mc_releaseDate": "2017-02-24",
+    "mc_criticScore": 68,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Spelldrifter": {
+    "mc_title": "Spelldrifter",
+    "mc_slug": "spelldrifter",
+    "mc_releaseDate": "2019-09-19",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC"
+  },
+  "Cave Story+": {
+    "mc_title": "Cave Story",
+    "mc_slug": "cave-story",
+    "mc_releaseDate": "2010-03-22",
+    "mc_criticScore": 89,
+    "mc_rating": "E10+",
+    "mc_platforms": "Wii, 3DS, PC, DS"
+  },
+  "Homeworld: Deserts of Kharak": {
+    "mc_title": "Homeworld: Deserts of Kharak",
+    "mc_slug": "homeworld-deserts-of-kharak",
+    "mc_releaseDate": "2016-01-20",
+    "mc_criticScore": 79,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC"
+  },
+  "Black Book": {
+    "mc_title": "Black Book",
+    "mc_slug": "black-book",
+    "mc_releaseDate": "2021-08-10",
+    "mc_criticScore": 75,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "Dodo Peak": {
+    "mc_title": "Dodo Peak",
+    "mc_slug": "dodo-peak",
+    "mc_releaseDate": "2020-07-31",
+    "mc_criticScore": 56,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, iOS (iPhone/iPad), PC"
+  },
+  "Europa Universalis IV": {
+    "mc_title": "Europa Universalis IV",
+    "mc_slug": "europa-universalis-iv",
+    "mc_releaseDate": "2013-08-13",
+    "mc_criticScore": 87,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "Orwell: Keeping an Eye on You": {
+    "mc_title": "Orwell: Keeping an Eye On You",
+    "mc_slug": "orwell-keeping-an-eye-on-you",
+    "mc_releaseDate": "2016-10-27",
+    "mc_criticScore": 77,
+    "mc_rating": "M",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Homeworld Remastered Collection": {
+    "mc_title": "Homeworld Remastered Collection",
+    "mc_slug": "homeworld-remastered-collection",
+    "mc_releaseDate": "2015-02-25",
+    "mc_criticScore": 86,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC"
+  },
+  "Severed Steel": {
+    "mc_title": "Severed Steel",
+    "mc_slug": "severed-steel",
+    "mc_releaseDate": "2021-09-17",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch, Xbox Series X, PlayStation 5"
+  },
+  "Murder by Numbers": {
+    "mc_title": "Murder by Numbers",
+    "mc_slug": "murder-by-numbers",
+    "mc_releaseDate": "2020-03-06",
+    "mc_criticScore": 79,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "The Elder Scrolls Online": {
+    "mc_title": "The Elder Scrolls Online",
+    "mc_slug": "the-elder-scrolls-online",
+    "mc_releaseDate": "2014-04-04",
+    "mc_criticScore": 71,
+    "mc_rating": "M",
+    "mc_platforms": "PC"
+  },
+  "Train Valley 2": {
+    "mc_title": "Train Valley 2",
+    "mc_slug": "train-valley-2",
+    "mc_releaseDate": "2019-04-15",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "GRIME": {
+    "mc_title": "GRIME",
+    "mc_slug": "grime",
+    "mc_releaseDate": "2021-08-02",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Xbox Series X, PlayStation 5, Nintendo Switch"
+  },
+  "The Dungeon of Naheulbeuk: The Amulet Of Chaos": {
+    "mc_title": "The Dungeon of Naheulbeuk: The Amulet of Chaos",
+    "mc_slug": "the-dungeon-of-naheulbeuk-the-amulet-of-chaos",
+    "mc_releaseDate": "2020-09-17",
+    "mc_criticScore": 72,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch, PlayStation 5, Xbox Series X"
+  },
+  "Idle Champions of the Forgotten Realms - Wulfgar's Legends of Renown Pack": {
+    "mc_title": "Idle Champions of the Forgotten Realms",
+    "mc_slug": "idle-champions-of-the-forgotten-realms",
+    "mc_releaseDate": "2018-05-15",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "theHunter: Call of the Wild": {
+    "mc_title": "theHunter: Call of the Wild",
+    "mc_slug": "thehunter-call-of-the-wild",
+    "mc_releaseDate": "2017-02-16",
+    "mc_criticScore": 64,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox One, PlayStation 4"
+  },
+  "Guacamelee! Super Turbo Championship Edition": {
+    "mc_title": "Guacamelee! Super Turbo Championship Edition",
+    "mc_slug": "guacamelee-super-turbo-championship-edition",
+    "mc_releaseDate": "2014-07-01",
+    "mc_criticScore": 87,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, Xbox One, Xbox 360, Wii U, PC, Nintendo Switch"
+  },
+  "Guacamelee! 2": {
+    "mc_title": "Guacamelee! 2",
+    "mc_slug": "guacamelee-2",
+    "mc_releaseDate": "2018-08-21",
+    "mc_criticScore": 83,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One"
+  },
+  "PAYDAY 2": {
+    "mc_title": "Payday 2",
+    "mc_slug": "payday-2",
+    "mc_releaseDate": "2013-08-13",
+    "mc_criticScore": 79,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Midnight Ghost Hunt": {
+    "mc_title": "Midnight Ghost Hunt",
+    "mc_slug": "midnight-ghost-hunt",
+    "mc_releaseDate": "2024-03-21",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Train Sim World 2 - LGV Méditerranée: Marseille - Avignon": {
+    "mc_title": "%",
+    "mc_slug": "-2025",
+    "mc_releaseDate": "2025-07-15",
+    "mc_criticScore": null,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PlayStation 5"
+  },
+  "Fallout: New Vegas - Ultimate Edition": {
+    "mc_title": "Fallout: New Vegas - Ultimate Edition",
+    "mc_slug": "fallout-new-vegas-ultimate-edition",
+    "mc_releaseDate": "2012-02-07",
+    "mc_criticScore": 0,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 3, Xbox 360, PC"
+  },
+  "DEATH STRANDING": {
+    "mc_title": "Death Stranding",
+    "mc_slug": "death-stranding",
+    "mc_releaseDate": "2019-11-08",
+    "mc_criticScore": 82,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC"
+  },
+  "The Sims 4 - The Daring Lifestyle Bundle": {
+    "mc_title": "The Sims 4: Eco Lifestyle",
+    "mc_slug": "the-sims-4-eco-lifestyle",
+    "mc_releaseDate": "2020-06-05",
+    "mc_criticScore": 82,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "The Sims 4 - Jungle Adventure Game Pack": {
+    "mc_title": "The Sims 4: Businesses & Hobbies Expansion Pack",
+    "mc_slug": "the-sims-4-businesses-and-hobbies-expansion-pack",
+    "mc_releaseDate": "2025-03-06",
+    "mc_criticScore": 70,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Xbox Series X"
+  },
+  "The Sims 4 - Luxury Party Stuff Pack": {
+    "mc_title": "The Sims 4: Paranormal Stuff Pack",
+    "mc_slug": "the-sims-4-paranormal-stuff-pack",
+    "mc_releaseDate": "2021-01-26",
+    "mc_criticScore": 76,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Against All Odds": {
+    "mc_title": "Against All Odds",
+    "mc_slug": "against-all-odds",
+    "mc_releaseDate": "2023-05-04",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Kao the Kangaroo": {
+    "mc_title": "Kao the Kangaroo",
+    "mc_slug": "kao-the-kangaroo",
+    "mc_releaseDate": "2022-05-27",
+    "mc_criticScore": 65,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 5, Xbox Series X, PlayStation 4, Xbox One"
+  },
+  "Horizon Chase Turbo": {
+    "mc_title": "Horizon Chase Turbo",
+    "mc_slug": "horizon-chase-turbo",
+    "mc_releaseDate": "2018-11-28",
+    "mc_criticScore": 82,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PlayStation 4, PC, Xbox One, PlayStation Vita"
+  },
+  "Breathedge": {
+    "mc_title": "Breathedge",
+    "mc_slug": "breathedge",
+    "mc_releaseDate": "2021-02-25",
+    "mc_criticScore": 71,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, PlayStation 5"
+  },
+  "Poker Club": {
+    "mc_title": "Poker Club",
+    "mc_slug": "poker-club",
+    "mc_releaseDate": "2021-11-24",
+    "mc_criticScore": 50,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4, PlayStation 5, Xbox Series X"
+  },
+  "Never Alone (Kisima Ingitchuna)": {
+    "mc_title": "Never Alone (2014)",
+    "mc_slug": "never-alone-2014",
+    "mc_releaseDate": "2014-11-18",
+    "mc_criticScore": 72,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Wii U, PlayStation 3, iOS (iPhone/iPad)"
+  },
+  "MORDHAU": {
+    "mc_title": "MORDHAU",
+    "mc_slug": "mordhau",
+    "mc_releaseDate": "2019-04-29",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, PlayStation 4, Xbox Series X, Xbox One"
+  },
+  "Second Extinction": {
+    "mc_title": "Second Extinction",
+    "mc_slug": "second-extinction",
+    "mc_releaseDate": "TBA",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "Xbox Series X, Xbox One, PC"
+  },
+  "Dying Light: Enhanced Edition": {
+    "mc_title": "Dying Light: The Following - Enhanced Edition",
+    "mc_slug": "dying-light-the-following-enhanced-edition",
+    "mc_releaseDate": "2016-02-09",
+    "mc_criticScore": 87,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4"
+  },
+  "The Silent Age": {
+    "mc_title": "The Silent Age",
+    "mc_slug": "the-silent-age",
+    "mc_releaseDate": "2012-12-06",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC"
+  },
+  "Tunche": {
+    "mc_title": "Tunche",
+    "mc_slug": "tunche",
+    "mc_releaseDate": "2021-11-02",
+    "mc_criticScore": 68,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "Chess Ultra": {
+    "mc_title": "Chess Ultra",
+    "mc_slug": "chess-ultra",
+    "mc_releaseDate": "2017-11-02",
+    "mc_criticScore": 79,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4"
+  },
+  "World of Warships — Starter Pack: Ishizuchi": {
+    "mc_title": "World of Warships",
+    "mc_slug": "world-of-warships",
+    "mc_releaseDate": "2015-09-17",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "Call of the Sea": {
+    "mc_title": "Call of the Sea",
+    "mc_slug": "call-of-the-sea",
+    "mc_releaseDate": "2020-12-08",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox Series X, Xbox One, PC, PlayStation 5, PlayStation 4, Nintendo Switch"
+  },
+  "Clash - Lone Fighter Pack": {
+    "mc_title": "SNK vs. Capcom: Card Fighters' Clash",
+    "mc_slug": "snk-vs-capcom-card-fighters-clash",
+    "mc_releaseDate": "2022-01-12",
+    "mc_criticScore": 84,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch"
+  },
+  "Rise of Industry": {
+    "mc_title": "Rise of Industry",
+    "mc_slug": "rise-of-industry",
+    "mc_releaseDate": "2019-05-02",
+    "mc_criticScore": 62,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Duskers": {
+    "mc_title": "Duskers",
+    "mc_slug": "duskers",
+    "mc_releaseDate": "2016-05-18",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Warpips": {
+    "mc_title": "Warpips",
+    "mc_slug": "warpips",
+    "mc_releaseDate": "2022-04-21",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox Series X, Xbox One"
+  },
+  "Recipe for Disaster": {
+    "mc_title": "Recipe For Disaster",
+    "mc_slug": "recipe-for-disaster",
+    "mc_releaseDate": "April 2026",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "City of Gangsters": {
+    "mc_title": "City of Gangsters",
+    "mc_slug": "city-of-gangsters",
+    "mc_releaseDate": "2021-08-09",
+    "mc_criticScore": 67,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Dishonored: Death of the Outsider": {
+    "mc_title": "Dishonored: Death of the Outsider",
+    "mc_slug": "dishonored-death-of-the-outsider",
+    "mc_releaseDate": "2017-09-15",
+    "mc_criticScore": 82,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "Adios": {
+    "mc_title": "Adios",
+    "mc_slug": "adios",
+    "mc_releaseDate": "2021-03-16",
+    "mc_criticScore": 78,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch"
+  },
+  "Hell is Others": {
+    "mc_title": "Hell is Others",
+    "mc_slug": "hell-is-others",
+    "mc_releaseDate": "2023-01-26",
+    "mc_criticScore": 78,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "The Cycle: Frontier - Fortuna Survivor": {
+    "mc_title": "The Cycle: Frontier",
+    "mc_slug": "the-cycle-frontier",
+    "mc_releaseDate": "2022-06-08",
+    "mc_criticScore": 59,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Epistory - Typing Chronicles": {
+    "mc_title": "Epistory - Typing Chronicles",
+    "mc_slug": "epistory-typing-chronicles",
+    "mc_releaseDate": "2016-03-30",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "Divine Knockout (DKO)": {
+    "mc_title": "Divine Knockout",
+    "mc_slug": "divine-knockout",
+    "mc_releaseDate": "2022-12-06",
+    "mc_criticScore": 74,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox Series X, PC, PlayStation 5, PlayStation 4, Xbox One"
+  },
+  "First Class Trouble": {
+    "mc_title": "First Class Trouble",
+    "mc_slug": "first-class-trouble",
+    "mc_releaseDate": "2021-11-02",
+    "mc_criticScore": 0,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 5, PC, Nintendo Switch, PlayStation 4"
+  },
+  "Gamedec - Definitive Edition": {
+    "mc_title": "Xenoblade Chronicles: Definitive Edition",
+    "mc_slug": "xenoblade-chronicles-definitive-edition",
+    "mc_releaseDate": "2020-05-29",
+    "mc_criticScore": 89,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch"
+  },
+  "Kerbal Space Program": {
+    "mc_title": "Kerbal Space Program",
+    "mc_slug": "kerbal-space-program",
+    "mc_releaseDate": "2011-06-24",
+    "mc_criticScore": 88,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Wii U"
+  },
+  "Shadow Tactics: Aiko's Choice": {
+    "mc_title": "Shadow Tactics: Blades of the Shogun - Aiko's Choice",
+    "mc_slug": "shadow-tactics-blades-of-the-shogun-aikos-choice",
+    "mc_releaseDate": "2021-12-06",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, Nintendo Switch 2"
+  },
+  "Dishonored - Definitive Edition": {
+    "mc_title": "Dishonored: Definitive Edition",
+    "mc_slug": "dishonored-definitive-edition",
+    "mc_releaseDate": "2015-08-25",
+    "mc_criticScore": 80,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "Eximius: Seize the Frontline": {
+    "mc_title": "Eximius: Seize the Frontline",
+    "mc_slug": "eximius-seize-the-frontline",
+    "mc_releaseDate": "2018-09-27",
+    "mc_criticScore": 53,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "DEATH STRANDING Director's Cut": {
+    "mc_title": "Death Stranding: Director's Cut",
+    "mc_slug": "death-stranding-directors-cut",
+    "mc_releaseDate": "2021-09-24",
+    "mc_criticScore": 85,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PC, iOS (iPhone/iPad), Xbox Series X"
+  },
+  "Metro: Last Light Redux": {
+    "mc_title": "Metro: Last Light Redux",
+    "mc_slug": "metro-last-light-redux",
+    "mc_releaseDate": "2014-08-25",
+    "mc_criticScore": 76,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "Encased: A Sci-Fi Post-Apocalyptic RPG": {
+    "mc_title": "Encased: a sci-fi post-apocalyptic RPG",
+    "mc_slug": "encased-a-sci-fi-post-apocalyptic-rpg",
+    "mc_releaseDate": "2021-09-07",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "LEGO Builder's Journey": {
+    "mc_title": "LEGO Builder's Journey",
+    "mc_slug": "lego-builders-journey",
+    "mc_releaseDate": "2021-06-22",
+    "mc_criticScore": 79,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, Xbox One, Xbox Series X, PlayStation 5, PlayStation 4"
+  },
+  "Wolfenstein: The New Order": {
+    "mc_title": "Wolfenstein: The New Order",
+    "mc_slug": "wolfenstein-the-new-order",
+    "mc_releaseDate": "2014-05-20",
+    "mc_criticScore": 79,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox 360, PlayStation 3, PC, Xbox One"
+  },
+  "Costume Quest 2": {
+    "mc_title": "Costume Quest 2",
+    "mc_slug": "costume-quest-2",
+    "mc_releaseDate": "2014-10-07",
+    "mc_criticScore": 68,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, PlayStation 3, Xbox 360, Wii U, PlayStation 4, Xbox One"
+  },
+  "Saints Row IV: Re-Elected": {
+    "mc_title": "Saints Row IV: Re-Elected",
+    "mc_slug": "saints-row-iv-re-elected",
+    "mc_releaseDate": "2020-03-27",
+    "mc_criticScore": 71,
+    "mc_rating": "M",
+    "mc_platforms": "Nintendo Switch, Xbox One, PlayStation 4, PC"
+  },
+  "Wildcat Gun Machine": {
+    "mc_title": "Wildcat Gun Machine",
+    "mc_slug": "wildcat-gun-machine",
+    "mc_releaseDate": "2022-05-04",
+    "mc_criticScore": 63,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox One, PC, Nintendo Switch, PlayStation 4"
+  },
+  "Fort Triumph": {
+    "mc_title": "Fort Triumph",
+    "mc_slug": "fort-triumph",
+    "mc_releaseDate": "2020-04-16",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch, PlayStation 4"
+  },
+  "RPG in a Box": {
+    "mc_title": "RPG in a Box",
+    "mc_slug": "rpg-in-a-box",
+    "mc_releaseDate": "2022-05-11",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "STAR WARS: Squadrons": {
+    "mc_title": "Star Wars: Squadrons",
+    "mc_slug": "star-wars-squadrons",
+    "mc_releaseDate": "2020-10-02",
+    "mc_criticScore": 79,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Xbox Series X"
+  },
+  "Dark Deity": {
+    "mc_title": "Dark Deity",
+    "mc_slug": "dark-deity",
+    "mc_releaseDate": "2021-06-15",
+    "mc_criticScore": 80,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "Evil Dead: The Game": {
+    "mc_title": "Evil Dead: The Game",
+    "mc_slug": "evil-dead-the-game",
+    "mc_releaseDate": "2022-05-13",
+    "mc_criticScore": 72,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, PlayStation 4, Xbox Series X, PC, Xbox One, Nintendo Switch"
+  },
+  "Rumbleverse - Epic Cheerleader Pack": {
+    "mc_title": "%",
+    "mc_slug": "-2025",
+    "mc_releaseDate": "2025-07-15",
+    "mc_criticScore": null,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PlayStation 5"
+  },
+  "Alba - A Wildlife Adventure": {
+    "mc_title": "Alba: a Wildlife Adventure",
+    "mc_slug": "alba-a-wildlife-adventure",
+    "mc_releaseDate": "2020-12-11",
+    "mc_criticScore": 79,
+    "mc_rating": "E",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, PlayStation 5, PlayStation 4, Xbox Series X, Xbox One"
+  },
+  "Shadow Tactics: Blades of the Shogun": {
+    "mc_title": "Shadow Tactics: Blades of the Shogun",
+    "mc_slug": "shadow-tactics-blades-of-the-shogun",
+    "mc_releaseDate": "2016-12-06",
+    "mc_criticScore": 85,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, PlayStation 5, Nintendo Switch 2"
+  },
+  "Filament": {
+    "mc_title": "Filament",
+    "mc_slug": "filament",
+    "mc_releaseDate": "2020-04-23",
+    "mc_criticScore": 82,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "Rising Storm 2: Vietnam": {
+    "mc_title": "Rising Storm 2: Vietnam",
+    "mc_slug": "rising-storm-2-vietnam",
+    "mc_releaseDate": "2017-05-30",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Saturnalia": {
+    "mc_title": "Saturnalia",
+    "mc_slug": "saturnalia",
+    "mc_releaseDate": "2022-10-27",
+    "mc_criticScore": 80,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, PlayStation 4, Xbox Series X, Xbox One, Nintendo Switch"
+  },
+  "Warhammer 40,000: Mechanicus": {
+    "mc_title": "Warhammer 40,000: Mechanicus",
+    "mc_slug": "warhammer-40000-mechanicus",
+    "mc_releaseDate": "2018-11-15",
+    "mc_criticScore": 78,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Evoland Legendary Edition": {
+    "mc_title": "Evoland: Legendary Edition",
+    "mc_slug": "evoland-legendary-edition",
+    "mc_releaseDate": "2019-02-07",
+    "mc_criticScore": 66,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PlayStation 4, Xbox One, PC"
+  },
+  "Darkwood": {
+    "mc_title": "Darkwood",
+    "mc_slug": "darkwood",
+    "mc_releaseDate": "2019-05-14",
+    "mc_criticScore": 80,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One, PlayStation 5"
+  },
+  "ToeJam & Earl: Back in the Groove!": {
+    "mc_title": "ToeJam & Earl: Back in the Groove!",
+    "mc_slug": "toejam-and-earl-back-in-the-groove",
+    "mc_releaseDate": "2019-02-15",
+    "mc_criticScore": 75,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Rising Hell": {
+    "mc_title": "Rising Hell",
+    "mc_slug": "rising-hell",
+    "mc_releaseDate": "2021-05-18",
+    "mc_criticScore": 0,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch"
+  },
+  "Slain: Back From Hell": {
+    "mc_title": "Slain: Back from Hell",
+    "mc_slug": "slain-back-from-hell",
+    "mc_releaseDate": "2016-09-20",
+    "mc_criticScore": 68,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, PlayStation Vita, Nintendo Switch"
+  },
+  "Runbow": {
+    "mc_title": "Runbow",
+    "mc_slug": "runbow",
+    "mc_releaseDate": "2015-08-27",
+    "mc_criticScore": 82,
+    "mc_rating": "E",
+    "mc_platforms": "Wii U, 3DS, PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "The Drone Racing League Simulator": {
+    "mc_title": "The Drone Racing League Simulator",
+    "mc_slug": "the-drone-racing-league-simulator",
+    "mc_releaseDate": "2020-09-23",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "Xbox One, PlayStation 4, PC"
+  },
+  "ARK: Survival Evolved": {
+    "mc_title": "ARK: Survival Evolved",
+    "mc_slug": "ark-survival-evolved",
+    "mc_releaseDate": "2017-08-27",
+    "mc_criticScore": 70,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Gloomhaven": {
+    "mc_title": "Gloomhaven",
+    "mc_slug": "gloomhaven",
+    "mc_releaseDate": "2019-07-17",
+    "mc_criticScore": 82,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, Nintendo Switch, Xbox One, PlayStation 4"
+  },
+  "Spirit of the North": {
+    "mc_title": "Spirit of the North",
+    "mc_slug": "spirit-of-the-north",
+    "mc_releaseDate": "2020-05-07",
+    "mc_criticScore": 59,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PlayStation 4, PC"
+  },
+  "The Captain": {
+    "mc_title": "The Captain",
+    "mc_slug": "the-captain",
+    "mc_releaseDate": "2021-12-03",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "Hundred Days: Winemaking Simulator": {
+    "mc_title": "Hundred Days - Winemaking Simulator",
+    "mc_slug": "hundred-days-winemaking-simulator",
+    "mc_releaseDate": "2021-05-13",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, iOS (iPhone/iPad), PlayStation 4, PlayStation 5, Xbox Series X"
+  },
+  "Realm Royale Reforged - Epic Launch Bundle": {
+    "mc_title": "Realm Royale Reforged",
+    "mc_slug": "realm-royale-reforged",
+    "mc_releaseDate": "2022-11-29",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Knockout City": {
+    "mc_title": "Knockout City",
+    "mc_slug": "knockout-city",
+    "mc_releaseDate": "2021-05-21",
+    "mc_criticScore": 80,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One, Xbox Series X, PlayStation 5"
+  },
+  "Shadow of the Tomb Raider: Definitive Edition": {
+    "mc_title": "Shadow of the Tomb Raider: Definitive Edition",
+    "mc_slug": "shadow-of-the-tomb-raider-definitive-edition",
+    "mc_releaseDate": "2019-11-05",
+    "mc_criticScore": null,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "Submerged: Hidden Depths": {
+    "mc_title": "Submerged: Hidden Depths",
+    "mc_slug": "submerged-hidden-depths",
+    "mc_releaseDate": "2022-03-10",
+    "mc_criticScore": 72,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 5, PC, PlayStation 4, Nintendo Switch, Xbox Series X, Xbox One"
+  },
+  "Ring of Pain": {
+    "mc_title": "Ring of Pain",
+    "mc_slug": "ring-of-pain",
+    "mc_releaseDate": "2020-10-15",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One"
+  },
+  "Destiny 2: Bungie 30th Anniversary Pack": {
+    "mc_title": "Atari 50: The Anniversary Celebration: The Namco Legendary Pack",
+    "mc_slug": "atari-50-the-anniversary-celebration-the-namco",
+    "mc_releaseDate": "2025-11-13",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "PlayStation 5, PC, Xbox Series X, Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "DOOM 64": {
+    "mc_title": "DOOM 64",
+    "mc_slug": "doom-64",
+    "mc_releaseDate": "2020-03-20",
+    "mc_criticScore": 76,
+    "mc_rating": "M",
+    "mc_platforms": "Nintendo Switch, Nintendo 64, PlayStation 4, Xbox One, PC"
+  },
+  "Rumbleverse - Boom Boxer Content Pack": {
+    "mc_title": "%",
+    "mc_slug": "-2025",
+    "mc_releaseDate": "2025-07-15",
+    "mc_criticScore": null,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PlayStation 5"
+  },
+  "Cook, Serve, Delicious! 3?!": {
+    "mc_title": null,
+    "mc_slug": null,
+    "mc_releaseDate": null,
+    "mc_criticScore": null,
+    "mc_rating": null,
+    "mc_platforms": null
+  },
+  "Unrailed!": {
+    "mc_title": "Unrailed!",
+    "mc_slug": "unrailed",
+    "mc_releaseDate": "2020-09-23",
+    "mc_criticScore": 77,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch, PlayStation 4"
+  },
+  "Lawn Mowing Simulator": {
+    "mc_title": "Lawn Mowing Simulator",
+    "mc_slug": "lawn-mowing-simulator",
+    "mc_releaseDate": "2021-08-10",
+    "mc_criticScore": 72,
+    "mc_rating": "",
+    "mc_platforms": "Xbox Series X, PC, Xbox One, PlayStation 5, PlayStation 4, Nintendo Switch, Meta Quest"
+  },
+  "Shop Titans - Exclusive Package": {
+    "mc_title": "Shop Titans",
+    "mc_slug": "shop-titans",
+    "mc_releaseDate": "2020-05-05",
+    "mc_criticScore": 42,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Tannenberg": {
+    "mc_title": "WWI Tannenberg: Eastern Front",
+    "mc_slug": "wwi-tannenberg-eastern-front",
+    "mc_releaseDate": "2017-11-16",
+    "mc_criticScore": 69,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Xbox Series X, PlayStation 5"
+  },
+  "Idle Champions of the Forgotten Realms - Gladiators of the Black Pits Pack": {
+    "mc_title": "Idle Champions of the Forgotten Realms",
+    "mc_slug": "idle-champions-of-the-forgotten-realms",
+    "mc_releaseDate": "2018-05-15",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Ancient Enemy": {
+    "mc_title": "Ancient Enemy",
+    "mc_slug": "ancient-enemy",
+    "mc_releaseDate": "2020-04-09",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Killing Floor 2": {
+    "mc_title": "Killing Floor 2",
+    "mc_slug": "killing-floor-2",
+    "mc_releaseDate": "2016-11-16",
+    "mc_criticScore": 75,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One"
+  },
+  "Geneforge 1 - Mutagen": {
+    "mc_title": "Geneforge 1 - Mutagen",
+    "mc_slug": "geneforge-1-mutagen",
+    "mc_releaseDate": "2021-02-24",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Hood: Outlaws & Legends": {
+    "mc_title": "Hood: Outlaws & Legends",
+    "mc_slug": "hood-outlaws-and-legends",
+    "mc_releaseDate": "2021-05-07",
+    "mc_criticScore": 63,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, Xbox Series X, PC, PlayStation 4, Xbox One"
+  },
+  "Iratus: Lord of the Dead": {
+    "mc_title": "Iratus: Lord of the Dead",
+    "mc_slug": "iratus-lord-of-the-dead",
+    "mc_releaseDate": "2020-04-23",
+    "mc_criticScore": 78,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "A Game Of Thrones: The Board Game Digital Edition": {
+    "mc_title": "A Game of Thrones: The Board Game - Digital Edition",
+    "mc_slug": "a-game-of-thrones-the-board-game-digital-edition",
+    "mc_releaseDate": "2020-10-06",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad)"
+  },
+  "Car Mechanic Simulator 2018": {
+    "mc_title": "Car Mechanic Simulator 2018",
+    "mc_slug": "car-mechanic-simulator-2018",
+    "mc_releaseDate": "2017-07-21",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Supraland": {
+    "mc_title": "Supraland",
+    "mc_slug": "supraland",
+    "mc_releaseDate": "2020-10-22",
+    "mc_criticScore": 82,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox One, PC, PlayStation 4, Nintendo Switch"
+  },
+  "Maneater": {
+    "mc_title": "Maneater",
+    "mc_slug": "maneater",
+    "mc_releaseDate": "2020-05-22",
+    "mc_criticScore": 70,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One, PlayStation 4, Xbox Series X, PlayStation 5"
+  },
+  "BioShock: The Collection": {
+    "mc_title": "BioShock: The Collection",
+    "mc_slug": "bioshock-the-collection",
+    "mc_releaseDate": "2016-09-13",
+    "mc_criticScore": 84,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch"
+  },
+  "BioShock 2 Remastered": {
+    "mc_title": "Call of Duty: Modern Warfare 2 Campaign Remastered",
+    "mc_slug": "call-of-duty-modern-warfare-2-campaign-remastered",
+    "mc_releaseDate": "2020-03-31",
+    "mc_criticScore": 71,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "BioShock Infinite: The Complete Edition": {
+    "mc_title": "The Witcher 3: Wild Hunt - Complete Edition",
+    "mc_slug": "the-witcher-3-wild-hunt-complete-edition",
+    "mc_releaseDate": "2019-10-15",
+    "mc_criticScore": 85,
+    "mc_rating": "M",
+    "mc_platforms": "Nintendo Switch, Xbox One, PC, PlayStation 4, PlayStation 5, Xbox Series X"
+  },
+  "Borderlands 3": {
+    "mc_title": "Borderlands 3",
+    "mc_slug": "borderlands-3",
+    "mc_releaseDate": "2019-09-13",
+    "mc_criticScore": 81,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, PlayStation 5, Xbox Series X"
+  },
+  "Prey Digital Deluxe": {
+    "mc_title": "Phenomenal Car Park Adventure: Digital Deluxe Edition",
+    "mc_slug": "phenomenal-car-park-adventure-digital-deluxe",
+    "mc_releaseDate": "TBA",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Jotun: Valhalla Edition": {
+    "mc_title": "Bad North: Jotunn Edition",
+    "mc_slug": "bad-north-jotunn-edition",
+    "mc_releaseDate": "2019-10-15",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), Nintendo Switch, PC"
+  },
+  "Redout: Enhanced Edition": {
+    "mc_title": "Planescape: Torment: Enhanced Edition / Icewind Dale: Enhanced Edition",
+    "mc_slug": "planescape-torment-enhanced-edition-icewind-dale",
+    "mc_releaseDate": "2019-10-15",
+    "mc_criticScore": 73,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "Terraforming Mars": {
+    "mc_title": "Terraforming Mars",
+    "mc_slug": "terraforming-mars",
+    "mc_releaseDate": "2019-12-03",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC"
+  },
+  "Just Die Already": {
+    "mc_title": "Just Die Already",
+    "mc_slug": "just-die-already",
+    "mc_releaseDate": "2021-05-20",
+    "mc_criticScore": 63,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One, PlayStation 4, Xbox Series X"
+  },
+  "Paradigm": {
+    "mc_title": "Paradigm",
+    "mc_slug": "paradigm",
+    "mc_releaseDate": "2017-04-05",
+    "mc_criticScore": 85,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Amnesia: Rebirth": {
+    "mc_title": "Amnesia: Rebirth",
+    "mc_slug": "amnesia-rebirth",
+    "mc_releaseDate": "2020-09-15",
+    "mc_criticScore": 80,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Xbox Series X, Nintendo Switch 2"
+  },
+  "Riverbond": {
+    "mc_title": "Riverbond",
+    "mc_slug": "riverbond",
+    "mc_releaseDate": "2019-12-10",
+    "mc_criticScore": 60,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Insurmountable": {
+    "mc_title": "Insurmountable",
+    "mc_slug": "insurmountable",
+    "mc_releaseDate": "2021-04-29",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, Xbox Series X, PlayStation 5, Xbox One"
+  },
+  "XCOM 2": {
+    "mc_title": "XCOM 2",
+    "mc_slug": "xcom-2",
+    "mc_releaseDate": "2016-02-04",
+    "mc_criticScore": 88,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Rogue Legacy": {
+    "mc_title": "Rogue Legacy",
+    "mc_slug": "rogue-legacy",
+    "mc_releaseDate": "2013-06-27",
+    "mc_criticScore": 85,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, PlayStation Vita, PlayStation 3, Xbox One, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "The Vanishing of Ethan Carter": {
+    "mc_title": "The Vanishing of Ethan Carter",
+    "mc_slug": "the-vanishing-of-ethan-carter",
+    "mc_releaseDate": "2014-09-25",
+    "mc_criticScore": 82,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "City of Brass": {
+    "mc_title": "City of Brass",
+    "mc_slug": "city-of-brass",
+    "mc_releaseDate": "2018-05-04",
+    "mc_criticScore": 66,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch"
+  },
+  "Total War: WARHAMMER": {
+    "mc_title": "Total War: WARHAMMER",
+    "mc_slug": "total-war-warhammer",
+    "mc_releaseDate": "2016-05-24",
+    "mc_criticScore": 86,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "DEMON'S TILT": {
+    "mc_title": "Demon's Tilt",
+    "mc_slug": "demons-tilt",
+    "mc_releaseDate": "2019-12-13",
+    "mc_criticScore": 0,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch, PlayStation 4"
+  },
+  "In Sound Mind": {
+    "mc_title": "In Sound Mind",
+    "mc_slug": "in-sound-mind",
+    "mc_releaseDate": "2021-09-28",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X, Nintendo Switch"
+  },
+  "Cities: Skylines": {
+    "mc_title": "Cities: Skylines",
+    "mc_slug": "cities-skylines",
+    "mc_releaseDate": "2015-03-10",
+    "mc_criticScore": 85,
+    "mc_rating": "E",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "Black Widow: Recharged": {
+    "mc_title": "Black Widow: Recharged",
+    "mc_slug": "black-widow-recharged",
+    "mc_releaseDate": "2021-10-28",
+    "mc_criticScore": 0,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PlayStation 5, PlayStation 4, Xbox Series X, Xbox One, PC"
+  },
+  "Centipede: Recharged": {
+    "mc_title": "Centipede: Recharged",
+    "mc_slug": "centipede-recharged",
+    "mc_releaseDate": "2021-09-29",
+    "mc_criticScore": 74,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, Xbox Series X, Xbox One, PC, PlayStation 4, PlayStation 5"
+  },
+  "Dauntless - Epic Slayer Kit": {
+    "mc_title": "Dauntless",
+    "mc_slug": "dauntless",
+    "mc_releaseDate": "2019-05-21",
+    "mc_criticScore": 78,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, PlayStation 5, Xbox Series X"
+  },
+  "Cris Tales": {
+    "mc_title": "Cris Tales",
+    "mc_slug": "cris-tales",
+    "mc_releaseDate": "2021-07-20",
+    "mc_criticScore": 74,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, PlayStation 5, Xbox Series X"
+  },
+  "Brothers: A Tale of Two Sons": {
+    "mc_title": "Brothers: A Tale of Two Sons",
+    "mc_slug": "brothers-a-tale-of-two-sons",
+    "mc_releaseDate": "2013-08-07",
+    "mc_criticScore": 86,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox 360, PlayStation 3, PC, PlayStation 4, Xbox One, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Windbound": {
+    "mc_title": "Windbound",
+    "mc_slug": "windbound",
+    "mc_releaseDate": "2026-05-01",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Yooka-Laylee and the Impossible Lair": {
+    "mc_title": "Yooka-Laylee and the Impossible Lair",
+    "mc_slug": "yooka-laylee-and-the-impossible-lair",
+    "mc_releaseDate": "2019-10-08",
+    "mc_criticScore": 82,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, Xbox One, Nintendo Switch, PC"
+  },
+  "DAEMON X MACHINA": {
+    "mc_title": "Daemon X Machina",
+    "mc_slug": "daemon-x-machina",
+    "mc_releaseDate": "2019-09-13",
+    "mc_criticScore": 69,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC"
+  },
+  "Relicta": {
+    "mc_title": "Relicta",
+    "mc_slug": "relicta",
+    "mc_releaseDate": "2020-08-03",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, Xbox Series X"
+  },
+  "Galactic Civilizations III": {
+    "mc_title": "Galactic Civilizations III",
+    "mc_slug": "galactic-civilizations-iii",
+    "mc_releaseDate": "2015-05-14",
+    "mc_criticScore": 81,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC"
+  },
+  "Gods Will Fall": {
+    "mc_title": "Gods Will Fall",
+    "mc_slug": "gods-will-fall",
+    "mc_releaseDate": "2021-01-28",
+    "mc_criticScore": 63,
+    "mc_rating": "",
+    "mc_platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One"
+  },
+  "Tomb Raider Trilogy": {
+    "mc_title": "The Tomb Raider Trilogy",
+    "mc_slug": "the-tomb-raider-trilogy",
+    "mc_releaseDate": "2011-03-22",
+    "mc_criticScore": 78,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 3"
+  },
+  "Rise of the Tomb Raider: 20 Year Celebration": {
+    "mc_title": "Rise of the Tomb Raider: 20 Year Celebration",
+    "mc_slug": "rise-of-the-tomb-raider-20-year-celebration",
+    "mc_releaseDate": "2016-10-11",
+    "mc_criticScore": 88,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One"
+  },
+  "Salt and Sanctuary": {
+    "mc_title": "Salt and Sanctuary",
+    "mc_slug": "salt-and-sanctuary",
+    "mc_releaseDate": "2016-03-15",
+    "mc_criticScore": 84,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PlayStation Vita, PC, Nintendo Switch, Xbox One"
+  },
+  "Pathfinder: Kingmaker - Enhanced Plus Edition": {
+    "mc_title": "Pathfinder: Kingmaker - Definitive Edition",
+    "mc_slug": "pathfinder-kingmaker-definitive-edition",
+    "mc_releaseDate": "2020-08-18",
+    "mc_criticScore": 74,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Nintendo Switch, Xbox One"
+  },
+  "Vampyr": {
+    "mc_title": "Vampyr",
+    "mc_slug": "vampyr",
+    "mc_releaseDate": "2018-06-05",
+    "mc_criticScore": 70,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch"
+  },
+  "Mutant Year Zero: Road to Eden": {
+    "mc_title": "Mutant Year Zero: Road to Eden",
+    "mc_slug": "mutant-year-zero-road-to-eden",
+    "mc_releaseDate": "2018-12-04",
+    "mc_criticScore": 78,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Remnant: From the Ashes": {
+    "mc_title": "Remnant: From the Ashes",
+    "mc_slug": "remnant-from-the-ashes",
+    "mc_releaseDate": "2019-08-19",
+    "mc_criticScore": 78,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Xbox Series X, Nintendo Switch"
+  },
+  "Neon Abyss": {
+    "mc_title": "Neon Abyss",
+    "mc_slug": "neon-abyss",
+    "mc_releaseDate": "2020-07-14",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Nintendo Switch, Xbox One"
+  },
+  "Shenmue III": {
+    "mc_title": "Shenmue III",
+    "mc_slug": "shenmue-iii",
+    "mc_releaseDate": "2019-11-19",
+    "mc_criticScore": 67,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC"
+  },
+  "Godfall: Challenger Edition": {
+    "mc_title": "Godfall: Ultimate Edition",
+    "mc_slug": "godfall-ultimate-edition",
+    "mc_releaseDate": "2022-04-07",
+    "mc_criticScore": 74,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox Series X, PlayStation 5, PC, Xbox One, PlayStation 4"
+  },
+  "Prison Architect": {
+    "mc_title": "Prison Architect",
+    "mc_slug": "prison-architect",
+    "mc_releaseDate": "2015-10-06",
+    "mc_criticScore": 83,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Xbox 360, iOS (iPhone/iPad)"
+  },
+  "Dead by Daylight": {
+    "mc_title": "Dead by Daylight",
+    "mc_slug": "dead-by-daylight",
+    "mc_releaseDate": "2017-06-20",
+    "mc_criticScore": 64,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch, iOS (iPhone/iPad), PlayStation 5, Xbox Series X"
+  },
+  "while True: learn()": {
+    "mc_title": "while True: learn()",
+    "mc_slug": "while-true-learn",
+    "mc_releaseDate": "2019-01-17",
+    "mc_criticScore": 73,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "Antstream - Epic Welcome Pack": {
+    "mc_title": "%",
+    "mc_slug": "-2025",
+    "mc_releaseDate": "2025-07-15",
+    "mc_criticScore": null,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PlayStation 5"
+  },
+  "Guild of Dungeoneering Ultimate Edition": {
+    "mc_title": "Guild of Dungeoneering",
+    "mc_slug": "guild-of-dungeoneering",
+    "mc_releaseDate": "2015-07-14",
+    "mc_criticScore": 72,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "KID A MNESIA EXHIBITION": {
+    "mc_title": "Kid A MNESIA Exhibition",
+    "mc_slug": "kid-a-mnesia-exhibition",
+    "mc_releaseDate": "2021-11-18",
+    "mc_criticScore": 0,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 5, PC"
+  },
+  "Rogue Company - Season Four Epic Pack": {
+    "mc_title": "Rogue Company",
+    "mc_slug": "rogue-company",
+    "mc_releaseDate": "2020-07-20",
+    "mc_criticScore": 75,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One, PlayStation 4, Xbox Series X, PlayStation 5"
+  },
+  "Tiny Tina's Assault on Dragon Keep: A Wonderlands One-shot Adventure": {
+    "mc_title": "Tiny Tina's Assault on Dragon Keep: A Wonderlands One-Shot Adventure",
+    "mc_slug": "tiny-tinas-assault-on-dragon-keep-a-wonderlands",
+    "mc_releaseDate": "2021-11-09",
+    "mc_criticScore": 0,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One"
+  },
+  "Aven Colony": {
+    "mc_title": "Aven Colony",
+    "mc_slug": "aven-colony",
+    "mc_releaseDate": "2017-07-25",
+    "mc_criticScore": 65,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4"
+  },
+  "DARQ: Complete Edition": {
+    "mc_title": "DARQ: Complete Edition",
+    "mc_slug": "darq-complete-edition",
+    "mc_releaseDate": "2021-03-18",
+    "mc_criticScore": 78,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PlayStation 4, Xbox One, PlayStation 5, Xbox Series X, PC"
+  },
+  "Among the Sleep Enhanced Edition": {
+    "mc_title": "Among the Sleep: Enhanced Edition",
+    "mc_slug": "among-the-sleep-enhanced-edition",
+    "mc_releaseDate": "2019-05-29",
+    "mc_criticScore": 0,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Paladins - Epic Pack": {
+    "mc_title": "Paladins: Champions of the Realm",
+    "mc_slug": "paladins-champions-of-the-realm",
+    "mc_releaseDate": "2018-06-12",
+    "mc_criticScore": 74,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Stubbs the Zombie in Rebel Without a Pulse": {
+    "mc_title": "Stubbs the Zombie in Rebel Without a Pulse",
+    "mc_slug": "stubbs-the-zombie-in-rebel-without-a-pulse",
+    "mc_releaseDate": "2005-10-18",
+    "mc_criticScore": 75,
+    "mc_rating": "M",
+    "mc_platforms": "Xbox, PC, Nintendo Switch, Xbox One, PlayStation 4"
+  },
+  "PC Building Simulator": {
+    "mc_title": "PC Building Simulator",
+    "mc_slug": "pc-building-simulator",
+    "mc_releaseDate": "2019-01-29",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "Tom Clancy’s Ghost Recon Wildlands - Fallen Ghosts": {
+    "mc_title": "Tom Clancy's Ghost Recon: Wildlands",
+    "mc_slug": "tom-clancys-ghost-recon-wildlands",
+    "mc_releaseDate": "2017-03-07",
+    "mc_criticScore": 70,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "2064: Read Only Memories": {
+    "mc_title": "2064: Read Only Memories",
+    "mc_slug": "2064-read-only-memories",
+    "mc_releaseDate": "2017-01-17",
+    "mc_criticScore": 76,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, PlayStation Vita, Xbox One"
+  },
+  "The Escapists": {
+    "mc_title": "The Escapists",
+    "mc_slug": "the-escapists",
+    "mc_releaseDate": "2015-02-13",
+    "mc_criticScore": 74,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox One, PC, PlayStation 4, Xbox 360, iOS (iPhone/iPad)"
+  },
+  "Speed Brawl": {
+    "mc_title": "Speed Brawl",
+    "mc_slug": "speed-brawl",
+    "mc_releaseDate": "2018-09-18",
+    "mc_criticScore": 0,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox One, PC, PlayStation 4, Nintendo Switch"
+  },
+  "Tharsis": {
+    "mc_title": "Tharsis",
+    "mc_slug": "tharsis",
+    "mc_releaseDate": "2016-01-11",
+    "mc_criticScore": 61,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Nintendo Switch"
+  },
+  "Nioh: The Complete Edition": {
+    "mc_title": "Nioh 2: The Complete Edition",
+    "mc_slug": "nioh-2-the-complete-edition",
+    "mc_releaseDate": "2021-02-05",
+    "mc_criticScore": 86,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4"
+  },
+  "Sheltered": {
+    "mc_title": "Sheltered",
+    "mc_slug": "sheltered",
+    "mc_releaseDate": "2016-03-15",
+    "mc_criticScore": 70,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Yoku's Island Express": {
+    "mc_title": "Yoku's Island Express",
+    "mc_slug": "yokus-island-express",
+    "mc_releaseDate": "2018-05-29",
+    "mc_criticScore": 83,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox One, PC, Nintendo Switch, PlayStation 4"
+  },
+  "Automachef": {
+    "mc_title": "Automachef",
+    "mc_slug": "automachef",
+    "mc_releaseDate": "2019-07-23",
+    "mc_criticScore": 68,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC"
+  },
+  "Saints Row: The Third - Remastered": {
+    "mc_title": "Saints Row: The Third Remastered",
+    "mc_slug": "saints-row-the-third-remastered",
+    "mc_releaseDate": "2020-05-22",
+    "mc_criticScore": 74,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Xbox Series X, PlayStation 5"
+  },
+  "Void Bastards": {
+    "mc_title": "Void Bastards",
+    "mc_slug": "void-bastards",
+    "mc_releaseDate": "2019-05-28",
+    "mc_criticScore": 81,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "Yooka-Laylee": {
+    "mc_title": "Yooka-Laylee",
+    "mc_slug": "yooka-laylee",
+    "mc_releaseDate": "2017-04-11",
+    "mc_criticScore": 68,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, PC, Wii U, Xbox One, Nintendo Switch"
+  },
+  "Rebel Galaxy": {
+    "mc_title": "Rebel Galaxy",
+    "mc_slug": "rebel-galaxy",
+    "mc_releaseDate": "2015-10-20",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Minit": {
+    "mc_title": "Minit",
+    "mc_slug": "minit",
+    "mc_releaseDate": "2018-04-03",
+    "mc_criticScore": 81,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "MOTHERGUNSHIP": {
+    "mc_title": "Mothergunship",
+    "mc_slug": "mothergunship",
+    "mc_releaseDate": "2018-07-17",
+    "mc_criticScore": 72,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Train Sim World 2": {
+    "mc_title": "Train Sim World 2",
+    "mc_slug": "train-sim-world-2",
+    "mc_releaseDate": "2020-08-20",
+    "mc_criticScore": 0,
+    "mc_rating": "E",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, PlayStation 5"
+  },
+  "Defense Grid: The Awakening": {
+    "mc_title": "Defense Grid: The Awakening",
+    "mc_slug": "defense-grid-the-awakening",
+    "mc_releaseDate": "2009-09-02",
+    "mc_criticScore": 82,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox 360, PC"
+  },
+  "Verdun": {
+    "mc_title": "WWI: Verdun - Western Front",
+    "mc_slug": "wwi-verdun-western-front",
+    "mc_releaseDate": "2016-08-30",
+    "mc_criticScore": 56,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, PlayStation 5"
+  },
+  "Obduction": {
+    "mc_title": "Obduction",
+    "mc_slug": "obduction",
+    "mc_releaseDate": "2016-08-24",
+    "mc_criticScore": 76,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Offworld Trading Company": {
+    "mc_title": "Offworld Trading Company",
+    "mc_slug": "offworld-trading-company",
+    "mc_releaseDate": "2016-04-28",
+    "mc_criticScore": 78,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Ironcast": {
+    "mc_title": "Ironcast",
+    "mc_slug": "ironcast",
+    "mc_releaseDate": "2017-08-10",
+    "mc_criticScore": 80,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4"
+  },
+  "The Spectrum Retreat": {
+    "mc_title": "The Spectrum Retreat",
+    "mc_slug": "the-spectrum-retreat",
+    "mc_releaseDate": "2018-07-10",
+    "mc_criticScore": 67,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch"
+  },
+  "Sonic Mania": {
+    "mc_title": "Sonic Mania",
+    "mc_slug": "sonic-mania",
+    "mc_releaseDate": "2017-08-15",
+    "mc_criticScore": 86,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch"
+  },
+  "Hell is Other Demons": {
+    "mc_title": "Hell is Other Demons",
+    "mc_slug": "hell-is-other-demons",
+    "mc_releaseDate": "2019-04-18",
+    "mc_criticScore": 74,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, Xbox Series X, Xbox One, PlayStation 5, PlayStation 4"
+  },
+  "Overcooked! 2": {
+    "mc_title": "Overcooked! 2",
+    "mc_slug": "overcooked-2",
+    "mc_releaseDate": "2018-08-07",
+    "mc_criticScore": 81,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PlayStation 4, Xbox One, PC, Nintendo Switch 2"
+  },
+  "Frostpunk": {
+    "mc_title": "Frostpunk",
+    "mc_slug": "frostpunk",
+    "mc_releaseDate": "2018-04-24",
+    "mc_criticScore": 84,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Among Us": {
+    "mc_title": "Among Us",
+    "mc_slug": "among-us",
+    "mc_releaseDate": "2018-11-16",
+    "mc_criticScore": 85,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, Xbox Series X, Xbox One, PlayStation 5, PlayStation 4"
+  },
+  "NBA 2K21": {
+    "mc_title": "NBA 2K21",
+    "mc_slug": "nba-2k21",
+    "mc_releaseDate": "2020-09-04",
+    "mc_criticScore": 68,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PlayStation 5, Nintendo Switch, Xbox One, Xbox Series X, PC"
+  },
+  "The Lion's Song": {
+    "mc_title": "The Lion's Song",
+    "mc_slug": "the-lions-song",
+    "mc_releaseDate": "2018-07-10",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, iOS (iPhone/iPad)"
+  },
+  "Pine": {
+    "mc_title": "Pine",
+    "mc_slug": "pine",
+    "mc_releaseDate": "2019-11-26",
+    "mc_criticScore": 48,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4"
+  },
+  "World of Warships Exclusive Starter Pack": {
+    "mc_title": "World of Warships",
+    "mc_slug": "world-of-warships",
+    "mc_releaseDate": "2015-09-17",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "Idle Champions of the Forgotten Realms - Epic Champions of Renown Pack": {
+    "mc_title": "Idle Champions of the Forgotten Realms",
+    "mc_slug": "idle-champions-of-the-forgotten-realms",
+    "mc_releaseDate": "2018-05-15",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Alien: Isolation - Last Survivor": {
+    "mc_title": "Alien: Isolation - Last Survivor",
+    "mc_slug": "alien-isolation-last-survivor",
+    "mc_releaseDate": "2014-10-14",
+    "mc_criticScore": null,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 3, PlayStation 4, Xbox 360, Xbox One"
+  },
+  "Alien: Isolation": {
+    "mc_title": "Alien: Isolation",
+    "mc_slug": "alien-isolation",
+    "mc_releaseDate": "2014-10-07",
+    "mc_criticScore": 79,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, PlayStation 3, Xbox 360, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Hand of Fate 2": {
+    "mc_title": "Hand of Fate 2",
+    "mc_slug": "hand-of-fate-2",
+    "mc_releaseDate": "2017-11-07",
+    "mc_criticScore": 80,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "Deponia: The Complete Journey": {
+    "mc_title": "Deponia: The Complete Journey",
+    "mc_slug": "deponia-the-complete-journey",
+    "mc_releaseDate": "2014-07-08",
+    "mc_criticScore": 0,
+    "mc_rating": "M",
+    "mc_platforms": "PC"
+  },
+  "Ken Follett's The Pillars of the Earth": {
+    "mc_title": "Ken Follett's The Pillars of the Earth",
+    "mc_slug": "ken-folletts-the-pillars-of-the-earth",
+    "mc_releaseDate": "2017-08-15",
+    "mc_criticScore": 78,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "The First Tree": {
+    "mc_title": "The First Tree",
+    "mc_slug": "the-first-tree",
+    "mc_releaseDate": "2018-11-30",
+    "mc_criticScore": 81,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One, iOS (iPhone/iPad)"
+  },
+  "3 out of 10: Season Two": {
+    "mc_title": "3 out of 10: Season Two",
+    "mc_slug": "3-out-of-10-season-two",
+    "mc_releaseDate": "2021-04-08",
+    "mc_criticScore": 79,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Tales of the Neon Sea": {
+    "mc_title": "Tales of the Neon Sea",
+    "mc_slug": "tales-of-the-neon-sea",
+    "mc_releaseDate": "2019-04-29",
+    "mc_criticScore": 62,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, iOS (iPhone/iPad), PlayStation 4, PlayStation 5, Xbox One"
+  },
+  "Creature in the Well": {
+    "mc_title": "Creature in the Well",
+    "mc_slug": "creature-in-the-well",
+    "mc_releaseDate": "2019-09-06",
+    "mc_criticScore": 76,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4"
+  },
+  "The Fall": {
+    "mc_title": "The fall",
+    "mc_slug": "the-fall",
+    "mc_releaseDate": "2025-03-28",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Surviving Mars": {
+    "mc_title": "Surviving Mars",
+    "mc_slug": "surviving-mars",
+    "mc_releaseDate": "2018-03-15",
+    "mc_criticScore": 76,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Wargame: Red Dragon": {
+    "mc_title": "Wargame: Red Dragon",
+    "mc_slug": "wargame-red-dragon",
+    "mc_releaseDate": "2014-04-17",
+    "mc_criticScore": 78,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Sunless Sea": {
+    "mc_title": "Sunless Sea",
+    "mc_slug": "sunless-sea",
+    "mc_releaseDate": "2015-02-06",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad)"
+  },
+  "Absolute Drift": {
+    "mc_title": "Absolute Drift",
+    "mc_slug": "absolute-drift",
+    "mc_releaseDate": "2020-12-03",
+    "mc_criticScore": 70,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One, iOS (iPhone/iPad)"
+  },
+  "RAGE 2": {
+    "mc_title": "RAGE 2",
+    "mc_slug": "rage-2",
+    "mc_releaseDate": "2019-05-13",
+    "mc_criticScore": 73,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Halcyon 6: Starbase Commander": {
+    "mc_title": "Halcyon 6: Starbase Commander",
+    "mc_slug": "halcyon-6-starbase-commander",
+    "mc_releaseDate": "2016-04-20",
+    "mc_criticScore": 71,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "For The King": {
+    "mc_title": "For the King",
+    "mc_slug": "for-the-king",
+    "mc_releaseDate": "2018-04-19",
+    "mc_criticScore": 79,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch, PlayStation 4"
+  },
+  "Dandara: Trials of Fear Edition": {
+    "mc_title": "Dandara: Trials of Fear+",
+    "mc_slug": "dandara-trials-of-fear-plus",
+    "mc_releaseDate": "2021-12-03",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad)"
+  },
+  "STAR WARS Battlefront II: Celebration Edition": {
+    "mc_title": "Star Wars Battlefront II",
+    "mc_slug": "star-wars-battlefront-ii",
+    "mc_releaseDate": "2017-11-14",
+    "mc_criticScore": 68,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "Crying Suns": {
+    "mc_title": "Crying Suns",
+    "mc_slug": "crying-suns",
+    "mc_releaseDate": "2019-09-18",
+    "mc_criticScore": 75,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Jurassic World Evolution": {
+    "mc_title": "Jurassic World Evolution",
+    "mc_slug": "jurassic-world-evolution",
+    "mc_releaseDate": "2018-06-11",
+    "mc_criticScore": 69,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox One, PlayStation 4"
+  },
+  "Torchlight II": {
+    "mc_title": "Torchlight II",
+    "mc_slug": "torchlight-ii",
+    "mc_releaseDate": "2012-09-20",
+    "mc_criticScore": 88,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One, PlayStation 4"
+  },
+  "Solitairica": {
+    "mc_title": "Solitairica",
+    "mc_slug": "solitairica",
+    "mc_releaseDate": "2016-08-24",
+    "mc_criticScore": 82,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC"
+  },
+  "Stranded Deep": {
+    "mc_title": "Stranded Deep",
+    "mc_slug": "stranded-deep",
+    "mc_releaseDate": "2020-04-23",
+    "mc_criticScore": 65,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch"
+  },
+  "Night in the Woods": {
+    "mc_title": "Night in the Woods",
+    "mc_slug": "night-in-the-woods",
+    "mc_releaseDate": "2017-02-21",
+    "mc_criticScore": 88,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, iOS (iPhone/iPad), PlayStation 5"
+  },
+  "My Time At Portia": {
+    "mc_title": "My Time At Portia",
+    "mc_slug": "my-time-at-portia",
+    "mc_releaseDate": "2019-01-15",
+    "mc_criticScore": 73,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Darkest Dungeon": {
+    "mc_title": "Darkest Dungeon",
+    "mc_slug": "darkest-dungeon",
+    "mc_releaseDate": "2015-02-03",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, PlayStation Vita, iOS (iPhone/iPad), Nintendo Switch, Xbox One"
+  },
+  "INSIDE": {
+    "mc_title": "INSIDE",
+    "mc_slug": "inside",
+    "mc_releaseDate": "2016-06-29",
+    "mc_criticScore": 93,
+    "mc_rating": "M",
+    "mc_platforms": "Xbox One, PC, PlayStation 4, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Tropico 5": {
+    "mc_title": "Tropico 5",
+    "mc_slug": "tropico-5",
+    "mc_releaseDate": "2014-05-23",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox 360, PlayStation 4"
+  },
+  "Metro 2033 Redux": {
+    "mc_title": "Metro: 2033 Redux",
+    "mc_slug": "metro-2033-redux",
+    "mc_releaseDate": "2014-08-25",
+    "mc_criticScore": 90,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "The Long Dark": {
+    "mc_title": "The Long Dark",
+    "mc_slug": "the-long-dark",
+    "mc_releaseDate": "2017-08-01",
+    "mc_criticScore": 77,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch, PlayStation 5"
+  },
+  "Oddworld: New 'n' Tasty": {
+    "mc_title": "Oddworld: Abe's Oddysee - New 'n' Tasty",
+    "mc_slug": "oddworld-abes-oddysee-new-n-tasty",
+    "mc_releaseDate": "2014-07-22",
+    "mc_criticScore": 84,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox 360, PlayStation 3, PlayStation Vita, Wii U, Xbox One, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Pillars of Eternity: Definitive Edition": {
+    "mc_title": "Pillars of Eternity: Definitive Edition",
+    "mc_slug": "pillars-of-eternity-definitive-edition",
+    "mc_releaseDate": "2017-11-15",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Tyranny: Gold Edition": {
+    "mc_title": "Resident Evil 7: biohazard - Gold Edition",
+    "mc_slug": "resident-evil-7-biohazard-gold-edition",
+    "mc_releaseDate": "2026-02-27",
+    "mc_criticScore": 87,
+    "mc_rating": "M",
+    "mc_platforms": "Nintendo Switch 2, PlayStation 4, Xbox One, PC, Nintendo Switch, PlayStation 5"
+  },
+  "MudRunner": {
+    "mc_title": "Spintires: MudRunner",
+    "mc_slug": "spintires-mudrunner",
+    "mc_releaseDate": "2017-10-31",
+    "mc_criticScore": 67,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Elite Dangerous": {
+    "mc_title": "Elite: Dangerous",
+    "mc_slug": "elite-dangerous",
+    "mc_releaseDate": "2014-12-16",
+    "mc_criticScore": 80,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox One, PlayStation 4"
+  },
+  "The World Next Door": {
+    "mc_title": "The World Next Door",
+    "mc_slug": "the-world-next-door",
+    "mc_releaseDate": "2019-03-27",
+    "mc_criticScore": 63,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC"
+  },
+  "The Textorcist: The Story of Ray Bibbia": {
+    "mc_title": "The Textorcist: The Story of Ray Bibbia",
+    "mc_slug": "the-textorcist-the-story-of-ray-bibbia",
+    "mc_releaseDate": "2019-02-14",
+    "mc_criticScore": 78,
+    "mc_rating": "",
+    "mc_platforms": "PC, Dreamcast"
+  },
+  "Dungeons 3": {
+    "mc_title": "Dungeons 3",
+    "mc_slug": "dungeons-3",
+    "mc_releaseDate": "2017-10-13",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Blair Witch": {
+    "mc_title": "Blair Witch",
+    "mc_slug": "blair-witch",
+    "mc_releaseDate": "2019-08-30",
+    "mc_criticScore": 69,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch, Meta Quest"
+  },
+  "Ghostbusters: The Video Game Remastered": {
+    "mc_title": "Ghostbusters: The Video Game Remastered",
+    "mc_slug": "ghostbusters-the-video-game-remastered",
+    "mc_releaseDate": "2019-10-04",
+    "mc_criticScore": 66,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch"
+  },
+  "Layers of Fear 2": {
+    "mc_title": "Layers of Fear 2",
+    "mc_slug": "layers-of-fear-2",
+    "mc_releaseDate": "2019-05-28",
+    "mc_criticScore": 70,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Amnesia: A Machine for Pigs": {
+    "mc_title": "Amnesia: A Machine for Pigs",
+    "mc_slug": "amnesia-a-machine-for-pigs",
+    "mc_releaseDate": "2013-09-10",
+    "mc_criticScore": 72,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Kingdom: New Lands": {
+    "mc_title": "Kingdom: New Lands",
+    "mc_slug": "kingdom-new-lands",
+    "mc_releaseDate": "2017-09-14",
+    "mc_criticScore": 74,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, iOS (iPhone/iPad), PlayStation 4"
+  },
+  "ABZÛ": {
+    "mc_title": "ABZU",
+    "mc_slug": "abzu",
+    "mc_releaseDate": "2016-08-02",
+    "mc_criticScore": 78,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch"
+  },
+  "Pikuniku": {
+    "mc_title": "Pikuniku",
+    "mc_slug": "pikuniku",
+    "mc_releaseDate": "2019-01-24",
+    "mc_criticScore": 76,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One"
+  },
+  "RollerCoaster Tycoon 3: Complete Edition": {
+    "mc_title": "RollerCoaster Tycoon 3: Complete Edition",
+    "mc_slug": "rollercoaster-tycoon-3-complete-edition",
+    "mc_releaseDate": "2020-09-24",
+    "mc_criticScore": 72,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Football Manager 2020": {
+    "mc_title": "Football Manager 2020",
+    "mc_slug": "football-manager-2020",
+    "mc_releaseDate": "2019-11-18",
+    "mc_criticScore": 84,
+    "mc_rating": "E",
+    "mc_platforms": "PC, iOS (iPhone/iPad)"
+  },
+  "Stick it to The Man!": {
+    "mc_title": "Stick it to the Man!",
+    "mc_slug": "stick-it-to-the-man",
+    "mc_releaseDate": "2013-11-19",
+    "mc_criticScore": 79,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 3, PlayStation Vita, PC, PlayStation 4, Wii U, Xbox One, Nintendo Switch"
+  },
+  "Watch_Dogs 2": {
+    "mc_title": "Watch Dogs 2",
+    "mc_slug": "watch-dogs-2",
+    "mc_releaseDate": "2016-11-15",
+    "mc_criticScore": 82,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "Railway Empire": {
+    "mc_title": "Railway Empire",
+    "mc_slug": "railway-empire",
+    "mc_releaseDate": "2018-01-26",
+    "mc_criticScore": 74,
+    "mc_rating": "E",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Where the Water Tastes Like Wine": {
+    "mc_title": "Where the Water Tastes Like Wine",
+    "mc_slug": "where-the-water-tastes-like-wine",
+    "mc_releaseDate": "2018-02-28",
+    "mc_criticScore": 74,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "Into the Breach": {
+    "mc_title": "Into the Breach",
+    "mc_slug": "into-the-breach",
+    "mc_releaseDate": "2018-02-27",
+    "mc_criticScore": 90,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Borderlands 2 - Commander Lilith & the Fight for Sanctuary": {
+    "mc_title": "Borderlands 2: Commander Lilith & the Fight for Sanctuary",
+    "mc_slug": "borderlands-2-commander-lilith-and-the-fight-for",
+    "mc_releaseDate": "2019-06-09",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "Xbox One, PC, PlayStation 4"
+  },
+  "Hitman": {
+    "mc_title": "Hitman",
+    "mc_slug": "hitman",
+    "mc_releaseDate": "2016-03-11",
+    "mc_criticScore": 84,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "Shadowrun Collection": {
+    "mc_title": "Shadowrun: Dragonfall - Director's Cut",
+    "mc_slug": "shadowrun-dragonfall-directors-cut",
+    "mc_releaseDate": "2014-09-18",
+    "mc_criticScore": 87,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, Xbox One, Xbox Series X, PlayStation 4, PlayStation 5"
+  },
+  "Shadowrun: Dragonfall - Director's Cut": {
+    "mc_title": "Shadowrun: Dragonfall - Director's Cut",
+    "mc_slug": "shadowrun-dragonfall-directors-cut",
+    "mc_releaseDate": "2014-09-18",
+    "mc_criticScore": 87,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, Xbox One, Xbox Series X, PlayStation 4, PlayStation 5"
+  },
+  "Shadowrun: Hong Kong - Extended Edition": {
+    "mc_title": "Shadowrun: Hong Kong - Extended Edition",
+    "mc_slug": "shadowrun-hong-kong-extended-edition",
+    "mc_releaseDate": "2022-06-21",
+    "mc_criticScore": 0,
+    "mc_rating": "M",
+    "mc_platforms": "Nintendo Switch, Xbox Series X, Xbox One, PlayStation 4, PlayStation 5"
+  },
+  "God's Trigger": {
+    "mc_title": "God's Trigger",
+    "mc_slug": "gods-trigger",
+    "mc_releaseDate": "2019-04-18",
+    "mc_criticScore": 71,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "Enter the Gungeon": {
+    "mc_title": "Enter the Gungeon",
+    "mc_slug": "enter-the-gungeon",
+    "mc_releaseDate": "2016-04-05",
+    "mc_criticScore": 82,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One, iOS (iPhone/iPad)"
+  },
+  "Remnant: From The Ashes": {
+    "mc_title": "Remnant: From the Ashes",
+    "mc_slug": "remnant-from-the-ashes",
+    "mc_releaseDate": "2019-08-19",
+    "mc_criticScore": 78,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Xbox Series X, Nintendo Switch"
+  },
+  "The Alto Collection": {
+    "mc_title": "The Alto Collection",
+    "mc_slug": "the-alto-collection",
+    "mc_releaseDate": "2020-08-13",
+    "mc_criticScore": 76,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch"
+  },
+  "A Total War Saga: Troy": {
+    "mc_title": "A Total War Saga: TROY",
+    "mc_slug": "a-total-war-saga-troy",
+    "mc_releaseDate": "2020-08-13",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "PC"
+  },
+  "3 out of 10, EP 1: \"Welcome To Shovelworks\"": {
+    "mc_title": "3 out of 10 Episode 1: Welcome to Shovelworks",
+    "mc_slug": "3-out-of-10-episode-1-welcome-to-shovelworks",
+    "mc_releaseDate": "2020-08-06",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Wilmot's Warehouse": {
+    "mc_title": "Wilmot's Warehouse",
+    "mc_slug": "wilmots-warehouse",
+    "mc_releaseDate": "2019-08-29",
+    "mc_criticScore": 85,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, iOS (iPhone/iPad), Xbox One, PlayStation 4"
+  },
+  "20XX": {
+    "mc_title": "20XX",
+    "mc_slug": "20xx",
+    "mc_releaseDate": "2018-07-10",
+    "mc_criticScore": 77,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Barony": {
+    "mc_title": "Barony: Legends & Pariahs",
+    "mc_slug": "barony-legends-and-pariahs",
+    "mc_releaseDate": "2023-08-01",
+    "mc_criticScore": null,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch"
+  },
+  "Superbrothers: Sword & Sworcery EP": {
+    "mc_title": "Superbrothers: Sword & Sworcery EP",
+    "mc_slug": "superbrothers-sword-and-sworcery-ep",
+    "mc_releaseDate": "2011-03-24",
+    "mc_criticScore": 86,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, Nintendo Switch"
+  },
+  "Next Up Hero": {
+    "mc_title": "Next Up Hero",
+    "mc_slug": "next-up-hero",
+    "mc_releaseDate": "2018-08-16",
+    "mc_criticScore": 0,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Tacoma": {
+    "mc_title": "Tacoma",
+    "mc_slug": "tacoma",
+    "mc_releaseDate": "2017-08-01",
+    "mc_criticScore": 76,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4"
+  },
+  "Lifeless Planet: Premier Edition": {
+    "mc_title": "Lifeless Planet",
+    "mc_slug": "lifeless-planet",
+    "mc_releaseDate": "2014-06-06",
+    "mc_criticScore": 59,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "The Escapists 2": {
+    "mc_title": "The Escapists 2",
+    "mc_slug": "the-escapists-2",
+    "mc_releaseDate": "2017-08-22",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One, iOS (iPhone/iPad)"
+  },
+  "Hue": {
+    "mc_title": "Hue",
+    "mc_slug": "hue",
+    "mc_releaseDate": "2016-08-30",
+    "mc_criticScore": 77,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, PlayStation Vita, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Aer: Memories of Old": {
+    "mc_title": "AER: Memories of Old",
+    "mc_slug": "aer-memories-of-old",
+    "mc_releaseDate": "2017-10-25",
+    "mc_criticScore": 69,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Stranger Things 3: The Game": {
+    "mc_title": "Stranger Things 3: The Game",
+    "mc_slug": "stranger-things-3-the-game",
+    "mc_releaseDate": "2019-07-04",
+    "mc_criticScore": 53,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "Pathway": {
+    "mc_title": "Pathway",
+    "mc_slug": "pathway",
+    "mc_releaseDate": "2019-04-11",
+    "mc_criticScore": 68,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "Ark: Survival Evolved": {
+    "mc_title": "ARK: Survival Evolved",
+    "mc_slug": "ark-survival-evolved",
+    "mc_releaseDate": "2017-08-27",
+    "mc_criticScore": 70,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Samurai Shodown Neogeo Collection": {
+    "mc_title": "Samurai Shodown NeoGeo Collection",
+    "mc_slug": "samurai-shodown-neogeo-collection",
+    "mc_releaseDate": "2020-07-28",
+    "mc_criticScore": 76,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Overcooked": {
+    "mc_title": "Overcooked!",
+    "mc_slug": "overcooked",
+    "mc_releaseDate": "2016-08-02",
+    "mc_criticScore": 78,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch"
+  },
+  "Sludge Life": {
+    "mc_title": "Sludge Life",
+    "mc_slug": "sludge-life",
+    "mc_releaseDate": "2020-04-08",
+    "mc_criticScore": 73,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Nintendo Switch"
+  },
+  "Borderlands: The Handsome Collection": {
+    "mc_title": "Borderlands: The Handsome Collection",
+    "mc_slug": "borderlands-the-handsome-collection",
+    "mc_releaseDate": "2015-03-24",
+    "mc_criticScore": 82,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch"
+  },
+  "Borderlands: The Pre-Sequel": {
+    "mc_title": "Borderlands: The Pre-Sequel",
+    "mc_slug": "borderlands-the-pre-sequel",
+    "mc_releaseDate": "2014-10-13",
+    "mc_criticScore": 75,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox 360, PlayStation 3"
+  },
+  "Sid Meier's Civilization VI": {
+    "mc_title": "Sid Meier's Civilization VI",
+    "mc_slug": "sid-meiers-civilization-vi",
+    "mc_releaseDate": "2016-10-20",
+    "mc_criticScore": 88,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, PlayStation 4, Xbox One"
+  },
+  "Grand Theft Auto V": {
+    "mc_title": "Grand Theft Auto V",
+    "mc_slug": "grand-theft-auto-v",
+    "mc_releaseDate": "2014-11-18",
+    "mc_criticScore": 97,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PlayStation 3, Xbox 360, Xbox One, PC, PlayStation 5, Xbox Series X"
+  },
+  "Death Coming": {
+    "mc_title": "Death Coming (2017)",
+    "mc_slug": "death-coming-2017",
+    "mc_releaseDate": "2018-03-14",
+    "mc_criticScore": 75,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), PC, PlayStation 4, Nintendo Switch"
+  },
+  "Amnesia: The Dark Descent": {
+    "mc_title": "Amnesia: The Dark Descent",
+    "mc_slug": "amnesia-the-dark-descent",
+    "mc_releaseDate": "2010-09-08",
+    "mc_criticScore": 85,
+    "mc_rating": "M",
+    "mc_platforms": "PC"
+  },
+  "Crashlands": {
+    "mc_title": "Crashlands",
+    "mc_slug": "crashlands",
+    "mc_releaseDate": "2016-01-21",
+    "mc_criticScore": 78,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, Xbox One"
+  },
+  "Just Cause 4": {
+    "mc_title": "Just Cause 4",
+    "mc_slug": "just-cause-4",
+    "mc_releaseDate": "2018-12-04",
+    "mc_criticScore": 68,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4"
+  },
+  "Wheels of Aurelia": {
+    "mc_title": "Wheels of Aurelia",
+    "mc_slug": "wheels-of-aurelia",
+    "mc_releaseDate": "2016-09-20",
+    "mc_criticScore": 63,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Close to the Sun": {
+    "mc_title": "Close To The Sun",
+    "mc_slug": "close-to-the-sun",
+    "mc_releaseDate": "2019-05-02",
+    "mc_criticScore": 66,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Sherlock Holmes: Crimes and Punishments": {
+    "mc_title": "Sherlock Holmes: Crimes & Punishments",
+    "mc_slug": "crimes-and-punishments",
+    "mc_releaseDate": "2014-09-30",
+    "mc_criticScore": 73,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, PlayStation 3, Xbox 360, Xbox One, Nintendo Switch"
+  },
+  "Gone Home": {
+    "mc_title": "Gone Home",
+    "mc_slug": "gone-home",
+    "mc_releaseDate": "2013-08-15",
+    "mc_criticScore": 86,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 3, Xbox 360, Wii U, PlayStation 4, Xbox One, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "Hob": {
+    "mc_title": "Hob",
+    "mc_slug": "hob",
+    "mc_releaseDate": "2017-09-26",
+    "mc_criticScore": 76,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Nintendo Switch"
+  },
+  "Totally Reliable Delivery Service": {
+    "mc_title": "Totally Reliable Delivery Service",
+    "mc_slug": "totally-reliable-delivery-service",
+    "mc_releaseDate": "2021-04-01",
+    "mc_criticScore": 64,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One, iOS (iPhone/iPad), Xbox Series X, PlayStation 5"
+  },
+  "Drawful 2": {
+    "mc_title": "Drawful 2",
+    "mc_slug": "drawful-2",
+    "mc_releaseDate": "2016-06-21",
+    "mc_criticScore": 75,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox One, PlayStation 4, PC, Nintendo Switch"
+  },
+  "Tormentor❌Punisher": {
+    "mc_title": "Tormentor X Punisher",
+    "mc_slug": "tormentor-x-punisher",
+    "mc_releaseDate": "2017-06-02",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "World War Z": {
+    "mc_title": "World War Z",
+    "mc_slug": "world-war-z",
+    "mc_releaseDate": "2019-04-16",
+    "mc_criticScore": 67,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch"
+  },
+  "The Stanley Parable": {
+    "mc_title": "The Stanley Parable",
+    "mc_slug": "the-stanley-parable",
+    "mc_releaseDate": "2013-10-17",
+    "mc_criticScore": 88,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Watch_Dogs": {
+    "mc_title": "Watch Dogs",
+    "mc_slug": "watch-dogs",
+    "mc_releaseDate": "2014-05-27",
+    "mc_criticScore": 80,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PlayStation 3, Xbox 360, PC, Wii U, Xbox One"
+  },
+  "A Short Hike": {
+    "mc_title": "A Short Hike",
+    "mc_slug": "a-short-hike",
+    "mc_releaseDate": "2020-08-18",
+    "mc_criticScore": 88,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Anodyne 2: Return to Dust": {
+    "mc_title": "Anodyne 2: Return to Dust",
+    "mc_slug": "anodyne-2-return-to-dust",
+    "mc_releaseDate": "2021-02-18",
+    "mc_criticScore": 77,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 5, Xbox Series X, Xbox One, PlayStation 4"
+  },
+  "Mutazione": {
+    "mc_title": "Mutazione",
+    "mc_slug": "mutazione",
+    "mc_releaseDate": "2019-09-19",
+    "mc_criticScore": 76,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, iOS (iPhone/iPad), Nintendo Switch, Xbox One"
+  },
+  "GoNNER": {
+    "mc_title": "GoNNER",
+    "mc_slug": "gonner",
+    "mc_releaseDate": "2017-06-29",
+    "mc_criticScore": 79,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "InnerSpace": {
+    "mc_title": "InnerSpace",
+    "mc_slug": "innerspace",
+    "mc_releaseDate": "2018-01-16",
+    "mc_criticScore": 63,
+    "mc_rating": "E",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Assassin's Creed: Syndicate": {
+    "mc_title": "Assassin's Creed Syndicate",
+    "mc_slug": "assassins-creed-syndicate",
+    "mc_releaseDate": "2015-10-23",
+    "mc_criticScore": 76,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC"
+  },
+  "Faeria": {
+    "mc_title": "Faeria",
+    "mc_slug": "faeria",
+    "mc_releaseDate": "2020-08-13",
+    "mc_criticScore": 80,
+    "mc_rating": "",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4"
+  },
+  "Aztez": {
+    "mc_title": "Aztez",
+    "mc_slug": "aztez",
+    "mc_releaseDate": "2017-08-01",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, PlayStation Vita, Xbox One, Wii U, Nintendo Switch"
+  },
+  "Carcassonne": {
+    "mc_title": "Carcassonne",
+    "mc_slug": "carcassonne",
+    "mc_releaseDate": "2007-06-27",
+    "mc_criticScore": 79,
+    "mc_rating": "E",
+    "mc_platforms": "Xbox 360, DS, PC"
+  },
+  "Ticket to Ride": {
+    "mc_title": "Ticket to Ride",
+    "mc_slug": "ticket-to-ride",
+    "mc_releaseDate": "2024-08-08",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "Nintendo Switch, PC, iOS (iPhone/iPad), Xbox Series X"
+  },
+  "Farming Simulator 19": {
+    "mc_title": "Farming Simulator 19",
+    "mc_slug": "farming-simulator-19",
+    "mc_releaseDate": "2018-11-19",
+    "mc_criticScore": 73,
+    "mc_rating": "E",
+    "mc_platforms": "PC, PlayStation 4, Xbox One"
+  },
+  "Horace": {
+    "mc_title": "Horace",
+    "mc_slug": "horace",
+    "mc_releaseDate": "2020-10-21",
+    "mc_criticScore": 82,
+    "mc_rating": "T",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Sundered: Eldritch Edition": {
+    "mc_title": "Eldritch Horror: Digital Edition",
+    "mc_slug": "eldritch-horror-digital-edition",
+    "mc_releaseDate": "TBA",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Darksiders Fury's Collection": {
+    "mc_title": "Darksiders II",
+    "mc_slug": "darksiders-ii",
+    "mc_releaseDate": "2012-08-14",
+    "mc_criticScore": 83,
+    "mc_rating": "M",
+    "mc_platforms": "Xbox 360, PlayStation 3, PC, Wii U"
+  },
+  "Darksiders II: Deathinitive Edition": {
+    "mc_title": "Darksiders II: Deathinitive Edition",
+    "mc_slug": "darksiders-ii-deathinitive-edition",
+    "mc_releaseDate": "2015-10-30",
+    "mc_criticScore": 72,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch, PlayStation 5, Xbox Series X"
+  },
+  "Steep": {
+    "mc_title": "Steep",
+    "mc_slug": "steep",
+    "mc_releaseDate": "2016-11-29",
+    "mc_criticScore": 71,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch"
+  },
+  "Hello Neighbor": {
+    "mc_title": "Hello Neighbor",
+    "mc_slug": "hello-neighbor",
+    "mc_releaseDate": "2017-12-08",
+    "mc_criticScore": 38,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch, PlayStation 4, iOS (iPhone/iPad), PlayStation 5"
+  },
+  "The Talos Principle": {
+    "mc_title": "The Talos Principle",
+    "mc_slug": "the-talos-principle",
+    "mc_releaseDate": "2014-12-11",
+    "mc_criticScore": 85,
+    "mc_rating": "T",
+    "mc_platforms": "PC, iOS (iPhone/iPad)"
+  },
+  "Hyper Light Drifter": {
+    "mc_title": "Hyper Light Drifter",
+    "mc_slug": "hyper-light-drifter",
+    "mc_releaseDate": "2016-03-31",
+    "mc_criticScore": 84,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, PlayStation Vita, Wii U, Xbox One, Nintendo Switch, iOS (iPhone/iPad)"
+  },
+  "FTL: Faster Than Light": {
+    "mc_title": "FTL: Faster Than Light",
+    "mc_slug": "ftl-faster-than-light",
+    "mc_releaseDate": "2012-09-14",
+    "mc_criticScore": 84,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, iOS (iPhone/iPad)"
+  },
+  "Totally Accurate Battle Simulator": {
+    "mc_title": "Totally Accurate Battle Simulator",
+    "mc_slug": "totally-accurate-battle-simulator",
+    "mc_releaseDate": "2019-12-17",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch, PlayStation 4, PlayStation 5"
+  },
+  "Celeste": {
+    "mc_title": "Celeste",
+    "mc_slug": "celeste",
+    "mc_releaseDate": "2018-01-25",
+    "mc_criticScore": 92,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PlayStation 4, PC, Xbox One"
+  },
+  "APE OUT": {
+    "mc_title": "Ape Out",
+    "mc_slug": "ape-out",
+    "mc_releaseDate": "2019-02-28",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One"
+  },
+  "Little Inferno": {
+    "mc_title": "Little Inferno",
+    "mc_slug": "little-inferno",
+    "mc_releaseDate": "2012-11-18",
+    "mc_criticScore": 79,
+    "mc_rating": "T",
+    "mc_platforms": "Wii U, PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "SUPERHOT": {
+    "mc_title": "SUPERHOT",
+    "mc_slug": "superhot",
+    "mc_releaseDate": "2016-02-25",
+    "mc_criticScore": 82,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "TowerFall Ascension": {
+    "mc_title": "TowerFall Ascension",
+    "mc_slug": "towerfall-ascension",
+    "mc_releaseDate": "2014-03-11",
+    "mc_criticScore": 87,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, PC, PlayStation Vita, Xbox One, Nintendo Switch"
+  },
+  "The Wolf Among Us": {
+    "mc_title": "The Wolf Among Us",
+    "mc_slug": "the-wolf-among-us",
+    "mc_releaseDate": "2013-10-11",
+    "mc_criticScore": 80,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 3, Xbox 360, Xbox One, PlayStation 4, PlayStation Vita"
+  },
+  "Rayman Legends": {
+    "mc_title": "Rayman Legends",
+    "mc_slug": "rayman-legends",
+    "mc_releaseDate": "2013-09-03",
+    "mc_criticScore": 92,
+    "mc_rating": "E10+",
+    "mc_platforms": "Wii U, PlayStation Vita, PlayStation 3, Xbox 360, PC, PlayStation 4, Xbox One"
+  },
+  "Bad North: Jotunn Edition": {
+    "mc_title": "Bad North: Jotunn Edition",
+    "mc_slug": "bad-north-jotunn-edition",
+    "mc_releaseDate": "2019-10-15",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "iOS (iPhone/iPad), Nintendo Switch, PC"
+  },
+  "The Messenger": {
+    "mc_title": "The Messenger",
+    "mc_slug": "the-messenger",
+    "mc_releaseDate": "2018-08-30",
+    "mc_criticScore": 86,
+    "mc_rating": "E10+",
+    "mc_platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4, PlayStation 5"
+  },
+  "Nuclear Throne": {
+    "mc_title": "Nuclear Throne",
+    "mc_slug": "nuclear-throne",
+    "mc_releaseDate": "2015-12-05",
+    "mc_criticScore": 89,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, PlayStation 4, PlayStation Vita, PlayStation 3, Nintendo Switch, Xbox One"
+  },
+  "RUINER": {
+    "mc_title": "Ruiner",
+    "mc_slug": "ruiner",
+    "mc_releaseDate": "2017-09-26",
+    "mc_criticScore": 75,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "Costume Quest": {
+    "mc_title": "Costume Quest",
+    "mc_slug": "costume-quest",
+    "mc_releaseDate": "2010-10-19",
+    "mc_criticScore": 77,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 3, Xbox 360, PC, iOS (iPhone/iPad)"
+  },
+  "SOMA": {
+    "mc_title": "SOMA",
+    "mc_slug": "soma",
+    "mc_releaseDate": "2015-09-21",
+    "mc_criticScore": 84,
+    "mc_rating": "M",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, Nintendo Switch 2"
+  },
+  "Layers of Fear: Masterpiece Edition": {
+    "mc_title": "Layers of Fear: Masterpiece Edition",
+    "mc_slug": "layers-of-fear-masterpiece-edition",
+    "mc_releaseDate": "2016-08-02",
+    "mc_criticScore": 0,
+    "mc_rating": "M",
+    "mc_platforms": "Xbox One, PlayStation 4, PC"
+  },
+  "Q.U.B.E. 2": {
+    "mc_title": "Q.U.B.E. 2",
+    "mc_slug": "qube-2",
+    "mc_releaseDate": "2018-03-13",
+    "mc_criticScore": 76,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch"
+  },
+  ">observer_": {
+    "mc_title": "Observer",
+    "mc_slug": "observer",
+    "mc_releaseDate": "2017-08-15",
+    "mc_criticScore": 78,
+    "mc_rating": "M",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "Alan Wake's American Nightmare": {
+    "mc_title": "Alan Wake's American Nightmare",
+    "mc_slug": "alan-wakes-american-nightmare",
+    "mc_releaseDate": "2012-02-22",
+    "mc_criticScore": 76,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox 360, PC"
+  },
+  "Everything": {
+    "mc_title": "Everything",
+    "mc_slug": "everything",
+    "mc_releaseDate": "2017-03-21",
+    "mc_criticScore": 80,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch"
+  },
+  "Batman Arkham - Trilogy": {
+    "mc_title": "Batman: Arkham City",
+    "mc_slug": "batman-arkham-city",
+    "mc_releaseDate": "2011-10-18",
+    "mc_criticScore": 94,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox 360, PlayStation 3, PC, Nintendo Switch"
+  },
+  "Batman: Arkham City - Game of the Year Edition": {
+    "mc_title": "Batman: Arkham City - Game of the Year Edition",
+    "mc_slug": "batman-arkham-city-game-of-the-year-edition",
+    "mc_releaseDate": "2012-05-29",
+    "mc_criticScore": null,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox 360, PC, PlayStation 3"
+  },
+  "Batman: Arkham Knight": {
+    "mc_title": "Batman: Arkham Knight",
+    "mc_slug": "batman-arkham-knight",
+    "mc_releaseDate": "2015-06-23",
+    "mc_criticScore": 87,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch"
+  },
+  "Lego Batman Trilogy": {
+    "mc_title": "LEGO Batman 2: DC Super Heroes",
+    "mc_slug": "lego-batman-2-dc-super-heroes",
+    "mc_releaseDate": "2012-06-19",
+    "mc_criticScore": 79,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox 360, PlayStation 3, PC, PlayStation Vita, 3DS, DS, Wii, Wii U"
+  },
+  "LEGO Batman 2: DC Super Heroes": {
+    "mc_title": "LEGO Batman 2: DC Super Heroes",
+    "mc_slug": "lego-batman-2-dc-super-heroes",
+    "mc_releaseDate": "2012-06-19",
+    "mc_criticScore": 79,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox 360, PlayStation 3, PC, PlayStation Vita, 3DS, DS, Wii, Wii U"
+  },
+  "LEGO Batman 3: Beyond Gotham": {
+    "mc_title": "LEGO Batman 3: Beyond Gotham",
+    "mc_slug": "lego-batman-3-beyond-gotham",
+    "mc_releaseDate": "2014-11-11",
+    "mc_criticScore": 73,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Xbox 360, PlayStation 3, Wii U, PlayStation Vita, 3DS, iOS (iPhone/iPad)"
+  },
+  "Conarium": {
+    "mc_title": "Conarium",
+    "mc_slug": "conarium",
+    "mc_releaseDate": "2017-06-06",
+    "mc_criticScore": 71,
+    "mc_rating": "T",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch"
+  },
+  "The End Is Nigh": {
+    "mc_title": "The End Is Nigh",
+    "mc_slug": "the-end-is-nigh",
+    "mc_releaseDate": "2017-07-12",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Nintendo Switch"
+  },
+  "FEZ": {
+    "mc_title": "Fez",
+    "mc_slug": "fez",
+    "mc_releaseDate": "2012-04-13",
+    "mc_criticScore": 89,
+    "mc_rating": "E",
+    "mc_platforms": "Xbox 360, PC, PlayStation Vita, PlayStation 4, PlayStation 3, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "GNOG": {
+    "mc_title": "GNOG",
+    "mc_slug": "gnog",
+    "mc_releaseDate": "2017-05-02",
+    "mc_criticScore": 77,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, PC, iOS (iPhone/iPad)"
+  },
+  "Alan Wake": {
+    "mc_title": "Alan Wake",
+    "mc_slug": "alan-wake",
+    "mc_releaseDate": "2010-05-18",
+    "mc_criticScore": 83,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox 360, PC"
+  },
+  "For Honor - Standard Edition": {
+    "mc_title": "For Honor",
+    "mc_slug": "for-honor",
+    "mc_releaseDate": "2017-02-14",
+    "mc_criticScore": 78,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, Xbox One, PC, Xbox Series X"
+  },
+  "Moonlighter": {
+    "mc_title": "Moonlighter",
+    "mc_slug": "moonlighter",
+    "mc_releaseDate": "2018-05-29",
+    "mc_criticScore": 81,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One, iOS (iPhone/iPad)"
+  },
+  "This War of Mine": {
+    "mc_title": "This War of Mine",
+    "mc_slug": "this-war-of-mine",
+    "mc_releaseDate": "2014-11-14",
+    "mc_criticScore": 83,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), PlayStation 4, Xbox One"
+  },
+  "Torchlight": {
+    "mc_title": "Torchlight",
+    "mc_slug": "torchlight",
+    "mc_releaseDate": "2011-03-09",
+    "mc_criticScore": 81,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox 360, PC"
+  },
+  "Last Day of June": {
+    "mc_title": "Last Day of June",
+    "mc_slug": "last-day-of-june",
+    "mc_releaseDate": "2017-08-31",
+    "mc_criticScore": 75,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, Nintendo Switch"
+  },
+  "RiME": {
+    "mc_title": "RiME",
+    "mc_slug": "rime",
+    "mc_releaseDate": "2017-05-26",
+    "mc_criticScore": 80,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One"
+  },
+  "Stories Untold": {
+    "mc_title": "Stories Untold",
+    "mc_slug": "stories-untold",
+    "mc_releaseDate": "2017-02-27",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC, Nintendo Switch, Xbox One, PlayStation 4"
+  },
+  "World of Goo": {
+    "mc_title": "World of Goo",
+    "mc_slug": "world-of-goo",
+    "mc_releaseDate": "2008-10-12",
+    "mc_criticScore": 90,
+    "mc_rating": "E",
+    "mc_platforms": "PC, Wii, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Transistor": {
+    "mc_title": "Transistor",
+    "mc_slug": "transistor",
+    "mc_releaseDate": "2014-05-20",
+    "mc_criticScore": 83,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "The Witness": {
+    "mc_title": "The Witness",
+    "mc_slug": "the-witness",
+    "mc_releaseDate": "2016-01-26",
+    "mc_criticScore": 87,
+    "mc_rating": "E",
+    "mc_platforms": "PlayStation 4, PC, PlayStation 3, Xbox 360, iOS (iPhone/iPad), Xbox One"
+  },
+  "Oxenfree": {
+    "mc_title": "Oxenfree",
+    "mc_slug": "oxenfree",
+    "mc_releaseDate": "2016-01-14",
+    "mc_criticScore": 80,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, iOS (iPhone/iPad), Nintendo Switch"
+  },
+  "Slime Rancher": {
+    "mc_title": "Slime Rancher",
+    "mc_slug": "slime-rancher",
+    "mc_releaseDate": "2017-08-01",
+    "mc_criticScore": 81,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch"
+  },
+  "Thimbleweed Park": {
+    "mc_title": "Thimbleweed Park",
+    "mc_slug": "thimbleweed-park",
+    "mc_releaseDate": "2017-03-30",
+    "mc_criticScore": 84,
+    "mc_rating": "",
+    "mc_platforms": "PC, Xbox One, Nintendo Switch, PlayStation 4, iOS (iPhone/iPad)"
+  },
+  "Axiom Verge": {
+    "mc_title": "Axiom Verge",
+    "mc_slug": "axiom-verge",
+    "mc_releaseDate": "2015-03-31",
+    "mc_criticScore": 84,
+    "mc_rating": "E10+",
+    "mc_platforms": "PlayStation 4, PC, Xbox 360, PlayStation Vita, Wii U, Xbox One, Nintendo Switch"
+  },
+  "The Jackbox Party Pack": {
+    "mc_title": "The Jackbox Party Pack",
+    "mc_slug": "the-jackbox-party-pack",
+    "mc_releaseDate": "2014-11-19",
+    "mc_criticScore": 78,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox One, PlayStation 4, PlayStation 3, PC, Xbox 360, Nintendo Switch"
+  },
+  "What Remains of Edith Finch": {
+    "mc_title": "What Remains of Edith Finch",
+    "mc_slug": "what-remains-of-edith-finch",
+    "mc_releaseDate": "2017-04-25",
+    "mc_criticScore": 88,
+    "mc_rating": "T",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch, iOS (iPhone/iPad), PlayStation 5, Xbox Series X"
+  },
+  "Super Meat Boy": {
+    "mc_title": "Super Meat Boy",
+    "mc_slug": "super-meat-boy",
+    "mc_releaseDate": "2010-10-20",
+    "mc_criticScore": 90,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox 360, Wii, PC, PlayStation 4, PlayStation Vita, Wii U, Nintendo Switch"
+  },
+  "Subnautica": {
+    "mc_title": "Subnautica",
+    "mc_slug": "subnautica",
+    "mc_releaseDate": "2018-01-23",
+    "mc_criticScore": 87,
+    "mc_rating": "E10+",
+    "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch, iOS (iPhone/iPad), PlayStation 5, Nintendo Switch 2"
+  }
+}

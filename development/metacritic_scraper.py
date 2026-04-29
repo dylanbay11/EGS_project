@@ -9,7 +9,7 @@ import os
 
 def resolve(data, obj, max_depth=10, current_depth=0):
     """
-    Recursively resolves references within the Metacritic Next.js JSON payload.
+    Recursively resolve references within the Metacritic Next.js JSON payload.
 
     Args:
         data (list): The root JSON object list containing the referable data.
@@ -36,7 +36,7 @@ def resolve(data, obj, max_depth=10, current_depth=0):
 
 def search_metacritic(game_name):
     """
-    Searches Metacritic for a game title and extracts data from the Next.js payload.
+    Search Metacritic for a game title and extract data from the Next.js payload.
 
     Args:
         game_name (str): The name of the game to query.
@@ -53,7 +53,7 @@ def search_metacritic(game_name):
     )
 
     try:
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req, timeout=10) as response:
             html = response.read().decode('utf-8')
 
         match = re.search(r'type="application/json".*?>(\[.*?\])</script>', html)
@@ -65,7 +65,6 @@ def search_metacritic(game_name):
         results = []
         for i, item in enumerate(data):
             if isinstance(item, dict) and 'title' in item and 'slug' in item and 'type' in item:
-                # We need to manually resolve criticScore to make sure we don't accidentally fall into another part of the tree
                 cs = None
                 if 'criticScoreSummary' in item and isinstance(item['criticScoreSummary'], int):
                     cs_dict = data[item['criticScoreSummary']]
@@ -84,47 +83,106 @@ def search_metacritic(game_name):
 
         return results
     except Exception as e:
-        print(f"Error searching for {game_name}: {e}")
+        print(f"Error searching for {game_name}: {e}", flush=True)
         return None
 
-def test_scrape():
+def scrape_and_merge():
     """
-    Executes a test scrape of Metacritic for the first 10 games in the dataset.
+    Scrape Metacritic for unique games and merge results into the main dataset.
 
-    Extracts details for each target, matches the highest scoring query result
-    to the target, appends results into a dataframe, and outputs it to a CSV file.
+    Loads data/cleaned_merged_data.csv, extracts unique game titles,
+    queries Metacritic with caching to prevent data loss upon interruption,
+    and saves the combined enriched dataframe to data/merge_mc.csv.
     """
-    df = pd.read_csv('data/epic_free_games_with_api_details.csv')
-    games = df['title'].head(10).tolist()
+    input_file = 'data/cleaned_merged_data.csv'
+    output_file = 'data/merge_mc.csv'
+    cache_file = 'outputs/metacritic_cache.json'
 
-    results = []
-    for game in games:
-        print(f"Searching for: {game}")
-        data = search_metacritic(game)
+    if not os.path.exists(input_file):
+        print(f"Input file {input_file} not found.", flush=True)
+        return
+
+    df = pd.read_csv(input_file)
+    games = df['Title_gsheets'].dropna().unique().tolist()
+
+    cache = {}
+    if os.path.exists(cache_file):
+        with open(cache_file, 'r', encoding='utf-8') as f:
+            cache = json.load(f)
+
+    new_results = 0
+    total_games = len(games)
+
+    for i, game in enumerate(games):
+        # Avoid redundant spaces
+        game_clean = str(game).strip()
+        if not game_clean:
+            continue
+
+        if game_clean in cache:
+            continue
+
+        print(f"[{i+1}/{total_games}] Searching for: {game_clean}", flush=True)
+        data = search_metacritic(game_clean)
+
         if data and len(data) > 0:
-            exact_matches = [d for d in data if str(d.get('title')).lower() == game.lower()]
+            exact_matches = [d for d in data if str(d.get('title')).lower() == game_clean.lower()]
             best_match = exact_matches[0] if exact_matches else data[0]
 
-            results.append({
-                'search_term': game,
+            platforms = []
+            for p in best_match.get('platforms', []):
+                if isinstance(p, dict) and 'name' in p:
+                    platforms.append(p['name'])
+                elif isinstance(p, str):
+                    platforms.append(p)
+
+            cache[game_clean] = {
                 'mc_title': best_match.get('title'),
                 'mc_slug': best_match.get('slug'),
-                'releaseDate': best_match.get('releaseDate'),
-                'criticScore': best_match.get('criticScore'),
-                'rating': best_match.get('rating'),
-                'platforms': [p.get('name') for p in best_match.get('platforms', []) if isinstance(p, dict)]
-            })
+                'mc_releaseDate': best_match.get('releaseDate'),
+                'mc_criticScore': best_match.get('criticScore'),
+                'mc_rating': best_match.get('rating'),
+                'mc_platforms': ", ".join(platforms) if platforms else None
+            }
         else:
-            results.append({
-                'search_term': game,
-                'mc_title': None
-            })
+            cache[game_clean] = {
+                'mc_title': None,
+                'mc_slug': None,
+                'mc_releaseDate': None,
+                'mc_criticScore': None,
+                'mc_rating': None,
+                'mc_platforms': None
+            }
 
-        time.sleep(random.uniform(2, 4)) # Rate limiting
+        new_results += 1
 
-    res_df = pd.DataFrame(results)
-    print(res_df)
-    res_df.to_csv('outputs/metacritic_sample.csv', index=False)
+        # Incremental save
+        if new_results % 10 == 0:
+            with open(cache_file, 'w', encoding='utf-8') as f:
+                json.dump(cache, f, ensure_ascii=False, indent=2)
+
+        # Fast scrape
+        time.sleep(0.1)
+
+    # Final save of cache
+    with open(cache_file, 'w', encoding='utf-8') as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+    # Merge back into dataframe
+    mc_data = []
+    for game, meta in cache.items():
+        row = {'Title_gsheets': game}
+        row.update(meta)
+        mc_data.append(row)
+
+    mc_df = pd.DataFrame(mc_data)
+
+    # Left join onto the original dataframe
+    # Using Pandas 3.0 CoW, standard assignments and direct merge
+    merged_df = pd.merge(df, mc_df, on='Title_gsheets', how='left')
+
+    merged_df.to_csv(output_file, index=False)
+    print(f"Successfully saved merged data to {output_file}", flush=True)
 
 if __name__ == '__main__':
-    test_scrape()
+    scrape_and_merge()

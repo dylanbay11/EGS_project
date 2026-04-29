@@ -1,259 +1,262 @@
+"""Scrape the Russian Wikipedia giveaway list into a rolling raw dataset."""
+
+from __future__ import annotations
+
+from pathlib import Path
+import datetime
+import os
+import re
+import time
+
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-import re
-import pandas as pd
-import time
-import os
-import datetime
-import glob
 
-def get_today_csv_path():
-    """Returns the path for today's Wikipedia scrape CSV."""
-    today = datetime.date.today().isoformat()
-    data_dir = os.path.join(os.path.dirname(__file__), '../data')
-    return os.path.join(data_dir, f'{today}-wiki.csv')
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = PROJECT_ROOT / "data"
+SCRAPE_URL = (
+    "https://ru.wikipedia.org/wiki/"
+    "%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B8%D0%B3%D1%80,"
+    "_%D1%80%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_"
+    "%D0%B2_Epic_Games_Store"
+)
+REQUEST_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+}
 
-def check_should_scrape():
-    """
-    Checks if a new scrape of Wikipedia data is required.
+MONTHS = {
+    "января": "January",
+    "февраля": "February",
+    "марта": "March",
+    "апреля": "April",
+    "мая": "May",
+    "июня": "June",
+    "июля": "July",
+    "августа": "August",
+    "сентября": "September",
+    "октября": "October",
+    "ноября": "November",
+    "декабря": "December",
+    "январь": "January",
+    "февраль": "February",
+    "март": "March",
+    "апрель": "April",
+    "май": "May",
+    "июнь": "June",
+    "июль": "July",
+    "август": "August",
+    "сентябрь": "September",
+    "октябрь": "October",
+    "ноябрь": "November",
+    "декабрь": "December",
+}
 
-    Returns:
-        bool: True if the scrape should proceed (today's file doesn't exist,
-              or FORCE_SCRAPE is set), False otherwise.
-    """
+
+def get_today_csv_path() -> Path:
+    """Return the output path for today's raw wiki scrape."""
+    return DATA_DIR / f"{datetime.date.today().isoformat()}-wiki.csv"
+
+
+def check_should_scrape() -> bool:
+    """Return whether a new raw scrape should be created today."""
     csv_path = get_today_csv_path()
-    if os.path.exists(csv_path) and not os.environ.get("FORCE_SCRAPE"):
-        print(f"Skipping scrape: Today's scrape {csv_path} already exists.")
+    if csv_path.exists() and not os.environ.get("FORCE_SCRAPE"):
+        print(f"Skipping scrape: today's scrape {csv_path} already exists.")
         return False
     return True
 
-def cleanup_old_scrapes():
-    """
-    Keeps today's scrape and the most recent previous scrape, and deletes older ones.
-    """
-    files = glob.glob('data/*-wiki.csv')
-    # Filter out enriched ones just in case
-    files = [f for f in files if not f.endswith('-wiki-enriched.csv')]
 
+def cleanup_old_scrapes() -> None:
+    """Keep today's scrape plus one earlier raw wiki scrape and delete older ones."""
+    files = sorted(
+        file_path
+        for file_path in DATA_DIR.glob("*-wiki.csv")
+        if not file_path.name.endswith("-wiki-enriched.csv")
+    )
     if not files:
         return
 
-    files.sort(reverse=True)
-    # Keep the first two files (today and yesterday/most recent)
-    files_to_keep = files[:2]
-    files_to_delete = files[2:]
-
-    for f in files_to_delete:
+    for file_path in files[:-2]:
         try:
-            os.remove(f)
-            print(f"Deleted old scrape: {f}")
-        except Exception as e:
-            print(f"Failed to delete {f}: {e}")
-
-months = {
-    'января': 'January', 'февраля': 'February', 'марта': 'March',
-    'апреля': 'April', 'мая': 'May', 'июня': 'June',
-    'июля': 'July', 'августа': 'August', 'сентября': 'September',
-    'октября': 'October', 'ноября': 'November', 'декабря': 'December',
-    'январь': 'January', 'февраль': 'February', 'март': 'March',
-    'апрель': 'April', 'май': 'May', 'июнь': 'June',
-    'июль': 'July', 'август': 'August', 'сентябрь': 'September',
-    'октябрь': 'October', 'ноябрь': 'November', 'декабрь': 'December'
-}
-
-def translate_date(date_str, year):
-    """
-    Translates and normalizes Russian month names and formats into English date strings.
-
-    Args:
-        date_str (str): The raw date string scraped from Russian Wikipedia.
-        year (int): The inferred release year to append if missing.
-
-    Returns:
-        str: A cleaned and translated date string in English.
-    """
-    # e.g., "14—27 декабря" or "14—27 декабря 2018"
-    # replace ndash or emdash with hyphen
-    date_str = date_str.replace('—', '-').replace('–', '-')
-    for ru, en in months.items():
-        date_str = date_str.replace(ru, en)
-
-    # Check if year is already in string
-    if not any(str(y) in date_str for y in range(2018, 2030)):
-        date_str = f"{date_str} {year}"
-
-    return date_str
+            file_path.unlink()
+            print(f"Deleted old scrape: {file_path}")
+        except OSError as exc:
+            print(f"Failed to delete {file_path}: {exc}")
 
 
-def drop_bundle_header_title(titles):
-    """Drop a leading bundle header when the row already lists the component games."""
+def translate_date(date_str: str, year: int) -> str:
+    """Translate Russian month names into the English date strings used downstream."""
+    translated = date_str.replace("—", "-").replace("–", "-")
+    for russian_name, english_name in MONTHS.items():
+        translated = translated.replace(russian_name, english_name)
+
+    if not any(str(possible_year) in translated for possible_year in range(2018, 2030)):
+        translated = f"{translated} {year}"
+
+    return translated
+
+
+def drop_bundle_header_title(titles: list[str]) -> list[str]:
+    """Drop a leading bundle header when the component games are listed below it."""
     if len(titles) < 2:
         return titles
 
     first_title = titles[0]
-    if re.search(r'\b(?:collection|trilogy)\b', first_title, flags=re.IGNORECASE):
+    if re.search(r"\b(?:collection|trilogy)\b", first_title, flags=re.IGNORECASE):
         return titles[1:]
-
     return titles
 
-def scrape_wiki():
-    """
-    Scrapes the list of Epic Games Store free giveaways from the Russian Wikipedia page.
 
-    Fetches the HTML content, parses data tables to extract dates, game titles,
-    and source links, resolving footnote references. Saves the extracted data
-    as a CSV to the data directory.
-    """
+def clean_title(raw_title: str) -> str:
+    """Normalize the scraped wiki title text for downstream matching."""
+    title = re.sub(r"^data-sort-value=.*?\|\s*", "", raw_title)
+    title = title.replace("«", "").replace("»", "")
+    title = title.replace("’", "'").replace("‘", "'")
+    title = title.replace("—", "-").replace("–", "-")
+    title = title.replace("\xa0", " ")
+
+    if title != "[REDACTED]":
+        title = re.sub(r"\[[а-яА-Яa-zA-Z.]+\]", "", title)
+
+    title = title.strip()
+    if title == "Чёрная книга":
+        return "Black Book"
+    return title
+
+
+def scrape_wiki() -> None:
+    """Scrape the Russian Wikipedia EGS giveaway page into today's raw wiki CSV."""
     if not check_should_scrape():
         return
 
     print("Starting scrape...")
-    url = "https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B8%D0%B3%D1%80,_%D1%80%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%B2_Epic_Games_Store"
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-
-    # Respecting rate limit (though it's just one page, we'll add a tiny delay to be safe)
     time.sleep(1)
 
-    response = requests.get(url, headers=headers)
+    response = requests.get(SCRAPE_URL, headers=REQUEST_HEADERS, timeout=30)
     response.raise_for_status()
-    soup = BeautifulSoup(response.content, 'html.parser')
+    soup = BeautifulSoup(response.content, "html.parser")
 
-    tables = soup.find_all('table', class_='wikitable')
+    tables = soup.find_all("table", class_="wikitable")
     print(f"Found {len(tables)} tables.")
 
-    data = []
-
+    data: list[dict[str, str | int]] = []
     for table in tables:
-        # Determine year
         year = None
-        prev = table.find_previous(['h2', 'h3'])
-        if prev:
-            year_match = re.search(r'(20\d{2})', prev.text)
+        previous_header = table.find_previous(["h2", "h3"])
+        if previous_header:
+            year_match = re.search(r"(20\d{2})", previous_header.get_text(" ", strip=True))
             if year_match:
                 year = int(year_match.group(1))
 
         if not year:
-             print("Warning: Could not determine year for a table. Using 2018 as fallback.")
-             year = 2018
+            print("Warning: Could not determine year for a table. Using 2018 as fallback.")
+            year = 2018
 
-        rows = table.find_all('tr')
-        for row in rows[1:]: # skip header
-            cells = row.find_all(['th', 'td'])
-            if len(cells) >= 3:
-                date_str = cells[0].text.strip()
+        rows = table.find_all("tr")
+        for row in rows[1:]:
+            cells = row.find_all(["th", "td"])
+            if len(cells) < 3:
+                continue
 
-                # Format date
-                clean_date = translate_date(date_str, year)
+            clean_date = translate_date(cells[0].get_text(" ", strip=True), year)
+            title_cell = cells[1]
 
-                # Setup title cell for better text extraction
-                title_cell = cells[1]
+            game_wiki_link = ""
+            title_link = title_cell.find("a", href=True)
+            if title_link:
+                href = title_link["href"]
+                if href.startswith("//"):
+                    game_wiki_link = "https:" + href
+                elif href.startswith("/"):
+                    game_wiki_link = "https://ru.wikipedia.org" + href
+                else:
+                    game_wiki_link = href
 
-                # Extract game wiki link (use first link as default for bundle)
-                game_wiki_link = ""
-                a_tag = title_cell.find('a', href=True)
-                if a_tag:
-                    href = a_tag['href']
-                    if href.startswith('//'):
-                        game_wiki_link = 'https:' + href
-                    elif href.startswith('/'):
-                        game_wiki_link = 'https://ru.wikipedia.org' + href
-                    else:
-                        game_wiki_link = href
+            links = []
+            for link_tag in cells[2].find_all("a", href=True):
+                href = link_tag["href"]
+                if href.startswith("#cite_note"):
+                    cite_id = href[1:]
+                    cite_element = soup.find(id=cite_id)
+                    if cite_element:
+                        external_link = cite_element.find(
+                            "a",
+                            class_="external text",
+                            href=True,
+                        )
+                        if external_link:
+                            links.append(external_link["href"])
+                else:
+                    links.append(href)
+            link_str = ", ".join(links)
 
-                # Extract links
-                links = []
-                for a in cells[2].find_all('a', href=True):
-                    href = a['href']
-                    if href.startswith('#cite_note'):
-                        cite_id = href[1:]
-                        cite_element = soup.find(id=cite_id)
-                        if cite_element:
-                            external_link = cite_element.find('a', class_='external text', href=True)
-                            if external_link:
-                                links.append(external_link['href'])
-                    else:
-                        links.append(href)
-                link_str = ", ".join(links)
+            definition_list = title_cell.find("dl")
+            if definition_list:
+                bundle_title = definition_list.find("dt")
+                if bundle_title:
+                    bundle_title.decompose()
 
-                # Check for definition lists which are used for bundles
-                has_dl = title_cell.find('dl')
-                if has_dl:
-                    dt = has_dl.find('dt')
-                    if dt:
-                        dt.decompose() # Remove the overarching collection name
+            for sup in title_cell.find_all("sup"):
+                sup.decompose()
 
-                # Remove sup elements
-                for sup in title_cell.find_all('sup'):
-                    sup.decompose()
+            for block_element in title_cell.find_all(["dd", "dt", "li", "br"]):
+                block_element.insert_before("\n")
 
-                # Insert newlines before block elements to ensure proper splitting
-                for elem in title_cell.find_all(['dd', 'dt', 'li', 'br']):
-                    elem.insert_before('\n')
+            raw_title_text = title_cell.get_text(separator=" ").strip()
+            raw_title_text = re.sub(r"[ \t]+", " ", raw_title_text)
+            raw_title_text = re.sub(r" ?\n ?", "\n", raw_title_text)
+            raw_title_text = re.sub(r"\n+", "\n", raw_title_text)
 
-                raw_title_text = title_cell.get_text(separator=' ').strip()
+            split_titles = [title.strip() for title in raw_title_text.split("\n") if title.strip()]
+            split_titles = drop_bundle_header_title(split_titles)
 
-                # Collapse whitespace
-                raw_title_clean = re.sub(r'[ \t]+', ' ', raw_title_text)
-                raw_title_clean = re.sub(r' ?\n ?', '\n', raw_title_clean)
-                raw_title_clean = re.sub(r'\n+', '\n', raw_title_clean)
+            for raw_title in split_titles:
+                title = clean_title(raw_title)
+                if not title:
+                    continue
 
-                # Split bundle into multiple rows
-                split_titles = [t.strip() for t in raw_title_clean.split('\n') if t.strip()]
-                split_titles = drop_bundle_header_title(split_titles)
-
-                for title in split_titles:
-                    # Clean title
-                    title = re.sub(r'^data-sort-value=.*?\|\s*', '', title)
-                    title = title.replace('«', '').replace('»', '')
-                    title = title.replace('’', "'").replace('‘', "'")
-                    title = title.replace('—', '-').replace('–', '-')
-                    title = title.replace('\xa0', ' ')
-
-                    if title != '[REDACTED]':
-                        title = re.sub(r'\[[а-яА-Яa-zA-Z.]+\]', '', title)
-
-                    title = title.strip()
-
-                    if title == 'Чёрная книга':
-                        title = 'Black Book'
-
-                    if title:
-                        data.append({
-                            "Date": clean_date,
-                            "Title": title,
-                            "Year": year,
-                            "Game Wiki Link": game_wiki_link,
-                            "Source Links": link_str
-                        })
+                data.append(
+                    {
+                        "Date": clean_date,
+                        "Title": title,
+                        "Year": year,
+                        "Game Wiki Link": game_wiki_link,
+                        "Source Links": link_str,
+                    }
+                )
 
     df = pd.DataFrame(data)
+    df = df.astype(
+        {
+            "Date": "string",
+            "Title": "string",
+            "Game Wiki Link": "string",
+            "Source Links": "string",
+        }
+    )
 
-    # Cast to PyArrow strings for Pandas 3.0 string backend compliance
-    df = df.astype({
-        "Date": "string",
-        "Title": "string",
-        "Game Wiki Link": "string",
-        "Source Links": "string"
-    })
-
-    # Validation
     if len(df) < 100:
-        print(f"Validation failed: Scrape only returned {len(df)} rows (expected >= 100). Discarding data.")
+        print(
+            f"Validation failed: Scrape only returned {len(df)} rows "
+            "(expected at least 100). Discarding data."
+        )
         return
 
-    na_count = df['Title'].isna().sum()
-    if na_count > len(df) * 0.1: # Allow up to 10% NAs
-        print(f"Validation failed: Too many NAs in Title column ({na_count}). Discarding data.")
+    na_count = df["Title"].isna().sum()
+    if na_count > len(df) * 0.1:
+        print(
+            f"Validation failed: Too many NAs in Title column "
+            f"({na_count} of {len(df)}). Discarding data."
+        )
         return
 
-    # Ensure data directory exists
-    os.makedirs('data', exist_ok=True)
-
+    DATA_DIR.mkdir(exist_ok=True)
     csv_path = get_today_csv_path()
     df.to_csv(csv_path, index=False)
     print(f"Successfully scraped and saved {len(df)} records to {csv_path}")
 
     cleanup_old_scrapes()
+
 
 if __name__ == "__main__":
     scrape_wiki()

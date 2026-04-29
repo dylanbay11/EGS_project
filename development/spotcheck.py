@@ -41,8 +41,12 @@ def _(os, pd):
     print("Loading Wiki data...")
     latest_wiki = get_latest_file(data_dir, '20*-wiki.csv')
     wiki_csv = pd.read_csv(latest_wiki)
-    latest_wiki_enriched = get_latest_file(data_dir, '20*-wiki-enriched.csv')
-    wiki_enriched_csv = pd.read_csv(latest_wiki_enriched)
+    static_wiki_enriched = os.path.join(data_dir, 'wiki-enriched.csv')
+    if os.path.exists(static_wiki_enriched):
+        wiki_enriched_csv = pd.read_csv(static_wiki_enriched)
+    else:
+        latest_wiki_enriched = get_latest_file(data_dir, '20*-wiki-enriched.csv')
+        wiki_enriched_csv = pd.read_csv(latest_wiki_enriched)
 
     # Intermediate/Merged data
     print("Loading Merged data...")
@@ -50,7 +54,10 @@ def _(os, pd):
 
     # API details
     print("Loading API details data...")
-    api_details_csv = pd.read_csv(os.path.join(data_dir, 'epic_free_games_with_api_details.csv'))
+    api_details_path = os.path.join(data_dir, 'epic_games_data_with_api_details.csv')
+    if not os.path.exists(api_details_path):
+        api_details_path = os.path.join(data_dir, 'epic_free_games_with_api_details.csv')
+    api_details_csv = pd.read_csv(api_details_path)
 
     datasets = {
         'GSheets': gsheets_csv,
@@ -169,7 +176,6 @@ def _(gsheets_csv, wiki_csv):
         """Normalizes titles to allow robust matching across data sources."""
         return s.astype("string").str.lower().str.replace(r'[^a-z0-9\s]', '', regex=True).str.replace(r'\s+', ' ', regex=True).str.strip()
 
-    # We need to extract the raw titles safely
     # mimic the bundle handling from clean_data so spot checks reflect the real pipeline
     gsheets_raw = gsheets_csv.copy()
     if len(gsheets_raw.columns) >= 7:
@@ -214,7 +220,9 @@ def _(gsheets_csv, wiki_csv):
             group_cols = ['Date', 'Source Links']
             group_sizes = wiki_raw.groupby(group_cols, dropna=False)['Title'].transform('size')
             header_counts = wiki_raw.groupby(group_cols, dropna=False)['is_bundle_header'].transform('sum')
-            wiki_raw = wiki_raw.loc[~(wiki_raw['is_bundle_header'] & (group_sizes > 1) & (header_counts > 0))].copy()
+            wiki_raw = wiki_raw.loc[
+                ~(wiki_raw['is_bundle_header'] & (group_sizes > 1) & (header_counts > 0))
+            ].copy()
             wiki_raw = wiki_raw.drop(columns='is_bundle_header')
         wiki_titles = set(normalize_title_series(wiki_raw['Title']).unique())
     else:
