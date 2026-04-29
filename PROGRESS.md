@@ -7,6 +7,7 @@
 - **Core merge step uses the enriched wiki data**: `development/clean_data.py` reads the newest Google Sheets source plus `data/wiki-enriched.csv`, applies the shared collection/bundle cleanup logic, and writes `data/cleaned_merged_data.csv`.
 - **Collection handling is now aligned across the main flow**: the raw Google Sheets loader and cleaner rewrite collection rows so the actual game lands in the title field and the collection name is preserved in notes as `Part of collection: ...`, while the wiki path defensively drops stale bundle-header rows.
 - **Downstream enrichment exists but is not the final canonical flow yet**: `development/metacritic_scraper.py` currently extends `data/cleaned_merged_data.csv` into `data/merge_mc.csv`, but the broader "single fully-featured dataset" stage is still in progress.
+- **HLTB enrichment exists as a downstream pass**: `development/hltb_scraper.py` now rebuilds `outputs/hltb_data.csv` and `data/merge_hltb.csv` with a conservative matcher that currently links 550 of 686 unique titles to HLTB data.
 
 ## Main Data Flow
 This is the main pipeline right now, ignoring exploratory notebooks, spot-check helpers, and older trial scripts.
@@ -42,6 +43,7 @@ This is the main pipeline right now, ignoring exploratory notebooks, spot-check 
 ## Current Notes
 - `development/spotcheck.py` should stay in sync with the main pipeline assumptions, especially the rolling `data/wiki-enriched.csv` intermediate and the collection/bundle cleanup rules.
 - `development/scrape_sheet.py` is still a development notebook-style script rather than part of the main production flow, but its duplicate import and stale output path should not drift from the main conventions.
+- `development/egs_api_helpers.py` and `development/egs_api_workbench.py` are now the easiest place to do manual Epic API title QA, slug inspection, and quick endpoint poking before folding logic back into a production script.
 - The merge step is still a normalized-title left join. That is good enough for current progress, but repeated giveaways across different years still deserve a more precise pass later if we want a cleaner event-level match.
 
 ## Near & Medium-Term Roadmap
@@ -52,7 +54,6 @@ There may be minor overlap between some of these.
 - [ ] **Wikipedia Spot Check**: Hand-check the enriched Wikipedia fields and a sample of tricky bundle rows.
 - [ ] **Google Sheets Spot Check**: Ensure that all relevant info was imported including labels and metadata.
 - [ ] **Verify Source Merges**: Tighten merge logic for repeated giveaway titles so event-level matches are cleaner.
-- [x] **HLTB Integration**: `development/hltb_scraper.py` now rebuilds `outputs/hltb_data.csv` and `data/merge_hltb.csv` with a conservative matcher that currently links 550 of 686 unique titles to HLTB data.
 - [ ] **HLTB Match Refinement**: Add a more dedicated title alias/matching layer for tricky collections, promos, trademark-heavy names, and subtitle/edition edge cases.
 - [ ] **Feature Engineering**: Perform minor feature engineering, manipulation, or reshaping for stubborn columns.
 - [ ] **Missing Data Assessment**: Complete a holistic missing-data pass across the merged dataset.
