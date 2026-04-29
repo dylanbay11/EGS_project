@@ -9,8 +9,8 @@ def _():
     """Initializes basic data components and core scraping logic for Marimo cell."""
     import marimo as mo
     import pandas as pd
-    import pandas as pd
     import numpy as np
+    from pathlib import Path
     import re
     import time
     import json
@@ -60,7 +60,7 @@ def _():
             return pd.DataFrame(), None
 
         #TODO: add a manual loading fallback from data folder after first successful scrape
-    return EGSException, api, pd, scrape_gamelist, time
+    return EGSException, Path, api, pd, scrape_gamelist, time
 
 
 @app.cell
@@ -201,7 +201,7 @@ def _(EGSException, api, time):
 
 
 @app.cell
-def _(get_game_details, pd, scrape_gamelist):
+def _(Path, get_game_details, pd, scrape_gamelist):
     """Marimo cell that runs the scraping process on the game list and handles results."""
     games_df = scrape_gamelist()
 
@@ -245,7 +245,8 @@ def _(get_game_details, pd, scrape_gamelist):
     print(processed_games_df.head())
 
     # Save the processed data
-    output_path = "../data/May2025.csv" # Save to top-level data folder
+    data_dir = Path(__file__).resolve().parent.parent / "data"
+    output_path = data_dir / "epic_games_data_with_api_details.csv"
     try:
         processed_games_df.to_csv(output_path, index=False)
         print(f"Successfully saved processed data to {output_path}")
