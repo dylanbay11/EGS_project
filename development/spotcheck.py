@@ -170,13 +170,28 @@ def _(gsheets_csv, wiki_csv):
         return s.astype("string").str.lower().str.replace(r'[^a-z0-9\s]', '', regex=True).str.replace(r'\s+', ' ', regex=True).str.strip()
 
     # We need to extract the raw titles safely
-    # Gsheets titles are in column 6 (index 5) or NOTES
+    # mimic the bundle handling from clean_data so spot checks reflect the real pipeline
     gsheets_raw = gsheets_csv.copy()
-    # Keep first 7 cols to mimic clean_data
     if len(gsheets_raw.columns) >= 7:
         gsheets_raw = gsheets_raw.iloc[:, 0:7]
         gsheets_raw.columns = ['FROM', 'TO', 'DAY', 'DAYS', 'TYPE', 'Title', 'NOTES']
-        gsheets_raw['Title'] = gsheets_raw['Title'].fillna(gsheets_raw['NOTES'])
+        title_values = gsheets_raw['Title'].astype("string").str.strip()
+        notes_values = gsheets_raw['NOTES'].astype("string").str.strip()
+        has_title = title_values.notna() & title_values.ne("")
+        has_notes = notes_values.notna() & notes_values.ne("")
+
+        collection_names = title_values.where(has_title).ffill()
+        is_continuation = ~has_title & has_notes
+        next_is_continuation = is_continuation.shift(-1).fillna(False)
+        is_start = has_title & has_notes & next_is_continuation
+        in_collection = is_start | is_continuation
+
+        gsheets_raw['Title'] = title_values
+        gsheets_raw['NOTES'] = notes_values
+        gsheets_raw.loc[in_collection, 'Title'] = notes_values.loc[in_collection]
+        gsheets_raw.loc[in_collection, 'NOTES'] = "Part of collection: " + collection_names.loc[in_collection]
+        isolated_missing_title = ~in_collection & ~has_title & has_notes
+        gsheets_raw.loc[isolated_missing_title, 'Title'] = notes_values.loc[isolated_missing_title]
         gsheets_raw = gsheets_raw[gsheets_raw['Title'].notna()]
 
         gsheets_titles = set(normalize_title_series(gsheets_raw['Title']).unique())
@@ -188,6 +203,19 @@ def _(gsheets_csv, wiki_csv):
         wiki_raw = wiki_csv.copy()
         wiki_raw['Title'] = wiki_raw['Title'].str.split('\n')
         wiki_raw = wiki_raw.explode('Title')
+        if {'Title', 'Date', 'Source Links'}.issubset(wiki_raw.columns):
+            wiki_raw['Title'] = wiki_raw['Title'].astype("string").str.strip()
+            wiki_raw['is_bundle_header'] = wiki_raw['Title'].str.contains(
+                r'\b(?:collection|trilogy)\b',
+                case=False,
+                regex=True,
+                na=False,
+            )
+            group_cols = ['Date', 'Source Links']
+            group_sizes = wiki_raw.groupby(group_cols, dropna=False)['Title'].transform('size')
+            header_counts = wiki_raw.groupby(group_cols, dropna=False)['is_bundle_header'].transform('sum')
+            wiki_raw = wiki_raw.loc[~(wiki_raw['is_bundle_header'] & (group_sizes > 1) & (header_counts > 0))].copy()
+            wiki_raw = wiki_raw.drop(columns='is_bundle_header')
         wiki_titles = set(normalize_title_series(wiki_raw['Title']).unique())
     else:
         wiki_titles = set()

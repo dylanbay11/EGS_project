@@ -3,6 +3,7 @@ import re
 import os
 import glob
 
+
 def get_latest_file(data_dir, pattern_xlsx, pattern_csv=None):
     """Helper to find the most recently created/named file matching a pattern."""
     files = glob.glob(os.path.join(data_dir, pattern_xlsx))
@@ -16,6 +17,61 @@ def get_latest_file(data_dir, pattern_xlsx, pattern_csv=None):
         raise FileNotFoundError(f"No files found matching {pattern_xlsx} or {pattern_csv}")
     files.sort(reverse=True)
     return files[0]
+
+
+def rewrite_collection_rows(df: pd.DataFrame, title_col: str, notes_col: str) -> pd.DataFrame:
+    """Replace collection headers with the actual per-game titles from notes."""
+    if title_col not in df.columns or notes_col not in df.columns:
+        return df
+
+    title_values = df[title_col].astype("string").str.strip()
+    notes_values = df[notes_col].astype("string").str.strip()
+    has_title = title_values.notna() & title_values.ne("")
+    has_notes = notes_values.notna() & notes_values.ne("")
+
+    collection_names = title_values.where(has_title).ffill()
+    is_continuation = ~has_title & has_notes
+    next_is_continuation = is_continuation.shift(-1).fillna(False)
+    is_start = has_title & has_notes & next_is_continuation
+    in_collection = is_start | is_continuation
+
+    new_titles = title_values.copy()
+    new_notes = notes_values.copy()
+
+    new_titles.loc[in_collection] = notes_values.loc[in_collection]
+    new_notes.loc[in_collection] = "Part of collection: " + collection_names.loc[in_collection]
+
+    isolated_missing_title = ~in_collection & ~has_title & has_notes
+    new_titles.loc[isolated_missing_title] = notes_values.loc[isolated_missing_title]
+
+    df[title_col] = new_titles
+    df[notes_col] = new_notes
+    return df
+
+
+def drop_wiki_bundle_headers(df: pd.DataFrame) -> pd.DataFrame:
+    """Drop stale bundle header rows when the individual games are already present."""
+    required_cols = {'Title', 'Date', 'Source Links'}
+    if df.empty or not required_cols.issubset(df.columns):
+        return df
+
+    df = df.copy()
+    df['Title'] = df['Title'].astype("string").str.strip()
+    df['is_bundle_header'] = df['Title'].str.contains(
+        r'\b(?:collection|trilogy)\b',
+        case=False,
+        regex=True,
+        na=False,
+    )
+
+    group_cols = ['Date', 'Source Links']
+    group_sizes = df.groupby(group_cols, dropna=False)['Title'].transform('size')
+    header_counts = df.groupby(group_cols, dropna=False)['is_bundle_header'].transform('sum')
+    keep_mask = ~(df['is_bundle_header'] & (group_sizes > 1) & (header_counts > 0))
+
+    return df.loc[keep_mask].drop(columns='is_bundle_header').reset_index(drop=True)
+
+
 def clean_gsheets():
     """
     Cleans the Google Sheets data.
@@ -68,9 +124,8 @@ def clean_gsheets():
     if len(df) > 0 and df.iloc[-1]['FROM'] == 'FROM':
         df = df.iloc[:-1].copy()
 
-    # If Title is NaN but NOTES is present (e.g., in a bundle like Trine Collection), use NOTES
-    if 'NOTES' in df.columns:
-        df['Title'] = df['Title'].fillna(df['NOTES'])
+    # rewrite collection rows before forward-filling so the real game title is kept
+    df = rewrite_collection_rows(df, 'Title', 'NOTES')
 
     # Forward-fill event-related columns for days with multiple games (Do not ffill TYPE)
     cols_to_ffill = ['FROM', 'TO', 'DAY', 'DAYS']
@@ -104,6 +159,7 @@ def clean_wiki():
     df['Title'] = df['Title'].astype("string").str.split('\n')
     df = df.explode('Title')
     df['Title'] = df['Title'].astype("string").str.strip()
+    df = drop_wiki_bundle_headers(df)
 
     return df
 
