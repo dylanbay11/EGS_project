@@ -45,11 +45,15 @@ This is the main pipeline right now, ignoring exploratory notebooks, spot-check 
 - The merge step is still a normalized-title left join. That is good enough for current progress, but repeated giveaways across different years still deserve a more precise pass later if we want a cleaner event-level match.
 
 ## Near & Medium-Term Roadmap
+There may be minor overlap between some of these.
 - [ ] **Visibility Options**: Create a marimo document that allows easier inspection and spot-checking of outputs, to enable better feedback for AI agents.
 - [ ] **Test Suite**: Develop a small-scale, useful set of reusable validation checks without turning the repo into a full pytest project.
+- [ ] **Finish Data Cleaning**: Finalize cleaning rules and procedures across datasets, both content and columns.
 - [ ] **Wikipedia Spot Check**: Hand-check the enriched Wikipedia fields and a sample of tricky bundle rows.
 - [ ] **Google Sheets Spot Check**: Ensure that all relevant info was imported including labels and metadata.
 - [ ] **Verify Source Merges**: Tighten merge logic for repeated giveaway titles so event-level matches are cleaner.
+- [x] **HLTB Integration**: `development/hltb_scraper.py` now rebuilds `outputs/hltb_data.csv` and `data/merge_hltb.csv` with a conservative matcher that currently links 550 of 686 unique titles to HLTB data.
+- [ ] **HLTB Match Refinement**: Add a more dedicated title alias/matching layer for tricky collections, promos, trademark-heavy names, and subtitle/edition edge cases.
 - [ ] **Feature Engineering**: Perform minor feature engineering, manipulation, or reshaping for stubborn columns.
 - [ ] **Missing Data Assessment**: Complete a holistic missing-data pass across the merged dataset.
 - [ ] **Fetch API Data Directly**: Bypass the problematic wrapper API and hit open static endpoints (`freeGamesPromotions` and `content/products/<productSlug>`) for tags, prices, developer, publisher, and related details.
