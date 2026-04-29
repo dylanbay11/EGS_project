@@ -14,7 +14,8 @@ There may be minor overlap between some of these.
 - [ ] **Wikipedia Spot Check**: Polish up final touches on game list data enrichment. The Wikipedia scrape needs hand verification and spot-checking by the user.
 - [ ] **Google Sheets Spot Check**: Ensure that all relevant info was imported including labels and 'meta'data.
 - [ ] **Verify Source Merges**: Ensure that the two gamelist sources merge and match correctly.
-- [x] **HLTB Integration**: Integrated HowLongToBeat scrape to enrich dataset with completion times and metadata via `development/hltb_scraper.py` into `data/merge_hltb.csv`.
+- [x] **HLTB Integration**: `development/hltb_scraper.py` now rebuilds `outputs/hltb_data.csv` and `data/merge_hltb.csv` with a conservative matcher that currently links 550 of 686 unique titles to HLTB data.
+- [ ] **HLTB Match Refinement**: Add a more dedicated title alias/matching layer for tricky collections, promos, trademark-heavy names, and subtitle/edition edge cases.
 - [ ] **Feature Engineering**: Perform minor feature engineering, manipulation, or reshaping for certain stubborn columns.
 - [ ] **Missing Data Assessment**: Complete a holistic missing data pass/assessment.
 - [ ] **Fetch API Data Directly**: Bypass the problematic wrapper-API and hit open static endpoints (`freeGamesPromotions` and `content/products/<productSlug>`) for data (like tags, prices, developer, and publisher details) as detailed in the API report.
