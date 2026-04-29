@@ -66,17 +66,19 @@ I will be analyzing THIS data source. For some background, CONTEXT. The goal is 
 ```{r}
 #| label: load-data
 
-# GSHEETS DATA QUALITY ANALYSIS AND NOTES
+# GSHEETS NOTES AND DATA QUALITY PREVIEW
 df <- read_xlsx(here::here("data", "2026-04-21-gsheets.xlsx"),
                  skip = 15, col_types = c("date", "date", rep("guess", 5))) |> 
   slice(1:(n()-1)) |>  # one stupid header repeat at bottom
   slice(which(TYPE == "next"):n())  # include the next game(s) but no future slots
   # slice(which.max(TO <= today()):n())  # do not include any next games or future slots
 # may also need to chop off a "next" game with "-" as NAME, I think is filler for double-nexts?
-
 # Make sure to skip the first few rows, but also after grabbing column names...
 #  the next few might have different numbers of rows! Depending on if "next" is a double, etc.
 # NAME / NOTES column will need renaming
+
+
+# The following are both notes about quirks in the data as well as identifying issues and future problems
 # unusual behavior: row 44, Trine Classic Collection; the 4 actual games are in the NAME/NOTES field
 # others like this: Batman Arkham - Trilogy, Lego Batman Trilogy, Darksider's Fury Collection, Borderlands: The Handsome Collection, Shadowrun Collection, Tomb Raider Trilogy, BioShock: The Collection, Fallout® Classic Collection (twice!), LOVE, LISA: Definitive Edition, 
 # "The Sims 4 - The Daring Lifestyle Bundle" puts a "-" in TYPE for some reason; also is like the above with 3 things in the notes column; ditto Destiny 2: Legacy Collection; maybe because these are "pack"
@@ -164,6 +166,96 @@ mismatches <- bind_rows(only_g, only_w)
 ```
 
 
+```{r}
+# building a generalized test set from edge cases; might need to pare down later
+# note this might need to be RE-RUN after fixes! Because fewer to grab from.
+set.seed(777)
+combinatoric_sample <- df %>%
+  group_by(TYPE, DAYS, `NAME / NOTES`) %>%
+  slice_sample(n = 2) %>%
+  ungroup() %>%
+  mutate(test_reason = "g: days-type-notes combos")
+
+nonascii_g <- df |> 
+  # [^\x01-\x7F] catches anything outside standard ASCII (ABZÛ, 🍜, ❌, ®)
+  filter(str_detect(NAME, "[^\x01-\x7F]")) |> 
+  mutate(test_reason = "g: Non-ASCII or Symbol")
+
+punctuation_g <- df |> 
+  # Catches apostrophes, hyphens, colons, and brackets
+  filter(str_detect(NAME, "['\"\\-:\\[\\]]")) |> 
+  slice_sample(n = 6) |> 
+  mutate(test_reason = "g: Punctuation Sample")
+
+hardcoded_g <- df |> 
+  filter(NAME %in% c(
+    ">observer_",
+    "[REDACTED]",
+    "Astrea: Six Sided Oracles",
+    "SUPERHOT",
+    "3 out of 10, EP 1: \"Welcome To Shovelworks\"",
+    "Sid Meier's Civilization VI",
+    "Cat Quest II",
+    "DEATH STRANDING - DIRECTORS CUT",
+    "Fallout® Classic Collection",
+    "LISA",
+    "LISA: Definitive Edition",
+    "Cat Quest 2",
+    "Cat Quest II",
+    "KID A MNESIA EXHIBITION"
+  )) |> 
+  mutate(test_reason = "g: Hardcoded Anomaly")
+
+nonascii_w <- dfw |> 
+  filter(str_detect(Title, "[^\x01-\x7F]")) |> 
+  mutate(test_reason = "w: Non-ASCII or Symbol")
+
+punctuation_w <- dfw |> 
+  filter(str_detect(Title, "['\"\\-:\\[\\]]")) |> 
+  slice_sample(n = 6) |> 
+  mutate(test_reason = "w: Punctuation Sample")
+
+# Targeting the "buried games" issue (collections, trilogies, packs)
+collections_w <- dfw |> 
+  # (?i) makes the regex case-insensitive
+  filter(str_detect(Title, "(?i)collection|trilogy|pack|bundle")) |> 
+  slice_sample(n = 6) |> 
+  mutate(test_reason = "w: Multi-Game Sample")
+
+hardcoded_w <- dfw |> 
+  filter(Title %in% c(
+    "data-sort-value=\"Evil Within, The 2\"| The Evil Within 2", # Wiki logic leak
+    "Alan Wake’s American Nightmare", # Apostrophe issue
+    "3 out of 10: Season Two",     # Episodic format clash
+    "Civilization VI",             # Prefix missing
+    "Cat Quest II",                # Arabic vs Roman
+    "Hitman"                       # Starter pack masquerading as full game\
+  )) |> 
+  mutate(test_reason = "w: Hardcoded Anomaly")
+  
+test_set <- bind_rows(
+  combinatoric_sample,
+  nonascii_g,
+  punctuation_g,
+  hardcoded_g,
+  nonascii_w,
+  punctuation_w,
+  collections_w,
+  hardcoded_w
+)
+rm(combinatoric_sample,
+  nonascii_g,
+  punctuation_g,
+  hardcoded_g,
+  nonascii_w,
+  punctuation_w,
+  collections_w,
+  hardcoded_w)
+gc()
+# write_csv(test_set, here("outputs", "abnormal_gameset.csv"))
+```
+
+
 # EDA
 
 Here is some initial descriptive information about our dataset.
@@ -185,6 +277,8 @@ We will now proceed with our analysis.
 
 ```{r}
 #| label: modeling
+
+tt <- read_xlsx("~/Desktop/Projects/EGS_project/data/2026-04-23-gsheets.xlsx")
 
 set.seed(1001)
 ```
