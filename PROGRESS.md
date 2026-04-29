@@ -4,6 +4,7 @@
 - **Automated Data Collection**: The primary source is a Community Google Sheet. We have automated data collection and parsing from this sheet via `data_collection.py`, which includes logic to handle categorical background colors and column cleaning.
 - **Data Enrichment**: We have a working Wikipedia scraper (`wiki_scraper.py`) that extracts giveaway lists from the Russian Wikipedia page for further data enrichment.
 - **Data Cleaning and Merging**: We have a script (`clean_data.py`) to clean the Google Sheets data, handle formatting quirks (e.g., exploded bundle titles from Wiki), and merge the datasets.
+- **Collection Handling**: The raw Google Sheets loader and cleaner now both rewrite collection rows so the actual game lands in the title field and the collection name is preserved in notes as `Part of collection: ...`. The wiki path also has a defensive bundle-header cleanup so stale or slightly shifted markup does not keep the collection title as a fake extra game row.
 - **API Access Discovery**: We discovered that the unofficial wrapper-API (`epicstore_api`) is failing due to structure/authentication changes. However, we found it is highly feasible to bypass it and use open static endpoints instead, as documented in `EpicGamesStoreAPIReport.md`.
 
 ## Near & Medium-Term Roadmap

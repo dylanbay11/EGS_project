@@ -84,6 +84,18 @@ def translate_date(date_str, year):
 
     return date_str
 
+
+def drop_bundle_header_title(titles):
+    """Drop a leading bundle header when the row already lists the component games."""
+    if len(titles) < 2:
+        return titles
+
+    first_title = titles[0]
+    if re.search(r'\b(?:collection|trilogy)\b', first_title, flags=re.IGNORECASE):
+        return titles[1:]
+
+    return titles
+
 def scrape_wiki():
     """
     Scrapes the list of Epic Games Store free giveaways from the Russian Wikipedia page.
@@ -187,6 +199,7 @@ def scrape_wiki():
 
                 # Split bundle into multiple rows
                 split_titles = [t.strip() for t in raw_title_clean.split('\n') if t.strip()]
+                split_titles = drop_bundle_header_title(split_titles)
 
                 for title in split_titles:
                     # Clean title

@@ -3,6 +3,7 @@ import numpy as np
 import re
 import time
 import json
+import io
 from epicstore_api import EpicGamesStoreAPI, EGSException
 # import requests                # web fallback
 # from bs4 import BeautifulSoup  # used for web fallback
@@ -18,6 +19,43 @@ except Exception as e:
 import os
 import datetime
 import requests
+
+
+def rewrite_collection_rows(df: pd.DataFrame, title_col: str, notes_col: str) -> pd.DataFrame:
+    """Replace collection headers with the actual game titles listed in notes.
+
+    Some Google Sheet rows use the title column for the collection name, while the
+    notes column stores the first real game in that collection. The following rows
+    then leave the title blank and keep listing more games in notes. This rewrites
+    those groups so each row's title is the actual game name, and the notes field
+    keeps the collection context instead.
+    """
+    if title_col not in df.columns or notes_col not in df.columns:
+        return df
+
+    title_values = df[title_col].astype("string").str.strip()
+    notes_values = df[notes_col].astype("string").str.strip()
+    has_title = title_values.notna() & title_values.ne("")
+    has_notes = notes_values.notna() & notes_values.ne("")
+
+    collection_names = title_values.where(has_title).ffill()
+    is_continuation = ~has_title & has_notes
+    next_is_continuation = is_continuation.shift(-1).fillna(False)
+    is_start = has_title & has_notes & next_is_continuation
+    in_collection = is_start | is_continuation
+
+    new_titles = title_values.copy()
+    new_notes = notes_values.copy()
+
+    new_titles.loc[in_collection] = notes_values.loc[in_collection]
+    new_notes.loc[in_collection] = "Part of collection: " + collection_names.loc[in_collection]
+
+    isolated_missing_title = ~in_collection & ~has_title & has_notes
+    new_titles.loc[isolated_missing_title] = notes_values.loc[isolated_missing_title]
+
+    df[title_col] = new_titles
+    df[notes_col] = new_notes
+    return df
 
 def scrape_gamelist():
     """
@@ -65,14 +103,9 @@ def scrape_gamelist():
             response = requests.get(google_sheet_url)
             response.raise_for_status()
 
-            # Save to temporary file first for validation
-            temp_filepath = filepath + ".tmp"
-            with open(temp_filepath, 'wb') as f:
-                f.write(response.content)
-
             # Basic Validation
             import openpyxl
-            wb = openpyxl.load_workbook(temp_filepath, data_only=True)
+            wb = openpyxl.load_workbook(io.BytesIO(response.content), data_only=True)
             sheet = wb.active
 
             # Find the header row (skipping 15 rows, so row 16 is header)
@@ -90,15 +123,14 @@ def scrape_gamelist():
 
             if row_count < 100:
                 print(f"Validation failed: Scrape contains too few rows ({row_count}).")
-                os.remove(temp_filepath)
                 # use latest if we failed
                 filepath = latest_file if latest_file else filepath
             elif row_count > 0 and (empty_names / row_count) > 0.5:
                 print(f"Validation failed: Too many empty names ({empty_names}/{row_count}).")
-                os.remove(temp_filepath)
                 filepath = latest_file if latest_file else filepath
             else:
-                os.rename(temp_filepath, filepath)
+                with open(filepath, 'wb') as f:
+                    f.write(response.content)
                 print(f"Downloaded and validated successfully to {filepath}")
                 latest_file = filepath
 
@@ -115,11 +147,6 @@ def scrape_gamelist():
 
         except Exception as e:
             print(f"Failed to download or validate Google Sheet: {e}")
-            if os.path.exists(temp_filepath):
-                try:
-                    os.remove(temp_filepath)
-                except Exception:
-                    pass
             # If download fails, try to fallback to latest
             if latest_file:
                  print(f"Falling back to {latest_file}")
@@ -181,9 +208,8 @@ def scrape_gamelist():
         if len(gdf) > 0 and gdf.iloc[-1]['FROM'] == 'FROM':
             gdf = gdf.iloc[:-1].copy()
 
-        # Fall back to 'NOTES' if 'Games' is empty
-        # Handled carefully: note the column was renamed from 'NAME / NOTES' to 'NOTES' and 'NAME' to 'Games' above!
-        gdf['Games'] = gdf['Games'].fillna(gdf['NOTES'])
+        # rewrite collection rows before the normal fill so bundle names don't stick as game titles
+        gdf = rewrite_collection_rows(gdf, 'Games', 'NOTES')
 
         # Forward fill missing dates and metadata
         gdf['FROM'] = gdf['FROM'].ffill()
@@ -324,4 +350,4 @@ def main():
 
 # ensure imports do not auto-run main()
 if __name__ == "__main__":
-    main() 
+    main()
