@@ -113,8 +113,7 @@ def _(DATA_DIR, OUTPUT_DIR, get_latest_file, pd):
         pd.read_csv(abnormal_path) if abnormal_path.exists() else pd.DataFrame()
     )
     wiki_df = pd.read_csv(latest_wiki_path) if latest_wiki_path else pd.DataFrame()
-
-    return abnormal_df, merged_df, wiki_df
+    return abnormal_df, merged_df
 
 
 @app.cell
@@ -169,7 +168,7 @@ def _(abnormal_df, merged_df, pd):
     )
 
     pd.DataFrame({"seed_title": seed_titles})
-    return seed_titles
+    return (seed_titles,)
 
 
 @app.cell
@@ -181,7 +180,6 @@ def _():
 
     # If the best search hit is wrong, paste a slug here and re-run the next cells.
     slug_override = ""
-
     return candidate_count, slug_override, title_query
 
 
@@ -196,7 +194,7 @@ def _(api, candidate_count, search_candidates_frame, tag_lookup, title_query):
         tag_lookup=tag_lookup,
     )
     candidate_df
-    return candidate_df
+    return
 
 
 @app.cell
@@ -210,11 +208,11 @@ def _(api, candidate_count, pick_best_search_match, title_query):
         min_score=70.0,
     )
     best_match
-    return best_match
+    return (best_match,)
 
 
 @app.cell
-def _(best_match, clean_slug, fetch_product, pd, slug_override, api):
+def _(api, best_match, clean_slug, fetch_product, pd, slug_override):
     """Marimo cell that fetches a product page using the best hit or manual slug."""
 
     resolved_slug = slug_override.strip() or clean_slug(
@@ -233,7 +231,7 @@ def _(extract_product_about, pd, product_payload):
 
     about = extract_product_about(product_payload)
     pd.Series(about)
-    return about
+    return
 
 
 @app.cell
@@ -246,7 +244,7 @@ def _(api, offer_catalog_frame, product_payload, tag_lookup):
         tag_lookup=tag_lookup,
     )
     offers_df
-    return offers_df
+    return
 
 
 @app.cell
@@ -255,11 +253,11 @@ def _(product_payload, product_requirements_frame):
 
     requirements_df = product_requirements_frame(product_payload)
     requirements_df
-    return requirements_df
+    return
 
 
 @app.cell
-def _(json_preview, best_match, product_payload, resolved_slug):
+def _(best_match, json_preview, product_payload, resolved_slug):
     """Marimo cell that gives you a compact raw JSON preview for debugging."""
 
     debug_preview = {
@@ -278,7 +276,7 @@ def _(free_games_frame, scraper):
 
     free_games_df = free_games_frame(scraper)
     free_games_df
-    return free_games_df
+    return
 
 
 @app.cell
@@ -293,7 +291,7 @@ def _(api, batch_search_scan, seed_titles):
         sleep_seconds=0.0,
     )
     batch_df
-    return batch_df
+    return
 
 
 @app.cell
@@ -343,7 +341,7 @@ def _(direct_graphql, json_preview, scraper, title_query):
 
     graphql_preview = direct_graphql(scraper, query, variables)
     print(json_preview(graphql_preview, max_chars=3500))
-    return graphql_preview
+    return
 
 
 @app.cell
