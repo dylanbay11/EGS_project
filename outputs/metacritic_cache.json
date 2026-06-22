@@ -5486,5 +5486,117 @@
     "mc_criticScore": 87,
     "mc_rating": "E10+",
     "mc_platforms": "PC, Xbox One, PlayStation 4, Nintendo Switch, iOS (iPhone/iPad), PlayStation 5, Nintendo Switch 2"
+  },
+  "Oddsparks: An Automation Adventure": {
+    "mc_title": "Oddsparks: An Automation Adventure",
+    "mc_slug": "oddsparks-an-automation-adventure",
+    "mc_releaseDate": "2025-05-27",
+    "mc_criticScore": 0,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 5, Xbox Series X"
+  },
+  "Trine (Enchanted Edition)": {
+    "mc_title": "Trine: Enchanted Edition",
+    "mc_slug": "trine-enchanted-edition",
+    "mc_releaseDate": "2015-03-12",
+    "mc_criticScore": 80,
+    "mc_rating": "E10+",
+    "mc_platforms": "Wii U, PlayStation 4, PC, Nintendo Switch"
+  },
+  "Fallout: A Post Nuclear Role Playing Game": {
+    "mc_title": "DUST - A Post Apocalyptic Role Playing Game",
+    "mc_slug": "dust-a-post-apocalyptic-role-playing-game",
+    "mc_releaseDate": "2022-05-01",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "LISA: The Joyful - Definitive Edition": {
+    "mc_title": "Grand Theft Auto: The Trilogy - The Definitive Edition",
+    "mc_slug": "grand-theft-auto-the-trilogy-the-definitive",
+    "mc_releaseDate": "2021-11-11",
+    "mc_criticScore": 54,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 5, Nintendo Switch, PlayStation 4, PC, Xbox Series X, Xbox One"
+  },
+  "LOVE (enhanced version, 2014)": {
+    "mc_title": "Love",
+    "mc_slug": "love",
+    "mc_releaseDate": "2026-02-24",
+    "mc_criticScore": null,
+    "mc_rating": "",
+    "mc_platforms": "PC"
+  },
+  "Destiny 2: The Witch Queen": {
+    "mc_title": "Destiny 2: The Witch Queen",
+    "mc_slug": "destiny-2-the-witch-queen",
+    "mc_releaseDate": "2022-02-22",
+    "mc_criticScore": 86,
+    "mc_rating": "",
+    "mc_platforms": "PC, PlayStation 4, Xbox One, PlayStation 5, Xbox Series X"
+  },
+  "The Sims 4 - Fashion Street Kit": {
+    "mc_title": "The Sims 4: Fashion Street Kit",
+    "mc_slug": "the-sims-4-fashion-street-kit",
+    "mc_releaseDate": "2021-10-05",
+    "mc_criticScore": 0,
+    "mc_rating": "T",
+    "mc_platforms": "PC, Xbox Series X, Xbox One, PlayStation 5, PlayStation 4"
+  },
+  "BioShock Remastered": {
+    "mc_title": "BioShock Remastered",
+    "mc_slug": "bioshock-remastered",
+    "mc_releaseDate": "2020-05-29",
+    "mc_criticScore": 0,
+    "mc_rating": "M",
+    "mc_platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One"
+  },
+  "Tomb Raider GAME OF THE YEAR EDITION": {
+    "mc_title": "Rise of the Tomb Raider: 20 Year Celebration",
+    "mc_slug": "rise-of-the-tomb-raider-20-year-celebration",
+    "mc_releaseDate": "2016-10-11",
+    "mc_criticScore": 88,
+    "mc_rating": "M",
+    "mc_platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch 2"
+  },
+  "Shadowrun Returns": {
+    "mc_title": "Shadowrun Returns",
+    "mc_slug": "shadowrun-returns",
+    "mc_releaseDate": "2013-07-25",
+    "mc_criticScore": 76,
+    "mc_rating": "",
+    "mc_platforms": "PC, iOS (iPhone/iPad), Nintendo Switch, Xbox One, Xbox Series X, PlayStation 4, PlayStation 5"
+  },
+  "Borderlands 2": {
+    "mc_title": "Borderlands 2",
+    "mc_slug": "borderlands-2",
+    "mc_releaseDate": "2012-09-18",
+    "mc_criticScore": 89,
+    "mc_rating": "M",
+    "mc_platforms": "Xbox 360, PlayStation 3, PC, PlayStation Vita"
+  },
+  "Darksiders: Warmastered Edition": {
+    "mc_title": "Darksiders: Warmastered Edition",
+    "mc_slug": "darksiders-warmastered-edition",
+    "mc_releaseDate": "2019-04-02",
+    "mc_criticScore": 77,
+    "mc_rating": "M",
+    "mc_platforms": "Nintendo Switch, PlayStation 4, Xbox One, Wii U, PC, PlayStation 5, Xbox Series X"
+  },
+  "Batman: Arkham Asylum Game of the Year Edition": {
+    "mc_title": "Batman: Arkham Asylum",
+    "mc_slug": "batman-arkham-asylum",
+    "mc_releaseDate": "2009-08-25",
+    "mc_criticScore": 92,
+    "mc_rating": "T",
+    "mc_platforms": "Xbox 360, PlayStation 3, PC, Nintendo Switch, DS"
+  },
+  "LEGO Batman: The Videogame": {
+    "mc_title": "LEGO Batman: The Videogame",
+    "mc_slug": "lego-batman-the-videogame",
+    "mc_releaseDate": "2008-09-23",
+    "mc_criticScore": 76,
+    "mc_rating": "E10+",
+    "mc_platforms": "Xbox 360, PC, PlayStation 3, DS, Wii, PlayStation 2, PSP"
   }
 }

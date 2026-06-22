@@ -55,14 +55,17 @@ def _():
 def _(
     Any,
     EpicGamesStoreAPI,
+    FREE_GAMES_URL,
     GRAPHQL_URL,
+    OfferData,
     Path,
-    clean_slug,
     cloudscraper,
+    fuzz,
     json,
-    offer_records_from_product,
+    pd,
+    time,
 ):
-    # Abstracted helper functions - do not need to deeply understand
+    # ABSTRACTED helper functions - do not need to deeply understand
 
     def create_clients(
         locale: str = "en-US",
@@ -168,22 +171,8 @@ def _(
                 records.append(record)
         return records
 
-    return (
-        create_clients,
-        decode_tag_ids,
-        direct_graphql,
-        fetch_offer_catalog_records,
-        fetch_product,
-        get_latest_file,
-        json_preview,
-        looks_like_page_slug,
-        search_store,
-    )
 
-
-@app.cell
-def _(Any, EpicGamesStoreAPI, FREE_GAMES_URL, clean_slug, cloudscraper, pd):
-    # Semi-abstracted helper functions: flatten and extract json payloads or other parsing
+    # SEMI-ABSTRACTED helper functions: flatten and extract json payloads or other parsing
 
     def normalize_title(title: str | None) -> str:
         """Normalize a title for rough matching and spot-check comparisons."""
@@ -338,32 +327,8 @@ def _(Any, EpicGamesStoreAPI, FREE_GAMES_URL, clean_slug, cloudscraper, pd):
         response.raise_for_status()
         return response.json()
 
-    return (
-        extract_product_about,
-        fetch_tag_lookup,
-        free_games_frame,
-        normalize_title,
-        product_requirements_frame,
-        search_elements,
-    )
 
-
-@app.cell
-def _(
-    Any,
-    EpicGamesStoreAPI,
-    OfferData,
-    decode_tag_ids,
-    fetch_offer_catalog_records,
-    fuzz,
-    looks_like_page_slug,
-    normalize_title,
-    pd,
-    search_elements,
-    search_store,
-    time,
-):
-    # Meat and potatoes helper functions
+    # IMPORTANT helper functions to understand
 
     def clean_slug(
         raw_slug: str | None,
@@ -633,9 +598,17 @@ def _(
     return (
         batch_search_scan,
         clean_slug,
+        create_clients,
+        direct_graphql,
+        extract_product_about,
+        fetch_product,
+        fetch_tag_lookup,
+        free_games_frame,
+        get_latest_file,
+        json_preview,
         offer_catalog_frame,
-        offer_records_from_product,
         pick_best_search_match,
+        product_requirements_frame,
         search_candidates_frame,
     )
 

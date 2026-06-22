@@ -103,7 +103,9 @@ def scrape_and_merge():
         return
 
     df = pd.read_csv(input_file)
-    games = df['Title_gsheets'].dropna().unique().tolist()
+    # current cleaned schema uses 'Title' (older runs used 'Title_gsheets')
+    title_col = 'Title' if 'Title' in df.columns else 'Title_gsheets'
+    games = df[title_col].dropna().unique().tolist()
 
     cache = {}
     if os.path.exists(cache_file):
@@ -168,10 +170,10 @@ def scrape_and_merge():
     with open(cache_file, 'w', encoding='utf-8') as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
-    # Merge back into dataframe
+    # Merge back into dataframe, keyed on whichever title column this dataset uses
     mc_data = []
     for game, meta in cache.items():
-        row = {'Title_gsheets': game}
+        row = {title_col: game}
         row.update(meta)
         mc_data.append(row)
 
@@ -179,7 +181,7 @@ def scrape_and_merge():
 
     # Left join onto the original dataframe
     # Using Pandas 3.0 CoW, standard assignments and direct merge
-    merged_df = pd.merge(df, mc_df, on='Title_gsheets', how='left')
+    merged_df = pd.merge(df, mc_df, on=title_col, how='left')
 
     merged_df.to_csv(output_file, index=False)
     print(f"Successfully saved merged data to {output_file}", flush=True)

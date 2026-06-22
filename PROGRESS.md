@@ -8,6 +8,10 @@
 - **Collection handling is now aligned across the main flow**: the raw Google Sheets loader and cleaner rewrite collection rows so the actual game lands in the title field and the collection name is preserved in notes as `Part of collection: ...`, while the wiki path defensively drops stale bundle-header rows.
 - **Downstream enrichment exists but is not the final canonical flow yet**: `development/metacritic_scraper.py` currently extends `data/cleaned_merged_data.csv` into `data/merge_mc.csv`, but the broader "single fully-featured dataset" stage is still in progress.
 - **HLTB enrichment exists as a downstream pass**: `development/hltb_scraper.py` now rebuilds `outputs/hltb_data.csv` and `data/merge_hltb.csv` with a conservative matcher that currently links 550 of 686 unique titles to HLTB data.
+- **Single canonical dataset now exists**: `development/build_dataset.py` is the authoritative join. It reads the cleaned event-level base plus the per-title caches (`outputs/metacritic_cache.json`, `outputs/hltb_data.csv`, `data/egs-enriched.csv`) and writes one tidy table at `data/egs_giveaways.parquet` (event-level, ~914 rows) plus a derived `data/egs_giveaways_by_game.parquet` (game-level, 686 titles). Columns are documented in root `DATA_DICTIONARY.md`. This replaces the previous parallel, schema-divergent `merge_*.csv` files as the analysis surface.
+- **Scraper schema drift fixed**: `metacritic_scraper.py` and `hltb_scraper.py` previously required a `Title_gsheets` column and would crash on the current cleaned schema (which uses `Title`). Both now adapt to either column, so their caches stay in sync with the current pipeline.
+- **EGS API enrichment is productionized**: `development/egs_api_enrich.py` promotes the workbench/`direct_egs_scraper` logic into a resumable, cached, rate-limit-polite pass that adds store-side price, tags/categories, seller/publisher/developer, dates, and descriptions to `data/egs-enriched.csv` (cache: `outputs/egs_api_cache.json`).
+- **Validation + EDA exist**: `development/validate_dataset.py` runs lightweight integrity/sanity checks on the canonical dataset (errors fail, warnings tolerated). `development/eda.py` is a marimo EDA notebook that doubles as a data-quality feedback pass (ends with a Data Issues list).
 
 ## Main Data Flow
 This is the main pipeline right now, ignoring exploratory notebooks, spot-check helpers, and older trial scripts.
@@ -34,11 +38,17 @@ This is the main pipeline right now, ignoring exploratory notebooks, spot-check 
    Produces `data/cleaned_merged_data.csv`
    This is the current main merged dataset for downstream analysis and future enrichers.
 
-5. **Downstream enrichment layer**
-   `development/metacritic_scraper.py`
-   Reads `data/cleaned_merged_data.csv`
-   Produces `data/merge_mc.csv`
-   This is one of the current follow-on enrichments on the path toward the eventual fully-featured analysis dataset.
+5. **Downstream enrichment layer (per-title caches)**
+   `development/metacritic_scraper.py` → `outputs/metacritic_cache.json` (+ `data/merge_mc.csv`)
+   `development/hltb_scraper.py` → `outputs/hltb_data.csv` (+ `data/merge_hltb.csv`)
+   `development/egs_api_enrich.py` → `data/egs-enriched.csv` (cache `outputs/egs_api_cache.json`)
+   Each maintains a per-title cache; the standalone `merge_*.csv` files are now legacy/debug.
+
+6. **Canonical build (single dataset)**
+   `development/build_dataset.py`
+   Reads `data/cleaned_merged_data.csv` + the three per-title caches above
+   Produces `data/egs_giveaways.parquet` (event-level) and `data/egs_giveaways_by_game.parquet` (game-level)
+   This is the analysis-ready surface. `development/validate_dataset.py` checks it; `development/eda.py` explores it.
 
 ## Current Notes
 - `development/spotcheck.py` should stay in sync with the main pipeline assumptions, especially the rolling `data/wiki-enriched.csv` intermediate and the collection/bundle cleanup rules.
@@ -48,8 +58,8 @@ This is the main pipeline right now, ignoring exploratory notebooks, spot-check 
 
 ## Near & Medium-Term Roadmap
 There may be minor overlap between some of these.
-- [ ] **Visibility Options**: Create a marimo document that allows easier inspection and spot-checking of outputs, to enable better feedback for AI agents.
-- [ ] **Test Suite**: Develop a small-scale, useful set of reusable validation checks without turning the repo into a full pytest project.
+- [x] **Visibility Options**: `development/eda.py` is a marimo EDA + data-quality notebook (export to html locally with `uv run marimo export html development/eda.py -o outputs/eda.html`).
+- [x] **Test Suite**: `development/validate_dataset.py` provides lightweight reusable validation checks (no pytest).
 - [ ] **Finish Data Cleaning**: Finalize cleaning rules and procedures across datasets, both content and columns.
 - [ ] **Wikipedia Spot Check**: Hand-check the enriched Wikipedia fields and a sample of tricky bundle rows.
 - [ ] **Google Sheets Spot Check**: Ensure that all relevant info was imported including labels and metadata.
@@ -57,7 +67,7 @@ There may be minor overlap between some of these.
 - [ ] **HLTB Match Refinement**: Add a more dedicated title alias/matching layer for tricky collections, promos, trademark-heavy names, and subtitle/edition edge cases.
 - [ ] **Feature Engineering**: Perform minor feature engineering, manipulation, or reshaping for stubborn columns.
 - [ ] **Missing Data Assessment**: Complete a holistic missing-data pass across the merged dataset.
-- [ ] **Fetch API Data Directly**: Bypass the problematic wrapper API and hit open static endpoints (`freeGamesPromotions` and `content/products/<productSlug>`) for tags, prices, developer, publisher, and related details.
+- [x] **Fetch API Data Directly**: `development/egs_api_enrich.py` pulls store-side price, tags, categories, seller/publisher/developer, dates, and descriptions per title. Uses the wrapper for the Cloudflare-protected search/offers plus the static `content/products/<slug>` endpoint for product pages; resumable and cached.
 
 ## Long-Term Roadmap
 - [ ] **Extract Wrapper Data**: If necessary, extract additional "extra" information via the wrapper API to enable more analysis.

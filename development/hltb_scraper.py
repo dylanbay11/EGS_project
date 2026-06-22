@@ -269,15 +269,26 @@ def build_search_queries(title: str) -> list[str]:
     return queries
 
 
+def giveaway_title_column(df: pd.DataFrame) -> str:
+    """Return the giveaway title column for this dataset's schema.
+
+    The current cleaned schema uses 'Title'; older merged files used
+    'Title_gsheets'. We support both so the scrape works either way.
+    """
+    for candidate in ("Title", "Title_gsheets"):
+        if candidate in df.columns:
+            return candidate
+    raise KeyError("Expected a 'Title' or 'Title_gsheets' column in the input dataset.")
+
+
 def load_unique_titles(input_file: Path) -> list[str]:
-    """Load the source dataset and return unique non-empty Google Sheets titles."""
+    """Load the source dataset and return unique non-empty giveaway titles."""
 
     df = pd.read_csv(input_file)
-    if "Title_gsheets" not in df.columns:
-        raise KeyError("Expected a 'Title_gsheets' column in the input dataset.")
+    title_col = giveaway_title_column(df)
 
     return (
-        pd.Series(df["Title_gsheets"])
+        pd.Series(df[title_col])
         .dropna()
         .astype(str)
         .map(collapse_spaces)
@@ -437,7 +448,7 @@ def merge_hltb_data(input_file: Path, output_file: Path, final_output_file: Path
 
     merged_df = original_df.merge(
         hltb_df,
-        left_on="Title_gsheets",
+        left_on=giveaway_title_column(original_df),
         right_on="Original_Title",
         how="left",
         validate="m:1",
