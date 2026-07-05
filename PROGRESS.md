@@ -72,6 +72,6 @@ There may be minor overlap between some of these.
 
 ## Long-Term Roadmap
 - [ ] **Extract Wrapper Data**: If necessary, extract additional "extra" information via the wrapper API to enable more analysis.
-- [~] **Interactive App (marimo)**: `development/explorer.py` scaffolds the explorer (timing, price, tags, score filters + data-quality triage). Started in marimo rather than Streamlit, matching the rest of the current toolchain. Next: refine UX from real use, and fold in whatever cleaning decisions come out of `REVIEW_NEEDED.md`.
+- [~] **Interactive App (marimo)**: `development/explorer.py` scaffolds the explorer (timing, price, tags, score filters + data-quality triage). Started in marimo rather than Streamlit, matching the rest of the current toolchain. Next: refine UX from real use, and fold in whatever cleaning decisions come out of `REVIEW_NEEDED.md`. Ultimately: Have a user-facing data explorer as final deliverable. So, this existing thing can be a starting point, but note that it was designed as a developer utility; long-term roadmap-wise, this is supposed to be a user-facing interactive app for curious users to answer their own small questions and visualize data in flexible ways. 
 - [ ] **Content Creation**: Write a blog post, Reddit post, and/or LinkedIn post detailing the findings and process.
 - [ ] **Portfolio Integration**: Create a presentation or portfolio-ready artifact for the project.
