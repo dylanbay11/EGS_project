@@ -12,6 +12,7 @@
 - **Scraper schema drift fixed**: `metacritic_scraper.py` and `hltb_scraper.py` previously required a `Title_gsheets` column and would crash on the current cleaned schema (which uses `Title`). Both now adapt to either column, so their caches stay in sync with the current pipeline.
 - **EGS API enrichment is productionized**: `development/egs_api_enrich.py` promotes the workbench/`direct_egs_scraper` logic into a resumable, cached, rate-limit-polite pass that adds store-side price, tags/categories, seller/publisher/developer, dates, and descriptions to `data/egs-enriched.csv` (cache: `outputs/egs_api_cache.json`).
 - **Validation + EDA exist**: `development/validate_dataset.py` runs lightweight integrity/sanity checks on the canonical dataset (errors fail, warnings tolerated). `development/eda.py` is a marimo EDA notebook that doubles as a data-quality feedback pass (ends with a Data Issues list).
+- **Stage 2 interactive explorer started**: `development/explorer.py` is a marimo app (separate artifact from `eda.py`) with an **Explore** tab (reactive grain/year/type/price/score/tag filters + a "confident EGS matches only" switch wired to `egs_meets_threshold`, driving a live table and price/year/tag charts) and a **Triage** tab that turns the `REVIEW_NEEDED.md` A–E data-quality questions into sortable tables (read-only — surfaces, never edits). `development/MARIMO_NOTES.md` is a conventions note pinned to the installed **marimo 0.23.2** (the version-picky `start`/`stop` slider args, the define-vs-read-across-cells rule, NA-safe masking). Export/smoke-test: `uv run marimo export html development/explorer.py -o outputs/explorer.html`.
 
 ## Main Data Flow
 This is the main pipeline right now, ignoring exploratory notebooks, spot-check helpers, and older trial scripts.
@@ -71,6 +72,6 @@ There may be minor overlap between some of these.
 
 ## Long-Term Roadmap
 - [ ] **Extract Wrapper Data**: If necessary, extract additional "extra" information via the wrapper API to enable more analysis.
-- [ ] **Interactive Streamlit App**: Build an interactive app for exploring giveaway timing, prices, tags, and other features.
+- [~] **Interactive App (marimo)**: `development/explorer.py` scaffolds the explorer (timing, price, tags, score filters + data-quality triage). Started in marimo rather than Streamlit, matching the rest of the current toolchain. Next: refine UX from real use, and fold in whatever cleaning decisions come out of `REVIEW_NEEDED.md`.
 - [ ] **Content Creation**: Write a blog post, Reddit post, and/or LinkedIn post detailing the findings and process.
 - [ ] **Portfolio Integration**: Create a presentation or portfolio-ready artifact for the project.
