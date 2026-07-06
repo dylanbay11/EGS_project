@@ -27,6 +27,7 @@ Run:
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -55,6 +56,53 @@ CORE_RENAME = {
     "COLOR_CATEGORY": "color_category",
 }
 
+# the sources spell a few repeat giveaways with different casing, which splits one
+# game into two "unique" titles; fold them onto the official spelling
+CANONICAL_TITLES = {
+    "Ark: Survival Evolved": "ARK: Survival Evolved",
+    "Remnant: From The Ashes": "Remnant: From the Ashes",
+    "SIFU": "Sifu",
+}
+
+# --- standalone-game classification (REVIEW_NEEDED item C) ---
+# Words that mark a giveaway as add-on/in-game content rather than a playable game.
+ADDON_TITLE_PATTERN = re.compile(
+    r"(?i)\b(?:dlc|packs?|bundle|unlock|starter|welcome|cosmetic|costume|skins?|wheels"
+    r"|decal|outfits?|gift|kits?|set|stuff|package|offer|giveaway|promo|bonus)\b"
+)
+
+# add-on content whose title dodges the pattern (expansions, DLC missions, unlocks)
+ADDON_TITLES = {
+    "Alien: Isolation - Last Survivor",
+    "Borderlands 2 - Commander Lilith & the Fight for Sanctuary",
+    "Crime Boss: Rockay City - Cagnali's Order",
+    "Crime Boss: Rockay City - Dragon's Gold Cup",
+    "Dark and Darker - Legendary Status",
+    "Destiny 2: Beyond Light",
+    "Destiny 2: Shadowkeep",
+    "Destiny 2: The Witch Queen",
+    "Dragon Age: The Veilguard - Rook’s Weapons Appearance",
+    "The Cycle: Frontier - Fortuna Survivor",
+    "Tom Clancy’s Ghost Recon Wildlands - Fallen Ghosts",
+    "Train Sim World 2 - LGV Méditerranée: Marseille - Avignon",
+    "Train Sim World® 5: Sherman Hill: Cheyenne - Laramie",
+    "Train Sim World® 6: Spirit of Steam: Liverpool Lime Street - Crewe",
+    "World of Warships x Azur Lane — Quest for AL Avrora",
+    "World of Warships — Anniversary Party Favor",
+}
+
+# pattern hits that ARE playable games (bundles of full games count as games)
+STANDALONE_TITLES = {
+    '3 out of 10, EP 1: "Welcome To Shovelworks"',
+    "Costume Quest",
+    "Costume Quest 2",
+    "HOT WHEELS UNLEASHED™",
+    "Jackbox Party Pack 4",
+    "Q.U.B.E. ULTIMATE BUNDLE",
+    "The Jackbox Party Pack",
+    "Wheels of Aurelia",
+}
+
 
 def join_key(series: pd.Series) -> pd.Series:
     """Normalize a title series into a stable join key (strip + collapse spaces)."""
@@ -66,14 +114,49 @@ def join_key(series: pd.Series) -> pd.Series:
 
 
 def load_base() -> pd.DataFrame:
-    """Load the cleaned event-level base and apply core column renames + dates."""
+    """Load the cleaned event-level base and apply core column renames + dates.
+
+    Also applies the snapshot-level corrections from the July 2026 review: title
+    casing folds, retiring the transient 'next' marker, and the standalone-game
+    flag.
+    """
     df = pd.read_csv(BASE_FILE).rename(columns=CORE_RENAME)
+    df["title"] = df["title"].replace(CANONICAL_TITLES)
     df["from_date"] = pd.to_datetime(df["from_date"], errors="coerce")
     df["to_date"] = pd.to_datetime(df["to_date"], errors="coerce")
     df["giveaway_year"] = df["from_date"].dt.year
+
+    # 'next' marked the upcoming giveaway at scrape time; those windows have since
+    # completed, so relabel them as ordinary events (provenance goes to notes)
+    upcoming = df["giveaway_type"].eq("next")
+    marker = "was listed as upcoming ('next') at scrape time"
+    df.loc[upcoming & df["notes"].notna(), "notes"] = df["notes"] + "; " + marker
+    df.loc[upcoming & df["notes"].isna(), "notes"] = marker
+    df.loc[upcoming, "giveaway_type"] = None
+
     # 'dupe', 'dupe2', 'dupe3' all mark a repeat giveaway of a prior title
     df["is_repeat"] = df["giveaway_type"].astype("string").str.startswith("dupe").fillna(False)
+    df["is_standalone_game"] = classify_standalone(df)
     return df
+
+
+def classify_standalone(df: pd.DataFrame) -> pd.Series:
+    """Flag each event as a standalone playable game vs add-on/in-game content.
+
+    A row counts as add-on content when its notes say so ("In-game content...",
+    "Requires base game..."), its giveaway_type is one of the pack markers, or its
+    title carries an add-on word / sits on the curated exception lists. Everything
+    else - including bundles of full games - is a standalone game.
+    """
+    notes = df["notes"].astype("string").str.lower()
+    addon_notes = notes.str.contains("in-game content|requires base game", na=False)
+    addon_type = df["giveaway_type"].isin(["pack", "pack2", "pack3"])
+    addon_title = (
+        df["title"].astype("string").str.contains(ADDON_TITLE_PATTERN, na=False)
+        | df["title"].isin(ADDON_TITLES)
+    )
+    is_addon = (addon_notes | addon_type | addon_title) & ~df["title"].isin(STANDALONE_TITLES)
+    return ~is_addon
 
 
 def load_metacritic() -> pd.DataFrame:
@@ -156,12 +239,15 @@ def build_game_table(event: pd.DataFrame) -> pd.DataFrame:
             giveaway_count=("title", "size"),
             first_giveaway=("from_date", "min"),
             last_giveaway=("from_date", "max"),
+            # add-on verdicts can differ per event (notes vary); add-on wins
+            is_standalone_game=("is_standalone_game", "min"),
         )
     )
 
     # event-specific columns we do NOT carry to the game level
     event_only = {"from_date", "to_date", "day_of_week", "duration_days",
-                  "giveaway_type", "is_repeat", "giveaway_year", "notes", "color_category"}
+                  "giveaway_type", "is_repeat", "giveaway_year", "notes", "color_category",
+                  "is_standalone_game"}
     enrichment_cols = [c for c in event.columns if c not in event_only and c != "title"]
     per_title = event.drop_duplicates("title")[["title", *enrichment_cols]]
 

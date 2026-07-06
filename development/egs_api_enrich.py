@@ -44,6 +44,143 @@ MATCH_THRESHOLD = 80.0  # below this we keep the guess but flag it as low confid
 SEARCH_COUNT = 10
 SAVE_EVERY = 10
 
+# Manual match corrections from the July 2026 data-quality review (REVIEW_NEEDED.md
+# items A-C, plus a token-subset audit of all "confident" matches). Every entry was
+# verified against the live storefront. Three shapes:
+#   {"action": "skip", "note": ...}
+#       the right product is no longer on EGS; leave the title unmatched instead of
+#       letting the fuzzy matcher grab the nearest wrong string
+#   {"action": "pick", "keywords": ..., "match_title": ..., ("seller": ...,) "note": ...}
+#       re-search with better keywords and pin the exact store listing by title (and
+#       seller when several listings share a title); treated as a trusted match
+#   {"action": "null_price", "note": ...}
+#       the match is right but the store reports $0 for a non-purchasable offer;
+#       enrich normally, then blank the price fields
+MANUAL_OVERRIDES: dict[str, dict[str, str]] = {
+    # -- wrong product matched; the real listing exists --
+    "Control": {
+        "action": "pick", "keywords": "Control", "match_title": "Control",
+        "seller": "505 Games",
+        "note": "search rank 1 is an unrelated Overwolf app; pinned the 505 Games listing",
+    },
+    "Thimbleweed Park": {
+        "action": "pick", "keywords": "Thimbleweed Park", "match_title": "Thimbleweed Park",
+        "note": "was matched to the free Delores spinoff",
+    },
+    "Rogue Legacy": {
+        "action": "pick", "keywords": "Rogue Legacy", "match_title": "Rogue Legacy",
+        "note": "token-subset scoring matched an Assassin's Creed Rogue DLC",
+    },
+    "Vampire Survivors": {
+        "action": "pick", "keywords": "Vampire Survivors", "match_title": "Vampire Survivors",
+        "note": "was matched to the Vampire Crawlers spinoff",
+    },
+    "The Bridge": {
+        "action": "pick", "keywords": "The Bridge", "match_title": "The Bridge",
+        "note": "was matched to Bridge Constructor: The Walking Dead",
+    },
+    "MudRunner": {
+        "action": "pick", "keywords": "MudRunner", "match_title": "MudRunner",
+        "note": "was matched to Expeditions: A MudRunner Game (different game)",
+    },
+    "Stories Untold": {
+        "action": "pick", "keywords": "Stories Untold", "match_title": "Stories Untold",
+        "note": "was matched to Lovecraft's Untold Stories",
+    },
+    "Tiny Tina's Wonderlands": {
+        "action": "pick", "keywords": "Tiny Tina's Wonderlands",
+        "match_title": "Tiny Tina's Wonderlands",
+        "note": "was matched to the Assault on Dragon Keep one-shot",
+    },
+    "Ghostwire: Tokyo": {
+        "action": "pick", "keywords": "Ghostwire Tokyo", "match_title": "Ghostwire: Tokyo",
+        "note": "was matched to the DEATHLOOP + Ghostwire bundle",
+    },
+    "Shenmue III": {
+        "action": "pick", "keywords": "Shenmue III", "match_title": "Shenmue III",
+        "note": "was matched to the Deluxe Edition; standard listing exists",
+    },
+    "Hand of Fate 2": {
+        "action": "pick", "keywords": "Hand of Fate 2", "match_title": "Hand of Fate 2",
+        "note": "was matched to the Game & DLC bundle; base listing exists",
+    },
+    # -- store shortened/renamed the title, so the search missed it --
+    "The Dungeon of Naheulbeuk: The Amulet Of Chaos": {
+        "action": "pick", "keywords": "Dungeon of Naheulbeuk",
+        "match_title": "The Dungeon of Naheulbeuk",
+        "note": "store listing dropped the subtitle",
+    },
+    "Encased: A Sci-Fi Post-Apocalyptic RPG": {
+        "action": "pick", "keywords": "Encased", "match_title": "Encased",
+        "note": "store listing dropped the subtitle",
+    },
+    "Bad North: Jotunn Edition": {
+        "action": "pick", "keywords": "Bad North", "match_title": "Bad North",
+        "note": "Jotunn Edition is the free-update rename of the same game",
+    },
+    "Tormentor❌Punisher": {
+        "action": "pick", "keywords": "Tormentor Punisher", "match_title": "Tormentor x Punisher",
+        "note": "store spells the ❌ as 'x'",
+    },
+    # -- original edition delisted; a same-content re-release is the current listing --
+    "Trine 4: The Nightmare Prince": {
+        "action": "pick", "keywords": "Trine 4", "match_title": "Trine 4: Definitive Edition",
+        "note": "original delisted; Definitive Edition is the successor re-release",
+    },
+    "Model Builder": {
+        "action": "pick", "keywords": "Model Builder",
+        "match_title": "Model Builder: Complete Edition",
+        "note": "original delisted; Complete Edition is the successor re-release",
+    },
+    # -- the real product is gone from EGS; nearest string was a wrong match --
+    "Hitman": {
+        "action": "skip",
+        "note": "HITMAN (2016) is delisted; current World of Assassination SKUs are different products",
+    },
+    "Train Sim World 2": {
+        "action": "skip",
+        "note": "TSW2 is delisted; only TSW6 editions and a free dev kit remain",
+    },
+    "Football Manager 2024": {
+        "action": "skip",
+        "note": "FM main games are not on EGS; nearest hit is the FM2020 in-game editor DLC",
+    },
+    "Football Manager 2020": {
+        "action": "skip",
+        "note": "FM2020 base game is delisted; only its in-game editor DLC remains",
+    },
+    "Thief": {
+        "action": "skip",
+        "note": "Thief (2014) is not in EGS search; nearest hit is an Arsene Lupin subtitle",
+    },
+    # -- correct match, unusable price --
+    "Borderlands 2": {
+        "action": "null_price",
+        "note": "store reports $0 for this non-purchasable offer; price nulled",
+    },
+    "Borderlands: The Pre-Sequel": {
+        "action": "null_price",
+        "note": "store reports $0 for this non-purchasable offer; price nulled",
+    },
+}
+
+PRICE_FIELDS = [
+    "egs_original_price_usd",
+    "egs_original_price_cents",
+    "egs_discount_price_cents",
+    "egs_currency",
+]
+
+# columns that survive in the output for low-confidence matches; everything else is
+# nulled so a garbage match can't leak a wrong price/seller into the analysis
+LOW_CONFIDENCE_KEEP = [
+    "title",
+    "egs_match_title",
+    "egs_match_score",
+    "egs_meets_threshold",
+    "egs_notes",
+]
+
 # the order we write columns out; keeps the csv stable across runs
 OUTPUT_COLUMNS = [
     "title",
@@ -243,21 +380,49 @@ def fetch_product_about(api: EpicGamesStoreAPI, slug: str | None) -> dict[str, A
     }
 
 
-def enrich_title(api: EpicGamesStoreAPI, title: str, tag_lookup: dict[str, str]) -> dict[str, Any]:
+def enrich_title(
+    api: EpicGamesStoreAPI,
+    title: str,
+    tag_lookup: dict[str, str],
+    override: dict[str, str] | None = None,
+) -> dict[str, Any]:
     """Search, match, and enrich a single title into one flat record.
 
     Casts a wide net but degrades gracefully: any field that cannot be fetched is
     left null and the reason is appended to ``egs_notes`` rather than raising.
+    When a ``MANUAL_OVERRIDES`` entry is passed, it steers the outcome: "skip"
+    returns an unmatched record, "pick" pins an exact store listing, and
+    "null_price" enriches normally then blanks the price fields. Override records
+    carry the note under ``egs_override`` so cache invalidation can spot stale ones.
     """
     record: dict[str, Any] = {"title": title}
     notes: list[str] = []
 
+    if override:
+        record["egs_override"] = override["note"]
+        if override["action"] == "skip":
+            record["egs_notes"] = "manual override: " + override["note"]
+            return record
+
+    keywords = override["keywords"] if override and override["action"] == "pick" else title
     try:
-        payload = api.fetch_store_games(keywords=title, count=SEARCH_COUNT, with_price=True)
+        payload = api.fetch_store_games(keywords=keywords, count=SEARCH_COUNT, with_price=True)
         elements = search_elements(payload)
     except Exception as exc:
         record["egs_notes"] = "search failed: " + str(exc)
         return record
+
+    if override and override["action"] == "pick":
+        elements = [
+            element for element in elements
+            if element.get("title") == override["match_title"]
+            and ("seller" not in override
+                 or (element.get("seller") or {}).get("name") == override["seller"])
+        ]
+        if not elements:
+            record["egs_notes"] = "manual override: pinned listing not found in search"
+            return record
+        notes.append("manual override: " + override["note"])
 
     if not elements:
         record["egs_notes"] = "no search results"
@@ -272,7 +437,8 @@ def enrich_title(api: EpicGamesStoreAPI, title: str, tag_lookup: dict[str, str])
     slug = clean_slug(best.get("productSlug"), custom_attributes, best.get("urlSlug"))
     namespace = best.get("namespace")
     offer_id = best.get("id")
-    meets = score >= MATCH_THRESHOLD
+    # a pinned listing is trusted even when its title differs a lot from ours
+    meets = score >= MATCH_THRESHOLD or bool(override and override["action"] == "pick")
 
     # search-level fields are always available
     search_price = price_block(best)
@@ -348,6 +514,13 @@ def enrich_title(api: EpicGamesStoreAPI, title: str, tag_lookup: dict[str, str])
     if not record.get("egs_developer"):
         notes.append("developer unavailable")
 
+    # only null the price while the store actually reports $0; a restored real
+    # price should win over the override
+    if override and override["action"] == "null_price" and not record.get("egs_original_price_cents"):
+        for field in PRICE_FIELDS:
+            record[field] = None
+        notes.append("manual override: " + override["note"])
+
     if notes:
         record["egs_notes"] = "; ".join(notes)
     return record
@@ -393,7 +566,12 @@ def load_unique_titles(limit: int | None) -> list[str]:
 
 
 def write_output(cache: dict[str, dict[str, Any]], titles: list[str]) -> None:
-    """Write the enrichment table for the requested titles, in input order."""
+    """Write the enrichment table for the requested titles, in input order.
+
+    Low-confidence matches keep their provenance columns (match title, score,
+    threshold flag, notes) but have every substantive field nulled - the cache
+    retains the raw guess, the analysis surface does not.
+    """
     import pandas as pd
 
     rows = [cache[title] for title in titles if title in cache]
@@ -402,6 +580,13 @@ def write_output(cache: dict[str, dict[str, Any]], titles: list[str]) -> None:
         if column not in df.columns:
             df[column] = None
     df = df[OUTPUT_COLUMNS]
+
+    low_confidence = ~df["egs_meets_threshold"].eq(True)
+    null_columns = [c for c in OUTPUT_COLUMNS if c not in LOW_CONFIDENCE_KEEP]
+    df.loc[low_confidence, null_columns] = None
+    print("Nulled substantive fields for {} low-confidence matches.".format(
+        int((low_confidence & df["egs_match_title"].notna()).sum())), flush=True)
+
     df.to_csv(OUTPUT_FILE, index=False)
     print("Wrote {} rows to {}".format(len(df), OUTPUT_FILE), flush=True)
 
@@ -430,12 +615,18 @@ def main() -> None:
     tag_lookup = build_tag_lookup(api)
     print("Tag lookup ready ({} tags).".format(len(tag_lookup)), flush=True)
 
-    pending = [title for title in titles if title not in cache]
+    # a title is pending when uncached, or when its manual override changed since
+    # it was cached (the egs_override marker records which note was applied)
+    pending = [
+        title for title in titles
+        if title not in cache
+        or cache[title].get("egs_override") != (MANUAL_OVERRIDES.get(title) or {}).get("note")
+    ]
     print("Fetching {} new titles (cache covers the rest).".format(len(pending)), flush=True)
 
     for index, title in enumerate(pending, start=1):
         print("[{}/{}] {}".format(index, len(pending), title), flush=True)
-        cache[title] = enrich_title(api, title, tag_lookup)
+        cache[title] = enrich_title(api, title, tag_lookup, MANUAL_OVERRIDES.get(title))
         match = cache[title].get("egs_match_title")
         score = cache[title].get("egs_match_score")
         print("  -> {} (score={})".format(match, score), flush=True)

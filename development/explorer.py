@@ -59,7 +59,7 @@ def _(event, game, mo):
 
         Filter the canonical `egs_giveaways` dataset and watch the table and charts react.
         - **{events}** giveaway events (event-level) · **{games}** unique titles (game-level)
-        - Use the **Triage** tab for the open data-quality questions (`REVIEW_NEEDED.md`).
+        - Use the **Triage** tab for data-quality regression checks (the original `REVIEW_NEEDED.md` questions were resolved July 2026).
 
         > Price/tag habit: leave **"Confident EGS matches only"** on — it restricts to
         > `egs_meets_threshold == True`, the correct base for money/tag analysis.
@@ -406,7 +406,8 @@ def _(
         [
             mo.md(
                 "## Data-quality triage\n"
-                "Open questions from `REVIEW_NEEDED.md`, surfaced as sortable tables. "
+                "Data-quality monitor: the original `REVIEW_NEEDED.md` questions were resolved "
+                "July 2026; these tables remain as regression checks. "
                 "These views are **read-only** — they flag, they don't edit the dataset."
             ),
             triage_zero,

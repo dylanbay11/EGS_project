@@ -90,7 +90,7 @@ flowchart TD
     subgraph S5["5 · Canonical build — the one authoritative join"]
         BD["build_dataset.py"]:::script
         EV["data/egs_giveaways.parquet<br>(event-level, ~914 rows)"]:::final
-        GM["data/egs_giveaways_by_game.parquet<br>(game-level, 686 titles)"]:::final
+        GM["data/egs_giveaways_by_game.parquet<br>(game-level, 683 titles)"]:::final
         BD --> EV
         BD --> GM
     end
@@ -154,7 +154,7 @@ first place to look when an enrichment value looks like it belongs to the wrong 
 |---|---|---|---|
 | `metacritic_scraper.py` | exact lowercase title match against search results, else **first result** | none | silently takes first result — least guarded matcher |
 | `hltb_scraper.py` | normalized-title scorer with sequel-number guard, safe-suffix stripping, `SequenceMatcher` ratio | `0.84` | leaves the row blank (no match recorded); ~550/686 titles matched |
-| `egs_api_enrich.py` | `fuzz.token_set_ratio` + normalized ratio vs API search results | `80.0` | **keeps the guess** but flags it `egs_meets_threshold = False` |
+| `egs_api_enrich.py` | `fuzz.token_set_ratio` + normalized ratio vs API search results | `80.0` | flags it `egs_meets_threshold = False`; the cache keeps the raw guess but the **output nulls all substantive fields** for it. ~24 titles carry `MANUAL_OVERRIDES` (pin the exact listing / force no-match / null a bogus $0 price), verified against the live store July 2026 |
 
 - `merge_mc.csv` / `merge_hltb.csv` are legacy per-enricher merged files from the old parallel
   pipeline — debug only, schemas drifted; nothing downstream should read them.
@@ -168,6 +168,10 @@ first place to look when an enrichment value looks like it belongs to the wrong 
   instead of silently inflating row counts.
 - Renames gsheets-era columns to snake_case (`FROM`→`from_date`, etc.), derives `giveaway_year`
   and `is_repeat` (any `TYPE` starting with `dupe`).
+- Snapshot corrections (July 2026 review): folds case-variant duplicate titles onto one canonical
+  spelling (`CANONICAL_TITLES` — ARK/Sifu/Remnant), relabels the transient `next` marker rows to
+  standard (provenance appended to `notes`), and derives `is_standalone_game` (playable game vs
+  DLC/pack/in-game content; pattern + curated exception lists).
 - Also writes `.csv` mirrors next to the parquets. The game-level table is derived from the
   event-level one (giveaway counts + first/last dates per title).
 
@@ -175,7 +179,8 @@ first place to look when an enrichment value looks like it belongs to the wrong 
 - `validate_dataset.py`: errors fail, warnings are tolerated. Run after any rebuild.
 - `eda.py` (marimo): EDA that doubles as a data-quality pass — ends with a Data Issues list.
 - `explorer.py` (marimo): Explore tab (filters incl. the `egs_meets_threshold` "confident matches
-  only" switch) + Triage tab (surfaces the `REVIEW_NEEDED.md` A–E questions, read-only).
+  only" switch) + Triage tab (data-quality monitor; the original `REVIEW_NEEDED.md` A–E questions
+  were resolved July 2026, the tables remain as regression checks).
 
 ## Join keys at a glance
 
@@ -197,7 +202,7 @@ this table is usually why:
 | Wiki fields all NA for a title | title-spelling mismatch on `merge_title`; compare raw wiki csv vs gsheets title |
 | Metacritic score looks like a different game | no-threshold first-result fallback in `metacritic_scraper.py`; fix via `outputs/metacritic_cache.json` |
 | HLTB fields blank | conservative matcher scored < 0.84 — check `outputs/hltb_data.csv` for the blank row |
-| EGS price/tags look off | check `egs_meets_threshold`; if False it's a kept-but-flagged fuzzy guess |
+| EGS price/tags look off | check `egs_meets_threshold` and `egs_notes`; low-confidence rows are nulled in output, and `MANUAL_OVERRIDES` in `egs_api_enrich.py` is where known-bad matches get pinned/skipped |
 | Row count inflated after rebuild | a cache grew duplicate keys — `validate="m:1"` in `build_dataset.py` should have raised; check its output |
 | Enrichment stale after title cleanup | caches key on the old title; delete the entry from the relevant cache file and re-run that enricher |
 | Canonical tables disagree with csv mirrors | mirrors are written in the same run; a partial/failed run can leave them out of sync — rebuild |
