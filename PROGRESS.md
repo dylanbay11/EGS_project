@@ -15,7 +15,7 @@
 - **Stage 2 interactive explorer started**: `development/explorer.py` is a marimo app (separate artifact from `eda.py`) with an **Explore** tab (reactive grain/year/type/price/score/tag filters + a "confident EGS matches only" switch wired to `egs_meets_threshold`, driving a live table and price/year/tag charts) and a **Triage** tab that turns the `REVIEW_NEEDED.md` A–E data-quality questions into sortable tables (read-only — surfaces, never edits). `development/MARIMO_NOTES.md` is a conventions note pinned to the installed **marimo 0.23.2** (the version-picky `start`/`stop` slider args, the define-vs-read-across-cells rule, NA-safe masking). Export/smoke-test: `uv run marimo export html development/explorer.py -o outputs/explorer.html`.
 
 ## Main Data Flow
-This is the main pipeline right now, ignoring exploratory notebooks, spot-check helpers, and older trial scripts.
+This is the main pipeline right now, ignoring exploratory notebooks, spot-check helpers, and older trial scripts. A visual version with diagnostic annotations (join keys, match thresholds, where each cleaning rule lives) is in root `DIAGRAM.md` — keep it in sync when pipeline structure changes.
 
 1. **Google Sheets base import**
    `development/data_collection.py`

@@ -70,7 +70,7 @@ Scripts and code in active development are to be placed in the development folde
 
 Recent data and their derived cleaned and/or merged forms are to be placed in the data folder. 
 
-Overview files, such as a PROGRESS.md (an ongoing checklist of TODOs), this file AGENTS.md (to orient best practices), README.md (intended to be user-facing for final release, not currently fully implemented), and similarly-scoped general repo files (such as the EGS_API_report.md which is relevant to current goals) should stay in the repo's root.
+Overview files, such as a PROGRESS.md (an ongoing checklist of TODOs), this file AGENTS.md (to orient best practices), README.md (intended to be user-facing for final release, not currently fully implemented), DIAGRAM.md (a mermaid map of the data pipeline plus diagnostic annotations), and similarly-scoped general repo files (such as the EGS_API_report.md which is relevant to current goals) should stay in the repo's root.
 
 Output files, such as test scripts and test outputs, smaller-scale markdown reports, smaller visualizations, etc. are to be placed in the outputs folder. Please note that currently .gitignore includes *.html, so those outputs are purely for the benefit of myself locally for verification. This also means that any remotely executed code html outputs will not transfer via github and will need to be done locally. As this is a small scale project, pytest is overkill. However, data validation is important, and realistic edge cases should be tested.
 
@@ -91,5 +91,7 @@ Ideally, I want functionality where it re-scrapes if it's been more than a day s
 ## Agent habits
 
 Make sure you update PROGRESS.md every time you finish a significant task. This may or may not be checking a box (and in fact, sometimes you may need to create a new box to reflect a logical "next step" task), it could also be adding or changing info about the current 'state' of the project, including names of scripts or datasets for easy reference. Occasionally no changes to PROGRESS.md will be needed at all if the completed task was not significant enough. 
+
+Similarly, keep DIAGRAM.md in sync whenever the *structure* of the pipeline changes: a script added/renamed/retired, an input or output file moved, a join key or cleaning rule changed, or a threshold adjusted. Cosmetic code changes don't require a diagram update — only changes that would make the chart or its annotation tables (join keys, match thresholds, diagnostic pointers) inaccurate.
 
 You may suggest moving or re-organizing things, but do not do so yourself unless explicitly asked to do so. Typically, the programmer themselves will handle that kind of thing. The exception, of course, being handling datasets and their derivatives, according to the rules in this AGENTS.md document - that kind of thing is OK to do yourself.
