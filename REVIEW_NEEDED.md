@@ -86,3 +86,10 @@ game count went 686 → 683 (ARK now correctly shows 4 giveaways).
   (e.g. `borderlands-2` works) even when search fails. A slug-guess fallback could
   recover dev/publisher/description (no price) for some of the 122 unmatched — only if
   that metadata turns out to matter for the analysis.
+- **`mc_criticScore == 0` means "no score", not zero** (found 2026-07-06 while building
+  the portfolio explorer): 72 game-level titles carry a literal 0 from the Metacritic
+  scraper where the site shows "tbd"/no critic score (e.g. Layers of Fear: Masterpiece
+  Edition, Ticket to Ride). They drag the score median from 77 to 76 and paint a fake
+  bottom row on any score scatter. The app extract (`development/build_app_data.py`)
+  converts 0 → NA for display; the canonical dataset still has the 0s — decide whether
+  `metacritic_scraper.py` should emit NA and the dataset be rebuilt.

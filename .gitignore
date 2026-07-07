@@ -179,3 +179,6 @@ settings.json
 .Rhistory
 *.Rproj
 *.RData
+
+# WASM export build artifact (regenerate: uv run marimo export html-wasm development/portfolio_explorer.py -o outputs/portfolio_wasm --mode run --no-show-code)
+outputs/portfolio_wasm/

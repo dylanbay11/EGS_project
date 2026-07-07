@@ -111,6 +111,16 @@ flowchart TD
     GM --> VD
     GM --> EDA
     GM --> EXP
+
+    %% ── stage 7: public app ──────────────────────────────────
+    subgraph S7["7 · Public app — WASM-deployable"]
+        BAD["build_app_data.py"]:::script
+        APPCSV["development/public/egs_app_data.csv<br>(slim app extract, ~212 KB)"]:::mid
+        PEXP["portfolio_explorer.py<br>(public marimo app)"]:::consumer
+        BAD --> APPCSV
+        APPCSV --> PEXP
+    end
+    EV -- "app columns only,<br>bool NA→False, MC 0→NA" --> BAD
 ```
 
 **Color legend** — 🟦 blue: scripts · 🟨 yellow: dated raw scrapes · 🟧 orange: rolling intermediates
@@ -181,6 +191,19 @@ first place to look when an enrichment value looks like it belongs to the wrong 
 - `explorer.py` (marimo): Explore tab (filters incl. the `egs_meets_threshold` "confident matches
   only" switch) + Triage tab (data-quality monitor; the original `REVIEW_NEEDED.md` A–E questions
   were resolved July 2026, the tables remain as regression checks).
+
+### 7 · Public app (`build_app_data.py` → `portfolio_explorer.py`)
+- `build_app_data.py` cuts a slim event-level CSV (`development/public/egs_app_data.csv`) with
+  only the columns the public app renders — **rerun it after any canonical rebuild** or the app
+  serves stale data. It applies two display-layer transforms the canonical dataset does *not*
+  have: NA booleans → `False`, and `mc_criticScore == 0` → NA (the scraper's "no score yet"
+  sentinel, 72 titles — see `REVIEW_NEEDED.md`). If the app disagrees with the parquet on
+  score counts, this is why.
+- `portfolio_explorer.py` (marimo) is the public-facing explorer. It reads the extract via
+  `mo.notebook_location()/public/`, which resolves to the notebook dir locally and the site URL
+  when exported with `marimo export html-wasm … --mode run --no-show-code` (fully client-side
+  Pyodide; the `public/` folder is copied into the export automatically). The exported site in
+  `outputs/portfolio_wasm/` is a gitignored build artifact.
 
 ## Join keys at a glance
 
