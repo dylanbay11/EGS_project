@@ -1,5 +1,18 @@
 # EGS Project Progress & State
 
+## September 2026 independent review
+
+Read [PROJECT_REVIEW.md](PROJECT_REVIEW.md) for the current orientation, branch map,
+evidence, and revised personal-QA agenda. It qualifies the older status claims below;
+the review did not apply pipeline repairs or certify the July resolution log.
+
+- [x] **Repository orientation review**: reviewed the non-Jules branch tips and documentation, reproduced the downstream canonical build, and smoke-tested the newer notebooks. Evidence: `outputs/repository_review_checks.py` and `outputs/repository_review_checks.txt`.
+- [ ] **Repair source grain before trusting counts**: 806 cleaned Sheets rows become 914 after the title-only wiki join; Bloons TD 6 expands 4→12. Preserve PC/mobile distinctions rather than blindly deduplicating title/date rows.
+- [ ] **Repair and audit product identity**: saved EGS and Metacritic matches include wrong BioShock games; Cat Quest 2/II remain separate titles. Threshold acceptance does not establish correctness.
+- [ ] **Agree on analytical definitions**: primary population, event versus game/offer counts, edition equivalence, price meaning, and snapshot versus ongoing refresh. Use the decision table in `PROJECT_REVIEW.md` rather than repeating the old A–E checklist.
+- [ ] **Strengthen canonical QA and refresh behavior**: add source-grain and identity checks, reconcile missing-score semantics, handle future `next` rows correctly, and make cache/slice behavior safe for routine use.
+- [ ] **Reassess public claims after repair**: 683 titles and $12,114.01 are reproducible provisional calculations. The app executes but its analytical claims and visitor experience still require acceptance.
+
 ## Current State
 - **Primary source collection is working**: `development/data_collection.py` handles the community Google Sheet and saves dated raw source files in `data/` using the `YYYY-MM-DD-gsheets.xlsx` pattern.
 - **Wikipedia raw scraping is working**: `development/wiki_scraper.py` follows the same rolling-cache idea, writes dated raw wiki files like `YYYY-MM-DD-wiki.csv`, and has safer bundle/header cleanup so collection names are less likely to become fake game rows.

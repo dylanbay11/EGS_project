@@ -1,0 +1,235 @@
+
+Environment
+{'python': '3.13.5 (main, Jun 12 2025, 12:42:35) [MSC v.1943 64 bit (AMD64)]', 'pandas': '3.0.2'}
+
+Grain
+{'cleaned_sheet_rows': 806, 'wiki_rows': 475, 'rebuilt_initial_join_rows': 914, 'saved_base_rows': 914, 'canonical_events': 914, 'canonical_titles': 683, 'duplicate_title_start_end_rows': 138, 'sheet_duplicate_title_start_end_rows': 30}
+
+Largest initial-join expansions
+                           Title  sheet_rows  merged_rows  extra_rows
+                     Bloons TD 6           4           12           8
+                         Control           3            9           6
+F.I.S.T.: Forged In Shadow Torch           2            6           4
+             Horizon Chase Turbo           3            6           3
+                           LIMBO           3            6           3
+                 DEATH STRANDING           2            4           2
+               Enter the Gungeon           2            4           2
+                     Beyond Blue           2            4           2
+                     Ghostrunner           2            4           2
+                  Escape Academy           2            4           2
+        A Plague Tale: Innocence           2            4           2
+                 Costume Quest 2           2            4           2
+                 Into the Breach           2            4           2
+                            ABZÛ           2            4           2
+                Ghostwire: Tokyo           2            4           2
+
+Bloons TD 6 source rows
+      Title                FROM                  TO   TYPE
+Bloons TD 6 2026-01-08 00:00:00 2026-01-15 00:00:00   dupe
+Bloons TD 6 2025-01-24 00:00:00 2025-02-20 00:00:00 mobile
+Bloons TD 6 2023-08-03 00:00:00 2023-08-10 00:00:00   dupe
+Bloons TD 6 2022-12-15 00:00:00 2022-12-16 00:00:00    NaN
+
+Bloons TD 6 wiki rows
+ title_wiki    daterange_wiki  year_wiki
+Bloons TD 6  15 December 2022       2022
+Bloons TD 6  3-10 August 2023       2023
+Bloons TD 6 8-15 January 2026       2026
+
+Snapshot
+{'first_date': '2018-12-14 00:00:00', 'last_date': '2026-04-30 00:00:00', 'missing_from_dates': 0, 'standalone_titles': 606, 'egs_trusted_titles': 550, 'egs_priced_titles': 548, 'mc_named_titles': 680, 'mc_zero_scores': 72, 'mc_positive_scores': 548, 'hltb_named_titles': 550, 'hltb_zero_main_story': 8, 'hltb_positive_main_story': 542, 'wiki_title_matches': 377, 'wiki_developer_values': 217, 'trusted_price_sum': 12114.010000000002}
+
+Source type counts
+TYPE
+NaN       561
+dupe       80
+mobile     63
+pack2      36
+pack       33
+other      11
+free        6
+pack3       5
+-           4
+dupe3       3
+next        2
+dupe2       2
+Name: count, dtype: int64
+
+Sheet color counts
+COLOR_CATEGORY
+FFD0E0E3    551
+FFB6D7A8    151
+FFF4CCCC     71
+FFFFF2CC     33
+Name: count, dtype: int64
+
+Same-title/window source rows (inspect platform before deduplicating)
+                                                                    Title                FROM                  TO   TYPE                                 NOTES COLOR_CATEGORY
+                                                    Boxes: Lost Fragments 2026-02-26 00:00:00 2026-03-05 00:00:00 mobile                                  <NA>       FFF4CCCC
+                                                    Boxes: Lost Fragments 2026-02-26 00:00:00 2026-03-05 00:00:00    NaN                                  <NA>       FFD0E0E3
+                             The Darkside Detective: A Fumble in the Dark 2026-02-12 00:00:00 2026-02-19 00:00:00 mobile                                  <NA>       FFF4CCCC
+                             The Darkside Detective: A Fumble in the Dark 2026-02-12 00:00:00 2026-02-19 00:00:00    NaN                                  <NA>       FFD0E0E3
+                                                             Botany Manor 2026-02-05 00:00:00 2026-02-12 00:00:00 mobile                                  <NA>       FFF4CCCC
+                                                             Botany Manor 2026-02-05 00:00:00 2026-02-12 00:00:00    NaN                                  <NA>       FFD0E0E3
+                                                   The Darkside Detective 2025-12-04 00:00:00 2025-12-11 00:00:00 mobile                                  <NA>       FFF4CCCC
+                                                   The Darkside Detective 2025-12-04 00:00:00 2025-12-11 00:00:00    NaN                                  <NA>       FFD0E0E3
+                                                        Universe for Sale 2025-11-27 00:00:00 2025-12-04 00:00:00 mobile                                  <NA>       FFF4CCCC
+                                                        Universe for Sale 2025-11-27 00:00:00 2025-12-04 00:00:00    NaN                                  <NA>       FFD0E0E3
+                                                                    Zoeti 2025-11-20 00:00:00 2025-11-27 00:00:00 mobile                                  <NA>       FFF4CCCC
+                                                                    Zoeti 2025-11-20 00:00:00 2025-11-27 00:00:00    NaN                                  <NA>       FFD0E0E3
+                                                           Scourgebringer 2025-11-13 00:00:00 2025-11-20 00:00:00 mobile                                  <NA>       FFF4CCCC
+                                                           Scourgebringer 2025-11-13 00:00:00 2025-11-20 00:00:00    NaN                                  <NA>       FFD0E0E3
+Idle Champions of the Forgotten Realms - Nixie's Champions of Renown Pack 2025-11-06 00:00:00 2025-11-13 00:00:00  pack3 In-game content, log into game to get       FFF4CCCC
+Idle Champions of the Forgotten Realms - Nixie's Champions of Renown Pack 2025-11-06 00:00:00 2025-11-13 00:00:00   pack In-game content, log into game to get       FFD0E0E3
+
+Existing human-note examples
+           Title                FROM                  TO   TYPE                             NOTES COLOR_CATEGORY
+    Botany Manor 2026-02-05 00:00:00 2026-02-12 00:00:00 mobile                              <NA>       FFF4CCCC
+    Botany Manor 2026-02-05 00:00:00 2026-02-12 00:00:00    NaN                              <NA>       FFD0E0E3
+Eastern Exorcist 2025-09-25 00:00:00 2025-10-02 00:00:00  dupe3                              <NA>       FFF4CCCC
+Eastern Exorcist 2025-09-25 00:00:00 2025-10-02 00:00:00    NaN                              <NA>       FFD0E0E3
+    Cat Quest II 2025-04-03 00:00:00 2025-04-10 00:00:00   dupe                              <NA>       FFB6D7A8
+       Cat Quest 2025-03-27 00:00:00 2025-04-03 00:00:00   dupe Epic Games Store Spring Sale 2025       FFB6D7A8
+Eastern Exorcist 2025-03-20 00:00:00 2025-04-17 00:00:00 mobile                              <NA>       FFF4CCCC
+     Cat Quest 2 2024-05-02 00:00:00 2024-05-09 00:00:00    NaN                              <NA>       FFD0E0E3
+       Cat Quest 2023-12-28 00:00:00 2023-12-29 00:00:00    NaN                              <NA>       FFB6D7A8
+          Hitman 2020-08-27 00:00:00 2020-09-03 00:00:00   free                              <NA>       FFD0E0E3
+Joining enrichments onto 914 event rows...
+  metacritic: matched 911/914 event rows
+  hltb: matched 913/914 event rows
+  egs: matched 779/914 event rows
+
+Stored artifacts reproduce
+{'initial_join_values': False, 'canonical_event': True, 'canonical_game': True}
+
+Initial join CSV-roundtrip equals saved base
+False
+
+Initial join differing columns
+['daterange_wiki', 'title_wiki', 'year_wiki', 'ru_link_wiki', 'source_wiki']
+
+Wiki title assignments changed by a raw-source rebuild
+                Title title_wiki daterange_wiki
+BioShock 2 Remastered        NaN            NaN
+
+Those rows in the saved base
+                Title            title_wiki       daterange_wiki
+BioShock 2 Remastered BioShock 2 Remastered 26 May - 2 June 2022
+
+App extract equals documented canonical projection
+True
+
+Different canonical titles sharing the same trusted EGS offer
+                    title           egs_match_title  egs_original_price_usd                     egs_offer_id
+    BioShock 2 Remastered     BioShock 2 Remastered                   19.99 991d921215bf473b819bd2bb4b007531
+      BioShock Remastered     BioShock 2 Remastered                   19.99 991d921215bf473b819bd2bb4b007531
+              Cat Quest 2              Cat Quest II                   14.99 2a8398bbcb524c379ab21e31f0be5aeb
+             Cat Quest II              Cat Quest II                   14.99 2a8398bbcb524c379ab21e31f0be5aeb
+                Evoland 2 Evoland Legendary Edition                   19.99 e068e168886a4a90a4e36a310e3bda32
+Evoland Legendary Edition Evoland Legendary Edition                   19.99 e068e168886a4a90a4e36a310e3bda32
+
+BioShock and Cat Quest cross-source identity examples
+                                  title                     egs_match_title  egs_match_score                                           mc_title                          hltb_game_name
+                  BioShock 2 Remastered               BioShock 2 Remastered            100.0 Call of Duty: Modern Warfare 2 Campaign Remastered                                     NaN
+BioShock Infinite: The Complete Edition BioShock Infinite: Complete Edition            100.0        The Witcher 3: Wild Hunt - Complete Edition Bioshock Infinite: The Complete Edition
+                    BioShock Remastered               BioShock 2 Remastered            100.0                                BioShock Remastered                                BioShock
+                              Cat Quest                           Cat Quest            100.0                                          Cat Quest                               Cat Quest
+                            Cat Quest 2                        Cat Quest II             90.0                                          Cat Quest                            Cat Quest II
+                           Cat Quest II                        Cat Quest II            100.0                                      Cat Quest III                            Cat Quest II
+
+Annual source rows versus canonical rows
+ year  sheet_rows  canonical_rows
+ 2018           2               2
+ 2019          69              81
+ 2020         108             124
+ 2021          93             109
+ 2022         103             121
+ 2023         101             113
+ 2024         108             123
+ 2025         174             191
+ 2026          48              50
+
+egs_giveaways CSV mirror equals parquet CSV
+True
+
+egs_giveaways_by_game CSV mirror equals parquet CSV
+True
+
+Lowest Metacritic name ratios (triage, not automatic wrong-match verdicts)
+                                                             title                                                             mc_title  mc_criticScore  title_ratio
+         Train Sim World 2 - LGV Méditerranée: Marseille - Avignon                                                                    %             NaN     0.000000
+                                     Antstream - Epic Welcome Pack                                                                    %             NaN     0.000000
+                             Rumbleverse - Boom Boxer Content Pack                                                                    %             NaN     0.000000
+                               Rumbleverse - Epic Cheerleader Pack                                                                    %             NaN     0.000000
+              Disney Speedstorm - Monochromatic Pack - Racer Ariel                                                                    ?             NaN     0.000000
+                                     LOVE (enhanced version, 2014)                                                                 Love             NaN    26.666667
+                                        SMITE 2 Thanatoasty Bundle                                                                SMITE            80.0    32.258065
+                                      STALCRAFT: X Edition Starter                           Xenoblade Chronicles X: Definitive Edition            87.0    38.235294
+                DC Heroes United’s - Super Power Batman Bundle DLC                                       LEGO Batman 2: DC Super Heroes            79.0    38.961039
+                                                            Verdun                                          WWI: Verdun - Western Front            56.0    40.000000
+                                 RAWMEN Sakura Gusoku Cosmetic Set                                           RAWMEN: Food Fighter Arena             NaN    41.379310
+                                                            Barony                                            Barony: Legends & Pariahs             NaN    42.857143
+                                             BioShock 2 Remastered                   Call of Duty: Modern Warfare 2 Campaign Remastered            71.0    42.857143
+                                  Fortnite -- Frosted Skyline Pack                                                             Fortnite            78.0    43.243243
+Train Sim World® 6: Spirit of Steam: Liverpool Lime Street - Crewe                                                    Train Sim World 6            76.0    43.589744
+                                          Arcadgeddon Promo bundle                                                    City of Promotion             NaN    43.902439
+    World of Warships x TMNT — Mission: Free Permanent Camo Unlock                                                    World of Warships            81.0    44.736842
+                                                 Echo Starter Pack                  Airport Ground Handling Simulator VR. Starter Pack.             NaN    45.454545
+                         Rumble Club - Free Game of the Week Bonus The Walking Dead: A Telltale Games Series - Game of the Year Edition            82.0    46.153846
+                                         Clash - Lone Fighter Pack                                 SNK vs. Capcom: Card Fighters' Clash            84.0    46.428571
+
+EGS related-product candidates marked trusted
+                                             title                                    egs_match_title  egs_original_price_usd                                                    egs_notes
+ A Game Of Thrones: The Board Game Digital Edition  A Game Of Thrones: The Board Game Digital Edition                   19.99 no product page (opaque/missing slug); developer unavailable
+                  Among the Sleep Enhanced Edition                 Among the Sleep - Enhanced Edition                   16.99                                                          NaN
+    Batman: Arkham Asylum Game of the Year Edition     Batman™ Arkham Asylum Game of the Year Edition                   19.99                                                          NaN
+    Batman: Arkham City - Game of the Year Edition    Batman™: Arkham City - Game of the Year Edition                   19.99                                                          NaN
+           BioShock Infinite: The Complete Edition                BioShock Infinite: Complete Edition                   54.97                                                          NaN
+                Castlevania Anniversary Collection                 Castlevania Anniversary Collection                   19.99 no product page (opaque/missing slug); developer unavailable
+                            DARQ: Complete Edition                             DARQ: Complete Edition                   19.99                                                          NaN
+                   Dandara: Trials of Fear Edition                    Dandara: Trials of Fear Edition                   14.99                                                          NaN
+               Darksiders II: Deathinitive Edition                 Darksiders II Deathinitive Edition                   29.99                                                          NaN
+                   Darksiders: Warmastered Edition                     Darksiders Warmastered Edition                   19.99                                                          NaN
+                   Dishonored - Definitive Edition                    Dishonored - Definitive Edition                   19.99                                                          NaN
+Dragon Age: Inquisition - Game of the Year Edition Dragon Age: Inquisition – Game of the Year Edition                   39.99 no product page (opaque/missing slug); developer unavailable
+                                         Evoland 2                          Evoland Legendary Edition                   19.99 no product page (opaque/missing slug); developer unavailable
+                         Evoland Legendary Edition                          Evoland Legendary Edition                   19.99 no product page (opaque/missing slug); developer unavailable
+               Fallout 3: Game of the Year Edition                Fallout 3: Game of the Year Edition                   19.99                                                          NaN
+             Fallout: New Vegas - Ultimate Edition              Fallout: New Vegas - Ultimate Edition                   19.99 no product page (opaque/missing slug); developer unavailable
+                      For Honor - Standard Edition                         For Honor Standard Edition                   29.99 no product page (opaque/missing slug); developer unavailable
+                      Gamedec - Definitive Edition                       Gamedec - Definitive Edition                   29.99                                                          NaN
+                         Gigantic: Rampage Edition                          Gigantic: Rampage Edition                   19.99 no product page (opaque/missing slug); developer unavailable
+      Guacamelee! Super Turbo Championship Edition       Guacamelee! Super Turbo Championship Edition                   14.99 no product page (opaque/missing slug); developer unavailable
+           Guild of Dungeoneering Ultimate Edition            Guild of Dungeoneering Ultimate Edition                   19.99                                                          NaN
+                                        HUMANKIND™                        HUMANKIND™ Standard Edition                   49.99                                                          NaN
+                   Homeworld Remastered Collection                    Homeworld Remastered Collection                   34.99                                                          NaN
+                           Jotun: Valhalla Edition                            Jotun: Valhalla Edition                   14.99                                                          NaN
+             LISA: The Joyful - Definitive Edition              LISA: The Joyful - Definitive Edition                    9.99 no product page (opaque/missing slug); developer unavailable
+
+Synthetic EGS exact-vs-subset tie
+({'title': 'Example Game Deluxe Edition'}, 100.0)
+
+Synthetic future next marker after load_base
+      title  from_date giveaway_type                                          notes
+Future Game 2099-01-01           NaN was listed as upcoming ('next') at scrape time
+
+Existing validator findings
+[]
+
+Python 3.11 grammar check (not a runtime compatibility test)
+[]
+
+EGS cache note counts
+                                                                                                                                                    311
+no product page (opaque/missing slug); developer unavailable                                                                                        200
+no search results                                                                                                                                   117
+no product page (opaque/missing slug)                                                                                                                16
+low confidence match (< 80)                                                                                                                          12
+developer unavailable                                                                                                                                 6
+manual override: store listing dropped the subtitle                                                                                                   2
+manual override: store reports $0 for this non-purchasable offer; price nulled                                                                        2
+manual override: original delisted; Definitive Edition is the successor re-release; no product page (opaque/missing slug); developer unavailable      1
+manual override: was matched to the Assault on Dragon Keep one-shot                                                                                   1
+manual override: search rank 1 is an unrelated Overwolf app; pinned the 505 Games listing                                                             1
+manual override: was matched to the Vampire Crawlers spinoff; no product page (opaque/missing slug); developer unavailable                            1
+Name: count, dtype: int64
