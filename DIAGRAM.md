@@ -121,6 +121,23 @@ flowchart TD
         APPCSV --> PEXP
     end
     EV -- "app columns only,<br>bool NA→False, MC 0→NA" --> BAD
+
+    %% isolated dashboard fixture, not a replacement for the canonical flow
+    subgraph MOCK["Design branch · clean-sample dashboard"]
+        DBS["build_dashboard_sample.py<br>(strict identity + source-window checks)"]:::script
+        DSP["data/dashboard_sample.parquet<br>(40 games / 42 windows)"]:::final
+        DSJ["development/dashboard/public/sample.json"]:::mid
+        DAPP["development/dashboard/app.py<br>(marimo + Plotly)"]:::consumer
+        DEXP["export_dashboard.py"]:::script
+        DSITE["outputs/dashboard_site/<br>+ dashboard_site.zip"]:::consumer
+        DBS --> DSP
+        DBS --> DSJ
+        DSJ --> DAPP
+        DAPP --> DEXP
+        DEXP --> DSITE
+    end
+    EV -- "cached metadata; reject ambiguous titles" --> DBS
+    RAWGS -- "fixed 2026-04-29 sheet;<br>1:1 title/start/end reconciliation" --> DBS
 ```
 
 **Color legend** — 🟦 blue: scripts · 🟨 yellow: dated raw scrapes · 🟧 orange: rolling intermediates
@@ -204,6 +221,26 @@ first place to look when an enrichment value looks like it belongs to the wrong 
   when exported with `marimo export html-wasm … --mode run --no-show-code` (fully client-side
   Pyodide; the `public/` folder is copied into the export automatically). The exported site in
   `outputs/portfolio_wasm/` is a gitignored build artifact.
+
+## Separate dashboard fixture (September 2026 branch)
+
+`build_dashboard_sample.py` reads the fixed `2026-04-29-gsheets.xlsx` and saved
+canonical event parquet. It excludes titles with duplicated windows, shared EGS
+product IDs, conflicting displayed metadata, nonmatching source windows, or
+edition/collection names. The four matched titles must agree after case and
+punctuation normalization; no fuzzy threshold or suffix removal is used. Source
+rows must be ordinary/repeat PC rows without notes, starting in 2018–2025 and
+completed by the source snapshot cutoff. Displayed enrichments must be populated
+with positive scores, playtimes, and USD prices.
+
+Source reconciliation is **1:1 on title/from_date/to_date**; metadata attachment
+is **m:1 on exact title**. Forty games are selected round-robin across first years,
+using a deterministic title hash within years. Forty-two source rows survive.
+`sample_occurrence` is chronological within each included title and is calculated
+before dashboard filters, so a returning window stays returning under a year filter.
+This fixture bypasses no production repair and supports no whole-program trend claims.
+Audit evidence and lightweight checks live in `outputs/dashboard_sample_*` and
+`outputs/dashboard_checks.py`. Exported browser data is JSON to avoid pyarrow in WASM.
 
 ## Join keys at a glance
 

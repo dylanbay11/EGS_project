@@ -182,3 +182,7 @@ settings.json
 
 # WASM export build artifact (regenerate: uv run marimo export html-wasm development/portfolio_explorer.py -o outputs/portfolio_wasm --mode run --no-show-code)
 outputs/portfolio_wasm/
+
+# Clean-sample dashboard exports (regenerate with development/export_dashboard.py)
+outputs/dashboard_site/
+outputs/dashboard_site.zip

@@ -11,6 +11,25 @@ The canonical analysis dataset, produced by `development/build_dataset.py`.
 
 Parquet is the canonical format; the `.csv` mirrors are for quick inspection only.
 
+### Separate dashboard design sample
+
+`data/dashboard_sample.parquet` is a bounded fixture, not a replacement canonical
+table: **40 games / 42 windows**, selected by `development/build_dashboard_sample.py`.
+It keeps a documented subset of cached metadata and only source-reconciled windows.
+`development/dashboard/public/sample.json` is its generated browser asset.
+Selection rules and limitations are in `outputs/dashboard_sample_report.md`.
+
+| Sample-specific column | Meaning |
+|---|---|
+| `source_sheet_row` | Actual Excel row in the fixed `2026-04-29-gsheets.xlsx` source; auditable title/start/end |
+| `sample_occurrence` | Chronological occurrence within the included title's full sample history, calculated before UI filters |
+| `giveaway_year` | Year of giveaway start, restricted to 2018–2025 for this fixture |
+
+Dashboard-derived `windows_in_view` and `first_in_view` describe the currently
+filtered events. Ratings, prices, and playtime medians count each game once.
+Cached prices have no known observation date; enrichment-name agreement does
+not certify live source accuracy or a platform-specific Metacritic score.
+
 ## Grain & keys
 
 - **Event-level** keeps every giveaway event, so a title given away multiple times

@@ -1,5 +1,32 @@
 # EGS Project Progress & State
 
+## September 2026 dashboard design branch
+
+- [x] **Second dashboard prototype on `codex/clean-sample-dashboard`**:
+  `development/dashboard/app.py` is a separate marimo + Plotly portfolio explorer
+  with sidebar filters, reactive game-level summaries, score/playtime discovery,
+  genre counts, a selectable game file, and giveaway history. Preserves the
+  existing explorers and production pipeline. Design/launch notes:
+  `outputs/dashboard_design.md`.
+- [x] **Bounded source-reconciled fixture**: `development/build_dashboard_sample.py`
+  selects 40 games / 42 windows from 122 eligible games in the saved snapshot.
+  Writes `data/dashboard_sample.parquet` and a deployable JSON asset under
+  `development/dashboard/public/`. Evidence: `outputs/dashboard_sample_report.md`
+  and `outputs/dashboard_sample_audit.csv`. This is an enriched design sample,
+  not a representative program-wide dataset or certification that the pipeline is fixed.
+- [x] **Portable export**: `development/export_dashboard.py` builds
+  `outputs/dashboard_site/` and `outputs/dashboard_site.zip` for ordinary static
+  hosting, bundling custom CSS and sample data. Local Python retains pandas 3;
+  browser metadata targets bundled Pyodide 0.27.7's pandas 2.2.3. No project dependency downgrade.
+- [x] **Programmatic checks passed**: `outputs/dashboard_checks.py` checks source
+  identity/grain and runs default, empty, single-game, and history notebook states.
+  Captured output is in `outputs/dashboard_checks.txt`.
+- [x] **Dashboard browser acceptance**: native search/history and actual WASM
+  startup, game selection, and empty filtering tested in the in-app browser.
+  Added an initial WASM loading message and meaningful empty genre-chart state.
+- [ ] **Staging**: obtain the user's website/staging destination before private deployment. Swap
+  in the repaired full dataset only after accepting the analytical definitions.
+
 ## September 2026 independent review
 
 Read [PROJECT_REVIEW.md](PROJECT_REVIEW.md) for the current orientation, branch map,

@@ -1,0 +1,32 @@
+Command: uv run python outputs/dashboard_checks.py
+Environment: Python 3.13, pandas 3.0.2, marimo 0.23.2
+
+PASS: Python 3.11 syntax and function docstrings
+PASS: 40 identities, 42 unique windows, exact source-sheet row/date reconciliation
+PASS: all 16 notebook cells execute; default metrics and selected game agree
+PASS: repeats count once per game, year boundaries, literal search, OR genres, 9 weekend picks
+PASS: complete empty rendering including charts, table, metrics, and game file
+PASS: complete single game rendering including charts, table, metrics, and game file
+PASS: history view executes with its independently retained tab state
+Browser/WASM execution and visual layout require a separate acceptance pass.
+
+Additional validation:
+- Native marimo HTML execution export completed successfully.
+- Local marimo preview returned HTTP 200 on localhost:2719.
+- WASM export helper verified embedded stylesheet and exact bundled sample JSON.
+- Source syntax checked against Python 3.11 grammar; native execution used Python 3.13.
+- Browser pin traced to installed exporter's Pyodide 0.27.7 bootstrap and its
+  documented pandas 2.2.3 package set. This is dependency compatibility evidence,
+  not evidence of a successful browser/WASM execution.
+
+Subsequent browser acceptance (2026-09-09):
+- Native app: actual layout inspected, Alien: Isolation search returned one game
+  and two windows; history showed the December 2020 and April 2021 source dates.
+- WASM app: loaded successfully over local HTTP; default metrics matched native.
+- Selected World of Goo and verified its game-file heading updated.
+- Literal no-result query produced zero counts and the explanatory empty state.
+- Reset cleared the query and restored default controls.
+- Final export showed the new loading message during runtime startup.
+- Fixed meaningless axes in the empty genre chart and singular game wording.
+- Native marimo drawer logs an upstream DialogTitle accessibility warning;
+  this pass is not a full accessibility or cross-browser certification.
