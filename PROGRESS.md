@@ -1,5 +1,20 @@
 # EGS Project Progress & State
 
+## September 2026 egdata landscape review
+
+- [x] **Competitor/API assessment**: reviewed `egdata.app`, its live public API, OpenAPI
+  contract, giveaway browser, and relevant offer endpoints. The collection layer overlaps
+  heavily: egdata already exposes offer-linked giveaway history, store identity/metadata,
+  prices, HLTB, external ratings, IGDB, and headline giveaway statistics. The project should
+  differentiate through repaired/reconciled source grain, explicit definitions, cross-source
+  auditability, longitudinal giveaway analysis, and its visitor-facing research narrative.
+  Detailed findings: `outputs/egdata_comparison.md`.
+- [ ] **Reconcile against egdata after the source-grain repair**: compare distinct offer/windows
+  through a shared cutoff, use stable offer IDs where available, and audit missing/extra records
+  without treating either source as automatic ground truth.
+- [ ] **Evaluate contemporaneous giveaway value**: test whether egdata price history can support
+  price-at-giveaway measures, with coverage diagnostics and clear reuse/attribution terms.
+
 ## September 2026 dashboard design branch
 
 - [x] **Second dashboard prototype on `codex/clean-sample-dashboard`**:
